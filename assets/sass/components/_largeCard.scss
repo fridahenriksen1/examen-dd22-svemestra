@@ -1,14 +1,17 @@
 //! Sektion som håller i korten till boende
 .user-accomodation {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 
   padding-top: 0rem;
   gap: 1rem;
+  margin-bottom: 7rem;
 
   @include flexbox(center, stretch, wrap);
 
   .card {
+    position: relative;
+    //z-index: -1;
     // --flex-items: 1;
     // flex: 0 0
     //   calc(
@@ -57,11 +60,19 @@
 
     //flex-direction: column; /* Lägg till */
 
+    .like-icon {
+      position: absolute;
+      z-index: 1;
+      width: 4rem;
+      height: 4rem;
+    }
+
     .card-content {
       display: flex;
       flex-direction: column;
       height: 100%;
       justify-content: space-between;
+      text-decoration: none;
 
       .circle-box {
         margin-bottom: 0.8rem;
@@ -77,6 +88,21 @@
           background: #141414;
           width: 0.6rem;
           height: 0.6rem;
+        }
+      }
+
+      .img-box {
+        position: relative;
+        .like-icon {
+          position: absolute;
+          width: 44px;
+          height: 44px;
+          top: 0.5rem;
+          right: 0.5rem;
+        }
+
+        img {
+          pointer-events: none;
         }
       }
     }
@@ -116,7 +142,7 @@
 
   .card-text {
     color: black;
-    margin: 1rem 0;
+    margin: 0.75rem 0 1rem 0;
 
     // .card-rating {
     //     display: inline-flex;
@@ -138,6 +164,10 @@
     //     }
 
     // }
+    p {
+      padding-top: 0.3rem;
+      font-size: 0.75rem;
+    }
   }
   .style-chips {
     display: inline-block;

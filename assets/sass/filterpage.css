@@ -348,15 +348,17 @@ h4 {
 
 .user-accomodation {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding-top: 0rem;
   gap: 1rem;
+  margin-bottom: 7rem;
   display: flex;
   justify-content: center;
   align-items: stretch;
   flex-wrap: wrap;
 }
 .user-accomodation .card {
+  position: relative;
   flex: 1 auto;
   display: flex;
   justify-content: center;
@@ -371,11 +373,18 @@ h4 {
     flex: 0 0 calc(25% - 1rem);
   }
 }
+.user-accomodation .card .like-icon {
+  position: absolute;
+  z-index: 1;
+  width: 4rem;
+  height: 4rem;
+}
 .user-accomodation .card .card-content {
   display: flex;
   flex-direction: column;
   height: 100%;
   justify-content: space-between;
+  text-decoration: none;
 }
 .user-accomodation .card .card-content .circle-box {
   margin-bottom: 0.8rem;
@@ -391,6 +400,19 @@ h4 {
   background: #141414;
   width: 0.6rem;
   height: 0.6rem;
+}
+.user-accomodation .card .card-content .img-box {
+  position: relative;
+}
+.user-accomodation .card .card-content .img-box .like-icon {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+.user-accomodation .card .card-content .img-box img {
+  pointer-events: none;
 }
 .user-accomodation .card h2 {
   font-size: 1.25rem;
@@ -410,7 +432,11 @@ h4 {
 }
 .user-accomodation .card-text {
   color: black;
-  margin: 1rem 0;
+  margin: 0.75rem 0 1rem 0;
+}
+.user-accomodation .card-text p {
+  padding-top: 0.3rem;
+  font-size: 0.75rem;
 }
 .user-accomodation .style-chips {
   display: inline-block;
