@@ -1,4 +1,10 @@
 // @import "/assets/sass/layout/nav";
+*,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 .big-container {
   background: #ffffff;
@@ -292,17 +298,10 @@
     box-sizing: border-box;
   }
 
-  .frame-771 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    box-sizing: border-box;
-  }
   .map-section {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     width: 100%;
-    box-sizing: border-box;
   }
   .icon-mapp-box {
     display: flex;
@@ -379,13 +378,13 @@
     height: 1rem;
     box-sizing: border-box;
   }
-
+  //.detaljsida {
   //!Här lägger jag stylen för mediumkort sektionen .detaljsida {
-  background: #ffffff;
-  display: flex;
-  flex-wrap: wrap;
+  // background: #ffffff;
+  // display: flex;
+  // flex-wrap: wrap;
 
-  padding-top: 1.9rem;
+  //padding-top: 1.9rem;
 
   //!spara
   .vector-6 {
@@ -491,7 +490,7 @@
 
   //!kortet spara
   .card-medium {
-    margin: 0.5rem;
+    margin: 0.5rem 0rem;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -511,15 +510,16 @@
   .card-box {
     margin-bottom: 1.5rem;
     display: flex;
+    flex: 1 0 auto;
 
     flex-wrap: wrap;
-    max-width: 400px;
+    //max-width: 400px;
     justify-content: space-between;
 
     box-sizing: border-box;
 
     @media (min-width: 600px) {
-      max-width: 600px;
+      // max-width: 600px;
     }
   }
 
@@ -532,4 +532,5 @@
   .frame-46 {
     margin: 0 1rem 1.4rem 1rem;
   }
+  //}
 }
