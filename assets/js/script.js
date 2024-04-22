@@ -27,7 +27,7 @@ if(searchInput){
         accommodations.forEach( accommodation =>{
             //Kollar om något av villkoren stämmer och return en boolean (true/false)
             //!La till att man kan söka på pris på sista
-            const isVisible =  accommodation.name.toLowerCase().includes(valueInput) ||  accommodation.category.toLowerCase().includes(valueInput) ||  accommodation.price.toLowerCase().includes(valueInput);
+            const isVisible =  accommodation.name.toLowerCase().includes(valueInput) ||  accommodation.category.toLowerCase().includes(valueInput) ||  accommodation.info.toLowerCase().includes(valueInput);
             //Gömmer korten som inte finns i sökningen 
              accommodation.element.classList.toggle('hide',!isVisible);
         });
@@ -43,20 +43,20 @@ function getCard (){
         const img = card.querySelector('[data-image]');
         const cat = card.querySelector('[data-cat]');
         const link = card.querySelector('[data-link]');
-        const price = card.querySelector('[data-price]');
+       // const price = card.querySelector('[data-price]');
         const info = card.querySelector('[data-info]');
-        console.log(price);
+       // console.log(price);
         //! Här ska det länkas till enskild sidan sen, just nu står det att href="undefined"
         link.setAttribute('href', accommodation.html);
 
         header.textContent =  accommodation.name;
         cat.textContent =  accommodation.category;
         img.setAttribute('src',  accommodation.imageURL);
-        price.textContent =  accommodation.price;
+        info.textContent =  accommodation.info;
         dataUserCards.append(card);
         
        
-        return{name:  accommodation.name,category:  accommodation.category,price:  accommodation.price, element:card}
+        return{name:  accommodation.name,category:  accommodation.category,info:  accommodation.info, element:card}
     });
 }
 fetch(jsonUrl)
@@ -79,15 +79,15 @@ fetch(jsonUrl)
                 const img = card.querySelector('[data-image]');
                 const cat = card.querySelector('[data-cat]');
                 const link = card.querySelector('[data-link]');
-                const price = card.querySelector('[data-price]');
-                console.log(price);
+                const info = card.querySelector('[data-info]');
+               // console.log(price);
                 link.setAttribute('href',  accommodation.html);
                 header.textContent =  accommodation.name;
                 cat.textContent =  accommodation.category;
                 img.setAttribute('src',  accommodation.imageURL);
-                price.textContent =  accommodation.price;
+                info.textContent =  accommodation.info;
                 section.append(card);
-                return{name:  accommodation.name,category:  accommodation.category,price:  accommodation.price, element:card}
+                return{name:  accommodation.name,category:  accommodation.category,info:  accommodation.info, element:card}
             });
         }); 
     }  
@@ -118,7 +118,7 @@ if (allChips) {
             accommodations.forEach(accommodation => {
                 // Kontrollera om något av de aktiva chippen matchar kategorin eller priset på boendet
                  //! Chips kategori och under är chips price 
-                const isVisible = activeChips.length === 0 || activeChips.includes(accommodation.category.toLowerCase()) || activeChips.includes(accommodation.price.toLowerCase());
+                const isVisible = activeChips.length === 0 || activeChips.includes(accommodation.category.toLowerCase()) || activeChips.includes(accommodation.info.toLowerCase());
                 // Gömmer de kort som inte har kategorin eller priset
                 accommodation.element.classList.toggle('hide', !isVisible);
             });
