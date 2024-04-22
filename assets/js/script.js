@@ -124,6 +124,7 @@ if (allChips) {
             });
         });
     });
+    
 }
 
 else{
