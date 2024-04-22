@@ -1,0 +1,242 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.big-container {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 3.9rem 0 0rem 0;
+  box-sizing: border-box;
+}
+.big-container .edit {
+  position: absolute;
+  right: 3rem;
+  top: 1.2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 1rem;
+  height: 1rem;
+  box-sizing: border-box;
+}
+.big-container .redigera {
+  padding-right: 0.3rem;
+}
+.big-container .mode-edit {
+  margin: 0.1rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 0.8rem;
+  height: 0.8rem;
+  box-sizing: border-box;
+}
+.big-container .vector {
+  width: 16px;
+}
+.big-container .textChips-container {
+  margin: 2rem 1rem 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  flex: calc(100% - 2rem);
+  box-sizing: border-box;
+}
+.big-container .txtPen-box {
+  margin: 0 0.1rem 1rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: calc(100% - 0.1rem);
+  box-sizing: border-box;
+}
+.big-container .dina-sparade-kategorier {
+  font-family: "Roboto";
+  font-weight: 400;
+  color: #111010;
+}
+.big-container .underline-border {
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.5);
+  padding-bottom: 1.2rem;
+}
+.big-container .frame-851 {
+  margin: 0.1rem 0 0.3rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 0.8rem;
+  height: 0.8rem;
+  box-sizing: border-box;
+}
+.big-container .container-fakeChips {
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.big-container .treehouses {
+  overflow-wrap: break-word;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: #141414;
+}
+.big-container .container-1 {
+  display: flex;
+  align-self: flex-start;
+}
+.big-container .chips-filtrering {
+  border-radius: 6.3rem;
+  border: 0.1rem solid #141414;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0.7rem 1.2rem;
+  box-sizing: border-box;
+}
+.big-container .profil-pic-box {
+  border-radius: 4.1rem;
+  background-image: url("/assets/img/profilpic.jpg");
+  margin: 0 0 1.4rem 0rem;
+  width: 8.1rem;
+  height: 8.1rem;
+  background-size: cover;
+}
+.big-container .h1-saved {
+  overflow-wrap: break-word;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #111010;
+}
+.big-container .profilPic-textBox {
+  margin: 0 0rem 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.big-container .txt-box-about {
+  margin: 0 1rem 2.9rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-self: flex-start;
+}
+.big-container .txt-about {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1rem;
+  color: #111010;
+}
+.big-container .iconTxt-containerBtm {
+  margin: 0 1rem 6.8rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  width: -moz-fit-content;
+  width: fit-content;
+  box-sizing: border-box;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 1rem;
+  color: #040404;
+}
+.big-container .saved-box {
+  margin: 0 0 2.3rem 0.2rem;
+  display: flex;
+  align-items: center;
+}
+.big-container .friends-box {
+  margin-bottom: 2.3rem;
+  display: flex;
+  align-items: center;
+}
+.big-container .settings-box {
+  display: flex;
+  align-items: center;
+}
+.big-container .mdiheart {
+  margin-right: 1.2rem;
+  display: flex;
+  width: 1.7rem;
+  height: 1.5rem;
+}
+.big-container .octiconpeople-24 {
+  margin-right: 1rem;
+  display: flex;
+  width: 2rem;
+  height: 1.6rem;
+}
+.big-container .material-symbols-lightsettings-outline {
+  margin-right: 1.3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 1.9rem;
+  height: 1.9rem;
+  box-sizing: border-box;
+}
+.big-container .main-saved {
+  margin: 0 1rem 1.4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(100% - 2rem);
+  box-sizing: border-box;
+}
+
+.nav-icons {
+  width: 1.3rem;
+  height: 1.5rem;
+}
+
+.home-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 1.3rem;
+  height: 1.5rem;
+  box-sizing: border-box;
+}
+
+.search-1 {
+  margin-bottom: 0rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  box-sizing: border-box;
+}
+
+.user-filled {
+  margin: 0.1rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 1.3rem;
+  height: 1.3rem;
+  box-sizing: border-box;
+}
+
+.navigation {
+  background: #ededed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1.8rem 0;
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+}/*# sourceMappingURL=profil.css.map */

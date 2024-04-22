@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resa Eamensarbete</title>
+    <link rel="stylesheet" href="assets/sass/filterpage.css">
+
+<!-- FONT länk  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+  <header class="main-header">
+
+ 
+
+
+<main>
+    <div class="flex-container">
+
+
+<!-- 
+         <article class="flex-item">1</article>
+        <article class="flex-item">2</article>
+        <article class="flex-item">3</article>
+        <article class="flex-item">4</article>
+        <article class="flex-item">5</article>
+        <article class="flex-item">6</article>  -->
+    <h1>Lorem ipsum dolor</h1>
+
+      <!-- Sök container -->
+    <section id="search" class="container">
+        <!-- <h1>Boenden</h1> -->
+
+        <!-- Sökbaren -->
+        <form id="search-bar" role='search'>
+            <label for='header-search'>
+                <span class='visually-hidden'>Search</span>
+            </label>
+            <input type='search' id='header-search' placeholder="Sök på område, boende, aktivitetet" data-search>
+            <!-- <button type='submit' id="btn-search">
+                <span class="material-symbols-rounded">search</span>
+                <span class='visually-hidden'>Submit Search</span>
+            </button> -->
+        </form>
+
+
+
+        <!-- chips filtreringen -->
+
+         <!-- KATERGORI CHIPSEN -->
+        <form class="m1b" id="categorys" action="">
+            <input class="chip" type="checkbox" id="categoryOne">
+            <label for="categoryOne">Trädhotell</label>
+            <input class="chip" type="checkbox" id="categoryTwo">
+            <label for="categoryTwo">Camping</label>
+            <input class="chip" type="checkbox" id="categoryThree">
+            <label for="categoryThree">Tillgång till Spa</label>
+            <input class="chip" type="checkbox" id="categoryFour">
+            <label for="categoryFour">Närhet till vattnet</label>
+            <input class="chip" type="checkbox" id="categoryFive">
+            <label for="categoryFive">Vandra</label>
+            <input class="chip" type="checkbox" id="categorySix">
+            <label for="categorySix">Cykla</label>
+            <input class="chip" type="checkbox" id="categorySeven">
+            <label for="categorySeven">Glamping</label>
+        </form>
+
+                    <!-- PRIS CHIPSEN -->
+                    <h4>Prisnivå</h4>
+        <form class="m1b" id="price" action="">
+            <input class="chip" type="checkbox" id="categoryEight">
+            <label for="categoryEight">Budget</label>
+            <input class="chip" type="checkbox" id="categoryNine">
+            <label for="categoryNine">Medel</label>
+            <input class="chip" type="checkbox" id="categoryTen">
+            <label for="categoryTen">Premium</label>
+        
+        </form>
+    </section>
+
+
+
+
+         <!-- Sektion med cards som hämtas från json med js, filtreringskorten för boende -->
+    <section class="user-accomodation container" data-user-cards>
+        <!-- Use <template> to hold some content that will be hidden when the page loads. Use JavaScript to display it:  -->
+        <template data-user-template>
+            <article class="card">
+                <a class="card-content" href="" data-link>
+                    <figure>
+                        <div class="img-box">
+                            <img data-image>
+
+                        </div>
+                        <figcaption class="card-text">
+                            <h2 data-header></h2>
+                            <!-- <p class="style-chips" data-cat></p> -->
+                            <p data-price></p>
+                           
+                        </figcaption>
+                       
+                    </figure>
+                  
+
+                    <section class="category-box">
+                       
+                        <!-- <p data-price></p> -->
+                        <p class="style-chips" data-cat></p>
+                    </section>
+                    <!-- <div class="gradient"></div> -->
+                </a>
+            </article>
+        </template>
+
+    </section>
+
+
+</div>
+</main>
+
+<!-- FOOTER -->
+      <!-- NAVIGATION -->
+      <nav class="navigation">
+        <a class="home-filled" href="index.html">
+          <img class="nav-icons" src="/assets/icons/homeIcon.svg" />
+        </a>
+        <a class="search-1" href="filterPage.html" >
+          <img class="nav-icons" src="/assets/icons/searchNavIcon.svg" />
+        </a>
+        <a class="user-filled" href="profil.html">
+          <img class="nav-icons" src="/assets/icons/navProfilIcon.svg" />
+        </a>
+      </nav>
+
+
+<script src="/assets/js/script.js"></script>
+<script src="/assets/js/getAccommodation.js" defer></script>
+
+
+
+<script  src="/assets/js/header.js"></script>
+<script  src="/assets/js/footer.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+[
+    {
+        "id": 1,
+        "name": "Hyssna",
+        "category": "Trädhotell",
+        "info": "Lorem ipsum dolor sit amet consectetur. Convallis amet nisi amet eget at.",
+        "imageURL": "assets/img/cottage.jpg",
+        "price": "Budget"
+
+    },
+    {
+        "id": 2,
+        "name": "Böda camping",
+        "category": "Camping",
+        "info": "Lorem ipsum dolor sit amet consectetur. Convallis amet nisi amet eget at.",
+        "imageURL": "assets/img/camping.jpg",
+        "price": "Medel"
+
+    },
+    {
+        "id": 3,
+        "name": "Sago hotellet",
+        "category": "Tillgång till Spa",
+        "info": "Lorem ipsum dolor sit amet consectetur. Convallis amet nisi amet eget at.",
+        "imageURL": "assets/img/hotel.jpg",
+        "price": "Premium"
+
+    },
+    {
+        "id": 4,
+        "name": "Sago hotellet",
+        "category": "Närhet till vattnet",
+        "info": "Lorem ipsum dolor sit amet consectetur. Convallis amet nisi amet eget at.",
+        "imageURL": "assets/img/hotel.jpg",
+        "price": "Budget"
+
+    },
+    {
+        "id": 5,
+        "name": "Sago hotellet",
+        "category": "Vandra",
+        "info": "Lorem ipsum dolor sit amet consectetur. Convallis amet nisi amet eget at.",
+        "imageURL": "assets/img/hotel.jpg",
+        "price": "Budget"
+
+    },
+    {
+        "id": 6,
+        "name": "Sago hotellet",
+        "category": "Cykla",
+        "info": "Lorem ipsum dolor sit amet consectetur. Convallis amet nisi amet eget at.",
+        "imageURL": "assets/img/hotel.jpg",
+        "price": "Medel"
+
+    },
+    {
+        "id": 7,
+        "name": "Sago hotellet",
+        "category": "Glamping",
+        "info": "Lorem ipsum dolor sit amet consectetur. Convallis amet nisi amet eget at.",
+        "imageURL": "assets/img/hotel.jpg",
+        "price": "Premium"
+
+    }
+
+
+
+
+    ]

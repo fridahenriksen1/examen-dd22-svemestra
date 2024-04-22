@@ -1,0 +1,130 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.account-container {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8.6rem;
+
+  box-sizing: border-box;
+  .logo {
+    margin: 0 0.1rem 7.5rem 0;
+    //! Typografi
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 3rem;
+    color: #000000;
+  }
+
+  //! Typografi
+  .logga-in {
+    overflow-wrap: break-word;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: #fafafa;
+    text-decoration: none;
+  }
+  .signIn-box {
+    border-radius: 6.3rem;
+    border: 0.1rem solid #000000;
+    background: #262626;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    padding: 0.4rem 4rem 0.4rem 4rem;
+  }
+  .skapa-konto {
+    overflow-wrap: break-word;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: #000000;
+  }
+  .createBtn-box {
+    border-radius: 6.3rem;
+    border: 0.1rem solid #000000;
+    margin: 0 0.1rem 1rem 0.1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.4rem 3rem 0.4rem 3rem;
+  }
+
+  .btn-txt-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-account {
+    //margin-bottom: 7.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  //! p style för text
+  .txt-password {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 0.8rem;
+    text-decoration-line: none;
+    line-height: 1.333;
+  }
+
+  //! klicka här texten
+  .click-txt {
+    text-decoration: underline;
+  }
+}
+
+//! NAV
+.nav-icons {
+  width: 1.3rem;
+  height: 1.5rem;
+}
+
+.home-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 1.3rem;
+  height: 1.5rem;
+  box-sizing: border-box;
+}
+
+.search-1 {
+  margin-bottom: 0rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  box-sizing: border-box;
+}
+
+.user-filled {
+  margin: 0.1rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 1.3rem;
+  height: 1.3rem;
+  box-sizing: border-box;
+}
+.navigation {
+  background: #ededed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1.8rem 0;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}

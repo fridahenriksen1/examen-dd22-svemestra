@@ -1,0 +1,31 @@
+#categorys {
+  margin-top: 1rem;
+}
+
+.chip {
+  + label {
+    display: inline-block;
+    background-color: transparent;
+    border-radius: 5rem;
+    padding: 0.6rem 1.5rem;
+    // padding: 0.75rem 1.25rem;
+    margin-bottom: 0.4rem;
+    margin-right: 0.2rem;
+    // margin: 0.5rem;
+    color: #141414;
+    font-size: 1rem;
+    user-select: none;
+    cursor: pointer;
+    border: 1px solid #141414;
+  }
+
+  &[type="checkbox"] {
+    display: none;
+
+    &:checked {
+      + label {
+        background-color: yellow;
+      }
+    }
+  }
+}

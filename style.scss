@@ -1,0 +1,489 @@
+*,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.hemskrm-kort-large {
+  background: #ffffff;
+  //padding-top: 302rem;
+
+  .dina-sparade-besksml {
+    margin-bottom: 1rem;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: #111010;
+  }
+  .rectangle-7 {
+    background-image: url(/assets/img/profilpic.jpg);
+    margin-right: 0.6rem;
+    width: 2.8rem;
+    height: 2.8rem;
+    background-size: cover;
+  }
+  .lorem-ipsum {
+    margin: 0.9rem 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: #111010;
+  }
+
+  //!spara
+  .frame-5 {
+    background: #ededed;
+    margin-right: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-basis: 10rem;
+    box-sizing: border-box;
+  }
+
+  .frame-6 {
+    background: #ededed;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-basis: 10rem;
+    box-sizing: border-box;
+  }
+  .frame-7 {
+    margin-bottom: 0.6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  //! spara box till de längst upp
+  .saved-box {
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  //! Spara
+  .fakeChips-box {
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+  }
+  .visa-alla {
+    margin-right: 0.8rem;
+    overflow-wrap: break-word;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 1rem;
+    color: #141414;
+  }
+  //! Spara arrow ikonen längst upp
+  .vector {
+    width: 1rem;
+    height: 1rem;
+  }
+  .arrow-forward {
+    margin: 0.1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 1rem;
+    height: 1rem;
+    box-sizing: border-box;
+  }
+
+  //! Vissa alla boxen
+  .btn-showAll {
+    border-radius: 6.3rem;
+    background: #ffffff;
+    display: flex;
+    flex-direction: row;
+    padding: 0.7rem 1rem 0.7rem 0.8rem;
+    width: fit-content;
+    box-sizing: border-box;
+  }
+  .frame-82 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .frame-25 {
+    margin-bottom: 2.3rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  //! spara lorem ipsum texten (stora)
+  .lorem-ipsum-dolor {
+    margin-bottom: 3rem;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 3rem;
+    color: #000000;
+  }
+  //! STORA KORTET med margin-top
+  .card-large {
+    &.mt {
+      margin-top: 2rem;
+    }
+  }
+
+  .vector-8 {
+    width: 4.6rem;
+    height: 4.6rem;
+  }
+  //!spara
+  .image {
+    opacity: 0.5;
+    // position: absolute;
+    // left: 50%;
+    // top: 50%;
+    // translate: -50% -50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    // padding: 0.8rem;
+    // width: 6.1rem;
+    // height: 6.1rem;
+
+    background-size: cover;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .vector-1 {
+    width: 1.5rem;
+    height: 1.4rem;
+  }
+
+  .container-8 {
+    margin-bottom: 0.3rem;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+  }
+  .vector-6 {
+    width: 0.7rem;
+    height: 0.8rem;
+  }
+
+  //!Spara
+  .contentBox-card {
+    max-width: 300px;
+    padding-top: 1rem;
+  }
+
+  //! Spara i närheten text stil
+  .lorem-ipsum-9 {
+    overflow-wrap: break-word;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #111010;
+  }
+  //!SPARA
+  .frame-252 {
+    margin-bottom: 1.6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: flex-start;
+    box-sizing: border-box;
+  }
+  .vector-40 {
+    width: 4.6rem;
+    height: 4.6rem;
+  }
+  //!Spara hjärtikonen
+  .vector-33 {
+    width: 1.5rem;
+    height: 1.4rem;
+  }
+  .component-14 {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 1.5rem;
+    height: 1.4rem;
+    box-sizing: border-box;
+  }
+  //!Spara
+  .frame-944 {
+    background: #d9d9d9;
+    position: relative;
+    margin-bottom: 0.8rem;
+    width: 20.5rem;
+    min-height: 17.5rem;
+    margin: auto;
+  }
+  //!spara
+  .ellipse {
+    border-radius: 0.3rem;
+    background: #141414;
+    width: 0.6rem;
+    height: 0.6rem;
+  }
+  //!Spara
+  .frame-274 {
+    margin-bottom: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    column-gap: 0.2rem;
+    width: 3.9rem;
+    box-sizing: border-box;
+  }
+  //!SPARA
+  .lorem-ipsum-10 {
+    margin-bottom: 0.3rem;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: #141414;
+  }
+
+  //!spara
+  .frame-284 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+
+    overflow-wrap: break-word;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: #141414;
+  }
+
+  //!Spara
+  .frame-544 {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .vector-39 {
+    width: 0.7rem;
+    height: 0.8rem;
+  }
+
+  //!Spara
+  .treehouses-29 {
+    overflow-wrap: break-word;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: #141414;
+    padding-left: 0.2rem;
+  }
+
+  .vector-37 {
+    width: 0.7rem;
+    height: 0.8rem;
+  }
+
+  .container-12 {
+    margin-bottom: 0.3rem;
+    display: flex;
+    width: fit-content;
+  }
+  .vector-38 {
+    width: 0.7rem;
+    height: 0.8rem;
+  }
+  .home-filled-28 {
+    margin: 0.1rem 0.7rem 0.1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 0.7rem;
+    height: 0.8rem;
+    box-sizing: border-box;
+  }
+
+  .vector-36 {
+    width: 0.7rem;
+    height: 0.8rem;
+  }
+
+  //!spara
+  .chips-filtrering-27 {
+    border-radius: 6.3rem;
+    border: 0.1rem solid #141414;
+    background: #ffffff;
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem 0.7rem 0.5rem 0.9rem;
+    box-sizing: border-box;
+  }
+  .container-13 {
+    margin: 0 0.8rem 0.3rem 0;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+  }
+
+  //!Spara
+  .vector-34 {
+    width: 0.7rem;
+    height: 0.8rem;
+  }
+  .home-filled-24 {
+    margin: 0.1rem 0.7rem 0.1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 0.7rem;
+    height: 0.8rem;
+    box-sizing: border-box;
+  }
+
+  .vector-35 {
+    width: 0.7rem;
+    height: 0.8rem;
+  }
+  //!SPARA
+  .home-filled-25 {
+    margin: 0.1rem 0.7rem 0.1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 0.7rem;
+    height: 0.8rem;
+    box-sizing: border-box;
+  }
+
+  //!SPARA
+  .chips-filtrering-26 {
+    border-radius: 6.3rem;
+    border: 0.1rem solid #141414;
+    background: #ffffff;
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem 0.7rem 0.5rem 0.9rem;
+    box-sizing: border-box;
+  }
+
+  //!SPARA
+  .container-3 {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+  }
+
+  .vector-62 {
+    width: 0.7rem;
+    height: 0.8rem;
+  }
+}
+
+.frame-511 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+.frame-53 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+}
+//!SEKTIONEN för en hel sektion
+.frame-49 {
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 0.5rem;
+
+  &.mt {
+    margin-top: 3rem;
+    margin-bottom: 10rem;
+  }
+}
+.index-main {
+  position: absolute;
+  left: 1rem;
+  top: 2.5rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+//!Nav style
+.nav-icons {
+  width: 1.3rem;
+  height: 1.5rem;
+}
+
+.home-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 1.3rem;
+  height: 1.5rem;
+  box-sizing: border-box;
+}
+
+.search-1 {
+  margin-bottom: 0rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  box-sizing: border-box;
+}
+
+.user-filled {
+  margin: 0.1rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 1.3rem;
+  height: 1.3rem;
+  box-sizing: border-box;
+}
+.navigation {
+  background: #ededed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1.8rem 0;
+  width: 100%;
+  box-sizing: border-box;
+
+  position: fixed;
+  bottom: 0px;
+}
