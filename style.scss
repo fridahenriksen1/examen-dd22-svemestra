@@ -78,6 +78,8 @@ html {
     flex-wrap: wrap;
     // justify-content: space-between;
   }
+
+  //! Typografi
   .visa-alla {
     margin-right: 0.8rem;
     overflow-wrap: break-word;
@@ -85,6 +87,7 @@ html {
     font-weight: 400;
     font-size: 1rem;
     color: #141414;
+    text-decoration: none;
   }
   //! Spara arrow ikonen längst upp
   .vector {
@@ -106,10 +109,9 @@ html {
     border-radius: 6.3rem;
     background: #ffffff;
     display: flex;
-    flex-direction: row;
+
     padding: 0.7rem 1rem 0.7rem 0.8rem;
     width: fit-content;
-    box-sizing: border-box;
   }
   .frame-82 {
     display: flex;
