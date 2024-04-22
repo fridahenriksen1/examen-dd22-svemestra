@@ -1,10 +1,11 @@
 //! Sektion som håller i korten till boende
 .user-accomodation {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 
   padding-top: 0rem;
   gap: 1rem;
+  margin-bottom: 7rem;
 
   @include flexbox(center, stretch, wrap);
 
@@ -77,6 +78,17 @@
           background: #141414;
           width: 0.6rem;
           height: 0.6rem;
+        }
+      }
+
+      .img-box {
+        position: relative;
+        .like-icon {
+          position: absolute;
+          width: 44px;
+          height: 44px;
+          top: 0.5rem;
+          right: 0.5rem;
         }
       }
     }
