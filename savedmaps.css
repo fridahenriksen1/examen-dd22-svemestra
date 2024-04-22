@@ -11,6 +11,7 @@
   margin: 0 0 1.4rem 0rem;
   width: 8.1rem;
   height: 8.1rem;
+  background-size: cover;
 }
 .big-container .h1-saved {
   overflow-wrap: break-word;
@@ -49,6 +50,9 @@
   font-size: 1rem;
   color: #2b2b2b;
   text-decoration: none;
+}
+.big-container .mappar-text.txtColor {
+  color: #959595;
 }
 .big-container .maps-box {
   border-bottom: 0.1rem solid #000000;
