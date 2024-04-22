@@ -52,6 +52,10 @@
     font-size: 1rem;
     color: #2b2b2b;
     text-decoration: none;
+
+    &.txtColor {
+      color: #959595;
+    }
   }
   .maps-box {
     border-bottom: 0.1rem solid #000000;
