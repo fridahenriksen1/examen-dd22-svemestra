@@ -2,8 +2,12 @@
   background: #ffffff;
   display: flex;
   flex-direction: column;
-  padding: 3.9rem 0 0rem 0;
+  padding: 3.9rem 0 5rem 0;
   box-sizing: border-box;
+  background: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 1.9rem;
 }
 .big-container .profil-pic-box {
   border-radius: 4.1rem;
@@ -352,6 +356,8 @@
   padding: 1.8rem 0;
   width: 100%;
   box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
 }
 .big-container .arrow-back-top-left {
   position: absolute;
@@ -363,4 +369,120 @@
   width: 1rem;
   height: 1rem;
   box-sizing: border-box;
+}
+.big-container .vector-6 {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+.big-container .heartBox {
+  position: absolute;
+  top: 0.8rem;
+  right: 1.1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 0.5rem;
+  height: 0.5rem;
+  box-sizing: border-box;
+}
+.big-container .container-4 {
+  background: #d9d9d9;
+  position: relative;
+  margin-bottom: 0.8rem;
+  width: 9.7rem;
+  height: 7.4rem;
+}
+.big-container .ellipse-11 {
+  border-radius: 0.3rem;
+  background: #141414;
+  width: 0.6rem;
+  height: 0.6rem;
+}
+.big-container .circle-box {
+  margin-bottom: 0.8rem;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  -moz-column-gap: 0.2rem;
+       column-gap: 0.2rem;
+  width: 3.9rem;
+  box-sizing: border-box;
+}
+.big-container .headline {
+  margin-bottom: 0.3rem;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1rem;
+  color: #141414;
+}
+.big-container .about-box {
+  margin-bottom: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+}
+.big-container .treehouses {
+  overflow-wrap: break-word;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 0.6rem;
+  color: #141414;
+}
+.big-container .chips-filtrering-6 {
+  border-radius: 6.3rem;
+  border: 0.1rem solid #141414;
+  background: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: flex-start;
+  padding: 0.2rem 0.4rem;
+  box-sizing: border-box;
+}
+.big-container .txtChips-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+}
+.big-container .contentSaved-Box {
+  margin-right: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 0.5rem);
+}
+.big-container .card-medium {
+  margin: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 9.7rem;
+}
+.big-container .short-infoTxt {
+  overflow-wrap: break-word;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: #141414;
+}
+.big-container .card-box {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 400px;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+@media (min-width: 600px) {
+  .big-container .card-box {
+    max-width: 600px;
+  }
+}
+.big-container .frame-46 {
+  margin: 0 1rem 1.4rem 1rem;
 }/*# sourceMappingURL=saveddestinations.css.map */

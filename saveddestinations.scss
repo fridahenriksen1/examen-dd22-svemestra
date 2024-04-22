@@ -4,7 +4,7 @@
   background: #ffffff;
   display: flex;
   flex-direction: column;
-  padding: 3.9rem 0 0rem 0;
+  padding: 3.9rem 0 5rem 0;
   box-sizing: border-box;
 
   //! Profilbild box
@@ -364,6 +364,8 @@
     padding: 1.8rem 0;
     width: 100%;
     box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
   }
 
   .arrow-back-top-left {
@@ -376,5 +378,158 @@
     width: 1rem;
     height: 1rem;
     box-sizing: border-box;
+  }
+
+  //!Här lägger jag stylen för mediumkort sektionen .detaljsida {
+  background: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+
+  padding-top: 1.9rem;
+
+  //!spara
+  .vector-6 {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+  //!spara
+  .heartBox {
+    position: absolute;
+    top: 0.8rem;
+    right: 1.1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 0.5rem;
+    height: 0.5rem;
+    box-sizing: border-box;
+  }
+
+  //!spara
+  .container-4 {
+    background: #d9d9d9;
+    position: relative;
+    margin-bottom: 0.8rem;
+    width: 9.7rem;
+    height: 7.4rem;
+  }
+
+  //!spara
+  .ellipse-11 {
+    border-radius: 0.3rem;
+    background: #141414;
+    width: 0.6rem;
+    height: 0.6rem;
+  }
+  //!spara
+  .circle-box {
+    margin-bottom: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    column-gap: 0.2rem;
+    width: 3.9rem;
+    box-sizing: border-box;
+  }
+
+  //!h2 headline
+  .headline {
+    margin-bottom: 0.3rem;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 1rem;
+    color: #141414;
+  }
+
+  //!spara
+  .about-box {
+    margin-bottom: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  //!spara
+  .treehouses {
+    overflow-wrap: break-word;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 0.6rem;
+    color: #141414;
+  }
+
+  //!chips filter
+  .chips-filtrering-6 {
+    border-radius: 6.3rem;
+    border: 0.1rem solid #141414;
+    background: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: flex-start;
+    padding: 0.2rem 0.4rem;
+    box-sizing: border-box;
+  }
+  //!spara
+  .txtChips-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  //!spara
+  .contentSaved-Box {
+    margin-right: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 0.5rem);
+  }
+
+  //!kortet spara
+  .card-medium {
+    margin: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 9.7rem;
+  }
+  //!Typografi
+  .short-infoTxt {
+    overflow-wrap: break-word;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: #141414;
+  }
+
+  //!spara
+  .card-box {
+    margin-bottom: 1.5rem;
+    display: flex;
+
+    flex-wrap: wrap;
+    max-width: 400px;
+    justify-content: space-between;
+
+    box-sizing: border-box;
+
+    @media (min-width: 600px) {
+      max-width: 600px;
+    }
+  }
+
+  //! stora containern
+  // .frame-45 {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  // }
+  //!Spara
+  .frame-46 {
+    margin: 0 1rem 1.4rem 1rem;
   }
 }
