@@ -18,6 +18,7 @@ html {
   margin: 0 0 1.4rem 0rem;
   width: 8.1rem;
   height: 8.1rem;
+  background-size: cover;
 }
 .big-container .h1-saved {
   overflow-wrap: break-word;
