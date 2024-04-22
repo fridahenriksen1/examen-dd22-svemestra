@@ -230,6 +230,11 @@ h4 {
   margin-top: 1rem;
 }
 
+.categori-txt {
+  margin-top: 1rem;
+  font-weight: 800;
+}
+
 .m1b {
   display: flex;
   max-width: 300px;
@@ -344,7 +349,7 @@ h4 {
 .user-accomodation {
   display: flex;
   justify-content: space-between;
-  padding-top: -3.5rem;
+  padding-top: 0rem;
   gap: 1rem;
   display: flex;
   justify-content: center;
@@ -352,10 +357,7 @@ h4 {
   flex-wrap: wrap;
 }
 .user-accomodation .card {
-  margin-top: 7.6rem;
   flex: 1 auto;
-  border: solid 1px #f3f0f0;
-  background-color: #b88a8a;
   display: flex;
   justify-content: center;
 }
@@ -374,6 +376,21 @@ h4 {
   flex-direction: column;
   height: 100%;
   justify-content: space-between;
+}
+.user-accomodation .card .card-content .circle-box {
+  margin-bottom: 0.8rem;
+  margin-top: 0.75rem;
+  display: flex;
+  align-self: flex-start;
+  -moz-column-gap: 0.2rem;
+       column-gap: 0.2rem;
+  width: 3.9rem;
+}
+.user-accomodation .card .card-content .circle-box .ellipse {
+  border-radius: 0.3rem;
+  background: #141414;
+  width: 0.6rem;
+  height: 0.6rem;
 }
 .user-accomodation .card h2 {
   font-size: 1.25rem;
