@@ -2,30 +2,96 @@
   margin-top: 1rem;
 }
 
-.chip {
-  + label {
-    display: inline-block;
-    background-color: transparent;
-    border-radius: 5rem;
-    padding: 0.6rem 1.5rem;
-    // padding: 0.75rem 1.25rem;
-    margin-bottom: 0.4rem;
-    margin-right: 0.2rem;
-    // margin: 0.5rem;
-    color: #141414;
-    font-size: 1rem;
-    user-select: none;
-    cursor: pointer;
-    border: 1px solid #141414;
-  }
+// .chip {
+//   + label {
+//     display: inline-block;
+//     background-color: transparent;
+//     border-radius: 5rem;
+//     padding: 0.6rem 1.5rem;
+//     // padding: 0.75rem 1.25rem;
+//     margin-bottom: 0.4rem;
+//     margin-right: 0.2rem;
+//     // margin: 0.5rem;
+//     color: #141414;
+//     font-size: 1rem;
+//     user-select: none;
+//     cursor: pointer;
+//     border: 1px solid #141414;
+//   }
 
-  &[type="checkbox"] {
-    display: none;
+//   &[type="checkbox"] {
+//     display: none;
 
-    &:checked {
-      + label {
-        background-color: yellow;
+//     &:checked {
+//       + label {
+//         background-color: yellow;
+//       }
+//     }
+//   }
+// }
+
+.m1b {
+  display: flex;
+  max-width: 300px;
+  overflow-x: auto;
+  // overflow-x: hidden;
+  .chip {
+    + label {
+      display: inline-block;
+      background-color: transparent;
+      // border-radius: 5rem;
+      padding: 0.6rem 1.5rem;
+      // padding: 0.75rem 1.25rem;
+      margin-bottom: 0.4rem;
+      margin-right: 0.2rem;
+      // margin: 0.5rem;
+      color: #141414;
+      font-size: 1rem;
+      user-select: none;
+      cursor: pointer;
+
+      // border: 1px solid #141414;
+    }
+
+    &[type="checkbox"] {
+      display: none;
+
+      &:checked {
+        + label {
+          background-color: yellow;
+        }
       }
     }
   }
+  $background-images: (
+    categoryOne: url("/assets/icons/iconCabin.svg"),
+    categoryTwo: url("/assets/icons/iconCabin.svg"),
+    categoryThree: url("/assets/icons/iconCabin.svg"),
+    categoryFour: url("/assets/icons/iconCabin.svg"),
+    categoryFive: url("/assets/icons/iconCabin.svg"),
+    categorySix: url("/assets/icons/iconCabin.svg"),
+    categorySeven: url("/assets/icons/iconCabin.svg"),
+    // Add more categories and corresponding images as needed
+  );
+
+  // Loop through each category ID and apply the background image
+  @each $id, $image in $background-images {
+    ##{$id} {
+      + label {
+        background-image: $image; // Set background image for each label
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.m1b::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.m1b {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
