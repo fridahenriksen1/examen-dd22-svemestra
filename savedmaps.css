@@ -4,6 +4,7 @@
   flex-direction: column;
   padding: 3.9rem 0 0rem 0;
   box-sizing: border-box;
+  margin-bottom: 5rem;
 }
 .big-container .profil-pic-box {
   border-radius: 4.1rem;
@@ -352,6 +353,8 @@
   padding: 1.8rem 0;
   width: 100%;
   box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
 }
 .big-container .arrow-back-top-left {
   position: absolute;
