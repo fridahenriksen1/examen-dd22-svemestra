@@ -72,49 +72,4 @@ html {
 }
 .account-container .click-txt {
   text-decoration: underline;
-}
-
-.nav-icons {
-  width: 1.3rem;
-  height: 1.5rem;
-}
-
-.home-box {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 1.3rem;
-  height: 1.5rem;
-  box-sizing: border-box;
-}
-
-.search-1 {
-  margin-bottom: 0rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 1.5rem;
-  height: 1.5rem;
-  box-sizing: border-box;
-}
-
-.user-filled {
-  margin: 0.1rem 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 1.3rem;
-  height: 1.3rem;
-  box-sizing: border-box;
-}
-
-.navigation {
-  background: #ededed;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 1.8rem 0;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
 }/*# sourceMappingURL=account.css.map */
