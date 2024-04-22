@@ -78,6 +78,7 @@ html {
   font-weight: 400;
   font-size: 1rem;
   color: #141414;
+  text-decoration: none;
 }
 .hemskrm-kort-large .vector {
   width: 1rem;
@@ -96,11 +97,9 @@ html {
   border-radius: 6.3rem;
   background: #ffffff;
   display: flex;
-  flex-direction: row;
   padding: 0.7rem 1rem 0.7rem 0.8rem;
   width: -moz-fit-content;
   width: fit-content;
-  box-sizing: border-box;
 }
 .hemskrm-kort-large .frame-82 {
   display: flex;
