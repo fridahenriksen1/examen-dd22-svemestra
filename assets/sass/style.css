@@ -277,6 +277,14 @@ h4 {
   width: 1.5rem;
   height: 1.4rem;
 }
+.suggestions-container .suggestionCard-box .card-large .contentBox-card {
+  padding-top: 1rem;
+}
+.suggestions-container .suggestionCard-box .card-large .contentBox-card .txtChip-box {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
 
 .visually-hidden {
   border: 0;
@@ -2130,16 +2138,6 @@ h4 {
   height: 0.8rem;
 }
 
-.contentBox-card {
-  max-width: 300px;
-  padding-top: 1rem;
-}
-
-.vector-33 {
-  width: 1.5rem;
-  height: 1.4rem;
-}
-
 .ellipse {
   border-radius: 0.3rem;
   background: #141414;
@@ -2179,14 +2177,6 @@ h4 {
   font-weight: 400;
   font-size: 0.8rem;
   color: #141414;
-}
-
-.frame-544 {
-  margin-bottom: 1rem;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  box-sizing: border-box;
 }
 
 .treehouses-29 {

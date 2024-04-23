@@ -47,6 +47,16 @@
         width: 1.5rem;
         height: 1.4rem;
       }
+      //!PaddingTop under bilden
+      .contentBox-card {
+        padding-top: 1rem;
+
+        .txtChip-box {
+          margin-bottom: 1rem;
+          display: flex;
+          flex-direction: column;
+        }
+      }
     }
   }
 }
