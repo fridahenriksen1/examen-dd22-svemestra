@@ -1,530 +1,123 @@
-
 .big-container {
-  background: #ffffff;
-  display: flex;
-  flex-direction: column;
-  padding: 3.9rem 0 5rem 0;
-  box-sizing: border-box;
-
-  //! Profilbild box
-  .profil-pic-box {
-    border-radius: 4.1rem;
-    background-image: url("/assets/img/profilpic.jpg");
-    margin: 0 0 1.4rem 0rem;
-    width: 8.1rem;
-    height: 8.1rem;
-    background-size: cover;
-  }
-  //!Typografi som ska flyttas
-  .h1-saved {
-    overflow-wrap: break-word;
-    font-family: "Roboto";
-    font-weight: 400;
-    font-size: 1.5rem;
-    color: #111010;
-  }
   .profilPic-textBox {
     margin: 0 0rem 1rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: fit-content;
-    box-sizing: border-box;
-  }
-  .besksml-4 {
-    overflow-wrap: break-word;
-    font-family: "Roboto";
-    font-weight: 500;
-    font-size: 1rem;
-    color: rgba(43, 43, 43, 0.5);
-  }
-  .saved-box {
-    margin: 0.6rem 1.7rem 0.6rem 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    box-sizing: border-box;
-    border-bottom: 0.1rem solid #000000;
-    padding-bottom: 0.4rem;
-  }
-  .mappar-text {
-    overflow-wrap: break-word;
-    font-family: "Roboto";
-    font-weight: 500;
-    font-size: 1rem;
-    color: #2b2b2b;
-    text-decoration: none;
-
-    &.mapTxt {
-      color: #959595;
-    }
-  }
-  .maps-box {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 0.6rem 0.1rem 0.5rem 0;
-    box-sizing: border-box;
-  }
-  .text-box-saved-maps {
-    margin-bottom: 2rem;
-    display: flex;
-    flex-direction: row;
-    width: fit-content;
-    box-sizing: border-box;
-  }
-  .vector {
-    width: 1.2rem;
-    height: 1rem;
-  }
-  .misort {
-    margin: 0.3rem 1.1rem 0.5rem 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 1.2rem;
-    height: 1rem;
-    box-sizing: border-box;
-  }
-  .rectangle-3 {
-    border-radius: 0.1rem;
-    border: 0.1rem solid #000000;
-    margin-right: 0.1rem;
-    width: 0.6rem;
-    height: 0.6rem;
-  }
-
-  .frame-2 {
-    margin-bottom: 0.1rem;
-    display: flex;
-    flex-direction: row;
-    width: 1.3rem;
-    box-sizing: border-box;
-  }
-
-  .frame-3 {
-    display: flex;
-    flex-direction: row;
-    width: 1.3rem;
-    box-sizing: border-box;
-  }
-  //! Frame som är aktiv ikon till vänster
-  .frame-1 {
-    border-bottom: 0.1rem solid #000000;
-    margin-right: 1.2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0.1rem 0.1rem 0.3rem 0.1rem;
-    width: 1.5rem;
-    box-sizing: border-box;
   }
 
   .format-list-bulleted {
     margin: 0.3rem 0 0.6rem 0;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     width: 1.2rem;
     height: 0.9rem;
-    box-sizing: border-box;
   }
-  .share-filter-box {
-    display: flex;
-    flex-direction: row;
-    width: 6.2rem;
-    box-sizing: border-box;
-  }
-  .vector-2 {
-    width: 0.9rem;
-    height: 0.9rem;
-  }
-  .icround-plus {
-    margin: 0.1rem 1.3rem 0.1rem 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 0.9rem;
-    height: 0.9rem;
-    box-sizing: border-box;
-  }
-  .vector-4 {
-    width: 1.1rem;
-    height: 1.1rem;
-  }
-  .search {
-    margin-right: 1.2rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 1.1rem;
-    height: 1.1rem;
-    box-sizing: border-box;
-  }
-  .vector-3 {
-    width: 1rem;
-    height: 0.3rem;
-  }
-  .more-vert {
-    margin: 0.4rem 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 1rem;
-    height: 0.3rem;
-    box-sizing: border-box;
-  }
-  .search-add-box {
-    margin: 0.2rem 0 0.5rem 0;
-    display: flex;
-    flex-direction: row;
-    width: 5.4rem;
-    height: fit-content;
-    box-sizing: border-box;
-  }
+
   .icon-box {
-    margin: 0 0.3rem 2rem 0.1rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: calc(100% - 0.4rem);
-    box-sizing: border-box;
+    //! Frame som är aktiv ikon till vänster
+    .active {
+      border-bottom: 0.1rem solid #000000;
+      margin-right: 1.2rem;
+      padding: 0.1rem 0.1rem 0.3rem 0.1rem;
+    }
   }
   //! Shared ikonerna (people icon)
   .shared-icon {
     width: 1.3rem;
     height: 0.8rem;
   }
-  .share-icon-box {
-    border-radius: 6.3rem;
-    background: #ffffff;
-    margin-bottom: 4.1rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 0.5rem 0.3rem 0.4rem 0.3rem;
-    width: 1.8rem;
-    height: 1.8rem;
-    box-sizing: border-box;
-  }
-  .vector-5 {
-    margin-top: 2.5rem;
-    width: 4.4rem;
-    height: 3.4rem;
-  }
+
   .folder-open {
     background: rgba(0, 0, 0, 0.2);
     margin-bottom: 0.8rem;
     display: flex;
     padding: 0.5rem 0 0 0.5rem;
-    //width: 100%;
     flex: 1 0 auto;
     height: 9.4rem;
-    box-sizing: border-box;
-  }
-  .lorem-ipsum {
-    margin-bottom: 0.3rem;
-    display: inline-block;
-    align-self: flex-start;
-    overflow-wrap: break-word;
-    font-family: "Roboto";
-    font-weight: 500;
-    font-size: 1rem;
-    color: #141414;
-  }
-  .saved-accommodations {
-    overflow-wrap: break-word;
-    font-family: "Roboto";
-    font-weight: 400;
-    font-size: 0.8rem;
-    color: #141414;
-  }
-  .frame-29 {
-    margin: 0 0.2rem;
-    display: flex;
-    flex-direction: column;
-    align-self: flex-start;
-    width: fit-content;
-    box-sizing: border-box;
-  }
-  .kort-medium {
-    margin-right: 1.1rem;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    flex-basis: 9.7rem;
-    box-sizing: border-box;
   }
 
-  .frame-291 {
-    margin: 0 0.2rem;
-    display: flex;
-    flex-direction: column;
-    align-self: flex-start;
-    width: fit-content;
-    box-sizing: border-box;
-  }
-
-  .map-box {
-    margin-bottom: 1rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .frame-292 {
-    margin: 0 0.2rem;
-    display: flex;
-    flex-direction: column;
-    align-self: flex-start;
-    width: fit-content;
-    box-sizing: border-box;
-  }
-
-  .frame-293 {
-    margin: 0 0.2rem;
-    display: flex;
-    flex-direction: column;
-    align-self: flex-start;
-    width: fit-content;
-    box-sizing: border-box;
-  }
-
-  .map-section {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-  }
   .icon-mapp-box {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    box-sizing: border-box;
   }
-  .main-saved {
-    margin: 0 1rem 1.4rem 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: calc(100% - 2rem);
-    box-sizing: border-box;
-  }
-  .nav-icons {
-    width: 1.3rem;
-    height: 1.5rem;
-  }
+
   //! Tillbaka ikonen längst upp på sidan
-  .backArrow-icon {
-    width: 2rem;
-    height: 2rem;
-  }
-  .home-box {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 1.3rem;
-    height: 1.5rem;
-    box-sizing: border-box;
-  }
-
-  .search-1 {
-    margin-bottom: 0rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 1.5rem;
-    height: 1.5rem;
-    box-sizing: border-box;
-  }
-
-  .user-filled {
-    margin: 0.1rem 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 1.3rem;
-    height: 1.3rem;
-    box-sizing: border-box;
-  }
-  .navigation {
-    background: #ededed;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 1.8rem 0;
-    width: 100%;
-    box-sizing: border-box;
-    position: fixed;
-    bottom: 0;
-  }
 
   .arrow-back-top-left {
     position: absolute;
     left: 1.2rem;
     top: 1.2rem;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 1rem;
-    height: 1rem;
-    box-sizing: border-box;
-  }
-  //.detaljsida {
-  //!Här lägger jag stylen för mediumkort sektionen .detaljsida {
-  // background: #ffffff;
-  // display: flex;
-  // flex-wrap: wrap;
 
-  //padding-top: 1.9rem;
-
-  //!spara
-  .vector-6 {
-    width: 0.5rem;
-    height: 0.5rem;
-  }
-  //!spara
-  .heartBox {
-    position: absolute;
-    top: 0.8rem;
-    right: 1.1rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 0.5rem;
-    height: 0.5rem;
-    box-sizing: border-box;
+    width: 2rem;
+    height: 2rem;
+    .backArrow-icon {
+      width: 2rem;
+      height: 2rem;
+    }
   }
 
-  //!spara
-  .container-4 {
-    background: #d9d9d9;
-    position: relative;
-    margin-bottom: 0.8rem;
-    width: 9.7rem;
-    height: 7.4rem;
-  }
-
-  //!spara
-  .ellipse-11 {
-    border-radius: 0.3rem;
-    background: #141414;
-    width: 0.6rem;
-    height: 0.6rem;
-  }
-  //!spara
-  .circle-box {
-    margin-bottom: 0.8rem;
-    display: flex;
-    flex-direction: row;
-    align-self: flex-start;
-    column-gap: 0.2rem;
-    width: 3.9rem;
-    box-sizing: border-box;
-  }
-
-  //!h2 headline
-  .headline {
-    margin-bottom: 0.3rem;
-    display: inline-block;
-    align-self: flex-start;
-    overflow-wrap: break-word;
-    font-family: "Roboto";
-    font-weight: 400;
-    font-size: 1rem;
-    color: #141414;
-  }
-
-  //!spara
-  .about-box {
-    margin-bottom: 0.8rem;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  //!spara
   .treehouses {
-    overflow-wrap: break-word;
-    font-family: "Roboto";
-    font-weight: 400;
     font-size: 0.6rem;
     color: #141414;
   }
 
-  //!chips filter
-  .chips-filtrering-6 {
-    border-radius: 6.3rem;
-    border: 0.1rem solid #141414;
-    background: #ffffff;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-self: flex-start;
-    padding: 0.2rem 0.4rem;
-    box-sizing: border-box;
-  }
-  //!spara
-  .txtChips-box {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  //!spara
-  .contentSaved-Box {
-    margin-right: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    width: calc(100% - 0.5rem);
-  }
-
-  //!kortet spara
-  .card-medium {
-    margin: 0.5rem 0rem;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    flex-basis: 9.7rem;
-  }
-  //!Typografi
-  .short-infoTxt {
-    overflow-wrap: break-word;
-    font-family: "Roboto";
-    font-weight: 400;
-    font-size: 0.8rem;
-    color: #141414;
-  }
-
-  //!spara
+  //!kortet
   .card-box {
-    margin-bottom: 1.5rem;
     display: flex;
     flex: 1 0 auto;
-
+    margin: 0 1rem 1.4rem 1rem;
     flex-wrap: wrap;
-    //max-width: 400px;
     justify-content: space-between;
 
-    box-sizing: border-box;
+    .card-medium {
+      margin: 0.5rem 0rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      flex-basis: 9.7rem;
 
-    @media (min-width: 600px) {
-      // max-width: 600px;
+      .card-img {
+        background: #d9d9d9;
+        position: relative;
+        margin-bottom: 0.8rem;
+        width: 9.7rem;
+        height: 7.4rem;
+        .heartBox {
+          position: absolute;
+          top: 0.8rem;
+          right: 1.1rem;
+          width: 0.8rem;
+          height: 0.8rem;
+        }
+      }
+      .txtChips-box {
+        display: flex;
+        flex-direction: column;
+        .about-box {
+          margin-bottom: 0.8rem;
+          display: flex;
+          flex-direction: column;
+        }
+
+        //!chips filter
+        .chipsFilterS {
+          border-radius: 6.3rem;
+          border: 0.1rem solid #141414;
+          background: #ffffff;
+          display: flex;
+          align-self: flex-start;
+          padding: 0.2rem 0.4rem;
+        }
+        .headline {
+          margin-bottom: 0.3rem;
+        }
+      }
     }
   }
-
-  //! stora containern
-  // .frame-45 {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  // }
-  //!Spara
-  .frame-46 {
-    margin: 0 1rem 1.4rem 1rem;
-  }
-  //}
 }
