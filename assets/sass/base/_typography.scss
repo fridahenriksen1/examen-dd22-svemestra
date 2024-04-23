@@ -69,3 +69,22 @@ h4 {
     padding-left: 0.2rem;
   }
 }
+//! Logga in knappen account sidan
+
+.logo {
+  margin: 0 0.1rem 7.5rem 0;
+  font-size: 3rem;
+}
+.btn-txt-box {
+  p {
+    font-size: 0.8rem;
+  }
+  .sign-in {
+    font-size: 1.3rem;
+    color: white;
+    text-decoration: none;
+  }
+  .createAccount {
+    font-size: 1.3rem;
+  }
+}

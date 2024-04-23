@@ -235,6 +235,23 @@ h4 {
   padding-left: 0.2rem;
 }
 
+.logo {
+  margin: 0 0.1rem 7.5rem 0;
+  font-size: 3rem;
+}
+
+.btn-txt-box p {
+  font-size: 0.8rem;
+}
+.btn-txt-box .sign-in {
+  font-size: 1.3rem;
+  color: white;
+  text-decoration: none;
+}
+.btn-txt-box .createAccount {
+  font-size: 1.3rem;
+}
+
 .navigation {
   background: #ededed;
   display: flex;
@@ -961,24 +978,13 @@ h4 {
   flex-direction: column;
   align-items: center;
   padding-top: 8.6rem;
-  box-sizing: border-box;
 }
-.account-container .logo {
-  margin: 0 0.1rem 7.5rem 0;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 3rem;
-  color: #000000;
+.account-container .main-account {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.account-container .logga-in {
-  overflow-wrap: break-word;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 1.3rem;
-  color: #fafafa;
-  text-decoration: none;
-}
-.account-container .signIn-box {
+.account-container .main-account .signIn-box {
   border-radius: 6.3rem;
   border: 0.1rem solid #000000;
   background: #262626;
@@ -987,40 +993,18 @@ h4 {
   justify-content: center;
   padding: 0.4rem 4rem 0.4rem 4rem;
 }
-.account-container .skapa-konto {
-  overflow-wrap: break-word;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 1.3rem;
-  color: #000000;
-}
-.account-container .createBtn-box {
+.account-container .main-account .createBtn-box {
   border-radius: 6.3rem;
   border: 0.1rem solid #000000;
   margin: 0 0.1rem 1rem 0.1rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   padding: 0.4rem 3rem 0.4rem 3rem;
 }
-.account-container .btn-txt-box {
+.account-container .main-account .btn-txt-box {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.account-container .main-account {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.account-container .txt-password {
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 0.8rem;
-  text-decoration-line: none;
-  line-height: 1.333;
-}
-.account-container .click-txt {
+.account-container .main-account .btn-txt-box .click-txt {
   text-decoration: underline;
 }
 
