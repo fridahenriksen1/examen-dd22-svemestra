@@ -1010,24 +1010,7 @@ h4 {
 
 .big-container {
   background: #ffffff;
-  display: flex;
-  flex-direction: column;
   padding: 3.9rem 0 0rem 0;
-  box-sizing: border-box;
-}
-.big-container .edit {
-  position: absolute;
-  right: 3rem;
-  top: 1.2rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 1rem;
-  height: 1rem;
-  box-sizing: border-box;
-}
-.big-container .redigera {
-  padding-right: 0.3rem;
 }
 .big-container .mode-edit {
   margin: 0.1rem 0;
@@ -1044,9 +1027,8 @@ h4 {
 .big-container .textChips-container {
   margin: 2rem 1rem 2rem 1rem;
   display: flex;
-  flex-direction: column;
-  flex: calc(100% - 2rem);
-  box-sizing: border-box;
+  flex-wrap: wrap;
+  flex: 0 0 100%;
 }
 .big-container .txtPen-box {
   margin: 0 0.1rem 1rem 0;
@@ -1108,17 +1090,14 @@ h4 {
 .big-container .profil-pic-box {
   border-radius: 4.1rem;
   background-image: url("/assets/img/profilpic.jpg");
-  margin: 0 0 1.4rem 0rem;
-  width: 8.1rem;
   height: 8.1rem;
   background-size: cover;
 }
 .big-container .h1-saved {
-  overflow-wrap: break-word;
-  font-family: "Roboto";
   font-weight: 400;
   font-size: 1.5rem;
   color: #111010;
+  margin-top: 0.5rem;
 }
 .big-container .profilPic-textBox {
   margin: 0 0rem 1rem 0;
@@ -1148,13 +1127,12 @@ h4 {
   align-self: flex-start;
   width: -moz-fit-content;
   width: fit-content;
-  box-sizing: border-box;
   font-family: "Roboto";
   font-weight: 500;
   font-size: 1rem;
   color: #040404;
 }
-.big-container .saved-box {
+.big-container .saved-box-profil {
   margin: 0 0 2.3rem 0.2rem;
   display: flex;
   align-items: center;
@@ -1197,7 +1175,6 @@ h4 {
   flex-direction: column;
   align-items: center;
   width: calc(100% - 2rem);
-  box-sizing: border-box;
 }
 
 .big-container {
