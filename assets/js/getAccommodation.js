@@ -2,9 +2,29 @@
 
 
 
-// const getID = document.querySelector('.accommodation');
+const getID = document.querySelector('.accommodation');
 
 // //Detta script hämtar och spottar ut data till ett enkillt recept
+
+// fetch("../json/accommodation.json")
+// .then(response => response.json())
+// .then(data => {
+//     console.log(data);
+// })
+fetch("../json/accommodation.json")
+.then(response => response.json())
+.then(data => {
+    console.log(data);
+    data.forEach(item => {
+        if(item.id == getID.ID.id){
+            console.log(item);
+
+            let figure = document.createElement
+            figure.setAttribute('class','destination-img');
+        }
+    })
+})
+
 
 // fetch('assets/json/accommodation.json')
 //     .then(response => response.json())
@@ -159,8 +179,3 @@
 // })
 
 
-fetch("../json/accommodation.json")
-.then(response => response.json())
-.then(data => {
-    console.log(data);
-})

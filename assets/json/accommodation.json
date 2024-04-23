@@ -15,7 +15,8 @@
         "category": "Camping",
         "info": "Lorem ipsum dolor sit amet consectetur. Convallis amet nisi amet eget at.",
         "imageURL": "assets/img/camping.jpg",
-        "price": "Medel"
+        "price": "Medel",
+        "html": "assets/accommodation/bodaCamping.html"
 
     },
     {
