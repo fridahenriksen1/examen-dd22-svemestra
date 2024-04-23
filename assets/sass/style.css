@@ -1200,40 +1200,6 @@ h4 {
   box-sizing: border-box;
 }
 
-.nav-icons {
-  width: 1.3rem;
-  height: 1.5rem;
-}
-
-.home-box {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 1.3rem;
-  height: 1.5rem;
-  box-sizing: border-box;
-}
-
-.search-1 {
-  margin-bottom: 0rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 1.5rem;
-  height: 1.5rem;
-  box-sizing: border-box;
-}
-
-.user-filled {
-  margin: 0.1rem 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 1.3rem;
-  height: 1.3rem;
-  box-sizing: border-box;
-}
-
 .big-container {
   background: #ffffff;
   display: flex;
