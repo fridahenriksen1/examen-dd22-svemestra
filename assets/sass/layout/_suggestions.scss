@@ -2,14 +2,18 @@
 .suggestions-container {
   display: flex;
   flex-wrap: wrap;
+
   margin-bottom: 7rem;
 
   .textbox-suggestions {
+    padding-left: 0.5rem;
+
     h2 {
       font-size: 1.5rem;
     }
   }
 
   .suggestionCard-box {
+    margin: auto;
   }
 }
