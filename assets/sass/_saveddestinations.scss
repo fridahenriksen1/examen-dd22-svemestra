@@ -6,7 +6,6 @@
     align-items: center;
     width: fit-content;
   }
-
   .format-list-bulleted {
     margin: 0.3rem 0 0.6rem 0;
     display: flex;
@@ -14,7 +13,6 @@
     width: 1.2rem;
     height: 0.9rem;
   }
-
   .icon-box {
     //! Frame som är aktiv ikon till vänster
     .active {
@@ -60,12 +58,10 @@
       height: 2rem;
     }
   }
-
   .treehouses {
     font-size: 0.6rem;
     color: #141414;
   }
-
   //!kortet
   .card-box {
     display: flex;
@@ -73,7 +69,6 @@
     margin: 0 1rem 1.4rem 1rem;
     flex-wrap: wrap;
     justify-content: space-between;
-
     .card-medium {
       margin: 0.5rem 0rem;
       display: flex;
