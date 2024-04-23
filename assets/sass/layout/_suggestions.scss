@@ -7,13 +7,19 @@
 
   .textbox-suggestions {
     padding-left: 0.5rem;
-
-    h2 {
-      font-size: 1.5rem;
-    }
+    margin-bottom: 2rem;
   }
-
+  //! Boxen runt korten för suggestions
   .suggestionCard-box {
     margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    //flex: 0 0 100%;
+
+    gap: 1rem;
+
+    //! STORA KORTET med margin-top
+    .card-large {
+    }
   }
 }

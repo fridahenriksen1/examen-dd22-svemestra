@@ -213,11 +213,6 @@ h4 {
   text-decoration: none;
 }
 
-.textbox-suggestions .h2-text {
-  font-weight: 700;
-  font-size: 1.5rem;
-  color: #111010;
-}
 .textbox-suggestions h2 {
   font-weight: 700;
   font-size: 1.5rem;
@@ -249,14 +244,14 @@ h4 {
 }
 .suggestions-container .textbox-suggestions {
   padding-left: 0.5rem;
-}
-.suggestions-container .textbox-suggestions h2 {
-  font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
 .suggestions-container .suggestionCard-box {
   margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
-
 .visually-hidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -2083,10 +2078,6 @@ h4 {
   font-weight: 400;
   font-size: 3rem;
   color: #000000;
-}
-
-.card-large.mt {
-  margin-top: 2rem;
 }
 
 .vector-8 {
