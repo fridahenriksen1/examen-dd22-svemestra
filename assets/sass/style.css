@@ -252,6 +252,32 @@ h4 {
   gap: 1rem;
   justify-content: center;
 }
+.suggestions-container .suggestionCard-box .card-large {
+  flex: 0 0 328px;
+}
+.suggestions-container .suggestionCard-box .card-large .img-heart-box {
+  background: #d9d9d9;
+  position: relative;
+  margin-bottom: 0.8rem;
+  min-height: 17.5rem;
+  margin: auto;
+}
+.suggestions-container .suggestionCard-box .card-large .image {
+  opacity: 0.5;
+  background-size: cover;
+}
+.suggestions-container .suggestionCard-box .card-large .image img {
+  width: 100%;
+  height: 100%;
+}
+.suggestions-container .suggestionCard-box .card-large .heartIConBox {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.1rem;
+  width: 1.5rem;
+  height: 1.4rem;
+}
+
 .visually-hidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -2085,17 +2111,6 @@ h4 {
   height: 4.6rem;
 }
 
-.image {
-  opacity: 0.5;
-  display: flex;
-  justify-content: center;
-  background-size: cover;
-}
-.image img {
-  width: 100%;
-  height: 100%;
-}
-
 .vector-1 {
   width: 1.5rem;
   height: 1.4rem;
@@ -2120,35 +2135,9 @@ h4 {
   padding-top: 1rem;
 }
 
-.vector-40 {
-  width: 4.6rem;
-  height: 4.6rem;
-}
-
 .vector-33 {
   width: 1.5rem;
   height: 1.4rem;
-}
-
-.component-14 {
-  position: absolute;
-  top: 1.2rem;
-  right: 1.1rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 1.5rem;
-  height: 1.4rem;
-  box-sizing: border-box;
-}
-
-.frame-944 {
-  background: #d9d9d9;
-  position: relative;
-  margin-bottom: 0.8rem;
-  width: 20.5rem;
-  min-height: 17.5rem;
-  margin: auto;
 }
 
 .ellipse {
