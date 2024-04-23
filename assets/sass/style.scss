@@ -1,14 +1,31 @@
-*,
-html {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+@import "abstracts/variables";
+@import "abstracts/mixins";
 
-.hemskrm-kort-large {
-  background: #ffffff;
-}
-.hemskrm-kort-large .dina-sparade-besksml {
+@import "base/reset";
+@import "base/typography";
+
+@import "layout/header";
+@import "layout/hero";
+@import "layout/footer";
+@import "layout/nav";
+
+@import "components/accessibility";
+@import "components/buttons";
+@import "components/chips";
+@import "components/searchbar";
+@import "components/largeCard";
+@import "components/savedResorts";
+
+@import "pages/home";
+@import "pages/savedmaps";
+//Detta måste sorteras
+@import "filterpage";
+@import "account";
+@import "profil";
+@import "saveddestinations";
+@import "savedmaps";
+
+.dina-sparade-besksml {
   margin-bottom: 1rem;
   display: inline-block;
   align-self: flex-start;
@@ -18,32 +35,11 @@ html {
   font-size: 1.3rem;
   color: #111010;
 }
-.hemskrm-kort-large .rectangle-7 {
-  background-image: url(/assets/img/profilpic.jpg);
-  margin-right: 0.6rem;
-  width: 2.8rem;
-  height: 2.8rem;
-  background-size: cover;
-}
-.hemskrm-kort-large .lorem-ipsum {
-  margin: 0.9rem 0;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 0.8rem;
-  color: #111010;
-}
-.hemskrm-kort-large .frame-5 {
-  background: #ededed;
-  margin-right: 0.5rem;
-  display: flex;
-  flex-direction: row;
-  flex-grow: 1;
-  flex-basis: 10rem;
-  box-sizing: border-box;
-}
-.hemskrm-kort-large .frame-6 {
+
+
+
+
+.frame-6 {
   background: #ededed;
   display: flex;
   flex-direction: row;
@@ -51,15 +47,8 @@ html {
   flex-basis: 10rem;
   box-sizing: border-box;
 }
-.hemskrm-kort-large .frame-7 {
-  margin-bottom: 0.6rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  box-sizing: border-box;
-}
-.hemskrm-kort-large .saved-box {
+//! spara box till de längst upp
+.saved-box {
   margin-bottom: 0.5rem;
   display: flex;
   flex-direction: column;
@@ -67,11 +56,15 @@ html {
   width: 100%;
   box-sizing: border-box;
 }
-.hemskrm-kort-large .fakeChips-box {
+//! Spara
+.fakeChips-box {
   display: flex;
   flex-wrap: wrap;
+  // justify-content: space-between;
 }
-.hemskrm-kort-large .visa-alla {
+
+//! Typografi
+.visa-alla {
   margin-right: 0.8rem;
   overflow-wrap: break-word;
   font-family: "Roboto";
@@ -80,11 +73,12 @@ html {
   color: #141414;
   text-decoration: none;
 }
-.hemskrm-kort-large .vector {
+//! Spara arrow ikonen längst upp
+.vector {
   width: 1rem;
   height: 1rem;
 }
-.hemskrm-kort-large .arrow-forward {
+.arrow-forward {
   margin: 0.1rem 0;
   display: flex;
   flex-direction: row;
@@ -93,29 +87,19 @@ html {
   height: 1rem;
   box-sizing: border-box;
 }
-.hemskrm-kort-large .btn-showAll {
+
+//! Vissa alla boxen
+.btn-showAll {
   border-radius: 6.3rem;
   background: #ffffff;
   display: flex;
+
   padding: 0.7rem 1rem 0.7rem 0.8rem;
-  width: -moz-fit-content;
   width: fit-content;
 }
-.hemskrm-kort-large .frame-82 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  box-sizing: border-box;
-}
-.hemskrm-kort-large .frame-25 {
-  margin-bottom: 2.3rem;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  box-sizing: border-box;
-}
-.hemskrm-kort-large .lorem-ipsum-dolor {
+
+//! spara lorem ipsum texten (stora)
+.lorem-ipsum-dolor {
   margin-bottom: 3rem;
   display: inline-block;
   align-self: flex-start;
@@ -125,68 +109,79 @@ html {
   font-size: 3rem;
   color: #000000;
 }
-.hemskrm-kort-large .card-large.mt {
-  margin-top: 2rem;
+//! STORA KORTET med margin-top
+.card-large {
+  &.mt {
+    margin-top: 2rem;
+  }
 }
-.hemskrm-kort-large .vector-8 {
+
+.vector-8 {
   width: 4.6rem;
   height: 4.6rem;
 }
-.hemskrm-kort-large .image {
+//!spara
+.image {
   opacity: 0.5;
+  // position: absolute;
+  // left: 50%;
+  // top: 50%;
+  // translate: -50% -50%;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  // padding: 0.8rem;
+  // width: 6.1rem;
+  // height: 6.1rem;
+
   background-size: cover;
+  img {
+    width: 100%;
+    height: 100%;
+  }
 }
-.hemskrm-kort-large .image img {
-  width: 100%;
-  height: 100%;
-}
-.hemskrm-kort-large .vector-1 {
+.vector-1 {
   width: 1.5rem;
   height: 1.4rem;
 }
-.hemskrm-kort-large .container-8 {
+
+.container-8 {
   margin-bottom: 0.3rem;
   display: flex;
   flex-direction: row;
-  width: -moz-fit-content;
   width: fit-content;
   box-sizing: border-box;
 }
-.hemskrm-kort-large .vector-6 {
+.vector-6 {
   width: 0.7rem;
   height: 0.8rem;
 }
-.hemskrm-kort-large .contentBox-card {
+
+//!Spara
+.contentBox-card {
   max-width: 300px;
   padding-top: 1rem;
 }
-.hemskrm-kort-large .lorem-ipsum-9 {
+
+//! Spara i närheten text stil
+.lorem-ipsum-9 {
   overflow-wrap: break-word;
   font-family: "Roboto";
   font-weight: 700;
   font-size: 1.5rem;
   color: #111010;
 }
-.hemskrm-kort-large .frame-252 {
-  margin-bottom: 1.6rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-self: flex-start;
-  box-sizing: border-box;
-}
-.hemskrm-kort-large .vector-40 {
+
+.vector-40 {
   width: 4.6rem;
   height: 4.6rem;
 }
-.hemskrm-kort-large .vector-33 {
+//!Spara hjärtikonen
+.vector-33 {
   width: 1.5rem;
   height: 1.4rem;
 }
-.hemskrm-kort-large .component-14 {
+.component-14 {
   position: absolute;
   top: 1.2rem;
   right: 1.1rem;
@@ -197,7 +192,8 @@ html {
   height: 1.4rem;
   box-sizing: border-box;
 }
-.hemskrm-kort-large .frame-944 {
+//!Spara
+.frame-944 {
   background: #d9d9d9;
   position: relative;
   margin-bottom: 0.8rem;
@@ -205,23 +201,25 @@ html {
   min-height: 17.5rem;
   margin: auto;
 }
-.hemskrm-kort-large .ellipse {
+//!spara
+.ellipse {
   border-radius: 0.3rem;
   background: #141414;
   width: 0.6rem;
   height: 0.6rem;
 }
-.hemskrm-kort-large .frame-274 {
+//!Spara
+.frame-274 {
   margin-bottom: 0.8rem;
   display: flex;
   flex-direction: row;
   align-self: flex-start;
-  -moz-column-gap: 0.2rem;
-       column-gap: 0.2rem;
+  column-gap: 0.2rem;
   width: 3.9rem;
   box-sizing: border-box;
 }
-.hemskrm-kort-large .lorem-ipsum-10 {
+//!SPARA
+.lorem-ipsum-10 {
   margin-bottom: 0.3rem;
   display: inline-block;
   align-self: flex-start;
@@ -231,29 +229,36 @@ html {
   font-size: 1.3rem;
   color: #141414;
 }
-.hemskrm-kort-large .frame-284 {
+
+//!spara
+.frame-284 {
   display: flex;
   flex-direction: column;
   width: 100%;
   box-sizing: border-box;
+
   overflow-wrap: break-word;
   font-family: "Roboto";
   font-weight: 400;
   font-size: 0.8rem;
   color: #141414;
 }
-.hemskrm-kort-large .frame-544 {
+
+//!Spara
+.frame-544 {
   margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
   width: 100%;
   box-sizing: border-box;
 }
-.hemskrm-kort-large .vector-39 {
+.vector-39 {
   width: 0.7rem;
   height: 0.8rem;
 }
-.hemskrm-kort-large .treehouses-29 {
+
+//!Spara
+.treehouses-29 {
   overflow-wrap: break-word;
   font-family: "Roboto";
   font-weight: 400;
@@ -261,21 +266,22 @@ html {
   color: #141414;
   padding-left: 0.2rem;
 }
-.hemskrm-kort-large .vector-37 {
+
+.vector-37 {
   width: 0.7rem;
   height: 0.8rem;
 }
-.hemskrm-kort-large .container-12 {
+
+.container-12 {
   margin-bottom: 0.3rem;
   display: flex;
-  width: -moz-fit-content;
   width: fit-content;
 }
-.hemskrm-kort-large .vector-38 {
+.vector-38 {
   width: 0.7rem;
   height: 0.8rem;
 }
-.hemskrm-kort-large .home-filled-28 {
+.home-filled-28 {
   margin: 0.1rem 0.7rem 0.1rem 0;
   display: flex;
   flex-direction: row;
@@ -284,11 +290,14 @@ html {
   height: 0.8rem;
   box-sizing: border-box;
 }
-.hemskrm-kort-large .vector-36 {
+
+.vector-36 {
   width: 0.7rem;
   height: 0.8rem;
 }
-.hemskrm-kort-large .chips-filtrering-27 {
+
+//!spara
+.chips-filtrering-27 {
   border-radius: 6.3rem;
   border: 0.1rem solid #141414;
   background: #ffffff;
@@ -297,19 +306,20 @@ html {
   padding: 0.5rem 0.7rem 0.5rem 0.9rem;
   box-sizing: border-box;
 }
-.hemskrm-kort-large .container-13 {
+.container-13 {
   margin: 0 0.8rem 0.3rem 0;
   display: flex;
   flex-direction: row;
-  width: -moz-fit-content;
   width: fit-content;
   box-sizing: border-box;
 }
-.hemskrm-kort-large .vector-34 {
+
+//!Spara
+.vector-34 {
   width: 0.7rem;
   height: 0.8rem;
 }
-.hemskrm-kort-large .home-filled-24 {
+.home-filled-24 {
   margin: 0.1rem 0.7rem 0.1rem 0;
   display: flex;
   flex-direction: row;
@@ -318,11 +328,13 @@ html {
   height: 0.8rem;
   box-sizing: border-box;
 }
-.hemskrm-kort-large .vector-35 {
+
+.vector-35 {
   width: 0.7rem;
   height: 0.8rem;
 }
-.hemskrm-kort-large .home-filled-25 {
+//!SPARA
+.home-filled-25 {
   margin: 0.1rem 0.7rem 0.1rem 0;
   display: flex;
   flex-direction: row;
@@ -331,7 +343,9 @@ html {
   height: 0.8rem;
   box-sizing: border-box;
 }
-.hemskrm-kort-large .chips-filtrering-26 {
+
+//!SPARA
+.chips-filtrering-26 {
   border-radius: 6.3rem;
   border: 0.1rem solid #141414;
   background: #ffffff;
@@ -340,15 +354,17 @@ html {
   padding: 0.5rem 0.7rem 0.5rem 0.9rem;
   box-sizing: border-box;
 }
-.hemskrm-kort-large .container-3 {
+
+//!SPARA
+.container-3 {
   display: flex;
   flex-direction: row;
   align-self: flex-start;
-  width: -moz-fit-content;
   width: fit-content;
   box-sizing: border-box;
 }
-.hemskrm-kort-large .vector-62 {
+
+.vector-62 {
   width: 0.7rem;
   height: 0.8rem;
 }
@@ -360,35 +376,25 @@ html {
   width: 100%;
   box-sizing: border-box;
 }
-
 .frame-53 {
   display: flex;
   flex-direction: column;
   width: 100%;
   box-sizing: border-box;
 }
-
+//!SEKTIONEN för en hel sektion
 .frame-49 {
   display: flex;
   flex-direction: column;
   padding: 0rem 0.5rem;
-}
-.frame-49.mt {
-  margin-top: 3rem;
-  margin-bottom: 10rem;
+
+  &.mt {
+    margin-top: 3rem;
+    margin-bottom: 10rem;
+  }
 }
 
-.index-main {
-  position: absolute;
-  left: 1rem;
-  top: 2.5rem;
-  right: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-sizing: border-box;
-}
-
+//!Nav style
 .nav-icons {
   width: 1.3rem;
   height: 1.5rem;
@@ -422,15 +428,3 @@ html {
   height: 1.3rem;
   box-sizing: border-box;
 }
-
-.navigation {
-  background: #ededed;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 1.8rem 0;
-  width: 100%;
-  box-sizing: border-box;
-  position: fixed;
-  bottom: 0px;
-}/*# sourceMappingURL=style.css.map */

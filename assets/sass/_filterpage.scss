@@ -1,26 +1,4 @@
-@import "abstracts/variables";
-@import "abstracts/mixins";
 
-@import "base/reset";
-@import "base/typography";
-
-@import "layout/header";
-@import "layout/hero";
-@import "layout/footer";
-@import "layout/nav";
-
-@import "components/accessibility";
-@import "components/buttons";
-@import "components/chips";
-@import "components/searchbar";
-@import "components/largeCard";
-
-@import "pages/home";
-@import "pages/savedmaps";
-
-body {
-  background-color: white;
-}
 
 .flex-container {
   max-width: 1200px;
