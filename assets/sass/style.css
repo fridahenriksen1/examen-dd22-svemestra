@@ -213,6 +213,17 @@ h4 {
   text-decoration: none;
 }
 
+.textbox-suggestions .h2-text {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #111010;
+}
+.textbox-suggestions h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #111010;
+}
+
 .navigation {
   background: #ededed;
   display: flex;
@@ -231,6 +242,14 @@ h4 {
   height: 1.5rem;
 }
 
+.suggestions-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 7rem;
+}
+.suggestions-container .textbox-suggestions h2 {
+  font-size: 1.5rem;
+}
 .visually-hidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -2026,8 +2045,6 @@ h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  box-sizing: border-box;
 }
 
 .fakeChips-box {
@@ -2073,7 +2090,6 @@ h4 {
 .image {
   opacity: 0.5;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   background-size: cover;
 }
@@ -2104,14 +2120,6 @@ h4 {
 .contentBox-card {
   max-width: 300px;
   padding-top: 1rem;
-}
-
-.lorem-ipsum-9 {
-  overflow-wrap: break-word;
-  font-family: "Roboto";
-  font-weight: 700;
-  font-size: 1.5rem;
-  color: #111010;
 }
 
 .vector-40 {
@@ -2194,11 +2202,6 @@ h4 {
   box-sizing: border-box;
 }
 
-.vector-39 {
-  width: 0.7rem;
-  height: 0.8rem;
-}
-
 .treehouses-29 {
   overflow-wrap: break-word;
   font-family: "Roboto";
@@ -2225,16 +2228,6 @@ h4 {
   height: 0.8rem;
 }
 
-.home-filled-28 {
-  margin: 0.1rem 0.7rem 0.1rem 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 0.7rem;
-  height: 0.8rem;
-  box-sizing: border-box;
-}
-
 .vector-36 {
   width: 0.7rem;
   height: 0.8rem;
@@ -2259,30 +2252,9 @@ h4 {
   box-sizing: border-box;
 }
 
-.vector-34 {
-  width: 0.7rem;
-  height: 0.8rem;
-}
-
-.home-filled-24 {
-  margin: 0.1rem 0.7rem 0.1rem 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 0.7rem;
-  height: 0.8rem;
-  box-sizing: border-box;
-}
-
-.vector-35 {
-  width: 0.7rem;
-  height: 0.8rem;
-}
-
 .home-filled-25 {
   margin: 0.1rem 0.7rem 0.1rem 0;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   width: 0.7rem;
   height: 0.8rem;
@@ -2311,63 +2283,4 @@ h4 {
 .vector-62 {
   width: 0.7rem;
   height: 0.8rem;
-}
-
-.frame-511 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.frame-53 {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.frame-49 {
-  display: flex;
-  flex-direction: column;
-  padding: 0rem 0.5rem;
-}
-.frame-49.mt {
-  margin-top: 3rem;
-  margin-bottom: 10rem;
-}
-
-.nav-icons {
-  width: 1.3rem;
-  height: 1.5rem;
-}
-
-.home-box {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 1.3rem;
-  height: 1.5rem;
-  box-sizing: border-box;
-}
-
-.search-1 {
-  margin-bottom: 0rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 1.5rem;
-  height: 1.5rem;
-  box-sizing: border-box;
-}
-
-.user-filled {
-  margin: 0.1rem 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 1.3rem;
-  height: 1.3rem;
-  box-sizing: border-box;
 }/*# sourceMappingURL=style.css.map */
