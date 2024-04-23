@@ -285,6 +285,13 @@ h4 {
   display: flex;
   flex-direction: column;
 }
+.suggestions-container .suggestionCard-box .card-large .contentBox-card .txtChip-box .ellipse-box {
+  margin-bottom: 0.8rem;
+  display: flex;
+  -moz-column-gap: 0.2rem;
+       column-gap: 0.2rem;
+  flex: 0 0 62px;
+}
 
 .visually-hidden {
   border: 0;
@@ -2143,17 +2150,6 @@ h4 {
   background: #141414;
   width: 0.6rem;
   height: 0.6rem;
-}
-
-.frame-274 {
-  margin-bottom: 0.8rem;
-  display: flex;
-  flex-direction: row;
-  align-self: flex-start;
-  -moz-column-gap: 0.2rem;
-       column-gap: 0.2rem;
-  width: 3.9rem;
-  box-sizing: border-box;
 }
 
 .lorem-ipsum-10 {
