@@ -29,7 +29,7 @@
         position: relative;
         margin-bottom: 0.8rem;
 
-        min-height: 17.5rem;
+        // min-height: 17.5rem;
         margin: auto;
       }
       .image {
@@ -74,6 +74,28 @@
             flex-direction: column;
             width: 100%;
             box-sizing: border-box;
+          }
+        }
+
+        //!Chipsen i kortet
+        .chipsBox {
+          margin-bottom: 0.3rem;
+          display: flex;
+          .chips-filter {
+            border-radius: 6.3rem;
+            border: 0.1rem solid #141414;
+            background: #ffffff;
+            display: flex;
+            padding: 0.5rem 0.7rem 0.5rem 0.9rem;
+            margin-right: 0.25rem;
+
+            //!Ikonboxen för ikon inne i cips filtret
+            .chip-icon {
+              margin: 0.1rem 0.7rem 0.1rem 0;
+              display: flex;
+              width: 0.7rem;
+              height: 0.8rem;
+            }
           }
         }
       }

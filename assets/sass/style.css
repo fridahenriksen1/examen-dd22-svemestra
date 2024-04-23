@@ -229,6 +229,12 @@ h4 {
   font-size: 1.3rem;
 }
 
+.chips-filter p {
+  font-size: 0.8rem;
+  color: #141414;
+  padding-left: 0.2rem;
+}
+
 .navigation {
   background: #ededed;
   display: flex;
@@ -269,7 +275,6 @@ h4 {
   background: #d9d9d9;
   position: relative;
   margin-bottom: 0.8rem;
-  min-height: 17.5rem;
   margin: auto;
 }
 .suggestions-container .suggestionCard-box .card-large .image {
@@ -312,6 +317,24 @@ h4 {
   flex-direction: column;
   width: 100%;
   box-sizing: border-box;
+}
+.suggestions-container .suggestionCard-box .card-large .contentBox-card .chipsBox {
+  margin-bottom: 0.3rem;
+  display: flex;
+}
+.suggestions-container .suggestionCard-box .card-large .contentBox-card .chipsBox .chips-filter {
+  border-radius: 6.3rem;
+  border: 0.1rem solid #141414;
+  background: #ffffff;
+  display: flex;
+  padding: 0.5rem 0.7rem 0.5rem 0.9rem;
+  margin-right: 0.25rem;
+}
+.suggestions-container .suggestionCard-box .card-large .contentBox-card .chipsBox .chips-filter .chip-icon {
+  margin: 0.1rem 0.7rem 0.1rem 0;
+  display: flex;
+  width: 0.7rem;
+  height: 0.8rem;
 }
 
 .visually-hidden {
@@ -930,26 +953,6 @@ h4 {
   width: 1rem;
   height: 1rem;
   box-sizing: border-box;
-}
-
-.flex-container {
-  max-width: 1200px;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 1rem;
-  gap: var(--flex-gap);
-  /* Denna kod ska läggas till på lämpligt ställe ex i en komponent partial */
-  /* Om ni vill använda gap och vill att det blir smooth med mellanrummen använd denna uträkning */
-  /* https://wiryawanadipa.com/blog/calculate-percentage-width-of-flex-items-when-using-gap/ */
-  /* flex: 0 0 calc((100% / 3) - (((3 - 1) / 3) * 1rem)); */
-}
-@media (min-width: 700px) {
-  .flex-container {
-    margin: 0 4rem;
-  }
-}
-.flex-container .text-box {
-  margin-bottom: 3.5rem;
 }
 
 .account-container {
@@ -2095,122 +2098,22 @@ h4 {
   padding: 1rem;
 }
 
-.frame-6 {
-  background: #ededed;
+.flex-container {
+  max-width: 1200px;
   display: flex;
-  flex-direction: row;
-  flex-grow: 1;
-  flex-basis: 10rem;
-  box-sizing: border-box;
+  flex-wrap: wrap;
+  padding: 1rem;
+  gap: var(--flex-gap);
+  /* Denna kod ska läggas till på lämpligt ställe ex i en komponent partial */
+  /* Om ni vill använda gap och vill att det blir smooth med mellanrummen använd denna uträkning */
+  /* https://wiryawanadipa.com/blog/calculate-percentage-width-of-flex-items-when-using-gap/ */
+  /* flex: 0 0 calc((100% / 3) - (((3 - 1) / 3) * 1rem)); */
 }
-
-.saved-box {
-  margin-bottom: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+@media (min-width: 700px) {
+  .flex-container {
+    margin: 0 4rem;
+  }
 }
-
-.vector {
-  width: 1rem;
-  height: 1rem;
-}
-
-.arrow-forward {
-  margin: 0.1rem 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 1rem;
-  height: 1rem;
-  box-sizing: border-box;
-}
-
-.lorem-ipsum-dolor {
-  margin-bottom: 3rem;
-  display: inline-block;
-  align-self: flex-start;
-  overflow-wrap: break-word;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 3rem;
-  color: #000000;
-}
-
-.vector-8 {
-  width: 4.6rem;
-  height: 4.6rem;
-}
-
-.vector-1 {
-  width: 1.5rem;
-  height: 1.4rem;
-}
-
-.container-8 {
-  margin-bottom: 0.3rem;
-  display: flex;
-  flex-direction: row;
-  width: -moz-fit-content;
-  width: fit-content;
-  box-sizing: border-box;
-}
-
-.vector-6 {
-  width: 0.7rem;
-  height: 0.8rem;
-}
-
-.treehouses-29 {
-  overflow-wrap: break-word;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 0.8rem;
-  color: #141414;
-  padding-left: 0.2rem;
-}
-
-.vector-37 {
-  width: 0.7rem;
-  height: 0.8rem;
-}
-
-.container-12 {
-  margin-bottom: 0.3rem;
-  display: flex;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-.chips-filter {
-  border-radius: 6.3rem;
-  border: 0.1rem solid #141414;
-  background: #ffffff;
-  display: flex;
-  padding: 0.5rem 0.7rem 0.5rem 0.9rem;
-}
-
-.container-13 {
-  margin: 0 0.8rem 0.3rem 0;
-  display: flex;
-  flex-direction: row;
-  width: -moz-fit-content;
-  width: fit-content;
-  box-sizing: border-box;
-}
-
-.home-filled-25 {
-  margin: 0.1rem 0.7rem 0.1rem 0;
-  display: flex;
-  width: 0.7rem;
-  height: 0.8rem;
-}
-
-.container-3 {
-  display: flex;
-  flex-direction: row;
-  align-self: flex-start;
-  width: -moz-fit-content;
-  width: fit-content;
-  box-sizing: border-box;
+.flex-container .text-box {
+  margin-bottom: 3.5rem;
 }/*# sourceMappingURL=style.css.map */

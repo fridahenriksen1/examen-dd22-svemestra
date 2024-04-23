@@ -4,9 +4,6 @@
 @import "base/reset";
 @import "base/typography";
 
-@import "layout/header";
-@import "layout/hero";
-@import "layout/footer";
 @import "layout/nav";
 @import "layout/suggestions";
 
@@ -29,129 +26,44 @@
   padding: 1rem;
 }
 
-.frame-6 {
-  background: #ededed;
+.flex-container {
+  max-width: 1200px;
+  //margin: auto;
   display: flex;
-  flex-direction: row;
-  flex-grow: 1;
-  flex-basis: 10rem;
-  box-sizing: border-box;
-}
-//! spara box till de längst upp
-.saved-box {
-  margin-bottom: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-//! Spara
+  flex-wrap: wrap;
+  padding: 1rem;
+  gap: var(--flex-gap);
 
+  @media (min-width: 700px) {
+    margin: 0 4rem;
+  }
 
-//! Spara arrow ikonen längst upp
-.vector {
-  width: 1rem;
-  height: 1rem;
-}
+  /* Denna kod ska läggas till på lämpligt ställe ex i en komponent partial */
+  /* Om ni vill använda gap och vill att det blir smooth med mellanrummen använd denna uträkning */
+  /* https://wiryawanadipa.com/blog/calculate-percentage-width-of-flex-items-when-using-gap/ */
+  /* flex: 0 0 calc((100% / 3) - (((3 - 1) / 3) * 1rem)); */
 
-.arrow-forward {
-  margin: 0.1rem 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 1rem;
-  height: 1rem;
-  box-sizing: border-box;
-}
+  //! Ta användinga av detta sen när stylen sätts, så korten flexar sig
+  // .flex-item {
+  //   --flex-items: 1;
+  //   background-color: blue;
+  //   border: 1px solid red;
+  //   flex: 0 0
+  //     calc(
+  //       (100% / var(--flex-items)) -
+  //         (((var(--flex-items) - 1) / var(--flex-items)) * var(--flex-gap))
+  //     );
 
-//! spara lorem ipsum texten (stora)
-.lorem-ipsum-dolor {
-  margin-bottom: 3rem;
-  display: inline-block;
-  align-self: flex-start;
-  overflow-wrap: break-word;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 3rem;
-  color: #000000;
-}
+  //   @media (min-width: 520px) {
+  //     --flex-items: 2;
+  //   }
 
-.vector-8 {
-  width: 4.6rem;
-  height: 4.6rem;
-}
-//!spara
+  //   @media (min-width: 920px) {
+  //     --flex-items: 3;
+  //   }
+  // }
 
-.vector-1 {
-  width: 1.5rem;
-  height: 1.4rem;
-}
-
-.container-8 {
-  margin-bottom: 0.3rem;
-  display: flex;
-  flex-direction: row;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.vector-6 {
-  width: 0.7rem;
-  height: 0.8rem;
-}
-
-//!Spara
-
-//!spara
-
-.treehouses-29 {
-  overflow-wrap: break-word;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 0.8rem;
-  color: #141414;
-  padding-left: 0.2rem;
-}
-
-.vector-37 {
-  width: 0.7rem;
-  height: 0.8rem;
-}
-
-.container-12 {
-  margin-bottom: 0.3rem;
-  display: flex;
-  width: fit-content;
-}
-
-//!spara
-.chips-filter {
-  border-radius: 6.3rem;
-  border: 0.1rem solid #141414;
-  background: #ffffff;
-  display: flex;
-
-  padding: 0.5rem 0.7rem 0.5rem 0.9rem;
-}
-.container-13 {
-  margin: 0 0.8rem 0.3rem 0;
-  display: flex;
-  flex-direction: row;
-  width: fit-content;
-  box-sizing: border-box;
-}
-
-//!SPARA
-.home-filled-25 {
-  margin: 0.1rem 0.7rem 0.1rem 0;
-  display: flex;
-  width: 0.7rem;
-  height: 0.8rem;
-}
-
-//!SPARA
-.container-3 {
-  display: flex;
-  flex-direction: row;
-  align-self: flex-start;
-  width: fit-content;
-  box-sizing: border-box;
+  .text-box {
+    margin-bottom: 3.5rem;
+  }
 }
