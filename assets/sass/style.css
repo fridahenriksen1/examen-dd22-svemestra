@@ -252,6 +252,24 @@ h4 {
   font-size: 1.3rem;
 }
 
+.chipsFilter p {
+  font-size: 0.75rem;
+}
+
+.h1-saved {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #111010;
+  margin-top: 0.5rem;
+}
+
+.iconTxt-containerBtm {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 1rem;
+  color: #040404;
+}
+
 .navigation {
   background: #ededed;
   display: flex;
@@ -1012,173 +1030,86 @@ h4 {
   background: #ffffff;
   padding: 3.9rem 0 0rem 0;
 }
-.big-container .mode-edit {
-  margin: 0.1rem 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 0.8rem;
-  height: 0.8rem;
-  box-sizing: border-box;
-}
-.big-container .vector {
-  width: 16px;
-}
-.big-container .textChips-container {
-  margin: 2rem 1rem 2rem 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  flex: 0 0 100%;
-}
-.big-container .txtPen-box {
-  margin: 0 0.1rem 1rem 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: calc(100% - 0.1rem);
-  box-sizing: border-box;
-}
-.big-container .dina-sparade-kategorier {
-  font-family: "Roboto";
-  font-weight: 400;
-  color: #111010;
-}
-.big-container .frame-851 {
-  margin: 0.1rem 0 0.3rem 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 0.8rem;
-  height: 0.8rem;
-  box-sizing: border-box;
-}
-.big-container .container-fakeChips {
-  margin-bottom: 0.5rem;
-  display: flex;
-  flex-direction: row;
-  align-self: flex-start;
-  -moz-column-gap: 0.5rem;
-       column-gap: 0.5rem;
-  width: -moz-fit-content;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.big-container .treehouses {
-  overflow-wrap: break-word;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 0.8rem;
-  color: #141414;
-}
-.big-container .container-1 {
-  display: flex;
-  align-self: flex-start;
-}
-.big-container .editPenBox {
-  display: flex;
-}
-.big-container .editPenBox .penEditimg {
-  height: 1rem;
-  width: 1rem;
-  margin-left: 0.5rem;
-}
-.big-container .chips-filtrering {
-  border-radius: 6.3rem;
-  border: 0.1rem solid #141414;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 0.7rem 2rem;
-  box-sizing: border-box;
-}
-.big-container .profil-pic-box {
-  border-radius: 4.1rem;
-  background-image: url("/assets/img/profilpic.jpg");
-  height: 8.1rem;
-  background-size: cover;
-}
-.big-container .h1-saved {
-  font-weight: 400;
-  font-size: 1.5rem;
-  color: #111010;
-  margin-top: 0.5rem;
-}
-.big-container .profilPic-textBox {
-  margin: 0 0rem 1rem 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: -moz-fit-content;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.big-container .txt-box-about {
-  margin: 0 1rem 2.9rem 1rem;
-  display: flex;
-  justify-content: center;
-  align-self: flex-start;
-}
-.big-container .txt-about {
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 1rem;
-  color: #111010;
-}
-.big-container .iconTxt-containerBtm {
-  margin: 0 1rem 6.8rem 1rem;
-  display: flex;
-  flex-direction: column;
-  align-self: flex-start;
-  width: -moz-fit-content;
-  width: fit-content;
-  font-family: "Roboto";
-  font-weight: 500;
-  font-size: 1rem;
-  color: #040404;
-}
-.big-container .saved-box-profil {
-  margin: 0 0 2.3rem 0.2rem;
-  display: flex;
-  align-items: center;
-  color: #040404;
-  text-decoration: none;
-}
-.big-container .friends-box {
-  margin-bottom: 2.3rem;
-  display: flex;
-  align-items: center;
-}
-.big-container .settings-box {
-  display: flex;
-  align-items: center;
-}
-.big-container .mdiheart {
-  margin-right: 1.2rem;
-  display: flex;
-  width: 1.7rem;
-  height: 1.5rem;
-}
-.big-container .octiconpeople-24 {
-  margin-right: 1rem;
-  display: flex;
-  width: 2rem;
-  height: 1.6rem;
-}
-.big-container .material-symbols-lightsettings-outline {
-  margin-right: 1.3rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 1.9rem;
-  height: 1.9rem;
-  box-sizing: border-box;
-}
 .big-container .main-saved {
   margin: 0 1rem 1.4rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: calc(100% - 2rem);
+}
+.big-container .main-saved .profilPic-textBox {
+  margin: 0 0rem 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.big-container .main-saved .profilPic-textBox .profil-pic-box {
+  border-radius: 4.1rem;
+  background-image: url("/assets/img/profilpic.jpg");
+  background-size: cover;
+}
+.big-container .main-saved .textChips-container {
+  margin: 2rem 1rem 2rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 0 100%;
+}
+.big-container .main-saved .textChips-container .txtPen-box {
+  margin: 0 0.1rem 1rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex: calc(100% - 0.1rem);
+}
+.big-container .main-saved .textChips-container .container-fakeChips {
+  margin-bottom: 0.5rem;
+  display: flex;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+.big-container .main-saved .textChips-container .container-fakeChips .chipsFilter {
+  border-radius: 6.3rem;
+  border: 0.1rem solid #141414;
+  display: flex;
+  padding: 0.7rem 2rem;
+}
+.big-container .main-saved .editPenBox {
+  display: flex;
+}
+.big-container .main-saved .editPenBox .penEditimg {
+  height: 1rem;
+  width: 1rem;
+  margin-left: 0.5rem;
+}
+.big-container .main-saved .txt-box-about {
+  margin: 0 1rem 2.9rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-self: flex-start;
+}
+.big-container .main-saved .saved-box-profil {
+  margin: 0 0 2.3rem 0.2rem;
+  display: flex;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+}
+.big-container .main-saved .iconTxt-containerBtm {
+  margin: 0 1rem 6.8rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+.big-container .main-saved .iconTxt-containerBtm .iconBox {
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+}
+.big-container .main-saved .iconTxt-containerBtm .iconBox .icoon {
+  width: 2rem;
+  height: 2rem;
 }
 
 .big-container {

@@ -1,219 +1,101 @@
 .big-container {
   background: #ffffff;
-  // display: flex;
-  // flex-direction: column;
   padding: 3.9rem 0 0rem 0;
-
-  // .edit {
-  //   position: absolute;
-  //   right: 3rem;
-  //   top: 1.2rem;
-  //   display: flex;
-  //   flex-direction: row;
-  //   justify-content: center;
-  //   width: 1rem;
-  //   height: 1rem;
-  // }
-  //! MEllanrummet mellan texten redigera och pennan
-  // .redigera {
-  //   padding-right: 0.3rem;
-  // }
-  //! Får se om denna gör något
-  .mode-edit {
-    margin: 0.1rem 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 0.8rem;
-    height: 0.8rem;
-    box-sizing: border-box;
-  }
-  //! storlek på pennan
-  .vector {
-    width: 16px;
-  }
-  //! containern för texten och fake chipsen
-  .textChips-container {
-    margin: 2rem 1rem 2rem 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    flex: 0 0 100%;
-  }
-
-  //!Boxen för text och penna
-  .txtPen-box {
-    margin: 0 0.1rem 1rem 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: calc(100% - 0.1rem);
-    box-sizing: border-box;
-  }
-  //! Textstylen för dina sparade katergorier jämte pennan
-  .dina-sparade-kategorier {
-    font-family: "Roboto";
-    font-weight: 400;
-    color: #111010;
-  }
-
-  //! OKLART OM DENNA BEHÖVS, kanske radera
-  .frame-851 {
-    margin: 0.1rem 0 0.3rem 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 0.8rem;
-    height: 0.8rem;
-    box-sizing: border-box;
-  }
-  //! containern för fake chipsen
-  .container-fakeChips {
-    margin-bottom: 0.5rem;
-    display: flex;
-    flex-direction: row;
-    align-self: flex-start;
-    column-gap: 0.5rem;
-    width: fit-content;
-    box-sizing: border-box;
-  }
-  //! text style på chipsen
-  .treehouses {
-    overflow-wrap: break-word;
-    font-family: "Roboto";
-    font-weight: 400;
-    font-size: 0.8rem;
-    color: #141414;
-  }
-  //! container för de två chipsen längst ner vandra och glamping
-  .container-1 {
-    display: flex;
-
-    align-self: flex-start;
-  }
-
-  .editPenBox {
-    display: flex;
-
-    .penEditimg {
-      height: 1rem;
-      width: 1rem;
-      margin-left: 0.5rem;
-    }
-  }
-
-  .chips-filtrering {
-    border-radius: 6.3rem;
-    border: 0.1rem solid #141414;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 0.7rem 2rem;
-    box-sizing: border-box;
-  }
-
-  //! Profilbild box
-  .profil-pic-box {
-    border-radius: 4.1rem;
-    background-image: url("/assets/img/profilpic.jpg");
-    // margin: 0 0 1.4rem 0rem;
-    // width: 8.1rem;
-    height: 8.1rem;
-    background-size: cover;
-  }
-  //!Typografi som ska flyttas
-  .h1-saved {
-    font-weight: 400;
-    font-size: 1.5rem;
-    color: #111010;
-    margin-top: 0.5rem;
-  }
-  .profilPic-textBox {
-    margin: 0 0rem 1rem 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: fit-content;
-    box-sizing: border-box;
-  }
-  //! text boxen för texten under bordern
-  .txt-box-about {
-    margin: 0 1rem 2.9rem 1rem;
-    display: flex;
-    justify-content: center;
-    align-self: flex-start;
-  }
-  //! TYPOGRAFI stil på texten under bordern
-  .txt-about {
-    font-family: "Roboto";
-    font-weight: 400;
-    font-size: 1rem;
-    color: #111010;
-  }
-  //! container runt ikoner och texten längst ner
-  .iconTxt-containerBtm {
-    margin: 0 1rem 6.8rem 1rem;
-    display: flex;
-    flex-direction: column;
-    align-self: flex-start;
-    width: fit-content;
-
-    //! TYPOGRAFI Text stylen längst ner på hjärtat, vänner och inställningar
-    font-family: "Roboto";
-    font-weight: 500;
-    font-size: 1rem;
-    color: #040404;
-  }
-  //!containern för hjärtat
-  .saved-box-profil {
-    margin: 0 0 2.3rem 0.2rem;
-    display: flex;
-    align-items: center;
-    color: #040404;
-    text-decoration: none;
-  }
-  //! boxen för vänner
-  .friends-box {
-    margin-bottom: 2.3rem;
-    display: flex;
-    align-items: center;
-  }
-  .settings-box {
-    display: flex;
-    align-items: center;
-  }
-  //! storleken på hjärtikonen
-  .mdiheart {
-    margin-right: 1.2rem;
-    display: flex;
-    width: 1.7rem;
-    height: 1.5rem;
-  }
-
-  //! storleken på vännerikonen
-  .octiconpeople-24 {
-    margin-right: 1rem;
-    display: flex;
-    width: 2rem;
-    height: 1.6rem;
-  }
-
-  .material-symbols-lightsettings-outline {
-    margin-right: 1.3rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 1.9rem;
-    height: 1.9rem;
-    box-sizing: border-box;
-  }
-
-  //!main
-
   .main-saved {
     margin: 0 1rem 1.4rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: calc(100% - 2rem);
+
+    .profilPic-textBox {
+      margin: 0 0rem 1rem 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: fit-content;
+
+      //! Profilbild box
+      .profil-pic-box {
+        border-radius: 4.1rem;
+        background-image: url("/assets/img/profilpic.jpg");
+        background-size: cover;
+      }
+    }
+
+    //! containern för texten och fake chipsen
+    .textChips-container {
+      margin: 2rem 1rem 2rem 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      flex: 0 0 100%;
+
+      //!Boxen för text och penna
+      .txtPen-box {
+        margin: 0 0.1rem 1rem 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex: calc(100% - 0.1rem);
+      }
+
+      //! containern för fake chipsen
+      .container-fakeChips {
+        margin-bottom: 0.5rem;
+        display: flex;
+        column-gap: 0.5rem;
+
+        .chipsFilter {
+          border-radius: 6.3rem;
+          border: 0.1rem solid #141414;
+          display: flex;
+          padding: 0.7rem 2rem;
+        }
+      }
+    }
+    .editPenBox {
+      display: flex;
+      .penEditimg {
+        height: 1rem;
+        width: 1rem;
+        margin-left: 0.5rem;
+      }
+    }
+
+    //! text boxen för texten under bordern
+    .txt-box-about {
+      margin: 0 1rem 2.9rem 1rem;
+      display: flex;
+      justify-content: center;
+      align-self: flex-start;
+    }
+    //! TYPOGRAFI stil på texten under bordern
+
+    //!containern för hjärtat
+    .saved-box-profil {
+      margin: 0 0 2.3rem 0.2rem;
+      display: flex;
+      align-items: center;
+      color: black;
+      text-decoration: none;
+    }
+
+    //! container runt ikoner och texten längst ner
+    .iconTxt-containerBtm {
+      margin: 0 1rem 6.8rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-self: flex-start;
+
+      .iconBox {
+        margin-right: 1rem;
+        display: flex;
+        align-items: center;
+        .icoon {
+          width: 2rem;
+          height: 2rem;
+        }
+      }
+    }
   }
 }
