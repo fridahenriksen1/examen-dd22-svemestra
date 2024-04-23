@@ -197,6 +197,79 @@ h4 {
   font-weight: 800;
 }
 
+.saved-resorts h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+.saved-resorts p {
+  font-size: 0.75rem;
+}
+
+.show-all {
+  margin-right: 0.8rem;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #141414;
+  text-decoration: none;
+}
+
+.textbox-suggestions h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #111010;
+}
+
+.information-box {
+  font-size: 0.8rem;
+  color: #141414;
+}
+.information-box h3 {
+  margin-bottom: 0.3rem;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+.chips-filter p {
+  font-size: 0.8rem;
+  color: #141414;
+  padding-left: 0.2rem;
+}
+
+.logo {
+  margin: 0 0.1rem 7.5rem 0;
+  font-size: 3rem;
+}
+
+.btn-txt-box p {
+  font-size: 0.8rem;
+}
+.btn-txt-box .sign-in {
+  font-size: 1.3rem;
+  color: white;
+  text-decoration: none;
+}
+.btn-txt-box .createAccount {
+  font-size: 1.3rem;
+}
+
+.chipsFilter p {
+  font-size: 0.75rem;
+}
+
+.h1-saved {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #111010;
+  margin-top: 0.5rem;
+}
+
+.iconTxt-containerBtm {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 1rem;
+  color: #040404;
+}
+
 .navigation {
   background: #ededed;
   display: flex;
@@ -213,6 +286,90 @@ h4 {
 .nav-icons {
   width: 1.3rem;
   height: 1.5rem;
+}
+
+.suggestions-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 7rem;
+}
+.suggestions-container .textbox-suggestions {
+  padding-left: 0.5rem;
+  margin-bottom: 2rem;
+}
+.suggestions-container .suggestionCard-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+.suggestions-container .suggestionCard-box .card-large {
+  flex: 0 0 328px;
+}
+.suggestions-container .suggestionCard-box .card-large .img-heart-box {
+  background: #d9d9d9;
+  position: relative;
+  margin-bottom: 0.8rem;
+  margin: auto;
+}
+.suggestions-container .suggestionCard-box .card-large .image {
+  opacity: 0.5;
+  background-size: cover;
+}
+.suggestions-container .suggestionCard-box .card-large .image img {
+  width: 100%;
+  height: 100%;
+}
+.suggestions-container .suggestionCard-box .card-large .heartIConBox {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.1rem;
+  width: 1.5rem;
+  height: 1.4rem;
+}
+.suggestions-container .suggestionCard-box .card-large .contentBox-card {
+  padding-top: 1rem;
+}
+.suggestions-container .suggestionCard-box .card-large .contentBox-card .txtChip-box {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.suggestions-container .suggestionCard-box .card-large .contentBox-card .txtChip-box .ellipse-box {
+  margin-bottom: 0.8rem;
+  display: flex;
+  -moz-column-gap: 0.2rem;
+       column-gap: 0.2rem;
+}
+.suggestions-container .suggestionCard-box .card-large .contentBox-card .txtChip-box .ellipse-box .ellipse {
+  border-radius: 0.3rem;
+  background: #141414;
+  width: 0.6rem;
+  height: 0.6rem;
+}
+.suggestions-container .suggestionCard-box .card-large .contentBox-card .txtChip-box .information-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+}
+.suggestions-container .suggestionCard-box .card-large .contentBox-card .chipsBox {
+  margin-bottom: 0.3rem;
+  display: flex;
+}
+.suggestions-container .suggestionCard-box .card-large .contentBox-card .chipsBox .chips-filter {
+  border-radius: 6.3rem;
+  border: 0.1rem solid #141414;
+  background: #ffffff;
+  display: flex;
+  padding: 0.5rem 0.7rem 0.5rem 0.9rem;
+  margin-right: 0.25rem;
+}
+.suggestions-container .suggestionCard-box .card-large .contentBox-card .chipsBox .chips-filter .chip-icon {
+  margin: 0.1rem 0.7rem 0.1rem 0;
+  display: flex;
+  width: 0.7rem;
+  height: 0.8rem;
 }
 
 .visually-hidden {
@@ -454,6 +611,9 @@ h4 {
   border: 1px solid #141414;
 }
 
+.saved-resorts {
+  margin-top: 2.5rem;
+}
 .saved-resorts .saved-resorts-container {
   display: flex;
   gap: 1rem;
@@ -462,8 +622,19 @@ h4 {
 .saved-resorts .saved-resorts-container .saved-resort {
   flex: 0 0 calc(50% - 0.5rem);
   display: flex;
+  align-items: center;
   gap: 1rem;
-  background-color: gray;
+  background-color: #ededed;
+}
+.saved-resorts .showAll {
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+.saved-resorts .showAll .arrow-forrward-icon {
+  width: 1rem;
+  height: 1rem;
 }
 
 /*If you have page-specific styles, it is better to put them in a pages/ folder, in a file named after the page. For instance, it’s not uncommon to have very specific styles for the home page hence the need for a _home.scss file in pages/.*/
@@ -819,50 +990,19 @@ h4 {
   box-sizing: border-box;
 }
 
-.flex-container {
-  max-width: 1200px;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 1rem;
-  gap: var(--flex-gap);
-  /* Denna kod ska läggas till på lämpligt ställe ex i en komponent partial */
-  /* Om ni vill använda gap och vill att det blir smooth med mellanrummen använd denna uträkning */
-  /* https://wiryawanadipa.com/blog/calculate-percentage-width-of-flex-items-when-using-gap/ */
-  /* flex: 0 0 calc((100% / 3) - (((3 - 1) / 3) * 1rem)); */
-}
-@media (min-width: 700px) {
-  .flex-container {
-    margin: 0 4rem;
-  }
-}
-.flex-container .text-box {
-  margin-bottom: 3.5rem;
-}
-
 .account-container {
   background: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 8.6rem;
-  box-sizing: border-box;
 }
-.account-container .logo {
-  margin: 0 0.1rem 7.5rem 0;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 3rem;
-  color: #000000;
+.account-container .main-account {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.account-container .logga-in {
-  overflow-wrap: break-word;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 1.3rem;
-  color: #fafafa;
-  text-decoration: none;
-}
-.account-container .signIn-box {
+.account-container .main-account .signIn-box {
   border-radius: 6.3rem;
   border: 0.1rem solid #000000;
   background: #262626;
@@ -871,225 +1011,24 @@ h4 {
   justify-content: center;
   padding: 0.4rem 4rem 0.4rem 4rem;
 }
-.account-container .skapa-konto {
-  overflow-wrap: break-word;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 1.3rem;
-  color: #000000;
-}
-.account-container .createBtn-box {
+.account-container .main-account .createBtn-box {
   border-radius: 6.3rem;
   border: 0.1rem solid #000000;
   margin: 0 0.1rem 1rem 0.1rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   padding: 0.4rem 3rem 0.4rem 3rem;
 }
-.account-container .btn-txt-box {
+.account-container .main-account .btn-txt-box {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.account-container .main-account {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.account-container .txt-password {
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 0.8rem;
-  text-decoration-line: none;
-  line-height: 1.333;
-}
-.account-container .click-txt {
+.account-container .main-account .btn-txt-box .click-txt {
   text-decoration: underline;
 }
 
 .big-container {
   background: #ffffff;
-  display: flex;
-  flex-direction: column;
   padding: 3.9rem 0 0rem 0;
-  box-sizing: border-box;
-}
-.big-container .edit {
-  position: absolute;
-  right: 3rem;
-  top: 1.2rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 1rem;
-  height: 1rem;
-  box-sizing: border-box;
-}
-.big-container .redigera {
-  padding-right: 0.3rem;
-}
-.big-container .mode-edit {
-  margin: 0.1rem 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 0.8rem;
-  height: 0.8rem;
-  box-sizing: border-box;
-}
-.big-container .vector {
-  width: 16px;
-}
-.big-container .textChips-container {
-  margin: 2rem 1rem 2rem 1rem;
-  display: flex;
-  flex-direction: column;
-  flex: calc(100% - 2rem);
-  box-sizing: border-box;
-}
-.big-container .txtPen-box {
-  margin: 0 0.1rem 1rem 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: calc(100% - 0.1rem);
-  box-sizing: border-box;
-}
-.big-container .dina-sparade-kategorier {
-  font-family: "Roboto";
-  font-weight: 400;
-  color: #111010;
-}
-.big-container .underline-border {
-  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.5);
-  padding-bottom: 1.2rem;
-}
-.big-container .frame-851 {
-  margin: 0.1rem 0 0.3rem 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 0.8rem;
-  height: 0.8rem;
-  box-sizing: border-box;
-}
-.big-container .container-fakeChips {
-  margin-bottom: 0.5rem;
-  display: flex;
-  flex-direction: row;
-  align-self: flex-start;
-  -moz-column-gap: 0.5rem;
-       column-gap: 0.5rem;
-  width: -moz-fit-content;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.big-container .treehouses {
-  overflow-wrap: break-word;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 0.8rem;
-  color: #141414;
-}
-.big-container .container-1 {
-  display: flex;
-  align-self: flex-start;
-}
-.big-container .chips-filtrering {
-  border-radius: 6.3rem;
-  border: 0.1rem solid #141414;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 0.7rem 1.2rem;
-  box-sizing: border-box;
-}
-.big-container .profil-pic-box {
-  border-radius: 4.1rem;
-  background-image: url("/assets/img/profilpic.jpg");
-  margin: 0 0 1.4rem 0rem;
-  width: 8.1rem;
-  height: 8.1rem;
-  background-size: cover;
-}
-.big-container .h1-saved {
-  overflow-wrap: break-word;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 1.5rem;
-  color: #111010;
-}
-.big-container .profilPic-textBox {
-  margin: 0 0rem 1rem 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: -moz-fit-content;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.big-container .txt-box-about {
-  margin: 0 1rem 2.9rem 1rem;
-  display: flex;
-  justify-content: center;
-  align-self: flex-start;
-}
-.big-container .txt-about {
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 1rem;
-  color: #111010;
-}
-.big-container .iconTxt-containerBtm {
-  margin: 0 1rem 6.8rem 1rem;
-  display: flex;
-  flex-direction: column;
-  align-self: flex-start;
-  width: -moz-fit-content;
-  width: fit-content;
-  box-sizing: border-box;
-  font-family: "Roboto";
-  font-weight: 500;
-  font-size: 1rem;
-  color: #040404;
-}
-.big-container .saved-box {
-  margin: 0 0 2.3rem 0.2rem;
-  display: flex;
-  align-items: center;
-  color: #040404;
-  text-decoration: none;
-}
-.big-container .friends-box {
-  margin-bottom: 2.3rem;
-  display: flex;
-  align-items: center;
-}
-.big-container .settings-box {
-  display: flex;
-  align-items: center;
-}
-.big-container .mdiheart {
-  margin-right: 1.2rem;
-  display: flex;
-  width: 1.7rem;
-  height: 1.5rem;
-}
-.big-container .octiconpeople-24 {
-  margin-right: 1rem;
-  display: flex;
-  width: 2rem;
-  height: 1.6rem;
-}
-.big-container .material-symbols-lightsettings-outline {
-  margin-right: 1.3rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 1.9rem;
-  height: 1.9rem;
-  box-sizing: border-box;
 }
 .big-container .main-saved {
   margin: 0 1rem 1.4rem 1rem;
@@ -1097,41 +1036,80 @@ h4 {
   flex-direction: column;
   align-items: center;
   width: calc(100% - 2rem);
-  box-sizing: border-box;
 }
-
-.nav-icons {
-  width: 1.3rem;
-  height: 1.5rem;
+.big-container .main-saved .profilPic-textBox {
+  margin: 0 0rem 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
 }
-
-.home-box {
+.big-container .main-saved .profilPic-textBox .profil-pic-box {
+  border-radius: 4.1rem;
+  background-image: url("/assets/img/profilpic.jpg");
+  background-size: cover;
+}
+.big-container .main-saved .textChips-container {
+  margin: 2rem 1rem 2rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 0 100%;
+}
+.big-container .main-saved .textChips-container .txtPen-box {
+  margin: 0 0.1rem 1rem 0;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  width: 1.3rem;
-  height: 1.5rem;
-  box-sizing: border-box;
+  justify-content: space-between;
+  flex: calc(100% - 0.1rem);
 }
-
-.search-1 {
-  margin-bottom: 0rem;
+.big-container .main-saved .textChips-container .container-fakeChips {
+  margin-bottom: 0.5rem;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 1.5rem;
-  height: 1.5rem;
-  box-sizing: border-box;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
 }
-
-.user-filled {
-  margin: 0.1rem 0;
+.big-container .main-saved .textChips-container .container-fakeChips .chipsFilter {
+  border-radius: 6.3rem;
+  border: 0.1rem solid #141414;
   display: flex;
-  flex-direction: row;
+  padding: 0.7rem 2rem;
+}
+.big-container .main-saved .editPenBox {
+  display: flex;
+}
+.big-container .main-saved .editPenBox .penEditimg {
+  height: 1rem;
+  width: 1rem;
+  margin-left: 0.5rem;
+}
+.big-container .main-saved .txt-box-about {
+  margin: 0 1rem 2.9rem 1rem;
+  display: flex;
   justify-content: center;
-  width: 1.3rem;
-  height: 1.3rem;
-  box-sizing: border-box;
+  align-self: flex-start;
+}
+.big-container .main-saved .saved-box-profil {
+  margin: 0 0 2.3rem 0.2rem;
+  display: flex;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+}
+.big-container .main-saved .iconTxt-containerBtm {
+  margin: 0 1rem 6.8rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+.big-container .main-saved .iconTxt-containerBtm .iconBox {
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+}
+.big-container .main-saved .iconTxt-containerBtm .iconBox .icoon {
+  width: 2rem;
+  height: 2rem;
 }
 
 .big-container {
@@ -1978,392 +1956,26 @@ h4 {
   box-sizing: border-box;
 }
 
-.dina-sparade-besksml {
-  margin-bottom: 1rem;
-  display: inline-block;
-  align-self: flex-start;
-  overflow-wrap: break-word;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 1.3rem;
-  color: #111010;
+.container {
+  padding: 1rem;
 }
 
-.frame-6 {
-  background: #ededed;
-  display: flex;
-  flex-direction: row;
-  flex-grow: 1;
-  flex-basis: 10rem;
-  box-sizing: border-box;
-}
-
-.saved-box {
-  margin-bottom: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.fakeChips-box {
+.flex-container {
+  max-width: 1200px;
   display: flex;
   flex-wrap: wrap;
+  padding: 1rem;
+  gap: var(--flex-gap);
+  /* Denna kod ska läggas till på lämpligt ställe ex i en komponent partial */
+  /* Om ni vill använda gap och vill att det blir smooth med mellanrummen använd denna uträkning */
+  /* https://wiryawanadipa.com/blog/calculate-percentage-width-of-flex-items-when-using-gap/ */
+  /* flex: 0 0 calc((100% / 3) - (((3 - 1) / 3) * 1rem)); */
 }
-
-.visa-alla {
-  margin-right: 0.8rem;
-  overflow-wrap: break-word;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 1rem;
-  color: #141414;
-  text-decoration: none;
+@media (min-width: 700px) {
+  .flex-container {
+    margin: 0 4rem;
+  }
 }
-
-.vector {
-  width: 1rem;
-  height: 1rem;
-}
-
-.arrow-forward {
-  margin: 0.1rem 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 1rem;
-  height: 1rem;
-  box-sizing: border-box;
-}
-
-.btn-showAll {
-  border-radius: 6.3rem;
-  background: #ffffff;
-  display: flex;
-  padding: 0.7rem 1rem 0.7rem 0.8rem;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-.lorem-ipsum-dolor {
-  margin-bottom: 3rem;
-  display: inline-block;
-  align-self: flex-start;
-  overflow-wrap: break-word;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 3rem;
-  color: #000000;
-}
-
-.card-large.mt {
-  margin-top: 2rem;
-}
-
-.vector-8 {
-  width: 4.6rem;
-  height: 4.6rem;
-}
-
-.image {
-  opacity: 0.5;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-size: cover;
-}
-.image img {
-  width: 100%;
-  height: 100%;
-}
-
-.vector-1 {
-  width: 1.5rem;
-  height: 1.4rem;
-}
-
-.container-8 {
-  margin-bottom: 0.3rem;
-  display: flex;
-  flex-direction: row;
-  width: -moz-fit-content;
-  width: fit-content;
-  box-sizing: border-box;
-}
-
-.vector-6 {
-  width: 0.7rem;
-  height: 0.8rem;
-}
-
-.contentBox-card {
-  max-width: 300px;
-  padding-top: 1rem;
-}
-
-.lorem-ipsum-9 {
-  overflow-wrap: break-word;
-  font-family: "Roboto";
-  font-weight: 700;
-  font-size: 1.5rem;
-  color: #111010;
-}
-
-.vector-40 {
-  width: 4.6rem;
-  height: 4.6rem;
-}
-
-.vector-33 {
-  width: 1.5rem;
-  height: 1.4rem;
-}
-
-.component-14 {
-  position: absolute;
-  top: 1.2rem;
-  right: 1.1rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 1.5rem;
-  height: 1.4rem;
-  box-sizing: border-box;
-}
-
-.frame-944 {
-  background: #d9d9d9;
-  position: relative;
-  margin-bottom: 0.8rem;
-  width: 20.5rem;
-  min-height: 17.5rem;
-  margin: auto;
-}
-
-.ellipse {
-  border-radius: 0.3rem;
-  background: #141414;
-  width: 0.6rem;
-  height: 0.6rem;
-}
-
-.frame-274 {
-  margin-bottom: 0.8rem;
-  display: flex;
-  flex-direction: row;
-  align-self: flex-start;
-  -moz-column-gap: 0.2rem;
-       column-gap: 0.2rem;
-  width: 3.9rem;
-  box-sizing: border-box;
-}
-
-.lorem-ipsum-10 {
-  margin-bottom: 0.3rem;
-  display: inline-block;
-  align-self: flex-start;
-  overflow-wrap: break-word;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 1.3rem;
-  color: #141414;
-}
-
-.frame-284 {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  box-sizing: border-box;
-  overflow-wrap: break-word;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 0.8rem;
-  color: #141414;
-}
-
-.frame-544 {
-  margin-bottom: 1rem;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.vector-39 {
-  width: 0.7rem;
-  height: 0.8rem;
-}
-
-.treehouses-29 {
-  overflow-wrap: break-word;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 0.8rem;
-  color: #141414;
-  padding-left: 0.2rem;
-}
-
-.vector-37 {
-  width: 0.7rem;
-  height: 0.8rem;
-}
-
-.container-12 {
-  margin-bottom: 0.3rem;
-  display: flex;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-.vector-38 {
-  width: 0.7rem;
-  height: 0.8rem;
-}
-
-.home-filled-28 {
-  margin: 0.1rem 0.7rem 0.1rem 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 0.7rem;
-  height: 0.8rem;
-  box-sizing: border-box;
-}
-
-.vector-36 {
-  width: 0.7rem;
-  height: 0.8rem;
-}
-
-.chips-filtrering-27 {
-  border-radius: 6.3rem;
-  border: 0.1rem solid #141414;
-  background: #ffffff;
-  display: flex;
-  flex-direction: row;
-  padding: 0.5rem 0.7rem 0.5rem 0.9rem;
-  box-sizing: border-box;
-}
-
-.container-13 {
-  margin: 0 0.8rem 0.3rem 0;
-  display: flex;
-  flex-direction: row;
-  width: -moz-fit-content;
-  width: fit-content;
-  box-sizing: border-box;
-}
-
-.vector-34 {
-  width: 0.7rem;
-  height: 0.8rem;
-}
-
-.home-filled-24 {
-  margin: 0.1rem 0.7rem 0.1rem 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 0.7rem;
-  height: 0.8rem;
-  box-sizing: border-box;
-}
-
-.vector-35 {
-  width: 0.7rem;
-  height: 0.8rem;
-}
-
-.home-filled-25 {
-  margin: 0.1rem 0.7rem 0.1rem 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 0.7rem;
-  height: 0.8rem;
-  box-sizing: border-box;
-}
-
-.chips-filtrering-26 {
-  border-radius: 6.3rem;
-  border: 0.1rem solid #141414;
-  background: #ffffff;
-  display: flex;
-  flex-direction: row;
-  padding: 0.5rem 0.7rem 0.5rem 0.9rem;
-  box-sizing: border-box;
-}
-
-.container-3 {
-  display: flex;
-  flex-direction: row;
-  align-self: flex-start;
-  width: -moz-fit-content;
-  width: fit-content;
-  box-sizing: border-box;
-}
-
-.vector-62 {
-  width: 0.7rem;
-  height: 0.8rem;
-}
-
-.frame-511 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.frame-53 {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.frame-49 {
-  display: flex;
-  flex-direction: column;
-  padding: 0rem 0.5rem;
-}
-.frame-49.mt {
-  margin-top: 3rem;
-  margin-bottom: 10rem;
-}
-
-.nav-icons {
-  width: 1.3rem;
-  height: 1.5rem;
-}
-
-.home-box {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 1.3rem;
-  height: 1.5rem;
-  box-sizing: border-box;
-}
-
-.search-1 {
-  margin-bottom: 0rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 1.5rem;
-  height: 1.5rem;
-  box-sizing: border-box;
-}
-
-.user-filled {
-  margin: 0.1rem 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 1.3rem;
-  height: 1.3rem;
-  box-sizing: border-box;
+.flex-container .text-box {
+  margin-bottom: 3.5rem;
 }/*# sourceMappingURL=style.css.map */

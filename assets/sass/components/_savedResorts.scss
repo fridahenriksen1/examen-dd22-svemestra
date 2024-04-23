@@ -1,13 +1,33 @@
+//! sektionen saved resorts på index sidan
 .saved-resorts {
+  margin-top: 2.5rem;
+
   .saved-resorts-container {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+
     .saved-resort {
       flex: 0 0 calc((100% / 2) - (((2 - 1) / 2) * 1rem));
       display: flex;
+      align-items: center;
       gap: 1rem;
-      background-color: gray;
+      background-color: #ededed;
+
+      //padding-right: 1rem;
+    }
+  }
+
+  //! Vissa alla knappen
+  .showAll {
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+
+    .arrow-forrward-icon {
+      width: 1rem;
+      height: 1rem;
     }
   }
 }

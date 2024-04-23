@@ -8,102 +8,104 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="savedMaps.css" /> -->
-    <!-- <link rel="stylesheet" href="assets/sass/pages/savedmaps.scss"> -->
     <link rel="stylesheet" href="assets/sass/style.css" />
   
   </head>
   <body>
     <div class="big-container">
       <main class="main-saved">
-        <div class=" edit">
-          <span class="redigera">
-          Redigera
-          </span>
-          <div class="mode-edit">
-            <img class="vector" src="/assets/icons/penIcon.svg" />
-          </div>
-        </div>
         <section class="profilPic-textBox">
           <div class="profil-pic-box">
-       
           </div>
           <h1 class="h1-saved">
           Frida Henriksen
           </h1>
+          <div class="editPenBox">
+          <p>
+            Redigera
+          </p>
+          <img class="penEditimg" src="/assets/icons/penIcon.svg" alt="">
+        </div>
         </section>
         <div class="textChips-container">
           <div class="txtPen-box">
-            <span class="dina-sparade-kategorier">
+            <p>
             Dina sparade kategorier
-            </span>
-            <div class="frame-851">
+            </p>
+            <div class="editPenBox">
               <img class="vector" src="/assets/icons/penIcon.svg" />
             </div>
           </div>
-          <div class="underline-border">
+         
             <div class="container-fakeChips">
-              <div class="chips-filtrering">
-                <span class="treehouses">
+              <div class="chipsFilter">
+                <p class="treehouses">
                 Treehouses
-                </span>
+                </p>
               </div>
-              <div class="chips-filtrering">
-                <span class="treehouses">
+              <div class="chipsFilter">
+                <p class="treehouses">
                 Camping
-                </span>
+                </p>
               </div>
-              <div class="chips-filtrering">
-                <span class="treehouses">
+              <div class="chipsFilter">
+                <p class="treehouses">
                 Spa
-                </span>
+                </p>
               </div>
             </div>
-            <div class="container-1">
-              <div class="chips-filtrering">
-                <span class="treehouses">
+            <div class="container-fakeChips">
+              <div class="chipsFilter">
+                <p class="treehouses">
                 Vandra
-                </span>
+                </p>
               </div>
-              <div class="chips-filtrering">
-                <span class="treehouses">
+              <div class="chipsFilter">
+                <p class="treehouses">
                 Glamping
-                </span>
+                </p>
               </div>
             </div>
-          </div>
         </div>
         <div class="txt-box-about">
-          <span class="txt-about">
+          <p>
           Sorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          </span>
+          </p>
         </div>
 
 
         <div class="iconTxt-containerBtm">
-          <a class="saved-box" href="savedDestinations.html">
-            <div class="mdiheart">
-              <img class="vector-2" src="/assets/icons/heartIconFilled.svg" />
+          <a class="saved-box-profil" href="savedDestinations.html">
+            <div class="iconBox">
+              <img class="icoon" src="/assets/icons/heartIconFilled.svg" />
             </div>
-            <div class="sparade-besksml-4">
+            <p class="sparade-besksml-4">
             Sparade besöksmål (4)
-            </div>
+            </p>
           </a>
-          <div class="friends-box">
-            <div class="octiconpeople-24">
-              <img class="vector-3" src="/assets/icons/friendsIcon.svg" />
+          <div class="saved-box-profil">
+            <div class="iconBox">
+              <img class="icoon" src="/assets/icons/friendsIcon.svg" />
             </div>
-            <div class="vnner-8">
-            Vänner (8)
-            </div>
+            <p class="vnner-8">
+            Vänner och grupper (8)
+            </p>
           </div>
-          <div class="settings-box">
-            <div class="material-symbols-lightsettings-outline">
-              <img class="vector-4" src="/assets/icons/settingsIcon.svg" />
+          <div class="saved-box-profil">
+            <div class="iconBox">
+              <img class="icoon" src="/assets/icons/friendsIcon.svg" />
             </div>
-            <div class="instllningar">
+            <p class="vnner-8">
+           Mina omdömen
+            </p>
+          </div>
+          <div class="saved-box-profil">
+            <div class="iconBox">
+              <img class="icoon" src="/assets/icons/settingsIcon.svg" />
+            </div>
+            <p class="instllningar">
             Inställningar
-            </div>
+            </p>
           </div>
         </div>
 
@@ -111,17 +113,32 @@
 
      
     </div>
-         <!-- NAVIGATION -->
-         <nav class="navigation">
-          <a class="home-filled" href="index.html">
-            <img class="nav-icons" src="/assets/icons/homeIcon.svg" />
-          </a>
+       <!-- NAVIGATION -->
+       <nav class="navigation">
+        <ul>
+          <li>
+        <a class="home-filled" href="index.html">
+          <img class="nav-icons" src="/assets/icons/homeIcon.svg" />
+        </a>
+      </li>
+      </ul>
+      <ul>
+        <li>
           <a class="search-1" href="filterPage.html" >
             <img class="nav-icons" src="/assets/icons/searchNavIcon.svg" />
           </a>
+
+        </li>
+      </ul>
+
+      <ul>
+        <li>
           <a class="user-filled" href="profil.html">
             <img class="nav-icons" src="/assets/icons/navProfilIcon.svg" />
           </a>
-        </nav>
+        </li>
+      </ul>
+      </nav>
+      
   </body>
 </html>
