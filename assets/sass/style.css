@@ -219,6 +219,16 @@ h4 {
   color: #111010;
 }
 
+.information-box {
+  font-size: 0.8rem;
+  color: #141414;
+}
+.information-box h3 {
+  margin-bottom: 0.3rem;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
 .navigation {
   background: #ededed;
   display: flex;
@@ -290,7 +300,12 @@ h4 {
   display: flex;
   -moz-column-gap: 0.2rem;
        column-gap: 0.2rem;
-  flex: 0 0 62px;
+}
+.suggestions-container .suggestionCard-box .card-large .contentBox-card .txtChip-box .information-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .visually-hidden {
@@ -2150,29 +2165,6 @@ h4 {
   background: #141414;
   width: 0.6rem;
   height: 0.6rem;
-}
-
-.lorem-ipsum-10 {
-  margin-bottom: 0.3rem;
-  display: inline-block;
-  align-self: flex-start;
-  overflow-wrap: break-word;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 1.3rem;
-  color: #141414;
-}
-
-.frame-284 {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  box-sizing: border-box;
-  overflow-wrap: break-word;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 0.8rem;
-  color: #141414;
 }
 
 .treehouses-29 {
