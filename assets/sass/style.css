@@ -301,6 +301,12 @@ h4 {
   -moz-column-gap: 0.2rem;
        column-gap: 0.2rem;
 }
+.suggestions-container .suggestionCard-box .card-large .contentBox-card .txtChip-box .ellipse-box .ellipse {
+  border-radius: 0.3rem;
+  background: #141414;
+  width: 0.6rem;
+  height: 0.6rem;
+}
 .suggestions-container .suggestionCard-box .card-large .contentBox-card .txtChip-box .information-box {
   display: flex;
   flex-direction: column;
@@ -2105,11 +2111,6 @@ h4 {
   align-items: center;
 }
 
-.fakeChips-box {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .vector {
   width: 1rem;
   height: 1rem;
@@ -2160,13 +2161,6 @@ h4 {
   height: 0.8rem;
 }
 
-.ellipse {
-  border-radius: 0.3rem;
-  background: #141414;
-  width: 0.6rem;
-  height: 0.6rem;
-}
-
 .treehouses-29 {
   overflow-wrap: break-word;
   font-family: "Roboto";
@@ -2188,24 +2182,12 @@ h4 {
   width: fit-content;
 }
 
-.vector-38 {
-  width: 0.7rem;
-  height: 0.8rem;
-}
-
-.vector-36 {
-  width: 0.7rem;
-  height: 0.8rem;
-}
-
-.chips-filtrering-27 {
+.chips-filter {
   border-radius: 6.3rem;
   border: 0.1rem solid #141414;
   background: #ffffff;
   display: flex;
-  flex-direction: row;
   padding: 0.5rem 0.7rem 0.5rem 0.9rem;
-  box-sizing: border-box;
 }
 
 .container-13 {
@@ -2220,20 +2202,8 @@ h4 {
 .home-filled-25 {
   margin: 0.1rem 0.7rem 0.1rem 0;
   display: flex;
-  justify-content: center;
   width: 0.7rem;
   height: 0.8rem;
-  box-sizing: border-box;
-}
-
-.chips-filtrering-26 {
-  border-radius: 6.3rem;
-  border: 0.1rem solid #141414;
-  background: #ffffff;
-  display: flex;
-  flex-direction: row;
-  padding: 0.5rem 0.7rem 0.5rem 0.9rem;
-  box-sizing: border-box;
 }
 
 .container-3 {
@@ -2243,9 +2213,4 @@ h4 {
   width: -moz-fit-content;
   width: fit-content;
   box-sizing: border-box;
-}
-
-.vector-62 {
-  width: 0.7rem;
-  height: 0.8rem;
 }/*# sourceMappingURL=style.css.map */
