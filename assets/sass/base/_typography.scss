@@ -19,8 +19,33 @@ h4 {
   font-weight: 800;
 }
 
-.card{
-  h2{
-    
+.card {
+  h2 {
+  }
+}
+
+.saved-resorts {
+  h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  p {
+    font-size: 0.75rem;
+  }
+}
+//!visa alla i index
+.show-all {
+  margin-right: 0.8rem;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #141414;
+  text-decoration: none;
+}
+
+.textbox-suggestions {
+  h2 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #111010;
   }
 }

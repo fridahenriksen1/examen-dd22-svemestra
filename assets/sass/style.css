@@ -197,6 +197,22 @@ h4 {
   font-weight: 800;
 }
 
+.saved-resorts h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+.saved-resorts p {
+  font-size: 0.75rem;
+}
+
+.show-all {
+  margin-right: 0.8rem;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #141414;
+  text-decoration: none;
+}
+
 .navigation {
   background: #ededed;
   display: flex;
@@ -454,6 +470,9 @@ h4 {
   border: 1px solid #141414;
 }
 
+.saved-resorts {
+  margin-top: 2.5rem;
+}
 .saved-resorts .saved-resorts-container {
   display: flex;
   gap: 1rem;
@@ -462,8 +481,19 @@ h4 {
 .saved-resorts .saved-resorts-container .saved-resort {
   flex: 0 0 calc(50% - 0.5rem);
   display: flex;
+  align-items: center;
   gap: 1rem;
-  background-color: gray;
+  background-color: #ededed;
+}
+.saved-resorts .showAll {
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+.saved-resorts .showAll .arrow-forrward-icon {
+  width: 1rem;
+  height: 1rem;
 }
 
 /*If you have page-specific styles, it is better to put them in a pages/ folder, in a file named after the page. For instance, it’s not uncommon to have very specific styles for the home page hence the need for a _home.scss file in pages/.*/
@@ -1978,15 +2008,8 @@ h4 {
   box-sizing: border-box;
 }
 
-.dina-sparade-besksml {
-  margin-bottom: 1rem;
-  display: inline-block;
-  align-self: flex-start;
-  overflow-wrap: break-word;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 1.3rem;
-  color: #111010;
+.container {
+  padding: 1rem;
 }
 
 .frame-6 {
@@ -2012,16 +2035,6 @@ h4 {
   flex-wrap: wrap;
 }
 
-.visa-alla {
-  margin-right: 0.8rem;
-  overflow-wrap: break-word;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 1rem;
-  color: #141414;
-  text-decoration: none;
-}
-
 .vector {
   width: 1rem;
   height: 1rem;
@@ -2035,15 +2048,6 @@ h4 {
   width: 1rem;
   height: 1rem;
   box-sizing: border-box;
-}
-
-.btn-showAll {
-  border-radius: 6.3rem;
-  background: #ffffff;
-  display: flex;
-  padding: 0.7rem 1rem 0.7rem 0.8rem;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 
 .lorem-ipsum-dolor {

@@ -8,6 +8,7 @@
 @import "layout/hero";
 @import "layout/footer";
 @import "layout/nav";
+@import "layout/suggestions";
 
 @import "components/accessibility";
 @import "components/buttons";
@@ -15,7 +16,6 @@
 @import "components/searchbar";
 @import "components/largeCard";
 @import "components/savedResorts";
-
 @import "pages/home";
 @import "pages/savedmaps";
 //Detta måste sorteras
@@ -25,19 +25,9 @@
 @import "saveddestinations";
 @import "savedmaps";
 
-.dina-sparade-besksml {
-  margin-bottom: 1rem;
-  display: inline-block;
-  align-self: flex-start;
-  overflow-wrap: break-word;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 1.3rem;
-  color: #111010;
+.container {
+  padding: 1rem;
 }
-
-
-
 
 .frame-6 {
   background: #ededed;
@@ -53,8 +43,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  box-sizing: border-box;
 }
 //! Spara
 .fakeChips-box {
@@ -63,21 +51,12 @@
   // justify-content: space-between;
 }
 
-//! Typografi
-.visa-alla {
-  margin-right: 0.8rem;
-  overflow-wrap: break-word;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 1rem;
-  color: #141414;
-  text-decoration: none;
-}
 //! Spara arrow ikonen längst upp
 .vector {
   width: 1rem;
   height: 1rem;
 }
+
 .arrow-forward {
   margin: 0.1rem 0;
   display: flex;
@@ -86,16 +65,6 @@
   width: 1rem;
   height: 1rem;
   box-sizing: border-box;
-}
-
-//! Vissa alla boxen
-.btn-showAll {
-  border-radius: 6.3rem;
-  background: #ffffff;
-  display: flex;
-
-  padding: 0.7rem 1rem 0.7rem 0.8rem;
-  width: fit-content;
 }
 
 //! spara lorem ipsum texten (stora)
@@ -161,15 +130,6 @@
 .contentBox-card {
   max-width: 300px;
   padding-top: 1rem;
-}
-
-//! Spara i närheten text stil
-.lorem-ipsum-9 {
-  overflow-wrap: break-word;
-  font-family: "Roboto";
-  font-weight: 700;
-  font-size: 1.5rem;
-  color: #111010;
 }
 
 .vector-40 {
@@ -252,10 +212,6 @@
   width: 100%;
   box-sizing: border-box;
 }
-.vector-39 {
-  width: 0.7rem;
-  height: 0.8rem;
-}
 
 //!Spara
 .treehouses-29 {
@@ -280,15 +236,6 @@
 .vector-38 {
   width: 0.7rem;
   height: 0.8rem;
-}
-.home-filled-28 {
-  margin: 0.1rem 0.7rem 0.1rem 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 0.7rem;
-  height: 0.8rem;
-  box-sizing: border-box;
 }
 
 .vector-36 {
@@ -315,29 +262,12 @@
 }
 
 //!Spara
-.vector-34 {
-  width: 0.7rem;
-  height: 0.8rem;
-}
-.home-filled-24 {
-  margin: 0.1rem 0.7rem 0.1rem 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 0.7rem;
-  height: 0.8rem;
-  box-sizing: border-box;
-}
 
-.vector-35 {
-  width: 0.7rem;
-  height: 0.8rem;
-}
 //!SPARA
 .home-filled-25 {
   margin: 0.1rem 0.7rem 0.1rem 0;
   display: flex;
-  flex-direction: row;
+  //flex-direction: row;
   justify-content: center;
   width: 0.7rem;
   height: 0.8rem;
@@ -367,64 +297,4 @@
 .vector-62 {
   width: 0.7rem;
   height: 0.8rem;
-}
-
-.frame-511 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  box-sizing: border-box;
-}
-.frame-53 {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  box-sizing: border-box;
-}
-//!SEKTIONEN för en hel sektion
-.frame-49 {
-  display: flex;
-  flex-direction: column;
-  padding: 0rem 0.5rem;
-
-  &.mt {
-    margin-top: 3rem;
-    margin-bottom: 10rem;
-  }
-}
-
-//!Nav style
-.nav-icons {
-  width: 1.3rem;
-  height: 1.5rem;
-}
-
-.home-box {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 1.3rem;
-  height: 1.5rem;
-  box-sizing: border-box;
-}
-
-.search-1 {
-  margin-bottom: 0rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 1.5rem;
-  height: 1.5rem;
-  box-sizing: border-box;
-}
-
-.user-filled {
-  margin: 0.1rem 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 1.3rem;
-  height: 1.3rem;
-  box-sizing: border-box;
 }
