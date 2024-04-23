@@ -1,0 +1,13 @@
+.saved-resorts {
+  .saved-resorts-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    .saved-resort {
+      flex: 0 0 calc((100% / 2) - (((2 - 1) / 2) * 1rem));
+      display: flex;
+      gap: 1rem;
+      background-color: gray;
+    }
+  }
+}

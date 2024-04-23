@@ -5,7 +5,8 @@
         "category": "Trädhotell",
         "info": "Lorem ipsum dolor sit amet consectetur. Convallis amet nisi amet eget at.",
         "imageURL": "assets/img/cottage.jpg",
-        "price": "Budget"
+        "price": "Budget",
+        "html": "assets/accommodation/hyssna.html"
 
     },
     {
