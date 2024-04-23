@@ -11,12 +11,13 @@
   }
   //! Boxen runt korten för suggestions
   .suggestionCard-box {
-    margin: auto;
+    // margin: auto;
     display: flex;
     flex-wrap: wrap;
     //flex: 0 0 100%;
 
     gap: 1rem;
+    justify-content: center;
 
     //! STORA KORTET med margin-top
     .card-large {
