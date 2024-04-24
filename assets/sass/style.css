@@ -666,6 +666,29 @@ h4 {
   background-size: cover;
 }
 
+.folder-card {
+  display: flex;
+  flex: 0 0 calc(50% - 0.5rem);
+  flex-direction: column;
+}
+.folder-card .folder-open {
+  background-image: url("/assets/img/camping.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 0.8rem;
+  display: flex;
+  padding: 0.5rem 0 0 0.5rem;
+  min-height: 9.4rem;
+}
+.folder-card .folder-open .share-icon-box {
+  border-radius: 6.3rem;
+  background: #ffffff;
+  margin-bottom: 4.1rem;
+  padding: 0.5rem 0.3rem 0.4rem 0.3rem;
+  height: 2rem;
+  width: 2rem;
+}
+
 .card-box {
   display: flex;
   flex: 1 0 auto;
@@ -752,6 +775,81 @@ h4 {
 .arrow-back-top-left .backArrow-icon {
   width: 4rem;
   height: 4rem;
+}
+
+.map-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.map-section .icon-box {
+  margin: 0 0.3rem 2rem 0.1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.map-section .icon-box .share-filter-box {
+  display: flex;
+  justify-content: space-between;
+  flex: 0 0 100px;
+}
+.map-section .icon-box .share-filter-box .active {
+  border-bottom: 0.1rem solid #000000;
+  padding: 0.1rem 0.1rem 0.3rem 0.1rem;
+}
+.map-section .icon-box .share-filter-box .columnIcon {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+.map-section .icon-box .share-filter-box .format-list-bulleted {
+  margin: 0.3rem 0 0.6rem 0;
+  display: flex;
+  justify-content: center;
+  width: 1.2rem;
+  height: 0.9rem;
+}
+.map-section .icon-box .search-add-box {
+  margin: 0.2rem 0 0.5rem 0;
+  display: flex;
+  align-items: center;
+  flex: 0 0 100px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.map-section .map-box {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.icon-mapp-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.icon-mapp-box .text-box-saved-maps {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  align-items: center;
+}
+.icon-mapp-box .text-box-saved-maps .saved-box,
+.icon-mapp-box .text-box-saved-maps .maps-box {
+  display: flex;
+  flex: 0 0 50%;
+  border: 1px solid black;
+  text-align: center;
+  padding: 0.625rem;
+  justify-content: center;
+}
+.icon-mapp-box .text-box-saved-maps .saved-box:active, .icon-mapp-box .text-box-saved-maps .saved-box.active,
+.icon-mapp-box .text-box-saved-maps .maps-box:active,
+.icon-mapp-box .text-box-saved-maps .maps-box.active {
+  background-color: black;
+  color: white;
 }
 
 /*If you have page-specific styles, it is better to put them in a pages/ folder, in a file named after the page. For instance, it’s not uncommon to have very specific styles for the home page hence the need for a _home.scss file in pages/.*/
@@ -889,28 +987,9 @@ h4 {
   width: 1.3rem;
   height: 0.8rem;
 }
-.big-container .folder-open {
-  background: rgba(0, 0, 0, 0.2);
-  margin-bottom: 0.8rem;
-  display: flex;
-  padding: 0.5rem 0 0 0.5rem;
-  flex: 1 0 auto;
-  height: 9.4rem;
-}
-.big-container .icon-mapp-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
 
 .big-container {
-  background: #ffffff;
-  display: flex;
-  flex-direction: column;
-  padding: 3.9rem 0 0rem 0;
-  box-sizing: border-box;
-  margin-bottom: 5rem;
+  margin-bottom: 7rem;
 }
 .big-container .besksml-4 {
   overflow-wrap: break-word;
@@ -918,12 +997,6 @@ h4 {
   font-weight: 500;
   font-size: 1rem;
   color: rgba(43, 43, 43, 0.5);
-}
-.big-container .saved-box {
-  margin: 0.6rem 1.7rem 0.6rem 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
 }
 .big-container .mappar-text {
   overflow-wrap: break-word;
@@ -935,39 +1008,6 @@ h4 {
 }
 .big-container .mappar-text.txtColor {
   color: #959595;
-}
-.big-container .icon-box {
-  margin: 0 0.3rem 2rem 0.1rem;
-  display: flex;
-  justify-content: space-between;
-}
-.big-container .icon-box .share-filter-box {
-  display: flex;
-  justify-content: space-between;
-  flex: 0 0 100px;
-}
-.big-container .icon-box .share-filter-box .active {
-  border-bottom: 0.1rem solid #000000;
-  padding: 0.1rem 0.1rem 0.3rem 0.1rem;
-}
-.big-container .icon-box .share-filter-box .columnIcon {
-  width: 1.1rem;
-  height: 1.1rem;
-}
-.big-container .icon-box .share-filter-box .format-list-bulleted {
-  margin: 0.3rem 0 0.6rem 0;
-  display: flex;
-  justify-content: center;
-  width: 1.2rem;
-  height: 0.9rem;
-}
-.big-container .icon-box .search-add-box {
-  margin: 0.2rem 0 0.5rem 0;
-  display: flex;
-  align-items: center;
-  flex: 0 0 100px;
-  height: -moz-fit-content;
-  height: fit-content;
 }
 .big-container .icround-plus {
   margin: 0.1rem 1.3rem 0.1rem 0;
@@ -994,70 +1034,10 @@ h4 {
   justify-content: center;
   width: 1rem;
   height: 0.3rem;
-  box-sizing: border-box;
 }
 .big-container .shared-icon {
   width: 1.3rem;
   height: 0.8rem;
-}
-.big-container .kort-medium {
-  display: flex;
-  flex: 0 0 calc(50% - 0.5rem);
-  flex-direction: column;
-}
-.big-container .kort-medium .folder-open {
-  background-image: url("/assets/img/camping.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-bottom: 0.8rem;
-  display: flex;
-  padding: 0.5rem 0 0 0.5rem;
-}
-.big-container .kort-medium .folder-open .share-icon-box {
-  border-radius: 6.3rem;
-  background: #ffffff;
-  margin-bottom: 4.1rem;
-  padding: 0.5rem 0.3rem 0.4rem 0.3rem;
-  height: 2rem;
-  width: 2rem;
-}
-.big-container .text-box-saved-maps {
-  margin-bottom: 2rem;
-  display: flex;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-.big-container .maps-box {
-  border-bottom: 0.1rem solid #000000;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 0.6rem 0.1rem 0.5rem 0;
-}
-.big-container .map-box {
-  margin-bottom: 1rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-}
-.big-container .map-section {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-.big-container .icon-mapp-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-.big-container .main-saved {
-  margin: 0 1rem 1.4rem 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: calc(100% - 2rem);
 }
 
 .container {

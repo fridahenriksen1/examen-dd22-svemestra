@@ -1,13 +1,7 @@
 // @import "/assets/sass/layout/nav";
 
 .big-container {
-  background: #ffffff;
-  display: flex;
-  flex-direction: column;
-  padding: 3.9rem 0 0rem 0;
-  box-sizing: border-box;
-  margin-bottom: 5rem;
-
+  margin-bottom: 7rem;
   .besksml-4 {
     overflow-wrap: break-word;
     font-family: "Roboto";
@@ -15,12 +9,7 @@
     font-size: 1rem;
     color: rgba(43, 43, 43, 0.5);
   }
-  .saved-box {
-    margin: 0.6rem 1.7rem 0.6rem 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
+
   .mappar-text {
     overflow-wrap: break-word;
     font-family: "Roboto";
@@ -31,44 +20,6 @@
 
     &.txtColor {
       color: #959595;
-    }
-  }
-
-  //! Frame som är aktiv ikon till vänster
-
-  //!sectionen med ikoner som sök, lägg till sortera osv.
-  .icon-box {
-    margin: 0 0.3rem 2rem 0.1rem;
-    display: flex;
-    justify-content: space-between;
-
-    .share-filter-box {
-      display: flex;
-      justify-content: space-between;
-      flex: 0 0 100px;
-      //! Frame som är aktiv ikon till vänster
-      .active {
-        border-bottom: 0.1rem solid #000000;
-        padding: 0.1rem 0.1rem 0.3rem 0.1rem;
-      }
-      .columnIcon {
-        width: 1.1rem;
-        height: 1.1rem;
-      }
-      .format-list-bulleted {
-        margin: 0.3rem 0 0.6rem 0;
-        display: flex;
-        justify-content: center;
-        width: 1.2rem;
-        height: 0.9rem;
-      }
-    }
-    .search-add-box {
-      margin: 0.2rem 0 0.5rem 0;
-      display: flex;
-      align-items: center;
-      flex: 0 0 100px;
-      height: fit-content;
     }
   }
 
@@ -99,7 +50,6 @@
     justify-content: center;
     width: 1rem;
     height: 0.3rem;
-    box-sizing: border-box;
   }
 
   //! Shared ikonerna (people icon)
@@ -108,68 +58,4 @@
     height: 0.8rem;
   }
 
-  //! Försökte byta namn här med, men gick inte precis som jag testade på en annan klass, vet inte varför, har inte vart några problem tidigare
-  .kort-medium {
-    display: flex;
-    flex: 0 0 calc(100% / 2 - 0.5rem);
-    flex-direction: column;
-
-    .folder-open {
-      background-image: url("/assets/img/camping.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      margin-bottom: 0.8rem;
-      display: flex;
-      padding: 0.5rem 0 0 0.5rem;
-      .share-icon-box {
-        border-radius: 6.3rem;
-        background: #ffffff;
-        margin-bottom: 4.1rem;
-        padding: 0.5rem 0.3rem 0.4rem 0.3rem;
-        height: 2rem;
-        width: 2rem;
-      }
-    }
-  }
-  //!Till ikonerna under prfilbild
-  .text-box-saved-maps {
-    margin-bottom: 2rem;
-    display: flex;
-
-    width: fit-content;
-  }
-  .maps-box {
-    border-bottom: 0.1rem solid #000000;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 0.6rem 0.1rem 0.5rem 0;
-  }
-
-  .map-box {
-    margin-bottom: 1rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-  }
-
-  .map-section {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  .icon-mapp-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-  .main-saved {
-    margin: 0 1rem 1.4rem 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: calc(100% - 2rem);
-  }
 }

@@ -1,0 +1,50 @@
+//!sectionen med ikoner som sök, lägg till sortera osv.
+
+.map-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .icon-box {
+    margin: 0 0.3rem 2rem 0.1rem;
+    display: flex;
+    justify-content: space-between;
+
+    .share-filter-box {
+      display: flex;
+      justify-content: space-between;
+      flex: 0 0 100px;
+      //! Frame som är aktiv ikon till vänster
+      .active {
+        border-bottom: 0.1rem solid #000000;
+        padding: 0.1rem 0.1rem 0.3rem 0.1rem;
+      }
+      .columnIcon {
+        width: 1.1rem;
+        height: 1.1rem;
+      }
+      .format-list-bulleted {
+        margin: 0.3rem 0 0.6rem 0;
+        display: flex;
+        justify-content: center;
+        width: 1.2rem;
+        height: 0.9rem;
+      }
+    }
+    .search-add-box {
+      margin: 0.2rem 0 0.5rem 0;
+      display: flex;
+      align-items: center;
+      flex: 0 0 100px;
+      height: fit-content;
+    }
+  }
+
+  .map-box {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
