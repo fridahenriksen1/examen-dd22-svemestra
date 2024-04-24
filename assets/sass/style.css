@@ -844,12 +844,12 @@ h4 {
   text-align: center;
   padding: 0.625rem;
   justify-content: center;
+  cursor: pointer;
 }
-.icon-mapp-box .text-box-saved-maps .saved-box:active, .icon-mapp-box .text-box-saved-maps .saved-box.active,
-.icon-mapp-box .text-box-saved-maps .maps-box:active,
-.icon-mapp-box .text-box-saved-maps .maps-box.active {
+.icon-mapp-box .text-box-saved-maps .active {
   background-color: black;
   color: white;
+  transition: background-color 0.7s ease;
 }
 
 /*If you have page-specific styles, it is better to put them in a pages/ folder, in a file named after the page. For instance, it’s not uncommon to have very specific styles for the home page hence the need for a _home.scss file in pages/.*/
@@ -898,7 +898,6 @@ h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: calc(100% - 2rem);
 }
 .big-container .main-saved .profilPic-textBox {
   margin: 0 0rem 1rem 0;
