@@ -677,6 +677,11 @@ h4 {
   justify-content: center;
   flex: 1;
 }
+@media (min-width: 375px) {
+  .card-box .card-medium {
+    flex: 0 0 calc(50% - 0.5rem);
+  }
+}
 .card-box .card-medium .card-img {
   background-image: url(/assets/img/cottage.jpg);
   background-size: cover;

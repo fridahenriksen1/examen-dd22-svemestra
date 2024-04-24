@@ -5,6 +5,7 @@
   margin: 0 1rem 1.4rem 1rem;
   flex-wrap: wrap;
   justify-content: space-between;
+  //gap: 1rem;
   .card-medium {
     margin: 0.5rem 0rem;
     display: flex;
@@ -12,6 +13,11 @@
     align-items: center;
     justify-content: center;
     flex: 1;
+
+    @media (min-width: 375px) {
+      flex: 0 0 calc(100% / 2 - 0.5rem);
+    }
+
     .card-img {
       background-image: url(/assets/img/cottage.jpg);
       background-size: cover;
