@@ -2,6 +2,7 @@
 .user-accomodation {
   display: flex;
   justify-content: center;
+  flex: 1 auto;
 
   padding-top: 0rem;
   gap: 1rem;
@@ -29,13 +30,8 @@
 
     //!Hur många kort som ska vara på raden och spacing
 
-    @include bp-sm {
-      flex: 0 0 calc(100% / 2 - 1rem);
-      // padding-bottom:10rem;
-    }
-
-    @include bp-lg {
-      flex: 0 0 calc(100% / 4 - 1rem);
+    @media (min-width: 375px) {
+      flex: 0 0 calc(100% / 2 - 0.5rem);
     }
 
     // @include bp-xl {
@@ -93,6 +89,8 @@
 
       .img-box {
         position: relative;
+        display: flex;
+        flex: 1;
         .like-icon {
           position: absolute;
           width: 44px;

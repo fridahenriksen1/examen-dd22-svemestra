@@ -13,7 +13,7 @@
     align-items: center;
     justify-content: center;
     flex: 1;
-
+    //!Mellanrummen mellan korten
     @media (min-width: 375px) {
       flex: 0 0 calc(100% / 2 - 0.5rem);
     }
