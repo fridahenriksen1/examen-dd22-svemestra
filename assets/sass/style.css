@@ -1094,6 +1094,7 @@ h4 {
   flex-wrap: wrap;
   flex: 1 auto;
   justify-content: center;
+  gap: 1rem;
 }
 .flex-container .suggestion-section .inspiration-box .inspirationCard {
   flex: 0 0 calc(50% - 0.5rem);
@@ -1101,10 +1102,20 @@ h4 {
 .flex-container .suggestion-section .inspiration-box .inspirationCard .clickCard .inspoPicBox {
   position: relative;
   height: 14rem;
+  min-width: 10rem;
+  flex: 1;
+}
+.flex-container .suggestion-section .inspiration-box .inspirationCard .clickCard .inspoPicBox img {
+  width: 100%;
+  height: 100%;
 }
 .flex-container .suggestion-section .inspiration-box .inspirationCard .clickCard .inspoPicBox .txtbg {
   position: absolute;
   right: 2.0625rem;
-  background-color: aqua;
+  background: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  color: #f4f4f4;
+  padding: 0.5rem 1.625rem;
   bottom: 0.875rem;
 }/*# sourceMappingURL=style.css.map */
