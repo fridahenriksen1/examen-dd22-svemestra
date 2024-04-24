@@ -6,7 +6,7 @@
         "info": "Lorem ipsum dolor sit amet consectetur. Convallis amet nisi amet eget at.",
         "imageURL": "assets/img/cottage.jpg",
         "price": "Budget",
-        "html": "assets/accommodation/hyssna.html"
+        "htmlUrl": "assets/accommodation/hyssna.html"
 
     },
     {
@@ -15,7 +15,8 @@
         "category": "Camping",
         "info": "Lorem ipsum dolor sit amet consectetur. Convallis amet nisi amet eget at.",
         "imageURL": "assets/img/camping.jpg",
-        "price": "Medel"
+        "price": "Medel",
+        "htmlUrl": "assets/accommodation/bodaCamping.html"
 
     },
     {
@@ -24,7 +25,8 @@
         "category": "Tillgång till Spa",
         "info": "Lorem ipsum dolor sit amet consectetur. Convallis amet nisi amet eget at.",
         "imageURL": "assets/img/hotel.jpg",
-        "price": "Premium"
+        "price": "Premium",
+        "htmlUrl": "assets/accommodation/sagoHotell.html"
 
     },
     {
@@ -33,7 +35,8 @@
         "category": "Närhet till vattnet",
         "info": "Lorem ipsum dolor sit amet consectetur. Convallis amet nisi amet eget at.",
         "imageURL": "assets/img/hotel.jpg",
-        "price": "Budget"
+        "price": "Budget",
+        "htmlUrl": "assets/accommodation/sagoHotell.html"
 
     },
     {
@@ -42,7 +45,8 @@
         "category": "Vandra",
         "info": "Lorem ipsum dolor sit amet consectetur. Convallis amet nisi amet eget at.",
         "imageURL": "assets/img/hotel.jpg",
-        "price": "Budget"
+        "price": "Budget",
+        "htmlUrl": "assets/accommodation/sagoHotell.html"
 
     },
     {
@@ -51,7 +55,8 @@
         "category": "Cykla",
         "info": "Lorem ipsum dolor sit amet consectetur. Convallis amet nisi amet eget at.",
         "imageURL": "assets/img/hotel.jpg",
-        "price": "Medel"
+        "price": "Medel",
+        "htmlUrl": "assets/accommodation/sagoHotell.html"
 
     },
     {
@@ -60,7 +65,8 @@
         "category": "Glamping",
         "info": "Lorem ipsum dolor sit amet consectetur. Convallis amet nisi amet eget at.",
         "imageURL": "assets/img/hotel.jpg",
-        "price": "Premium"
+        "price": "Premium",
+        "htmlUrl": "assets/accommodation/sagoHotell.html"
 
     }
 

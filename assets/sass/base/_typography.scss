@@ -93,6 +93,7 @@ h4 {
     font-size: 0.75rem;
   }
 }
+
 //!Profilnamn
 .h1-saved {
   font-weight: 400;
@@ -102,8 +103,18 @@ h4 {
 }
 //! Text stylen längst ner på hjärtat, vänner och inställningar
 .iconTxt-containerBtm {
-  font-family: "Roboto";
   font-weight: 500;
   font-size: 1rem;
   color: #040404;
+}
+
+//! Till medium kort
+.short-infoTxt {
+  font-size: 0.8rem;
+  color: #141414;
+}
+//!Lilla texten i mappkortet
+.saved-accommodations {
+  font-size: 0.8rem;
+  color: #141414;
 }

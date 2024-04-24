@@ -264,10 +264,19 @@ h4 {
 }
 
 .iconTxt-containerBtm {
-  font-family: "Roboto";
   font-weight: 500;
   font-size: 1rem;
   color: #040404;
+}
+
+.short-infoTxt {
+  font-size: 0.8rem;
+  color: #141414;
+}
+
+.saved-accommodations {
+  font-size: 0.8rem;
+  color: #141414;
 }
 
 .navigation {
@@ -507,6 +516,7 @@ h4 {
 .user-accomodation {
   display: flex;
   justify-content: center;
+  flex: 1 auto;
   padding-top: 0rem;
   gap: 1rem;
   margin-bottom: 7rem;
@@ -521,14 +531,9 @@ h4 {
   display: flex;
   justify-content: center;
 }
-@media (min-width: 480px) {
+@media (min-width: 375px) {
   .user-accomodation .card {
-    flex: 0 0 calc(50% - 1rem);
-  }
-}
-@media (min-width: 960px) {
-  .user-accomodation .card {
-    flex: 0 0 calc(25% - 1rem);
+    flex: 0 0 calc(50% - 0.5rem);
   }
 }
 .user-accomodation .card .like-icon {
@@ -561,6 +566,8 @@ h4 {
 }
 .user-accomodation .card .card-content .img-box {
   position: relative;
+  display: flex;
+  flex: 1;
 }
 .user-accomodation .card .card-content .img-box .like-icon {
   position: absolute;
@@ -635,6 +642,97 @@ h4 {
 .saved-resorts .showAll .arrow-forrward-icon {
   width: 1rem;
   height: 1rem;
+}
+
+.profil-pic-box {
+  border-radius: 4.1rem;
+  background-image: url("/assets/img/profilpic.jpg");
+  margin: 0 0 1.4rem 0rem;
+  width: 8.1rem;
+  height: 8.1rem;
+  background-size: cover;
+}
+
+.folder-cards {
+  margin-right: 1.1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.card-box {
+  display: flex;
+  flex: 1 0 auto;
+  margin: 0 1rem 1.4rem 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card-box .card-medium {
+  margin: 0.5rem 0rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+@media (min-width: 375px) {
+  .card-box .card-medium {
+    flex: 0 0 calc(50% - 0.5rem);
+  }
+}
+.card-box .card-medium .card-img {
+  background-image: url(/assets/img/cottage.jpg);
+  background-size: cover;
+  position: relative;
+  margin-bottom: 0.8rem;
+  width: 9.7rem;
+  height: 7.4rem;
+  opacity: 0.8;
+  flex: 1;
+  gap: 1rem;
+}
+.card-box .card-medium .card-img .heartBox {
+  position: absolute;
+  top: 0.8rem;
+  right: 1.1rem;
+  width: 0.8rem;
+  height: 0.8rem;
+}
+.card-box .card-medium .contentSaved-Box .circle-box {
+  margin-bottom: 0.8rem;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  -moz-column-gap: 0.2rem;
+       column-gap: 0.2rem;
+  width: 3.9rem;
+  box-sizing: border-box;
+}
+.card-box .card-medium .contentSaved-Box .circle-box .ellipse-11 {
+  border-radius: 0.3rem;
+  background: #141414;
+  width: 0.4rem;
+  height: 0.4rem;
+}
+.card-box .card-medium .txtChips-box {
+  display: flex;
+  flex-direction: column;
+}
+.card-box .card-medium .txtChips-box .about-box {
+  margin-bottom: 0.8rem;
+  display: flex;
+  flex-direction: column;
+}
+.card-box .card-medium .txtChips-box .chipsFilterS {
+  border-radius: 6.3rem;
+  border: 0.1rem solid #141414;
+  background: #ffffff;
+  display: flex;
+  align-self: flex-start;
+  padding: 0.2rem 0.4rem;
+}
+.card-box .card-medium .txtChips-box .headline {
+  margin-bottom: 0.3rem;
 }
 
 /*If you have page-specific styles, it is better to put them in a pages/ folder, in a file named after the page. For instance, it’s not uncommon to have very specific styles for the home page hence the need for a _home.scss file in pages/.*/
@@ -1112,28 +1210,6 @@ h4 {
   height: 2rem;
 }
 
-.big-container {
-  background: #ffffff;
-  display: flex;
-  flex-direction: column;
-  padding: 3.9rem 0 5rem 0;
-  box-sizing: border-box;
-}
-.big-container .profil-pic-box {
-  border-radius: 4.1rem;
-  background-image: url("/assets/img/profilpic.jpg");
-  margin: 0 0 1.4rem 0rem;
-  width: 8.1rem;
-  height: 8.1rem;
-  background-size: cover;
-}
-.big-container .h1-saved {
-  overflow-wrap: break-word;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 1.5rem;
-  color: #111010;
-}
 .big-container .profilPic-textBox {
   margin: 0 0rem 1rem 0;
   display: flex;
@@ -1141,184 +1217,22 @@ h4 {
   align-items: center;
   width: -moz-fit-content;
   width: fit-content;
-  box-sizing: border-box;
-}
-.big-container .besksml-4 {
-  overflow-wrap: break-word;
-  font-family: "Roboto";
-  font-weight: 500;
-  font-size: 1rem;
-  color: rgba(43, 43, 43, 0.5);
-}
-.big-container .saved-box {
-  margin: 0.6rem 1.7rem 0.6rem 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  box-sizing: border-box;
-  border-bottom: 0.1rem solid #000000;
-  padding-bottom: 0.4rem;
-}
-.big-container .mappar-text {
-  overflow-wrap: break-word;
-  font-family: "Roboto";
-  font-weight: 500;
-  font-size: 1rem;
-  color: #2b2b2b;
-  text-decoration: none;
-}
-.big-container .mappar-text.mapTxt {
-  color: #959595;
-}
-.big-container .maps-box {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 0.6rem 0.1rem 0.5rem 0;
-  box-sizing: border-box;
-}
-.big-container .text-box-saved-maps {
-  margin-bottom: 2rem;
-  display: flex;
-  flex-direction: row;
-  width: -moz-fit-content;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.big-container .vector {
-  width: 1.2rem;
-  height: 1rem;
-}
-.big-container .misort {
-  margin: 0.3rem 1.1rem 0.5rem 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 1.2rem;
-  height: 1rem;
-  box-sizing: border-box;
-}
-.big-container .rectangle-3 {
-  border-radius: 0.1rem;
-  border: 0.1rem solid #000000;
-  margin-right: 0.1rem;
-  width: 0.6rem;
-  height: 0.6rem;
-}
-.big-container .frame-2 {
-  margin-bottom: 0.1rem;
-  display: flex;
-  flex-direction: row;
-  width: 1.3rem;
-  box-sizing: border-box;
-}
-.big-container .frame-3 {
-  display: flex;
-  flex-direction: row;
-  width: 1.3rem;
-  box-sizing: border-box;
-}
-.big-container .frame-1 {
-  border-bottom: 0.1rem solid #000000;
-  margin-right: 1.2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0.1rem 0.1rem 0.3rem 0.1rem;
-  width: 1.5rem;
-  box-sizing: border-box;
 }
 .big-container .format-list-bulleted {
   margin: 0.3rem 0 0.6rem 0;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   width: 1.2rem;
   height: 0.9rem;
-  box-sizing: border-box;
 }
-.big-container .share-filter-box {
-  display: flex;
-  flex-direction: row;
-  width: 6.2rem;
-  box-sizing: border-box;
-}
-.big-container .vector-2 {
-  width: 0.9rem;
-  height: 0.9rem;
-}
-.big-container .icround-plus {
-  margin: 0.1rem 1.3rem 0.1rem 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 0.9rem;
-  height: 0.9rem;
-  box-sizing: border-box;
-}
-.big-container .vector-4 {
-  width: 1.1rem;
-  height: 1.1rem;
-}
-.big-container .search {
+.big-container .icon-box .active {
+  border-bottom: 0.1rem solid #000000;
   margin-right: 1.2rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 1.1rem;
-  height: 1.1rem;
-  box-sizing: border-box;
-}
-.big-container .vector-3 {
-  width: 1rem;
-  height: 0.3rem;
-}
-.big-container .more-vert {
-  margin: 0.4rem 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 1rem;
-  height: 0.3rem;
-  box-sizing: border-box;
-}
-.big-container .search-add-box {
-  margin: 0.2rem 0 0.5rem 0;
-  display: flex;
-  flex-direction: row;
-  width: 5.4rem;
-  height: -moz-fit-content;
-  height: fit-content;
-  box-sizing: border-box;
-}
-.big-container .icon-box {
-  margin: 0 0.3rem 2rem 0.1rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: calc(100% - 0.4rem);
-  box-sizing: border-box;
+  padding: 0.1rem 0.1rem 0.3rem 0.1rem;
 }
 .big-container .shared-icon {
   width: 1.3rem;
   height: 0.8rem;
-}
-.big-container .share-icon-box {
-  border-radius: 6.3rem;
-  background: #ffffff;
-  margin-bottom: 4.1rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 0.5rem 0.3rem 0.4rem 0.3rem;
-  width: 1.8rem;
-  height: 1.8rem;
-  box-sizing: border-box;
-}
-.big-container .vector-5 {
-  margin-top: 2.5rem;
-  width: 4.4rem;
-  height: 3.4rem;
 }
 .big-container .folder-open {
   background: rgba(0, 0, 0, 0.2);
@@ -1327,263 +1241,28 @@ h4 {
   padding: 0.5rem 0 0 0.5rem;
   flex: 1 0 auto;
   height: 9.4rem;
-  box-sizing: border-box;
-}
-.big-container .lorem-ipsum {
-  margin-bottom: 0.3rem;
-  display: inline-block;
-  align-self: flex-start;
-  overflow-wrap: break-word;
-  font-family: "Roboto";
-  font-weight: 500;
-  font-size: 1rem;
-  color: #141414;
-}
-.big-container .saved-accommodations {
-  overflow-wrap: break-word;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 0.8rem;
-  color: #141414;
-}
-.big-container .frame-29 {
-  margin: 0 0.2rem;
-  display: flex;
-  flex-direction: column;
-  align-self: flex-start;
-  width: -moz-fit-content;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.big-container .kort-medium {
-  margin-right: 1.1rem;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  flex-basis: 9.7rem;
-  box-sizing: border-box;
-}
-.big-container .frame-291 {
-  margin: 0 0.2rem;
-  display: flex;
-  flex-direction: column;
-  align-self: flex-start;
-  width: -moz-fit-content;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.big-container .map-box {
-  margin-bottom: 1rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  box-sizing: border-box;
-}
-.big-container .frame-292 {
-  margin: 0 0.2rem;
-  display: flex;
-  flex-direction: column;
-  align-self: flex-start;
-  width: -moz-fit-content;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.big-container .frame-293 {
-  margin: 0 0.2rem;
-  display: flex;
-  flex-direction: column;
-  align-self: flex-start;
-  width: -moz-fit-content;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.big-container .map-section {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
 }
 .big-container .icon-mapp-box {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  box-sizing: border-box;
-}
-.big-container .main-saved {
-  margin: 0 1rem 1.4rem 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: calc(100% - 2rem);
-  box-sizing: border-box;
-}
-.big-container .nav-icons {
-  width: 1.3rem;
-  height: 1.5rem;
-}
-.big-container .backArrow-icon {
-  width: 2rem;
-  height: 2rem;
-}
-.big-container .home-box {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 1.3rem;
-  height: 1.5rem;
-  box-sizing: border-box;
-}
-.big-container .search-1 {
-  margin-bottom: 0rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 1.5rem;
-  height: 1.5rem;
-  box-sizing: border-box;
-}
-.big-container .user-filled {
-  margin: 0.1rem 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 1.3rem;
-  height: 1.3rem;
-  box-sizing: border-box;
-}
-.big-container .navigation {
-  background: #ededed;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 1.8rem 0;
-  width: 100%;
-  box-sizing: border-box;
-  position: fixed;
-  bottom: 0;
 }
 .big-container .arrow-back-top-left {
   position: absolute;
   left: 1.2rem;
   top: 1.2rem;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 1rem;
-  height: 1rem;
-  box-sizing: border-box;
+  width: 2rem;
+  height: 2rem;
 }
-.big-container .vector-6 {
-  width: 0.5rem;
-  height: 0.5rem;
-}
-.big-container .heartBox {
-  position: absolute;
-  top: 0.8rem;
-  right: 1.1rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 0.5rem;
-  height: 0.5rem;
-  box-sizing: border-box;
-}
-.big-container .container-4 {
-  background: #d9d9d9;
-  position: relative;
-  margin-bottom: 0.8rem;
-  width: 9.7rem;
-  height: 7.4rem;
-}
-.big-container .ellipse-11 {
-  border-radius: 0.3rem;
-  background: #141414;
-  width: 0.6rem;
-  height: 0.6rem;
-}
-.big-container .circle-box {
-  margin-bottom: 0.8rem;
-  display: flex;
-  flex-direction: row;
-  align-self: flex-start;
-  -moz-column-gap: 0.2rem;
-       column-gap: 0.2rem;
-  width: 3.9rem;
-  box-sizing: border-box;
-}
-.big-container .headline {
-  margin-bottom: 0.3rem;
-  display: inline-block;
-  align-self: flex-start;
-  overflow-wrap: break-word;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 1rem;
-  color: #141414;
-}
-.big-container .about-box {
-  margin-bottom: 0.8rem;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  box-sizing: border-box;
+.big-container .arrow-back-top-left .backArrow-icon {
+  width: 2rem;
+  height: 2rem;
 }
 .big-container .treehouses {
-  overflow-wrap: break-word;
-  font-family: "Roboto";
-  font-weight: 400;
   font-size: 0.6rem;
   color: #141414;
-}
-.big-container .chips-filtrering-6 {
-  border-radius: 6.3rem;
-  border: 0.1rem solid #141414;
-  background: #ffffff;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-self: flex-start;
-  padding: 0.2rem 0.4rem;
-  box-sizing: border-box;
-}
-.big-container .txtChips-box {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  box-sizing: border-box;
-}
-.big-container .contentSaved-Box {
-  margin-right: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  width: calc(100% - 0.5rem);
-}
-.big-container .card-medium {
-  margin: 0.5rem 0rem;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  flex-basis: 9.7rem;
-}
-.big-container .short-infoTxt {
-  overflow-wrap: break-word;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 0.8rem;
-  color: #141414;
-}
-.big-container .card-box {
-  margin-bottom: 1.5rem;
-  display: flex;
-  flex: 1 0 auto;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  box-sizing: border-box;
-}
-.big-container .frame-46 {
-  margin: 0 1rem 1.4rem 1rem;
 }
 
 .big-container {
@@ -1593,30 +1272,6 @@ h4 {
   padding: 3.9rem 0 0rem 0;
   box-sizing: border-box;
   margin-bottom: 5rem;
-}
-.big-container .profil-pic-box {
-  border-radius: 4.1rem;
-  background-image: url("/assets/img/profilpic.jpg");
-  margin: 0 0 1.4rem 0rem;
-  width: 8.1rem;
-  height: 8.1rem;
-  background-size: cover;
-}
-.big-container .h1-saved {
-  overflow-wrap: break-word;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 1.5rem;
-  color: #111010;
-}
-.big-container .profilPic-textBox {
-  margin: 0 0rem 1rem 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: -moz-fit-content;
-  width: fit-content;
-  box-sizing: border-box;
 }
 .big-container .besksml-4 {
   overflow-wrap: break-word;
@@ -1643,15 +1298,7 @@ h4 {
 .big-container .mappar-text.txtColor {
   color: #959595;
 }
-.big-container .maps-box {
-  border-bottom: 0.1rem solid #000000;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 0.6rem 0.1rem 0.5rem 0;
-  box-sizing: border-box;
-}
-.big-container .text-box-saved-maps {
+.big-container ext-box-saved-maps {
   margin-bottom: 2rem;
   display: flex;
   flex-direction: row;
@@ -1679,29 +1326,6 @@ h4 {
   width: 0.6rem;
   height: 0.6rem;
 }
-.big-container .frame-2 {
-  margin-bottom: 0.1rem;
-  display: flex;
-  flex-direction: row;
-  width: 1.3rem;
-  box-sizing: border-box;
-}
-.big-container .frame-3 {
-  display: flex;
-  flex-direction: row;
-  width: 1.3rem;
-  box-sizing: border-box;
-}
-.big-container .frame-1 {
-  border-bottom: 0.1rem solid #000000;
-  margin-right: 1.2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0.1rem 0.1rem 0.3rem 0.1rem;
-  width: 1.5rem;
-  box-sizing: border-box;
-}
 .big-container .format-list-bulleted {
   margin: 0.3rem 0 0.6rem 0;
   display: flex;
@@ -1713,9 +1337,7 @@ h4 {
 }
 .big-container .share-filter-box {
   display: flex;
-  flex-direction: row;
   width: 6.2rem;
-  box-sizing: border-box;
 }
 .big-container .vector-2 {
   width: 0.9rem;
@@ -1756,22 +1378,18 @@ h4 {
   height: 0.3rem;
   box-sizing: border-box;
 }
-.big-container .search-add-box {
-  margin: 0.2rem 0 0.5rem 0;
-  display: flex;
-  flex-direction: row;
-  width: 5.4rem;
-  height: -moz-fit-content;
-  height: fit-content;
-  box-sizing: border-box;
-}
 .big-container .icon-box {
   margin: 0 0.3rem 2rem 0.1rem;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  width: calc(100% - 0.4rem);
-  box-sizing: border-box;
+}
+.big-container .icon-box .search-add-box {
+  margin: 0.2rem 0 0.5rem 0;
+  display: flex;
+  align-items: center;
+  width: 5.4rem;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .big-container .shared-icon {
   width: 1.3rem;
@@ -1789,19 +1407,13 @@ h4 {
   height: 1.8rem;
   box-sizing: border-box;
 }
-.big-container .vector-5 {
-  margin-top: 2.5rem;
-  width: 4.4rem;
-  height: 3.4rem;
-}
 .big-container .folder-open {
-  background: rgba(0, 0, 0, 0.2);
+  background-image: url("/assets/img/camping.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   margin-bottom: 0.8rem;
   display: flex;
   padding: 0.5rem 0 0 0.5rem;
-  flex: 1 0 auto;
-  height: 9.4rem;
-  box-sizing: border-box;
 }
 .big-container .lorem-ipsum {
   margin-bottom: 0.3rem;
@@ -1813,31 +1425,7 @@ h4 {
   font-size: 1rem;
   color: #141414;
 }
-.big-container .saved-accommodations {
-  overflow-wrap: break-word;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 0.8rem;
-  color: #141414;
-}
-.big-container .frame-29 {
-  margin: 0 0.2rem;
-  display: flex;
-  flex-direction: column;
-  align-self: flex-start;
-  width: -moz-fit-content;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.big-container .kort-medium {
-  margin-right: 1.1rem;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  flex-basis: 9.7rem;
-  box-sizing: border-box;
-}
-.big-container .frame-291 {
+.big-container .map-txt {
   margin: 0 0.2rem;
   display: flex;
   flex-direction: column;
@@ -1851,30 +1439,6 @@ h4 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 100%;
-  box-sizing: border-box;
-}
-.big-container .frame-292 {
-  margin: 0 0.2rem;
-  display: flex;
-  flex-direction: column;
-  align-self: flex-start;
-  width: -moz-fit-content;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.big-container .frame-293 {
-  margin: 0 0.2rem;
-  display: flex;
-  flex-direction: column;
-  align-self: flex-start;
-  width: -moz-fit-content;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.big-container .frame-771 {
-  display: flex;
-  flex-direction: column;
   width: 100%;
   box-sizing: border-box;
 }
@@ -1899,50 +1463,9 @@ h4 {
   width: calc(100% - 2rem);
   box-sizing: border-box;
 }
-.big-container .nav-icons {
-  width: 1.3rem;
-  height: 1.5rem;
-}
 .big-container .backArrow-icon {
   width: 2rem;
   height: 2rem;
-}
-.big-container .home-box {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 1.3rem;
-  height: 1.5rem;
-  box-sizing: border-box;
-}
-.big-container .search-1 {
-  margin-bottom: 0rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 1.5rem;
-  height: 1.5rem;
-  box-sizing: border-box;
-}
-.big-container .user-filled {
-  margin: 0.1rem 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 1.3rem;
-  height: 1.3rem;
-  box-sizing: border-box;
-}
-.big-container .navigation {
-  background: #ededed;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 1.8rem 0;
-  width: 100%;
-  box-sizing: border-box;
-  position: fixed;
-  bottom: 0;
 }
 .big-container .arrow-back-top-left {
   position: absolute;
