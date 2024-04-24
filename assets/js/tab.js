@@ -7,9 +7,8 @@
 //       // Add 'active' class to the clicked tab
 //       tab.classList.add('active');
 //     });
-//   });
   
-
+//!Till filter tabsen i saved destinations och mappar
 document.addEventListener('DOMContentLoaded', function() {
     // Hämta sidans URL
     var currentPageUrl = window.location.href;

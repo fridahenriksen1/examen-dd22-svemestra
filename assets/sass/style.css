@@ -421,6 +421,10 @@ h4 {
   overflow-x: auto;
 }
 .m1b .chip + label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   background-color: transparent;
   white-space: nowrap;
   flex: 0 0 10%;
@@ -1061,4 +1065,46 @@ h4 {
 }
 .flex-container .text-box {
   margin-bottom: 3.5rem;
+}
+.flex-container .suggestion-section {
+  margin-bottom: 8rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-container .suggestion-section .inspoTxtBox {
+  margin-left: 0.5rem;
+}
+.flex-container .suggestion-section .inspoTxtBox h1 {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+}
+.flex-container .suggestion-section .inspoTxtBox h2 {
+  color: #514e4e;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+}
+.flex-container .suggestion-section .inspiration-box {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 auto;
+  justify-content: center;
+}
+.flex-container .suggestion-section .inspiration-box .inspirationCard {
+  flex: 0 0 calc(50% - 0.5rem);
+}
+.flex-container .suggestion-section .inspiration-box .inspirationCard .clickCard .inspoPicBox {
+  position: relative;
+  height: 14rem;
+}
+.flex-container .suggestion-section .inspiration-box .inspirationCard .clickCard .inspoPicBox .txtbg {
+  position: absolute;
+  right: 2.0625rem;
+  background-color: aqua;
+  bottom: 0.875rem;
 }/*# sourceMappingURL=style.css.map */
