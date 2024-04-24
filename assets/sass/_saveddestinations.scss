@@ -42,22 +42,5 @@
     align-items: center;
     width: 100%;
   }
-  //! Tillbaka ikonen längst upp på sidan
-  .arrow-back-top-left {
-    position: absolute;
-    left: 1.2rem;
-    top: 1.2rem;
-    display: flex;
 
-    width: 2rem;
-    height: 2rem;
-    .backArrow-icon {
-      width: 2rem;
-      height: 2rem;
-    }
-  }
-  .treehouses {
-    font-size: 0.6rem;
-    color: #141414;
-  }
 }

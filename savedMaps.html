@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Undersida för sparade mappar</title>
+    <title>Sparade mappar</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -15,7 +15,16 @@
   </head>
   <body>
     <div class="big-container">
+      <header>
+        <a class="arrow-back-top-left" href="savedDestinations.html">
+          <img class="backArrow-icon" src="/assets/icons/ArrowBackTop-left.svg" />
+        </a>
+
+      </header>
+  
       <main class="main-saved">
+
+      
         <section class="profilPic-textBox">
           <div class="profil-pic-box">
        
@@ -43,7 +52,7 @@
                 <div class="misort">
                   <img class="vector" src="/assets/icons/sortIcon.svg" />
                 </div>
-                <div class="frame-1">
+                <div class="active">
           
                   <img class="vector-4" src="/assets/icons/columnIcon.svg" />
                 </div>
@@ -66,22 +75,22 @@
             </div>
            
               <div class="map-box">
-                <div class="kort-medium">
+                <article class="kort-medium">
                   <div class="folder-open">
                     <div class="share-icon-box">
                       <img class="shared-icon" src="/assets/icons/sharedIcon.svg" />
                     </div>
                   </div>
                   <div class="map-txt">
-                    <div class="lorem-ipsum">
+                    <h2 class="mapTxt-headline">
                     Trähus
-                    </div>
+                    </h2>
                     <p class="saved-accommodations">
                     5st besöksmål
                     </p>
                   </div>
-                </div>
-                <div class="kort-medium">
+                </article>
+                <article class="kort-medium">
                   <div class="folder-open">
                     <div class="share-icon-box">
                       <img class="shared-icon" src="/assets/icons/sharedIcon.svg" />
@@ -89,17 +98,17 @@
                   
                   </div>
                   <div class="map-txt">
-                    <div class="lorem-ipsum">
+                    <h2 class="mapTxt-headline">
                     Familjesemester
-                    </div>
+                    </h2>
                     <p class="saved-accommodations">
                     27st besöksmål
                     </p>
                   </div>
-                </div>
+                </article>
               </div>
               <div class="map-box">
-                <div class="kort-medium">
+                <article class="kort-medium">
                   <div class="folder-open">
                     <div class="share-icon-box">
                       <img class="shared-icon" src="/assets/icons/sharedIcon.svg" />
@@ -107,32 +116,29 @@
                    >
                   </div>
                   
-                    <div class="lorem-ipsum">
+                    <h2 class="mapTxt-headline">
                     Tjejhelg
-                    </div>
+                    </h2>
                     <p class="saved-accommodations">
                     54st besöksmål
                     </p>
-                  
-                </div>
-                <div class="folder-cards">
+                </article>
+                <article class="kort-medium">
                   <div class="folder-open">
                     <div class="share-icon-box">
                       <img class="shared-icon" src="/assets/icons/sharedIcon.svg" />
                     </div>
-                    
+                   >
                   </div>
-                  <div class="map-txt">
-                    <div class="lorem-ipsum">
-                    30-års present
-                    </div>
+                  
+                    <h2 class="mapTxt-headline">
+                    30 års present
+                    </h2>
                     <p class="saved-accommodations">
-                    8st besöksmål
+                    14st besöksmål
                     </p>
-                  </div>
-                </div>
+                </article>
               </div>
-           
           </section>
         </div>
       </main>
@@ -161,9 +167,7 @@
       </li>
     </ul>
     </nav>
-      <a class="arrow-back-top-left" href="savedDestinations.html">
-        <img class="backArrow-icon" src="/assets/icons/ArrowBackTop-left.svg" />
-      </a>
+ 
     </div>
   </body>
 </html>
