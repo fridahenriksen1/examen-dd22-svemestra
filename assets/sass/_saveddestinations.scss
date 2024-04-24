@@ -41,6 +41,11 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+
+    // .saved-box {
+    //   border-bottom: 1px solid black;
+    //   //padding-bottom: 1rem;
+    // }
   }
   //! Tillbaka ikonen längst upp på sidan
   .arrow-back-top-left {
@@ -73,7 +78,8 @@
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
-      flex-basis: 9.7rem;
+      //flex-basis: 9.7rem;
+      flex-basis: 2rem;
 
       .card-img {
         background: #d9d9d9;
