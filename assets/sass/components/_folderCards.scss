@@ -1,9 +1,25 @@
-//! Mappkorten i savedmaps
-// .folder-cards {
-//   margin-right: 1.1rem;
-//   display: flex;
-//   flex-wrap: wrap;
-//   flex-grow: 1;
+//!Mapp korten
+.folder-card {
+  display: flex;
+  flex: 0 0 calc(100% / 2 - 0.5rem);
+  flex-direction: column;
 
-// }
+  .folder-open {
+    background-image: url("/assets/img/camping.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 0.8rem;
+    display: flex;
+    padding: 0.5rem 0 0 0.5rem;
+    min-height: 9.4rem;
 
+    .share-icon-box {
+      border-radius: 6.3rem;
+      background: #ffffff;
+      margin-bottom: 4.1rem;
+      padding: 0.5rem 0.3rem 0.4rem 0.3rem;
+      height: 2rem;
+      width: 2rem;
+    }
+  }
+}

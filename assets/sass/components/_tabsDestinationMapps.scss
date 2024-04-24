@@ -1,0 +1,61 @@
+// .icon-mapp-box {
+//   display: flex;
+//   flex-wrap: wrap;
+//   align-items: center;
+//   justify-content: center;
+
+//   .text-box-saved-maps {
+//     margin-bottom: 2rem;
+//     display: flex;
+//     justify-content: center;
+//     flex: 1;
+//     align-items: center;
+
+//     .saved-box,
+//     .maps-box {
+//       display: flex;
+//       flex: 0 0 50%;
+//       border: 1px solid black;
+//       text-align: center;
+//       padding: 0.625rem;
+//       justify-content: center;
+
+//       &:active,
+//       &.active {
+//         background-color: black;
+//         color: white;
+//       }
+//     }
+//   }
+// }
+.icon-mapp-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  .text-box-saved-maps {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    align-items: center;
+
+    .saved-box,
+    .maps-box {
+      display: flex;
+      flex: 0 0 50%;
+      border: 1px solid black;
+      text-align: center;
+      padding: 0.625rem;
+      justify-content: center;
+      cursor: pointer; // Add a pointer cursor to indicate clickability
+    }
+
+    .active {
+      background-color: black;
+      color: white;
+      transition: background-color 0.7s ease;
+    }
+  }
+}

@@ -421,6 +421,10 @@ h4 {
   overflow-x: auto;
 }
 .m1b .chip + label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   background-color: transparent;
   white-space: nowrap;
   flex: 0 0 10%;
@@ -666,6 +670,29 @@ h4 {
   background-size: cover;
 }
 
+.folder-card {
+  display: flex;
+  flex: 0 0 calc(50% - 0.5rem);
+  flex-direction: column;
+}
+.folder-card .folder-open {
+  background-image: url("/assets/img/camping.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 0.8rem;
+  display: flex;
+  padding: 0.5rem 0 0 0.5rem;
+  min-height: 9.4rem;
+}
+.folder-card .folder-open .share-icon-box {
+  border-radius: 6.3rem;
+  background: #ffffff;
+  margin-bottom: 4.1rem;
+  padding: 0.5rem 0.3rem 0.4rem 0.3rem;
+  height: 2rem;
+  width: 2rem;
+}
+
 .card-box {
   display: flex;
   flex: 1 0 auto;
@@ -754,6 +781,81 @@ h4 {
   height: 4rem;
 }
 
+.map-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.map-section .icon-box {
+  margin: 0 0.3rem 2rem 0.1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.map-section .icon-box .share-filter-box {
+  display: flex;
+  justify-content: space-between;
+  flex: 0 0 100px;
+}
+.map-section .icon-box .share-filter-box .active {
+  border-bottom: 0.1rem solid #000000;
+  padding: 0.1rem 0.1rem 0.3rem 0.1rem;
+}
+.map-section .icon-box .share-filter-box .columnIcon {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+.map-section .icon-box .share-filter-box .format-list-bulleted {
+  margin: 0.3rem 0 0.6rem 0;
+  display: flex;
+  justify-content: center;
+  width: 1.2rem;
+  height: 0.9rem;
+}
+.map-section .icon-box .search-add-box {
+  margin: 0.2rem 0 0.5rem 0;
+  display: flex;
+  align-items: center;
+  flex: 0 0 100px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.map-section .map-box {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.icon-mapp-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.icon-mapp-box .text-box-saved-maps {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  align-items: center;
+}
+.icon-mapp-box .text-box-saved-maps .saved-box,
+.icon-mapp-box .text-box-saved-maps .maps-box {
+  display: flex;
+  flex: 0 0 50%;
+  border: 1px solid black;
+  text-align: center;
+  padding: 0.625rem;
+  justify-content: center;
+  cursor: pointer;
+}
+.icon-mapp-box .text-box-saved-maps .active {
+  background-color: black;
+  color: white;
+  transition: background-color 0.7s ease;
+}
+
 /*If you have page-specific styles, it is better to put them in a pages/ folder, in a file named after the page. For instance, it’s not uncommon to have very specific styles for the home page hence the need for a _home.scss file in pages/.*/
 .account-container {
   background: #ffffff;
@@ -800,7 +902,6 @@ h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: calc(100% - 2rem);
 }
 .big-container .main-saved .profilPic-textBox {
   margin: 0 0rem 1rem 0;
@@ -889,28 +990,9 @@ h4 {
   width: 1.3rem;
   height: 0.8rem;
 }
-.big-container .folder-open {
-  background: rgba(0, 0, 0, 0.2);
-  margin-bottom: 0.8rem;
-  display: flex;
-  padding: 0.5rem 0 0 0.5rem;
-  flex: 1 0 auto;
-  height: 9.4rem;
-}
-.big-container .icon-mapp-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
 
 .big-container {
-  background: #ffffff;
-  display: flex;
-  flex-direction: column;
-  padding: 3.9rem 0 0rem 0;
-  box-sizing: border-box;
-  margin-bottom: 5rem;
+  margin-bottom: 7rem;
 }
 .big-container .besksml-4 {
   overflow-wrap: break-word;
@@ -918,12 +1000,6 @@ h4 {
   font-weight: 500;
   font-size: 1rem;
   color: rgba(43, 43, 43, 0.5);
-}
-.big-container .saved-box {
-  margin: 0.6rem 1.7rem 0.6rem 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
 }
 .big-container .mappar-text {
   overflow-wrap: break-word;
@@ -935,39 +1011,6 @@ h4 {
 }
 .big-container .mappar-text.txtColor {
   color: #959595;
-}
-.big-container .icon-box {
-  margin: 0 0.3rem 2rem 0.1rem;
-  display: flex;
-  justify-content: space-between;
-}
-.big-container .icon-box .share-filter-box {
-  display: flex;
-  justify-content: space-between;
-  flex: 0 0 100px;
-}
-.big-container .icon-box .share-filter-box .active {
-  border-bottom: 0.1rem solid #000000;
-  padding: 0.1rem 0.1rem 0.3rem 0.1rem;
-}
-.big-container .icon-box .share-filter-box .columnIcon {
-  width: 1.1rem;
-  height: 1.1rem;
-}
-.big-container .icon-box .share-filter-box .format-list-bulleted {
-  margin: 0.3rem 0 0.6rem 0;
-  display: flex;
-  justify-content: center;
-  width: 1.2rem;
-  height: 0.9rem;
-}
-.big-container .icon-box .search-add-box {
-  margin: 0.2rem 0 0.5rem 0;
-  display: flex;
-  align-items: center;
-  flex: 0 0 100px;
-  height: -moz-fit-content;
-  height: fit-content;
 }
 .big-container .icround-plus {
   margin: 0.1rem 1.3rem 0.1rem 0;
@@ -994,70 +1037,10 @@ h4 {
   justify-content: center;
   width: 1rem;
   height: 0.3rem;
-  box-sizing: border-box;
 }
 .big-container .shared-icon {
   width: 1.3rem;
   height: 0.8rem;
-}
-.big-container .kort-medium {
-  display: flex;
-  flex: 0 0 calc(50% - 0.5rem);
-  flex-direction: column;
-}
-.big-container .kort-medium .folder-open {
-  background-image: url("/assets/img/camping.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-bottom: 0.8rem;
-  display: flex;
-  padding: 0.5rem 0 0 0.5rem;
-}
-.big-container .kort-medium .folder-open .share-icon-box {
-  border-radius: 6.3rem;
-  background: #ffffff;
-  margin-bottom: 4.1rem;
-  padding: 0.5rem 0.3rem 0.4rem 0.3rem;
-  height: 2rem;
-  width: 2rem;
-}
-.big-container .text-box-saved-maps {
-  margin-bottom: 2rem;
-  display: flex;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-.big-container .maps-box {
-  border-bottom: 0.1rem solid #000000;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 0.6rem 0.1rem 0.5rem 0;
-}
-.big-container .map-box {
-  margin-bottom: 1rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-}
-.big-container .map-section {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-.big-container .icon-mapp-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-.big-container .main-saved {
-  margin: 0 1rem 1.4rem 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: calc(100% - 2rem);
 }
 
 .container {
@@ -1082,4 +1065,65 @@ h4 {
 }
 .flex-container .text-box {
   margin-bottom: 3.5rem;
+}
+.flex-container .suggestion-section {
+  margin-bottom: 8rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-container .suggestion-section .inspoTxtBox {
+  margin-left: 0.5rem;
+}
+.flex-container .suggestion-section .inspoTxtBox h1 {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+}
+.flex-container .suggestion-section .inspoTxtBox h2 {
+  color: #514e4e;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+}
+.flex-container .suggestion-section .inspiration-box {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 auto;
+  justify-content: center;
+  gap: 1rem;
+}
+.flex-container .suggestion-section .inspiration-box .inspirationCard {
+  flex: 0 0 calc(50% - 0.5rem);
+}
+.flex-container .suggestion-section .inspiration-box .inspirationCard .clickCard .inspoPicBox {
+  position: relative;
+  height: 14rem;
+  min-width: 10rem;
+  flex: 1;
+}
+.flex-container .suggestion-section .inspiration-box .inspirationCard .clickCard .inspoPicBox img {
+  width: 100%;
+  height: 100%;
+}
+.flex-container .suggestion-section .inspiration-box .inspirationCard .clickCard .inspoPicBox .txtbg {
+  position: absolute;
+  right: 2.0625rem;
+  background: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  color: #f4f4f4;
+  padding: 0.5rem 1.625rem;
+  bottom: 0.875rem;
+}
+.flex-container .suggestion-section .inspiration-box .showAllLink {
+  text-decoration: none;
+  color: black;
+}
+.flex-container .suggestion-section .inspiration-box .showAllLink .showAllBox {
+  display: flex;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
