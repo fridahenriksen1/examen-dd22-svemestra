@@ -274,6 +274,11 @@ h4 {
   color: #141414;
 }
 
+.saved-accommodations {
+  font-size: 0.8rem;
+  color: #141414;
+}
+
 .navigation {
   background: #ededed;
   display: flex;
@@ -648,6 +653,83 @@ h4 {
   width: 8.1rem;
   height: 8.1rem;
   background-size: cover;
+}
+
+.folder-cards {
+  margin-right: 1.1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.card-box {
+  display: flex;
+  flex: 1 0 auto;
+  margin: 0 1rem 1.4rem 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card-box .card-medium {
+  margin: 0.5rem 0rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.card-box .card-medium .card-img {
+  background-image: url(/assets/img/cottage.jpg);
+  background-size: cover;
+  position: relative;
+  margin-bottom: 0.8rem;
+  width: 9.7rem;
+  height: 7.4rem;
+  opacity: 0.8;
+  flex: 1;
+  gap: 1rem;
+}
+.card-box .card-medium .card-img .heartBox {
+  position: absolute;
+  top: 0.8rem;
+  right: 1.1rem;
+  width: 0.8rem;
+  height: 0.8rem;
+}
+.card-box .card-medium .contentSaved-Box .circle-box {
+  margin-bottom: 0.8rem;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  -moz-column-gap: 0.2rem;
+       column-gap: 0.2rem;
+  width: 3.9rem;
+  box-sizing: border-box;
+}
+.card-box .card-medium .contentSaved-Box .circle-box .ellipse-11 {
+  border-radius: 0.3rem;
+  background: #141414;
+  width: 0.4rem;
+  height: 0.4rem;
+}
+.card-box .card-medium .txtChips-box {
+  display: flex;
+  flex-direction: column;
+}
+.card-box .card-medium .txtChips-box .about-box {
+  margin-bottom: 0.8rem;
+  display: flex;
+  flex-direction: column;
+}
+.card-box .card-medium .txtChips-box .chipsFilterS {
+  border-radius: 6.3rem;
+  border: 0.1rem solid #141414;
+  background: #ffffff;
+  display: flex;
+  align-self: flex-start;
+  padding: 0.2rem 0.4rem;
+}
+.card-box .card-medium .txtChips-box .headline {
+  margin-bottom: 0.3rem;
 }
 
 /*If you have page-specific styles, it is better to put them in a pages/ folder, in a file named after the page. For instance, it’s not uncommon to have very specific styles for the home page hence the need for a _home.scss file in pages/.*/
@@ -1179,55 +1261,6 @@ h4 {
   font-size: 0.6rem;
   color: #141414;
 }
-.big-container .card-box {
-  display: flex;
-  flex: 1 0 auto;
-  margin: 0 1rem 1.4rem 1rem;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.big-container .card-box .card-medium {
-  margin: 0.5rem 0rem;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  flex-basis: 2rem;
-}
-.big-container .card-box .card-medium .card-img {
-  background: #d9d9d9;
-  position: relative;
-  margin-bottom: 0.8rem;
-  width: 9.7rem;
-  height: 7.4rem;
-}
-.big-container .card-box .card-medium .card-img .heartBox {
-  position: absolute;
-  top: 0.8rem;
-  right: 1.1rem;
-  width: 0.8rem;
-  height: 0.8rem;
-}
-.big-container .card-box .card-medium .txtChips-box {
-  display: flex;
-  flex-direction: column;
-}
-.big-container .card-box .card-medium .txtChips-box .about-box {
-  margin-bottom: 0.8rem;
-  display: flex;
-  flex-direction: column;
-}
-.big-container .card-box .card-medium .txtChips-box .chipsFilterS {
-  border-radius: 6.3rem;
-  border: 0.1rem solid #141414;
-  background: #ffffff;
-  display: flex;
-  align-self: flex-start;
-  padding: 0.2rem 0.4rem;
-}
-.big-container .card-box .card-medium .txtChips-box .headline {
-  margin-bottom: 0.3rem;
-}
 
 .big-container {
   background: #ffffff;
@@ -1402,31 +1435,7 @@ h4 {
   font-size: 1rem;
   color: #141414;
 }
-.big-container .saved-accommodations {
-  overflow-wrap: break-word;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 0.8rem;
-  color: #141414;
-}
-.big-container .frame-29 {
-  margin: 0 0.2rem;
-  display: flex;
-  flex-direction: column;
-  align-self: flex-start;
-  width: -moz-fit-content;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.big-container .kort-medium {
-  margin-right: 1.1rem;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  flex-basis: 9.7rem;
-  box-sizing: border-box;
-}
-.big-container .frame-291 {
+.big-container .map-txt {
   margin: 0 0.2rem;
   display: flex;
   flex-direction: column;
@@ -1441,24 +1450,6 @@ h4 {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  box-sizing: border-box;
-}
-.big-container .frame-292 {
-  margin: 0 0.2rem;
-  display: flex;
-  flex-direction: column;
-  align-self: flex-start;
-  width: -moz-fit-content;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.big-container .frame-293 {
-  margin: 0 0.2rem;
-  display: flex;
-  flex-direction: column;
-  align-self: flex-start;
-  width: -moz-fit-content;
-  width: fit-content;
   box-sizing: border-box;
 }
 .big-container .frame-771 {

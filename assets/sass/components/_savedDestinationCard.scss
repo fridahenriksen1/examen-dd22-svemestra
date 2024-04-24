@@ -1,0 +1,75 @@
+//!kortet i savedDestinations
+.card-box {
+  display: flex;
+  flex: 1 0 auto;
+  margin: 0 1rem 1.4rem 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .card-medium {
+    margin: 0.5rem 0rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    .card-img {
+      background-image: url(/assets/img/cottage.jpg);
+      background-size: cover;
+      position: relative;
+      margin-bottom: 0.8rem;
+      width: 9.7rem;
+      height: 7.4rem;
+      opacity: 0.8;
+      flex: 1;
+
+      gap: 1rem;
+      .heartBox {
+        position: absolute;
+        top: 0.8rem;
+        right: 1.1rem;
+        width: 0.8rem;
+        height: 0.8rem;
+      }
+    }
+    .contentSaved-Box {
+      .circle-box {
+        margin-bottom: 0.8rem;
+        display: flex;
+        flex-direction: row;
+        align-self: flex-start;
+        column-gap: 0.2rem;
+        width: 3.9rem;
+        box-sizing: border-box;
+        .ellipse-11 {
+          border-radius: 0.3rem;
+          background: #141414;
+          width: 0.4rem;
+          height: 0.4rem;
+        }
+      }
+    }
+
+    .txtChips-box {
+      display: flex;
+      flex-direction: column;
+      .about-box {
+        margin-bottom: 0.8rem;
+        display: flex;
+        flex-direction: column;
+      }
+
+      //!chips filter
+      .chipsFilterS {
+        border-radius: 6.3rem;
+        border: 0.1rem solid #141414;
+        background: #ffffff;
+        display: flex;
+        align-self: flex-start;
+        padding: 0.2rem 0.4rem;
+      }
+      .headline {
+        margin-bottom: 0.3rem;
+      }
+    }
+  }
+}

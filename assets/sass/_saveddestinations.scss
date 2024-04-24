@@ -41,11 +41,6 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-
-    // .saved-box {
-    //   border-bottom: 1px solid black;
-    //   //padding-bottom: 1rem;
-    // }
   }
   //! Tillbaka ikonen längst upp på sidan
   .arrow-back-top-left {
@@ -64,59 +59,5 @@
   .treehouses {
     font-size: 0.6rem;
     color: #141414;
-  }
-  //!kortet
-  .card-box {
-    display: flex;
-    flex: 1 0 auto;
-    margin: 0 1rem 1.4rem 1rem;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    .card-medium {
-      margin: 0.5rem 0rem;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      //flex-basis: 9.7rem;
-      flex-basis: 2rem;
-
-      .card-img {
-        background: #d9d9d9;
-        position: relative;
-        margin-bottom: 0.8rem;
-        width: 9.7rem;
-        height: 7.4rem;
-        .heartBox {
-          position: absolute;
-          top: 0.8rem;
-          right: 1.1rem;
-          width: 0.8rem;
-          height: 0.8rem;
-        }
-      }
-      .txtChips-box {
-        display: flex;
-        flex-direction: column;
-        .about-box {
-          margin-bottom: 0.8rem;
-          display: flex;
-          flex-direction: column;
-        }
-
-        //!chips filter
-        .chipsFilterS {
-          border-radius: 6.3rem;
-          border: 0.1rem solid #141414;
-          background: #ffffff;
-          display: flex;
-          align-self: flex-start;
-          padding: 0.2rem 0.4rem;
-        }
-        .headline {
-          margin-bottom: 0.3rem;
-        }
-      }
-    }
   }
 }
