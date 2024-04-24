@@ -1118,4 +1118,12 @@ h4 {
   color: #f4f4f4;
   padding: 0.5rem 1.625rem;
   bottom: 0.875rem;
+}
+.flex-container .suggestion-section .inspiration-box .showAllLink {
+  text-decoration: none;
+  color: black;
+}
+.flex-container .suggestion-section .inspiration-box .showAllLink .showAllBox {
+  display: flex;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */

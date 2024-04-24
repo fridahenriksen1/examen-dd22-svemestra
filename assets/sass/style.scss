@@ -133,6 +133,20 @@
           }
         }
       }
+      .showAllLink {
+        text-decoration: none;
+        color: black;
+        .showAllBox {
+          display: flex;
+          align-items: center;
+          .icon {
+          }
+        }
+      }
     }
+  }
+  //!SEKTIONEN BESÖKSMÅL NÄRA MIG
+  .destination-section {
+    
   }
 }
