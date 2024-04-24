@@ -20,7 +20,6 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    box-sizing: border-box;
   }
   .mappar-text {
     overflow-wrap: break-word;
@@ -34,54 +33,45 @@
       color: #959595;
     }
   }
-  ext-box-saved-maps {
-    margin-bottom: 2rem;
-    display: flex;
-    flex-direction: row;
-    width: fit-content;
-    box-sizing: border-box;
-  }
-  .vector {
-    width: 1.2rem;
-    height: 1rem;
-  }
-  .misort {
-    margin: 0.3rem 1.1rem 0.5rem 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 1.2rem;
-    height: 1rem;
-    box-sizing: border-box;
-  }
-  .rectangle-3 {
-    border-radius: 0.1rem;
-    border: 0.1rem solid #000000;
-    margin-right: 0.1rem;
-    width: 0.6rem;
-    height: 0.6rem;
-  }
 
   //! Frame som är aktiv ikon till vänster
 
-  .format-list-bulleted {
-    margin: 0.3rem 0 0.6rem 0;
+  //!sectionen med ikoner som sök, lägg till sortera osv.
+  .icon-box {
+    margin: 0 0.3rem 2rem 0.1rem;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 1.2rem;
-    height: 0.9rem;
-    box-sizing: border-box;
-  }
-  .share-filter-box {
-    display: flex;
+    justify-content: space-between;
 
-    width: 6.2rem;
+    .share-filter-box {
+      display: flex;
+      justify-content: space-between;
+      flex: 0 0 100px;
+      //! Frame som är aktiv ikon till vänster
+      .active {
+        border-bottom: 0.1rem solid #000000;
+        padding: 0.1rem 0.1rem 0.3rem 0.1rem;
+      }
+      .columnIcon {
+        width: 1.1rem;
+        height: 1.1rem;
+      }
+      .format-list-bulleted {
+        margin: 0.3rem 0 0.6rem 0;
+        display: flex;
+        justify-content: center;
+        width: 1.2rem;
+        height: 0.9rem;
+      }
+    }
+    .search-add-box {
+      margin: 0.2rem 0 0.5rem 0;
+      display: flex;
+      align-items: center;
+      flex: 0 0 100px;
+      height: fit-content;
+    }
   }
-  .vector-2 {
-    width: 0.9rem;
-    height: 0.9rem;
-  }
+
   .icround-plus {
     margin: 0.1rem 1.3rem 0.1rem 0;
     display: flex;
@@ -91,10 +81,7 @@
     height: 0.9rem;
     box-sizing: border-box;
   }
-  .vector-4 {
-    width: 1.1rem;
-    height: 1.1rem;
-  }
+
   .search {
     margin-right: 1.2rem;
     display: flex;
@@ -104,10 +91,7 @@
     height: 1.1rem;
     box-sizing: border-box;
   }
-  .vector-3 {
-    width: 1rem;
-    height: 0.3rem;
-  }
+
   .more-vert {
     margin: 0.4rem 0;
     display: flex;
@@ -118,63 +102,48 @@
     box-sizing: border-box;
   }
 
-  .icon-box {
-    margin: 0 0.3rem 2rem 0.1rem;
-    display: flex;
-    justify-content: space-between;
-
-    .search-add-box {
-      margin: 0.2rem 0 0.5rem 0;
-      display: flex;
-      align-items: center;
-      width: 5.4rem;
-      height: fit-content;
-    }
-  }
   //! Shared ikonerna (people icon)
   .shared-icon {
     width: 1.3rem;
     height: 0.8rem;
   }
-  .share-icon-box {
-    border-radius: 6.3rem;
-    background: #ffffff;
-    margin-bottom: 4.1rem;
+
+  //! Försökte byta namn här med, men gick inte precis som jag testade på en annan klass, vet inte varför, har inte vart några problem tidigare
+  .kort-medium {
+    display: flex;
+    flex: 0 0 calc(100% / 2 - 0.5rem);
+    flex-direction: column;
+
+    .folder-open {
+      background-image: url("/assets/img/camping.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-bottom: 0.8rem;
+      display: flex;
+      padding: 0.5rem 0 0 0.5rem;
+      .share-icon-box {
+        border-radius: 6.3rem;
+        background: #ffffff;
+        margin-bottom: 4.1rem;
+        padding: 0.5rem 0.3rem 0.4rem 0.3rem;
+        height: 2rem;
+        width: 2rem;
+      }
+    }
+  }
+  //!Till ikonerna under prfilbild
+  .text-box-saved-maps {
+    margin-bottom: 2rem;
+    display: flex;
+
+    width: fit-content;
+  }
+  .maps-box {
+    border-bottom: 0.1rem solid #000000;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 0.5rem 0.3rem 0.4rem 0.3rem;
-    width: 1.8rem;
-    height: 1.8rem;
-    box-sizing: border-box;
-  }
-
-  .folder-open {
-    background-image: url("/assets/img/camping.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-bottom: 0.8rem;
-    display: flex;
-    padding: 0.5rem 0 0 0.5rem;
-  }
-  .lorem-ipsum {
-    margin-bottom: 0.3rem;
-    display: inline-block;
-    align-self: flex-start;
-    overflow-wrap: break-word;
-    font-family: "Roboto";
-    font-weight: 500;
-    font-size: 1rem;
-    color: #141414;
-  }
-
-  .map-txt {
-    margin: 0 0.2rem;
-    display: flex;
-    flex-direction: column;
-    align-self: flex-start;
-    width: fit-content;
-    box-sizing: border-box;
+    padding: 0.6rem 0.1rem 0.5rem 0;
   }
 
   .map-box {
@@ -183,21 +152,18 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    box-sizing: border-box;
   }
 
   .map-section {
     display: flex;
     flex-direction: column;
     width: 100%;
-    box-sizing: border-box;
   }
   .icon-mapp-box {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    box-sizing: border-box;
   }
   .main-saved {
     margin: 0 1rem 1.4rem 1rem;
@@ -205,24 +171,5 @@
     flex-direction: column;
     align-items: center;
     width: calc(100% - 2rem);
-    box-sizing: border-box;
-  }
-
-  //! Tillbaka ikonen längst upp på sidan
-  .backArrow-icon {
-    width: 2rem;
-    height: 2rem;
-  }
-
-  .arrow-back-top-left {
-    position: absolute;
-    left: 1.2rem;
-    top: 1.2rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 1rem;
-    height: 1rem;
-    box-sizing: border-box;
   }
 }

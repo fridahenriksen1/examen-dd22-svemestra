@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Undersida för sparade besöksmål</title>
+    <title>Sparade besöksmål</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -13,7 +13,13 @@
   </head>
   <body>
     <div class="big-container">
+      <header>
+        <a class="arrow-back-top-left" href="profil.html">
+          <img class="backArrow-icon" src="/assets/icons/ArrowBackTop-left.svg" />
+        </a>
+      </header>
       <main class="main-saved">
+      
         <section class="profilPic-textBox">
           <div class="profil-pic-box">
        
@@ -39,12 +45,12 @@
             <div class="icon-box">
               <div class="share-filter-box">
                 <div class="misort">
-                  <img src="/assets/icons/sortIcon.svg" />
+                  <img class="columnIcon" src="/assets/icons/sortIcon.svg" />
                 </div>
                 
                 <div class="active">
           
-                  <img  src="/assets/icons/columnIcon.svg" />
+                  <img class="columnIcon"  src="/assets/icons/columnIcon.svg" />
                 </div>
                 <div class="format-list-bulleted">
                   <img src="/assets/icons/listIcon.svg" />
@@ -60,10 +66,8 @@
                 <div class="format-list-bulleted">
                   <img src="/assets/icons/threeDotIcon.svg" />
                 </div>
-              
               </div>
             </div>
-           
                 <!-- Stora container -->
                   <div class="card-box">
                   
@@ -244,9 +248,7 @@
         </li>
       </ul>
       </nav>
-      <a class="arrow-back-top-left" href="profil.html">
-        <img class="backArrow-icon" src="/assets/icons/ArrowBackTop-left.svg" />
-      </a>
+  
     </div>
   </body>
 </html>

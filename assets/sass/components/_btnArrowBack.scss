@@ -1,0 +1,15 @@
+//! Tillbaka ikonen längst upp på sidan i mappar och besöksmål
+.arrow-back-top-left {
+  position: absolute;
+  left: 1.2rem;
+  top: 1.2rem;
+  padding: 1rem;
+
+  width: 2rem;
+  height: 2rem;
+
+  .backArrow-icon {
+    width: 4rem;
+    height: 4rem;
+  }
+}
