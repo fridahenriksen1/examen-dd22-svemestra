@@ -279,6 +279,19 @@ h4 {
   color: #141414;
 }
 
+.treehouses {
+  font-size: 0.6rem;
+  color: #141414;
+}
+
+.map-txt .mapTxt-headline {
+  margin-bottom: 0.3rem;
+  align-self: flex-start;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #141414;
+}
+
 .navigation {
   background: #ededed;
   display: flex;
@@ -653,13 +666,6 @@ h4 {
   background-size: cover;
 }
 
-.folder-cards {
-  margin-right: 1.1rem;
-  display: flex;
-  flex-wrap: wrap;
-  flex-grow: 1;
-}
-
 .card-box {
   display: flex;
   flex: 1 0 auto;
@@ -733,6 +739,19 @@ h4 {
 }
 .card-box .card-medium .txtChips-box .headline {
   margin-bottom: 0.3rem;
+}
+
+.arrow-back-top-left {
+  position: absolute;
+  left: 1.2rem;
+  top: 1.2rem;
+  padding: 1rem;
+  width: 2rem;
+  height: 2rem;
+}
+.arrow-back-top-left .backArrow-icon {
+  width: 4rem;
+  height: 4rem;
 }
 
 /*If you have page-specific styles, it is better to put them in a pages/ folder, in a file named after the page. For instance, it’s not uncommon to have very specific styles for the home page hence the need for a _home.scss file in pages/.*/
@@ -896,22 +915,6 @@ h4 {
   align-items: center;
   width: 100%;
 }
-.big-container .arrow-back-top-left {
-  position: absolute;
-  left: 1.2rem;
-  top: 1.2rem;
-  display: flex;
-  width: 2rem;
-  height: 2rem;
-}
-.big-container .arrow-back-top-left .backArrow-icon {
-  width: 2rem;
-  height: 2rem;
-}
-.big-container .treehouses {
-  font-size: 0.6rem;
-  color: #141414;
-}
 
 .big-container {
   background: #ffffff;
@@ -933,7 +936,6 @@ h4 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  box-sizing: border-box;
 }
 .big-container .mappar-text {
   overflow-wrap: break-word;
@@ -945,34 +947,6 @@ h4 {
 }
 .big-container .mappar-text.txtColor {
   color: #959595;
-}
-.big-container ext-box-saved-maps {
-  margin-bottom: 2rem;
-  display: flex;
-  flex-direction: row;
-  width: -moz-fit-content;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.big-container .vector {
-  width: 1.2rem;
-  height: 1rem;
-}
-.big-container .misort {
-  margin: 0.3rem 1.1rem 0.5rem 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 1.2rem;
-  height: 1rem;
-  box-sizing: border-box;
-}
-.big-container .rectangle-3 {
-  border-radius: 0.1rem;
-  border: 0.1rem solid #000000;
-  margin-right: 0.1rem;
-  width: 0.6rem;
-  height: 0.6rem;
 }
 .big-container .format-list-bulleted {
   margin: 0.3rem 0 0.6rem 0;
@@ -987,10 +961,6 @@ h4 {
   display: flex;
   width: 6.2rem;
 }
-.big-container .vector-2 {
-  width: 0.9rem;
-  height: 0.9rem;
-}
 .big-container .icround-plus {
   margin: 0.1rem 1.3rem 0.1rem 0;
   display: flex;
@@ -1000,10 +970,6 @@ h4 {
   height: 0.9rem;
   box-sizing: border-box;
 }
-.big-container .vector-4 {
-  width: 1.1rem;
-  height: 1.1rem;
-}
 .big-container .search {
   margin-right: 1.2rem;
   display: flex;
@@ -1012,10 +978,6 @@ h4 {
   width: 1.1rem;
   height: 1.1rem;
   box-sizing: border-box;
-}
-.big-container .vector-3 {
-  width: 1rem;
-  height: 0.3rem;
 }
 .big-container .more-vert {
   margin: 0.4rem 0;
@@ -1043,19 +1005,12 @@ h4 {
   width: 1.3rem;
   height: 0.8rem;
 }
-.big-container .share-icon-box {
-  border-radius: 6.3rem;
-  background: #ffffff;
-  margin-bottom: 4.1rem;
+.big-container .kort-medium {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 0.5rem 0.3rem 0.4rem 0.3rem;
-  width: 1.8rem;
-  height: 1.8rem;
-  box-sizing: border-box;
+  flex: 0 0 calc(50% - 0.5rem);
+  flex-direction: column;
 }
-.big-container .folder-open {
+.big-container .kort-medium .folder-open {
   background-image: url("/assets/img/camping.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1063,37 +1018,19 @@ h4 {
   display: flex;
   padding: 0.5rem 0 0 0.5rem;
 }
-.big-container .map-txt {
-  margin: 0 0.2rem;
-  display: flex;
-  flex-direction: column;
-  align-self: flex-start;
-  width: -moz-fit-content;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.big-container .lorem-ipsum {
-  margin-bottom: 0.3rem;
-  display: inline-block;
-  align-self: flex-start;
-  overflow-wrap: break-word;
-  font-family: "Roboto";
-  font-weight: 500;
-  font-size: 1rem;
-  color: #141414;
-}
-.big-container .kort-medium {
-  display: flex;
-  flex-direction: column;
-  flex: 0 0 calc(50% - 0.5rem);
+.big-container .kort-medium .folder-open .share-icon-box {
+  border-radius: 6.3rem;
+  background: #ffffff;
+  margin-bottom: 4.1rem;
+  padding: 0.5rem 0.3rem 0.4rem 0.3rem;
+  height: 2rem;
+  width: 2rem;
 }
 .big-container .text-box-saved-maps {
   margin-bottom: 2rem;
   display: flex;
-  flex-direction: row;
   width: -moz-fit-content;
   width: fit-content;
-  box-sizing: border-box;
 }
 .big-container .maps-box {
   border-bottom: 0.1rem solid #000000;
@@ -1101,7 +1038,6 @@ h4 {
   flex-direction: row;
   justify-content: center;
   padding: 0.6rem 0.1rem 0.5rem 0;
-  box-sizing: border-box;
 }
 .big-container .map-box {
   margin-bottom: 1rem;
@@ -1109,20 +1045,17 @@ h4 {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  box-sizing: border-box;
 }
 .big-container .map-section {
   display: flex;
   flex-direction: column;
   width: 100%;
-  box-sizing: border-box;
 }
 .big-container .icon-mapp-box {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  box-sizing: border-box;
 }
 .big-container .main-saved {
   margin: 0 1rem 1.4rem 1rem;
@@ -1130,22 +1063,16 @@ h4 {
   flex-direction: column;
   align-items: center;
   width: calc(100% - 2rem);
-  box-sizing: border-box;
 }
-.big-container .backArrow-icon {
-  width: 2rem;
-  height: 2rem;
+
+.vector-4 {
+  width: 1.1rem;
+  height: 1.1rem;
 }
-.big-container .arrow-back-top-left {
-  position: absolute;
-  left: 1.2rem;
-  top: 1.2rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 1rem;
-  height: 1rem;
-  box-sizing: border-box;
+
+.columnIcon {
+  width: 1.1rem;
+  height: 1.1rem;
 }
 
 .container {
