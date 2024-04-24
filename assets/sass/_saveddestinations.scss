@@ -6,21 +6,8 @@
     align-items: center;
     width: fit-content;
   }
-  .format-list-bulleted {
-    margin: 0.3rem 0 0.6rem 0;
-    display: flex;
-    justify-content: center;
-    width: 1.2rem;
-    height: 0.9rem;
-  }
-  .icon-box {
-    //! Frame som är aktiv ikon till vänster
-    .active {
-      border-bottom: 0.1rem solid #000000;
-      margin-right: 1.2rem;
-      padding: 0.1rem 0.1rem 0.3rem 0.1rem;
-    }
-  }
+
+
   //! Shared ikonerna (people icon)
   .shared-icon {
     width: 1.3rem;
@@ -42,5 +29,4 @@
     align-items: center;
     width: 100%;
   }
-
 }

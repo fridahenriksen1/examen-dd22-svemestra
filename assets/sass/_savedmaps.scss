@@ -36,19 +36,40 @@
 
   //! Frame som är aktiv ikon till vänster
 
-  .format-list-bulleted {
-    margin: 0.3rem 0 0.6rem 0;
+  //!sectionen med ikoner som sök, lägg till sortera osv.
+  .icon-box {
+    margin: 0 0.3rem 2rem 0.1rem;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 1.2rem;
-    height: 0.9rem;
-    box-sizing: border-box;
-  }
-  .share-filter-box {
-    display: flex;
+    justify-content: space-between;
 
-    width: 6.2rem;
+    .share-filter-box {
+      display: flex;
+      justify-content: space-between;
+      flex: 0 0 100px;
+      //! Frame som är aktiv ikon till vänster
+      .active {
+        border-bottom: 0.1rem solid #000000;
+        padding: 0.1rem 0.1rem 0.3rem 0.1rem;
+      }
+      .columnIcon {
+        width: 1.1rem;
+        height: 1.1rem;
+      }
+      .format-list-bulleted {
+        margin: 0.3rem 0 0.6rem 0;
+        display: flex;
+        justify-content: center;
+        width: 1.2rem;
+        height: 0.9rem;
+      }
+    }
+    .search-add-box {
+      margin: 0.2rem 0 0.5rem 0;
+      display: flex;
+      align-items: center;
+      flex: 0 0 100px;
+      height: fit-content;
+    }
   }
 
   .icround-plus {
@@ -81,19 +102,6 @@
     box-sizing: border-box;
   }
 
-  .icon-box {
-    margin: 0 0.3rem 2rem 0.1rem;
-    display: flex;
-    justify-content: space-between;
-
-    .search-add-box {
-      margin: 0.2rem 0 0.5rem 0;
-      display: flex;
-      align-items: center;
-      width: 5.4rem;
-      height: fit-content;
-    }
-  }
   //! Shared ikonerna (people icon)
   .shared-icon {
     width: 1.3rem;
@@ -164,14 +172,4 @@
     align-items: center;
     width: calc(100% - 2rem);
   }
-}
-
-//!Försökte byta namnet till columnIcon ist för vector-4 men något knas blev det för fungerade inte, stod att vector-4 var kvar i css filen, vet inte om det vara pga det
-.vector-4 {
-  width: 1.1rem;
-  height: 1.1rem;
-}
-.columnIcon {
-  width: 1.1rem;
-  height: 1.1rem;
 }
