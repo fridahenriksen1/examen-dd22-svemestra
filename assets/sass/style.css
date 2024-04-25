@@ -788,8 +788,6 @@ h4 {
 }
 .map-section .icon-box {
   margin: 0 0.3rem 2rem 0.1rem;
-  display: flex;
-  justify-content: space-between;
 }
 .map-section .icon-box .share-filter-box {
   display: flex;
