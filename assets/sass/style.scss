@@ -122,13 +122,14 @@
             }
             .txtbg {
               position: absolute;
-              right: 2.0625rem;
+
               background: rgba(255, 255, 255, 0.15);
               backdrop-filter: blur(10px);
               color: #f4f4f4;
               padding: 0.5rem 1.625rem;
-
-              bottom: 0.875rem;
+              bottom: 3rem;
+              left: 50%;
+              transform: translateX(-50%) translateY(100%);
             }
           }
         }
@@ -147,6 +148,17 @@
   }
   //!SEKTIONEN BESÖKSMÅL NÄRA MIG
   .destination-section {
-    
+    h2 {
+      font-size: 1.5rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+    .destinationCloseBox{
+
+      
+
+
+    }
   }
 }
