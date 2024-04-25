@@ -29,10 +29,6 @@
 @import "saveddestinations";
 @import "savedmaps";
 
-.container {
-  padding: 1rem;
-}
-
 .flex-container {
   max-width: 1200px;
   //margin: auto;
@@ -177,6 +173,18 @@
             bottom: 3rem;
             left: 50%;
             transform: translateX(-50%) translateY(100%);
+          }
+        }
+      }
+    }
+    .twoCardbox {
+      .destiCardSm {
+        .destinationCloseBoxSM {
+          position: relative;
+          min-width: 20.5rem;
+          height: 9.375rem;
+          flex: 1 auto;
+          .txtbg-bigPic {
           }
         }
       }

@@ -2,9 +2,9 @@
     {
         "id": 1,
         "name": "Hyssna",
-        "category": "Trädhotell",
+        "categories": ["trädhotell","glamping"],
         "info": "Lorem ipsum dolor sit amet consectetur. Convallis amet nisi amet eget at.",
-        "imageURL": "assets/img/cottage.jpg",
+        "imageURL": "img/cottage.jpg",
         "price": "Budget",
         "htmlUrl": "assets/accommodation/hyssna.html"
 
@@ -12,9 +12,9 @@
     {
         "id": 2,
         "name": "Böda camping",
-        "category": "Camping",
+        "categories": ["camping"],
         "info": "Lorem ipsum dolor sit amet consectetur. Convallis amet nisi amet eget at.",
-        "imageURL": "assets/img/camping.jpg",
+        "imageURL": "img/camping.jpg",
         "price": "Medel",
         "htmlUrl": "assets/accommodation/bodaCamping.html"
 
@@ -22,49 +22,49 @@
     {
         "id": 3,
         "name": "Sago hotellet",
-        "category": "Tillgång till Spa",
+        "categories": ["trädhotell","spa"],
         "info": "Lorem ipsum dolor sit amet consectetur. Convallis amet nisi amet eget at.",
-        "imageURL": "assets/img/hotel.jpg",
+        "imageURL": "img/hotel.jpg",
         "price": "Premium",
         "htmlUrl": "assets/accommodation/sagoHotell.html"
 
     },
     {
         "id": 4,
-        "name": "Sago hotellet",
-        "category": "Närhet till vattnet",
+        "name": "Vätten rundan",
+        "categories": ["cyckla"],
         "info": "Lorem ipsum dolor sit amet consectetur. Convallis amet nisi amet eget at.",
-        "imageURL": "assets/img/hotel.jpg",
+        "imageURL": "img/hotel.jpg",
         "price": "Budget",
         "htmlUrl": "assets/accommodation/sagoHotell.html"
 
     },
     {
         "id": 5,
-        "name": "Sago hotellet",
-        "category": "Vandra",
+        "name": "Sjön",
+        "categories": ["vatten"],
         "info": "Lorem ipsum dolor sit amet consectetur. Convallis amet nisi amet eget at.",
-        "imageURL": "assets/img/hotel.jpg",
+        "imageURL": "img/hotel.jpg",
         "price": "Budget",
         "htmlUrl": "assets/accommodation/sagoHotell.html"
 
     },
     {
         "id": 6,
-        "name": "Sago hotellet",
-        "category": "Cykla",
+        "name": "Kinnekulle",
+        "categories": ["vandra"],
         "info": "Lorem ipsum dolor sit amet consectetur. Convallis amet nisi amet eget at.",
-        "imageURL": "assets/img/hotel.jpg",
+        "imageURL": "img/hotel.jpg",
         "price": "Medel",
         "htmlUrl": "assets/accommodation/sagoHotell.html"
 
     },
     {
         "id": 7,
-        "name": "Sago hotellet",
-        "category": "Glamping",
+        "name": "Vämland glamping",
+        "categories": ["glamping"],
         "info": "Lorem ipsum dolor sit amet consectetur. Convallis amet nisi amet eget at.",
-        "imageURL": "assets/img/hotel.jpg",
+        "imageURL": "img/hotel.jpg",
         "price": "Premium",
         "htmlUrl": "assets/accommodation/sagoHotell.html"
 

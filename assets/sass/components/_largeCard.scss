@@ -178,7 +178,12 @@
     user-select: none;
     cursor: pointer;
     margin-bottom: 1rem;
+    text-transform: capitalize;
 
     border: 1px solid #141414;
   }
+}
+.like-icon {
+  background-color: aqua;
+  cursor: pointer;
 }
