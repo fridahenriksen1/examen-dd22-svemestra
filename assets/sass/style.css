@@ -1053,6 +1053,7 @@ h4 {
   flex-wrap: wrap;
   padding: 1rem;
   gap: var(--flex-gap);
+  margin-bottom: 8rem;
   /* Denna kod ska läggas till på lämpligt ställe ex i en komponent partial */
   /* Om ni vill använda gap och vill att det blir smooth med mellanrummen använd denna uträkning */
   /* https://wiryawanadipa.com/blog/calculate-percentage-width-of-flex-items-when-using-gap/ */
@@ -1067,7 +1068,6 @@ h4 {
   margin-bottom: 3.5rem;
 }
 .flex-container .suggestion-section {
-  margin-bottom: 8rem;
   display: flex;
   flex-wrap: wrap;
 }
@@ -1128,9 +1128,33 @@ h4 {
   display: flex;
   align-items: center;
 }
+.flex-container .destination-section {
+  display: flex;
+  flex-wrap: wrap;
+}
 .flex-container .destination-section h2 {
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+.flex-container .destination-section .destiCard .destinationCloseBox .clickCard .destinationCloseBox {
+  position: relative;
+  width: 20.5rem;
+  height: 9.375rem;
+}
+.flex-container .destination-section .destiCard .destinationCloseBox .clickCard .destinationCloseBox img {
+  width: 100%;
+  height: 100%;
+}
+.flex-container .destination-section .destiCard .destinationCloseBox .clickCard .destinationCloseBox .txtbg-bigPic {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  color: #f4f4f4;
+  padding: 0.5rem 1.625rem;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(100%);
 }/*# sourceMappingURL=style.css.map */
