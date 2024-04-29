@@ -16,3 +16,32 @@
 // });
 
 
+// document.addEventListener('DOMContentLoaded', function() {
+//     const likeIcon = document.querySelector('.like-icon');
+  
+//     // Lägg till en händelselyssnare för klickhändelsen
+//     likeIcon.addEventListener('click', function() {
+//       // Byt klass från "material-symbols-outlined" till "material-symbols-filled"
+//       likeIcon.classList.toggle('material-symbols-outlined');
+//       likeIcon.classList.toggle('material-symbols-filled');
+//     });
+//   });
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    const likeIcon = document.querySelector('.like-icon');
+  
+    // Lägg till en händelselyssnare för klickhändelsen
+    likeIcon.addEventListener('click', function() {
+        // Kontrollera om "material-symbols-filled" redan finns
+        if (likeIcon.classList.contains('material-symbols-filled')) {
+            // Om det finns, ta bort "material-symbols-filled" och lägg till "material-symbols-outlined"
+            likeIcon.classList.remove('material-symbols-filled');
+            likeIcon.classList.add('material-symbols-outlined');
+        } else {
+            // Om det inte finns, ta bort "material-symbols-outlined" och lägg till "material-symbols-filled"
+            likeIcon.classList.remove('material-symbols-outlined');
+            likeIcon.classList.add('material-symbols-filled');
+        }
+    });
+});
+
