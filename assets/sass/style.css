@@ -1095,7 +1095,6 @@ h4 {
 }
 .flex-container .suggestion-section .inspiration-box .inspirationCard .clickCard .inspoPicBox {
   position: relative;
-  height: 14rem;
   min-width: 10rem;
   flex: 1;
 }
