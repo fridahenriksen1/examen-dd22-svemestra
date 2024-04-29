@@ -1118,18 +1118,20 @@ h4 {
   left: 50%;
   transform: translateX(-50%) translateY(100%);
 }
-.flex-container .suggestion-section .inspiration-box .showAllLink {
-  text-decoration: none;
-  color: black;
-}
-.flex-container .suggestion-section .inspiration-box .showAllLink .showAllBox {
-  display: flex;
-  align-items: center;
+.flex-container h2 {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 0.5rem;
+  margin-top: 3rem;
+  color: #514e4e;
 }
 .flex-container .destination-section {
   display: flex;
   flex-wrap: wrap;
   flex: 1 auto;
+  justify-content: center;
 }
 .flex-container .destination-section h2 {
   font-size: 1.5rem;
@@ -1154,14 +1156,43 @@ h4 {
   left: 50%;
   transform: translateX(-50%) translateY(100%);
 }
+.flex-container .destination-section .twoCardbox {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 auto;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.flex-container .destination-section .twoCardbox .destiCardSm {
+  margin-top: 1rem;
+}
 .flex-container .destination-section .twoCardbox .destiCardSm .destinationCloseBoxSM {
   position: relative;
-  min-width: 20.5rem;
+  min-width: 10rem;
   height: 9.375rem;
   flex: 1 auto;
+}
+.flex-container .destination-section .twoCardbox .destiCardSm .destinationCloseBoxSM .txtbg-bigPic {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  color: #f4f4f4;
+  padding: 0.5rem 1.625rem;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(100%);
 }
 .flex-container .destination-section img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.flex-container .showAllLink {
+  text-decoration: none;
+  color: black;
+}
+.flex-container .showAllLink .showAllBox {
+  display: flex;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */

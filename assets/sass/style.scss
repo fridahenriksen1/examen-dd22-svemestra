@@ -79,6 +79,7 @@
 
     .inspoTxtBox {
       margin-left: 0.5rem;
+      //! TYpografia som ska flyttas till typografi partials
       h1 {
         font-size: 2rem;
         font-style: normal;
@@ -126,23 +127,34 @@
           }
         }
       }
-      .showAllLink {
-        text-decoration: none;
-        color: black;
-        .showAllBox {
-          display: flex;
-          align-items: center;
-          .icon {
-          }
-        }
-      }
+      // .showAllLink {
+      //   text-decoration: none;
+      //   color: black;
+      //   .showAllBox {
+      //     display: flex;
+      //     align-items: center;
+      //     .icon {
+      //     }
+      //   }
+      // }
     }
+  }
+  //! TYpografi som ska flyttas till typografi partials
+  h2 {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 0.5rem;
+    margin-top: 3rem;
+    color: #514e4e;
   }
   //!SEKTIONEN BESÖKSMÅL NÄRA MIG
   .destination-section {
     display: flex;
     flex-wrap: wrap;
     flex: 1 auto;
+    justify-content: center;
     h2 {
       font-size: 1.5rem;
       font-style: normal;
@@ -178,13 +190,31 @@
       }
     }
     .twoCardbox {
+      display: flex;
+      flex-wrap: wrap;
+      flex: 1 auto;
+      justify-content: center;
+      //flex: 0 0 calc(100% / 2 - 0.5rem);
+      // height: 9.375rem;
+      gap: 0.5rem;
       .destiCardSm {
+        //flex: 0 0 calc(100% / 2 - 0.5rem);
+        margin-top: 1rem;
         .destinationCloseBoxSM {
           position: relative;
-          min-width: 20.5rem;
+          min-width: 10rem;
           height: 9.375rem;
           flex: 1 auto;
           .txtbg-bigPic {
+            position: absolute;
+
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            color: #f4f4f4;
+            padding: 0.5rem 1.625rem;
+            bottom: 3rem;
+            left: 50%;
+            transform: translateX(-50%) translateY(100%);
           }
         }
       }
@@ -193,6 +223,16 @@
       width: 100%;
       //height: 100%;
       object-fit: cover;
+    }
+  }
+  .showAllLink {
+    text-decoration: none;
+    color: black;
+    .showAllBox {
+      display: flex;
+      align-items: center;
+      .icon {
+      }
     }
   }
 }
