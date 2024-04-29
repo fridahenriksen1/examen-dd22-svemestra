@@ -11,8 +11,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
+ <!-- GOOGLE ICONS --> 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+    
    <link rel="stylesheet" href="assets/sass/style.css">
 </head>
 
@@ -120,6 +123,16 @@
         <span class="material-symbols-outlined like-icon">
           favorite
           </span>
+
+           <!-- Thin outlined heart -->
+    <!-- <div id="heartContainer" style="font-variation-settings: 'FILL' 0, 'wght' 100, 'GRAD' 0, 'opsz' 48;">
+      <span id="heartIcon" class="material-symbols-outlined">favorite</span>
+  </div> -->
+
+          <!-- <div class="heart-container" onclick="toggleHeart()">
+            <span class="material-symbols-outlined" id="heartIcon">favorite</span>
+          </div> -->
+          
           <!-- <img class="like-icon" src="/assets/icons/heart-like-large-card.svg"> -->
           <a class="card-content" href="" data-link>
               
@@ -163,28 +176,48 @@
 </main>
 
 
-    <!-- NAVIGATION -->
-    <nav class="navigation">
+       <!-- NAVIGATION -->
+       <nav class="navigation">
         <ul>
-          <li>
-        <a class="home-filled" href="index.html">
-          <img class="nav-icons" src="/assets/icons/homeIcon.svg" />
+          <li class="iconTxtNav-box">
+        <a class="link" href="index.html">
+          <!-- <img class="nav-icons" src="/assets/icons/homeIcon.svg" /> -->
+          <span class="material-symbols-outlined ">
+            home
+            </span>
+            <p>Hem</p>
         </a>
       </li>
       </ul>
       <ul>
-        <li>
-          <a class="search-1" href="filterPage.html" >
-            <img class="nav-icons" src="/assets/icons/searchNavIcon.svg" />
+        <li class="iconTxtNav-box">
+          <a class="link" href="filterPage.html" >
+            <img class="nav-icons" src="/assets/icons/Search.svg" />
+            <p>Utforska</p>
           </a>
 
         </li>
       </ul>
 
       <ul>
-        <li>
-          <a class="user-filled" href="profil.html">
-            <img class="nav-icons" src="/assets/icons/navProfilIcon.svg" />
+        <li class="iconTxtNav-box">
+          <a class="link" href="savedDestinations.html">
+            <span class="material-symbols-outlined">
+              favorite
+              </span>
+              <p>Favoriter</p>
+              
+          </a>
+        </li>
+      </ul>
+      <ul>
+        <li class="iconTxtNav-box">
+          <a class="link" href="profil.html">
+
+          <span class="material-symbols-outlined">
+            account_circle
+            </span>
+            <p>Profil</p>
           </a>
         </li>
       </ul>

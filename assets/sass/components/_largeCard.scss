@@ -56,12 +56,13 @@
 
     //flex-direction: column; /* Lägg till */
 
-    .like-icon {
-      position: absolute;
-      z-index: 1;
-      width: 4rem;
-      height: 4rem;
-    }
+    // .like-icon {
+    //   position: absolute;
+    //   z-index: 1;
+    //   width: 4rem;
+    //   height: 4rem;
+    //   right: 0rem;
+    // }
 
     .card-content {
       display: flex;
@@ -184,6 +185,29 @@
   }
 }
 .like-icon {
-  background-color: aqua;
+  // background-color: aqua;
+  color: white;
+
   cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  top: 0.5rem;
+  right: 0rem;
+  border-radius: 6.25rem;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5.897604942321777px);
 }
+// .material-symbols-outlined {
+//   font-variation-settings: "FILL" 0;
+// }
+
+// .material-symbols-filled {
+//   font-variation-settings: "FILL" 1;
+// }
