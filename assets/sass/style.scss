@@ -78,7 +78,7 @@
     flex-wrap: wrap;
 
     .inspoTxtBox {
-      margin-left: 0.5rem;
+      // margin-left: 0.5rem;
       //! TYpografia som ska flyttas till typografi partials
       h1 {
         font-size: 2rem;
@@ -87,13 +87,15 @@
         line-height: 110%;
       }
       h2 {
-        color: #514e4e;
-        font-size: 1.5rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
+        // color: #514e4e;
+        // font-size: 1.5rem;
+        // font-style: normal;
+        // font-weight: 700;
+        // line-height: normal;
+        // margin-bottom: 1rem;
+        // margin-top: 3rem;
+        margin-left: 0;
         margin-bottom: 1rem;
-        margin-top: 3rem;
       }
     }
 
@@ -141,13 +143,14 @@
   }
   //! TYpografi som ska flyttas till typografi partials
   h2 {
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-left: 0.5rem;
-    margin-top: 3rem;
-    color: #514e4e;
+    // font-size: 1.5rem;
+    // font-style: normal;
+    // font-weight: 700;
+    // line-height: normal;
+    // margin-left: 0.5rem;
+    // margin-top: 3rem;
+    // color: #514e4e;
+    margin-bottom: 1rem;
   }
   //!SEKTIONEN BESÖKSMÅL NÄRA MIG
   .destination-section {
@@ -156,10 +159,11 @@
     flex: 1 auto;
     justify-content: center;
     h2 {
-      font-size: 1.5rem;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
+      // font-size: 1.5rem;
+      // font-style: normal;
+      // font-weight: 700;
+      // line-height: normal;
+      margin-left: 0.5rem;
     }
     .destiCard {
       .clickCard {
@@ -225,6 +229,21 @@
       object-fit: cover;
     }
   }
+
+  h2 {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    //margin-left: 0.5rem;
+    margin-top: 3rem;
+    color: #514e4e;
+    // margin-bottom: 1rem;
+  }
+  .h2-activities {
+    margin-bottom: 0rem;
+  }
+
   .showAllLink {
     text-decoration: none;
     color: black;

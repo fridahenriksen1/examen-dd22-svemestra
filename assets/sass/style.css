@@ -1073,9 +1073,6 @@ h4 {
   display: flex;
   flex-wrap: wrap;
 }
-.flex-container .suggestion-section .inspoTxtBox {
-  margin-left: 0.5rem;
-}
 .flex-container .suggestion-section .inspoTxtBox h1 {
   font-size: 2rem;
   font-style: normal;
@@ -1083,13 +1080,8 @@ h4 {
   line-height: 110%;
 }
 .flex-container .suggestion-section .inspoTxtBox h2 {
-  color: #514e4e;
-  font-size: 1.5rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  margin-left: 0;
   margin-bottom: 1rem;
-  margin-top: 3rem;
 }
 .flex-container .suggestion-section .inspiration-box {
   display: flex;
@@ -1119,13 +1111,7 @@ h4 {
   transform: translateX(-50%) translateY(100%);
 }
 .flex-container h2 {
-  font-size: 1.5rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  margin-left: 0.5rem;
-  margin-top: 3rem;
-  color: #514e4e;
+  margin-bottom: 1rem;
 }
 .flex-container .destination-section {
   display: flex;
@@ -1134,10 +1120,7 @@ h4 {
   justify-content: center;
 }
 .flex-container .destination-section h2 {
-  font-size: 1.5rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  margin-left: 0.5rem;
 }
 .flex-container .destination-section .destiCard .clickCard .destinationCloseBox {
   position: relative;
@@ -1187,6 +1170,17 @@ h4 {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.flex-container h2 {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 3rem;
+  color: #514e4e;
+}
+.flex-container .h2-activities {
+  margin-bottom: 0rem;
 }
 .flex-container .showAllLink {
   text-decoration: none;
