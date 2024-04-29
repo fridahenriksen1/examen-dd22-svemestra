@@ -2,11 +2,12 @@
   background: #ededed;
   display: flex;
   justify-content: space-around;
-  padding: 1.8rem 0;
+  // padding: 1.8rem 0;
   width: 100%;
   position: fixed;
   bottom: 0;
   z-index: 3;
+
   .nav-icons {
     width: 28px;
     height: 28px;
@@ -16,23 +17,38 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    // .link {
-    //   text-decoration: none;
-    //   color: black;
-    // }
   }
   .link {
     text-decoration: none;
     color: black;
     font-size: 12px;
+    padding: 1rem;
+    text-align: center;
   }
 }
 
 //!Outlined variabler till ikonerna
 .material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 28;
+  font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 28;
 }
 //!Filled variabler
 .filled {
-  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 28;
+  font-variation-settings: "FILL" 1, "wght" 200, "GRAD" 0, "opsz" 28;
+}
+
+// Mixin för att definiera aktiv färg för ikonen
+@mixin active-icon-color($color) {
+  color: $color;
+}
+
+.navigation {
+  .favorite-icon::before {
+    // Standard inställningar för ikonen (t.ex. outlined)
+    font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 28;
+  }
+}
+
+// Använd mixin för att tilldela aktiv färg till ikonen när på favoritsidan
+body.favorites .navigation .favorite-icon::before {
+  @include active-icon-color(red); // Byt ut "red" mot den önskade aktiva färgen
 }
