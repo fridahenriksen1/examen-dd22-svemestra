@@ -19,9 +19,13 @@ h4 {
   font-weight: 800;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .card {
-  h2 {
-  }
+  h2 {}
 }
 
 .saved-resorts {
@@ -29,18 +33,14 @@ h4 {
     font-size: 1.25rem;
     margin-bottom: 1rem;
   }
+
   p {
     font-size: 0.75rem;
   }
 }
-//!visa alla i index
-.show-all {
-  margin-right: 0.8rem;
-  font-weight: 400;
-  font-size: 1rem;
-  color: #141414;
-  text-decoration: none;
-}
+
+
+
 //! Förslag på resmål text
 .textbox-suggestions {
   h2 {
@@ -49,6 +49,7 @@ h4 {
     color: #111010;
   }
 }
+
 //! Informationen i stora kortet
 .information-box {
   font-size: 0.8rem;
@@ -61,6 +62,7 @@ h4 {
     font-size: 1.3rem;
   }
 }
+
 //! p text i chips filter, stort kort
 .chips-filter {
   p {
@@ -69,25 +71,30 @@ h4 {
     padding-left: 0.2rem;
   }
 }
+
 //! Logga in knappen account sidan
 
 .logo {
   margin: 0 0.1rem 7.5rem 0;
   font-size: 3rem;
 }
+
 .btn-txt-box {
   p {
     font-size: 0.8rem;
   }
+
   .sign-in {
     font-size: 1.3rem;
     color: white;
     text-decoration: none;
   }
+
   .createAccount {
     font-size: 1.3rem;
   }
 }
+
 .chipsFilter {
   p {
     font-size: 0.75rem;
@@ -101,6 +108,7 @@ h4 {
   color: #111010;
   margin-top: 0.5rem;
 }
+
 //! Text stylen längst ner på hjärtat, vänner och inställningar
 .iconTxt-containerBtm {
   font-weight: 500;
@@ -113,6 +121,7 @@ h4 {
   font-size: 0.8rem;
   color: #141414;
 }
+
 //!Lilla texten i mappkortet
 .saved-accommodations {
   font-size: 0.8rem;
