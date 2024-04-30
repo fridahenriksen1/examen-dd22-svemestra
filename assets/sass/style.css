@@ -366,7 +366,8 @@ a {
 .suggestions-container .suggestionCard-box .card-large .contentBox-card .txtChip-box .ellipse-box {
   margin-bottom: 0.8rem;
   display: flex;
-  column-gap: 0.2rem;
+  -moz-column-gap: 0.2rem;
+       column-gap: 0.2rem;
 }
 .suggestions-container .suggestionCard-box .card-large .contentBox-card .txtChip-box .ellipse-box .ellipse {
   border-radius: 0.3rem;
@@ -463,7 +464,9 @@ main {
   margin-left: 0.5rem;
   color: #141414;
   font-size: 1rem;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   cursor: pointer;
   font-size: 12px;
 }
@@ -520,7 +523,8 @@ main {
 .card.card-inspo .card-content-frost {
   position: absolute;
   background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   color: #f4f4f4;
   padding: 0.5rem 1.625rem;
   bottom: 3rem;
@@ -532,7 +536,8 @@ main {
 }
 .card.card-square img {
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .searchFilter-box {
@@ -554,6 +559,9 @@ main {
   border: 1px solid #141414;
   outline: none;
   box-shadow: 0px 0px 20px gray;
+}
+.searchFilter-box #search-bar #header-search::-moz-placeholder {
+  font-size: 12px; /* Ange önskad fontstorlek här */
 }
 .searchFilter-box #search-bar #header-search::placeholder {
   font-size: 12px; /* Ange önskad fontstorlek här */
@@ -611,7 +619,8 @@ main {
   margin-top: 0.75rem;
   display: flex;
   align-self: flex-start;
-  column-gap: 0.2rem;
+  -moz-column-gap: 0.2rem;
+       column-gap: 0.2rem;
   width: 3.9rem;
 }
 .user-accomodation .card .card-content .circle-box .ellipse {
@@ -645,7 +654,8 @@ main {
 .user-accomodation img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .user-accomodation.hide {
   display: none;
@@ -665,7 +675,9 @@ main {
   border-radius: 5rem;
   padding: 0.5rem 1.5rem;
   font-size: 1rem;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   cursor: pointer;
   margin-bottom: 1rem;
   text-transform: capitalize;
@@ -687,7 +699,30 @@ main {
   right: 0rem;
   border-radius: 6.25rem;
   background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(5.8976049423px);
+  -webkit-backdrop-filter: blur(5.8976049423px);
+          backdrop-filter: blur(5.8976049423px);
+}
+
+.like-icon {
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  top: 0.5rem;
+  right: 0rem;
+  border-radius: 6.25rem;
+  background: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(5.89px);
+          backdrop-filter: blur(5.89px);
+}
+.like-icon.liked {
+  font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 0, "opsz" 48;
 }
 
 .saved-resorts {
@@ -805,7 +840,8 @@ main {
   display: flex;
   flex-direction: row;
   align-self: flex-start;
-  column-gap: 0.2rem;
+  -moz-column-gap: 0.2rem;
+       column-gap: 0.2rem;
   width: 3.9rem;
   box-sizing: border-box;
 }
@@ -884,6 +920,7 @@ main {
   display: flex;
   align-items: center;
   flex: 0 0 100px;
+  height: -moz-fit-content;
   height: fit-content;
 }
 .map-section .map-box {
@@ -975,6 +1012,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: -moz-fit-content;
   width: fit-content;
 }
 .big-container .main-saved .profilPic-textBox .profil-pic-box {
@@ -998,7 +1036,8 @@ main {
 .big-container .main-saved .textChips-container .container-fakeChips {
   margin-bottom: 0.5rem;
   display: flex;
-  column-gap: 0.5rem;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
 }
 .big-container .main-saved .textChips-container .container-fakeChips .chipsFilter {
   border-radius: 6.3rem;
@@ -1048,6 +1087,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: -moz-fit-content;
   width: fit-content;
 }
 .big-container .shared-icon {
