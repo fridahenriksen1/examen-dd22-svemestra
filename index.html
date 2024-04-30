@@ -17,7 +17,12 @@
   <div class="flex-container">
     <main>
       <section class="saved-resorts">
-        <h2>Dina sparade önskemål</h2>
+        <div class="show-all-container start">
+          <h2 class="heading mt1">Dina sparade önskemål</h2>
+          <a class="link-tagg" href="savedDestinations.html">
+            <span class="link_1">Visa alla</span>
+          </a>
+        </div>
         <!-- Boxen för sparade  -->
         <div class="saved-resorts-container">
           <article class="saved-resort">
@@ -25,7 +30,8 @@
               <img src="assets/img/profilpic.jpg" alt="">
             </figure>
             <div>
-              <p>Kallbadhuset</p>
+              <p class="p-card-mini">Trakt Forest</p>
+              <p class="p-card-mini">Hotel</p>
             </div>
           </article>
           <article class="saved-resort">
@@ -33,7 +39,8 @@
               <img src="assets/img/profilpic.jpg" alt="">
             </figure>
             <div>
-              <p>Hyssna Forest Res..</p>
+              <p class="p-card-mini">Hyssna Forest</p>
+              <p class="p-card-mini">Resort</p>
             </div>
           </article>
           <article class="saved-resort">
@@ -41,7 +48,8 @@
               <img src="assets/img/profilpic.jpg" alt="">
             </figure>
             <div>
-              <p>Orbaden Hotell & S..</p>
+              <p class="p-card-mini">Aurora Tepee</p>
+              <p class="p-card-mini">Camp</p>
             </div>
           </article>
           <article class="saved-resort">
@@ -49,24 +57,18 @@
               <img src="assets/img/profilpic.jpg" alt="">
             </figure>
             <div>
-              <p>Ishotellet i Jukkas..</p>
+              <p class="p-card-mini">Arctic Bath</p>
             </div>
           </article>
-        </div>
-        <div class="show-all-container">
-          <a class="show-all-link" href="savedDestinations.html">
-            <span>Visa alla</span>
-            <span class="material-symbols-outlined">
-              arrow_forward
-            </span>
-          </a>
         </div>
       </section>
       <section class="suggestion-section">
-        <div>
-          <h1>Vad vill du göra på semestern?</h1>
-          <h2>Hitta inspiration</h2>
+        <div class="mbt4">
+          <h1 class="heading head-1">Vad vill du göra på semestern?</h1>
         </div>
+        <!-- Linjen fungerar inte???? den finns i styleing components -->
+        <div class="deviderLine mbt4"></div>
+        <h2 class="heading">Hitta inspiration</h2>
         <div class="suggestion-cards flex-container-wrap">
           <article class="card card-inspo">
             <figure>
@@ -241,8 +243,8 @@
       </li>
       <li class="menu-item">
         <a class="menu-link" href="filterPage.html">
-          <span class="material-symbols-outlined">home</span>
-          <p>Hem</p>
+          <img class="nav-icons" src="/assets/icons/Search.svg" />
+            <p>Utforska</p>
         </a>
       </li>
       <li class="menu-item">

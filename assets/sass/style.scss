@@ -3,10 +3,15 @@
 
 @import "base/reset";
 @import "base/typography";
+@import "base/spacing";
+@import "base/colors";
 
 @import "layout/nav";
 @import "layout/suggestions";
 @import "layout/layout";
+
+@import "pages/home";
+// @import "pages/savedmaps";
 
 @import "components/accessibility";
 @import "components/buttons";
@@ -21,8 +26,9 @@
 @import "components/btnArrowBack";
 @import "components/iconbarDestinationMap";
 @import "components/tabsDestinationMapps";
-@import "pages/home";
-// @import "pages/savedmaps";
+@import "components/devider-lines";
+
+
 
 //Detta måste sorteras
 @import "filterpage";
@@ -30,6 +36,7 @@
 @import "profil";
 @import "saveddestinations";
 @import "savedmaps";
+
 
 // .flex-container {
 //   max-width: 1200px;

@@ -1,0 +1,31 @@
+// SPACING
+// Margin Borrom 1rem
+.mb1{
+    margin-bottom: 1rem;
+}
+.mbt4{
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+}
+// margin top
+.mt1{
+    margin-top: 1rem;
+}
+// <a> taggarnas padding
+.link-tagg{
+    padding: 1rem;
+}
+
+// sorteras:
+
+.saved-resorts {
+    margin-top: 2.5rem;
+  
+  }
+
+//   Lite marign för att få rum åt p-taggarna i sparade besöksmåls componenten
+.p-card-mini {
+    &:first-child {
+      margin-bottom: 0.2rem;
+    }
+  }
