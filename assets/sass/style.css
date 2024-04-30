@@ -598,6 +598,7 @@ main {
 }
 .user-accomodation .card {
   position: relative;
+  border: 1px solid #dedede;
   flex: 1 auto;
   display: flex;
   justify-content: center;
@@ -721,7 +722,7 @@ main {
   -webkit-backdrop-filter: blur(5.89px);
           backdrop-filter: blur(5.89px);
 }
-.like-icon.liked {
+.like-icon.filled .material-symbols-outlined {
   font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 0, "opsz" 48;
 }
 

@@ -12,6 +12,7 @@
 
   .card {
     position: relative;
+    border: 1px solid #dedede;
     //z-index: -1;
     // --flex-items: 1;
     // flex: 0 0
@@ -233,7 +234,10 @@
   //   font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 0, "opsz" 48;
   // }
 
-  &.liked {
+  // &.liked {
+  //   font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 0, "opsz" 48;
+  // }
+  &.filled .material-symbols-outlined {
     font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 0, "opsz" 48;
   }
 }
