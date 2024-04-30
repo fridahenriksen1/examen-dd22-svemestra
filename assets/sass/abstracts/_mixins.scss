@@ -4,16 +4,19 @@
     @content;
   }
 }
+
 @mixin bp-md {
   @media (min-width: $bp-md) {
     @content;
   }
 }
+
 @mixin bp-lg {
   @media (min-width: $bp-lg) {
     @content;
   }
 }
+
 @mixin bp-xl {
   @media (min-width: $bp-xl) {
     @content;

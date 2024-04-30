@@ -1,1 +1,18 @@
 //Style för buttons
+
+//Visa alla style
+.show-all-container {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+
+    .show-all-link {
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+
+        .show-all-text {
+            text-decoration: underline;
+        }
+    }
+}
