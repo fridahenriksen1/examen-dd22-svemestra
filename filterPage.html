@@ -11,8 +11,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+ <!-- GOOGLE ICONS --> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 
+    
    <link rel="stylesheet" href="assets/sass/style.css">
 </head>
 
@@ -76,19 +79,19 @@
          <!-- KATERGORI CHIPSEN -->
          <h2 class="categori-txt">Kategorier</h2>
         <form class="m1b" id="categorys" action="">
-            <input class="chip" type="checkbox" id="categoryOne">
+            <input class="chip categoy" type="checkbox" id="categoryOne" data-cat="trädhotell">
             <label for="categoryOne">Trädhotell</label>
-            <input class="chip" type="checkbox" id="categoryTwo">
+            <input class="chip categoy" type="checkbox" id="categoryTwo" data-cat="camping">
             <label for="categoryTwo">Camping</label>
-            <input class="chip" type="checkbox" id="categoryThree">
+            <input class="chip categoy" type="checkbox" id="categoryThree" data-cat="spa">
             <label for="categoryThree">Tillgång till Spa</label>
-            <input class="chip" type="checkbox" id="categoryFour">
+            <input class="chip categoy" type="checkbox" id="categoryFour" data-cat="vatten">
             <label for="categoryFour">Närhet till vattnet</label>
-            <input class="chip" type="checkbox" id="categoryFive">
+            <input class="chip categoy" type="checkbox" id="categoryFive" data-cat="vandra">
             <label for="categoryFive">Vandra</label>
-            <input class="chip" type="checkbox" id="categorySix">
+            <input class="chip categoy" type="checkbox" id="categorySix" data-cat="cyckla">
             <label for="categorySix">Cykla</label>
-            <input class="chip" type="checkbox" id="categorySeven">
+            <input class="chip categoy" type="checkbox" id="categorySeven" data-cat="glamping">
             <label for="categorySeven">Glamping</label>
         </form>
 
@@ -112,84 +115,117 @@
     <section class="user-accomodation" data-user-cards>
         <!-- Use <template> to hold some content that will be hidden when the page loads. Use JavaScript to display it:  -->
            
-        <template data-user-template>
-            <article class="card">
-                <img class="like-icon" src="/assets/icons/heart-like-large-card.svg">
-                <a class="card-content" href="" data-link>
-                    
-                    <figure>
-                        <div class="img-box">
-                            <img data-image>
-                            <img class="like-icon" src="/assets/icons/heart-like-large-card.svg">
-
-                        </div>
-                        <div class="circle-box">
-                            <div class="ellipse">
-                            </div>
-                            <div class="ellipse">
-                            </div>
-                            <div class="ellipse">
-                            </div>
-                            <div class="ellipse">
-                            </div>
-                            <div class="ellipse">
-                            </div>
-                          </div>
-                        <figcaption class="card-text">
-                            <h2 data-header></h2>
-                            <!-- <p class="style-chips" data-cat></p> -->
-                            <p data-info></p>
-                           
-                        </figcaption>
-                       
-                    </figure>
-                  
-
-                    <section class="category-box">
-                       
-                        <!-- <p data-price></p> -->
-                        <p class="style-chips" data-cat></p>
-                    </section>
-                    <!-- <div class="gradient"></div> -->
-                </a>
-            </article>
-        </template>
+        
 
     </section>
+    <template data-user-template>
+      <article class="card">
+        <span class="material-symbols-outlined like-icon">
+          favorite
+          </span>
 
+           <!-- Thin outlined heart -->
+    <!-- <div id="heartContainer" style="font-variation-settings: 'FILL' 0, 'wght' 100, 'GRAD' 0, 'opsz' 48;">
+      <span id="heartIcon" class="material-symbols-outlined">favorite</span>
+  </div> -->
+
+          <!-- <div class="heart-container" onclick="toggleHeart()">
+            <span class="material-symbols-outlined" id="heartIcon">favorite</span>
+          </div> -->
+          
+          <!-- <img class="like-icon" src="/assets/icons/heart-like-large-card.svg"> -->
+          <a class="card-content" href="" data-link>
+              
+              <figure>
+                  <div class="img-box">
+                      <img data-image>
+                      <!-- <img class="like-icon" src="/assets/icons/heart-like-large-card.svg"> -->
+
+                  </div>
+                  <div class="circle-box">
+                      <div class="ellipse">
+                      </div>
+                      <div class="ellipse">
+                      </div>
+                      <div class="ellipse">
+                      </div>
+                      <div class="ellipse">
+                      </div>
+                      <div class="ellipse">
+                      </div>
+                    </div>
+                  <figcaption class="card-text">
+                      <h2 data-header></h2>
+                      <!-- <p class="style-chips" data-cat></p> -->
+                      <p data-info></p>
+                     
+                  </figcaption>
+                 
+              </figure>
+            
+
+              <section class="category-box" data-categorys>
+            
+              </section>
+              <!-- <div class="gradient"></div> -->
+          </a>
+      </article>
+  </template>
 
 </div>
 </main>
 
 
-    <!-- NAVIGATION -->
-    <nav class="navigation">
+       <!-- NAVIGATION -->
+       <nav class="navigation">
         <ul>
-          <li>
-        <a class="home-filled" href="index.html">
-          <img class="nav-icons" src="/assets/icons/homeIcon.svg" />
+          <li class="iconTxtNav-box">
+        <a class="link" href="index.html">
+          <!-- <img class="nav-icons" src="/assets/icons/homeIcon.svg" /> -->
+          <span class="material-symbols-outlined ">
+            home
+            </span>
+            <p>Hem</p>
         </a>
       </li>
       </ul>
       <ul>
-        <li>
-          <a class="search-1" href="filterPage.html" >
-            <img class="nav-icons" src="/assets/icons/searchNavIcon.svg" />
+        <li class="iconTxtNav-box">
+          <a class="link" href="filterPage.html" >
+            <img class="nav-icons" src="/assets/icons/Search.svg" />
+            <p>Utforska</p>
           </a>
 
         </li>
       </ul>
 
       <ul>
-        <li>
-          <a class="user-filled" href="profil.html">
-            <img class="nav-icons" src="/assets/icons/navProfilIcon.svg" />
+        <li class="iconTxtNav-box">
+          <a class="link" href="savedDestinations.html">
+            <span class="material-symbols-outlined">
+              favorite
+              </span>
+              <p>Favoriter</p>
+              
+          </a>
+        </li>
+      </ul>
+      <ul>
+        <li class="iconTxtNav-box">
+          <a class="link" href="profil.html">
+
+          <span class="material-symbols-outlined">
+            account_circle
+            </span>
+            <p>Profil</p>
           </a>
         </li>
       </ul>
       </nav>
-<script src="/assets/js/script.js"></script>
-<script src="/assets/js/getAccommodation.js" defer></script>
-<script  src="/assets/js/filterpage.js"></script>
+<!-- <script src="/assets/js/script.js"></script> -->
+<!-- <script src="/assets/js/getAccommodation.js" defer></script> -->
+<!-- <script  src="/assets/js/filterpage.js"></script> -->
+<script src="assets/js/filtering.js"></script>
+<script src="assets/js/like.js"></script>
 </body>
 </html>

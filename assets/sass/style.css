@@ -34,8 +34,7 @@ video,
 canvas,
 svg {
   display: block;
-  max-width: 100%;
-  height: 100%;
+  width: 100%;
 }
 
 input,
@@ -197,20 +196,17 @@ h4 {
   font-weight: 800;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .saved-resorts h2 {
   font-size: 1.25rem;
   margin-bottom: 1rem;
 }
 .saved-resorts p {
   font-size: 0.75rem;
-}
-
-.show-all {
-  margin-right: 0.8rem;
-  font-weight: 400;
-  font-size: 1rem;
-  color: #141414;
-  text-decoration: none;
 }
 
 .textbox-suggestions h2 {
@@ -292,22 +288,32 @@ h4 {
   color: #141414;
 }
 
-.navigation {
+.bottom-menu-container {
   background: #ededed;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 1.8rem 0;
   width: 100%;
-  box-sizing: border-box;
   position: fixed;
   bottom: 0;
+  left: 0;
+  right: 0;
   z-index: 3;
 }
-
-.nav-icons {
-  width: 1.3rem;
-  height: 1.5rem;
+.bottom-menu-container .bottom-menu {
+  display: flex;
+}
+.bottom-menu-container .bottom-menu .menu-item {
+  flex: 1 0 auto;
+  display: flex;
+}
+.bottom-menu-container .bottom-menu .menu-item .menu-link {
+  flex: 1;
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+  padding: 1rem;
+  text-align: center;
+}
+.bottom-menu-container .bottom-menu .menu-item .menu-link .material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 28;
 }
 
 .suggestions-container {
@@ -360,8 +366,7 @@ h4 {
 .suggestions-container .suggestionCard-box .card-large .contentBox-card .txtChip-box .ellipse-box {
   margin-bottom: 0.8rem;
   display: flex;
-  -moz-column-gap: 0.2rem;
-       column-gap: 0.2rem;
+  column-gap: 0.2rem;
 }
 .suggestions-container .suggestionCard-box .card-large .contentBox-card .txtChip-box .ellipse-box .ellipse {
   border-radius: 0.3rem;
@@ -394,6 +399,16 @@ h4 {
   height: 0.8rem;
 }
 
+.flex-container-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+main {
+  padding: 1rem;
+}
+
 .visually-hidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -404,6 +419,20 @@ h4 {
   position: absolute;
   width: 1px;
   white-space: nowrap;
+}
+
+.show-all-container {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+}
+.show-all-container .show-all-link {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+.show-all-container .show-all-link .show-all-text {
+  text-decoration: underline;
 }
 
 #categorys {
@@ -434,9 +463,7 @@ h4 {
   margin-left: 0.5rem;
   color: #141414;
   font-size: 1rem;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
   cursor: pointer;
   font-size: 12px;
 }
@@ -486,6 +513,28 @@ h4 {
   scrollbar-width: none; /* Firefox */
 }
 
+.card.card-inspo {
+  flex: 0 0 calc(50% - 0.5rem);
+  position: relative;
+}
+.card.card-inspo .card-content-frost {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  color: #f4f4f4;
+  padding: 0.5rem 1.625rem;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(100%);
+}
+.card.card-square {
+  height: 150px;
+}
+.card.card-square img {
+  height: 100%;
+  object-fit: cover;
+}
+
 .searchFilter-box {
   display: flex;
   justify-content: space-between;
@@ -505,9 +554,6 @@ h4 {
   border: 1px solid #141414;
   outline: none;
   box-shadow: 0px 0px 20px gray;
-}
-.searchFilter-box #search-bar #header-search::-moz-placeholder {
-  font-size: 12px; /* Ange önskad fontstorlek här */
 }
 .searchFilter-box #search-bar #header-search::placeholder {
   font-size: 12px; /* Ange önskad fontstorlek här */
@@ -553,12 +599,6 @@ h4 {
     flex: 0 0 calc(50% - 0.5rem);
   }
 }
-.user-accomodation .card .like-icon {
-  position: absolute;
-  z-index: 1;
-  width: 4rem;
-  height: 4rem;
-}
 .user-accomodation .card .card-content {
   display: flex;
   flex-direction: column;
@@ -571,8 +611,7 @@ h4 {
   margin-top: 0.75rem;
   display: flex;
   align-self: flex-start;
-  -moz-column-gap: 0.2rem;
-       column-gap: 0.2rem;
+  column-gap: 0.2rem;
   width: 3.9rem;
 }
 .user-accomodation .card .card-content .circle-box .ellipse {
@@ -606,8 +645,7 @@ h4 {
 .user-accomodation img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .user-accomodation.hide {
   display: none;
@@ -627,12 +665,29 @@ h4 {
   border-radius: 5rem;
   padding: 0.5rem 1.5rem;
   font-size: 1rem;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
   cursor: pointer;
   margin-bottom: 1rem;
+  text-transform: capitalize;
   border: 1px solid #141414;
+}
+
+.like-icon {
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  top: 0.5rem;
+  right: 0rem;
+  border-radius: 6.25rem;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5.8976049423px);
 }
 
 .saved-resorts {
@@ -647,8 +702,22 @@ h4 {
   flex: 0 0 calc(50% - 0.5rem);
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
   background-color: #ededed;
+  height: 2.75rem;
+  width: 10rem;
+}
+.saved-resorts .saved-resorts-container .saved-resort figure {
+  width: 2.75rem;
+  height: 2.75rem;
+}
+.saved-resorts .saved-resorts-container .saved-resort figure img {
+  height: 100%;
+  width: 100%;
+}
+.saved-resorts .saved-resorts-container .saved-resort p {
+  white-space: nowrap;
+  padding-right: 0.375rem;
 }
 .saved-resorts .showAll {
   background: #ffffff;
@@ -736,8 +805,7 @@ h4 {
   display: flex;
   flex-direction: row;
   align-self: flex-start;
-  -moz-column-gap: 0.2rem;
-       column-gap: 0.2rem;
+  column-gap: 0.2rem;
   width: 3.9rem;
   box-sizing: border-box;
 }
@@ -814,7 +882,6 @@ h4 {
   display: flex;
   align-items: center;
   flex: 0 0 100px;
-  height: -moz-fit-content;
   height: fit-content;
 }
 .map-section .map-box {
@@ -906,7 +973,6 @@ h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: -moz-fit-content;
   width: fit-content;
 }
 .big-container .main-saved .profilPic-textBox .profil-pic-box {
@@ -930,8 +996,7 @@ h4 {
 .big-container .main-saved .textChips-container .container-fakeChips {
   margin-bottom: 0.5rem;
   display: flex;
-  -moz-column-gap: 0.5rem;
-       column-gap: 0.5rem;
+  column-gap: 0.5rem;
 }
 .big-container .main-saved .textChips-container .container-fakeChips .chipsFilter {
   border-radius: 6.3rem;
@@ -981,7 +1046,6 @@ h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: -moz-fit-content;
   width: fit-content;
 }
 .big-container .shared-icon {
@@ -1039,96 +1103,4 @@ h4 {
 .big-container .shared-icon {
   width: 1.3rem;
   height: 0.8rem;
-}
-
-.container {
-  padding: 1rem;
-}
-
-.flex-container {
-  max-width: 1200px;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 1rem;
-  gap: var(--flex-gap);
-  /* Denna kod ska läggas till på lämpligt ställe ex i en komponent partial */
-  /* Om ni vill använda gap och vill att det blir smooth med mellanrummen använd denna uträkning */
-  /* https://wiryawanadipa.com/blog/calculate-percentage-width-of-flex-items-when-using-gap/ */
-  /* flex: 0 0 calc((100% / 3) - (((3 - 1) / 3) * 1rem)); */
-}
-@media (min-width: 700px) {
-  .flex-container {
-    margin: 0 4rem;
-  }
-}
-.flex-container .text-box {
-  margin-bottom: 3.5rem;
-}
-.flex-container .suggestion-section {
-  margin-bottom: 8rem;
-  display: flex;
-  flex-wrap: wrap;
-}
-.flex-container .suggestion-section .inspoTxtBox {
-  margin-left: 0.5rem;
-}
-.flex-container .suggestion-section .inspoTxtBox h1 {
-  font-size: 2rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 110%;
-}
-.flex-container .suggestion-section .inspoTxtBox h2 {
-  color: #514e4e;
-  font-size: 1.5rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  margin-bottom: 1rem;
-  margin-top: 3rem;
-}
-.flex-container .suggestion-section .inspiration-box {
-  display: flex;
-  flex-wrap: wrap;
-  flex: 1 auto;
-  justify-content: center;
-  gap: 1rem;
-}
-.flex-container .suggestion-section .inspiration-box .inspirationCard {
-  flex: 0 0 calc(50% - 0.5rem);
-}
-.flex-container .suggestion-section .inspiration-box .inspirationCard .clickCard .inspoPicBox {
-  position: relative;
-  height: 14rem;
-  min-width: 10rem;
-  flex: 1;
-}
-.flex-container .suggestion-section .inspiration-box .inspirationCard .clickCard .inspoPicBox img {
-  width: 100%;
-  height: 100%;
-}
-.flex-container .suggestion-section .inspiration-box .inspirationCard .clickCard .inspoPicBox .txtbg {
-  position: absolute;
-  background: rgba(255, 255, 255, 0.15);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  color: #f4f4f4;
-  padding: 0.5rem 1.625rem;
-  bottom: 3rem;
-  left: 50%;
-  transform: translateX(-50%) translateY(100%);
-}
-.flex-container .suggestion-section .inspiration-box .showAllLink {
-  text-decoration: none;
-  color: black;
-}
-.flex-container .suggestion-section .inspiration-box .showAllLink .showAllBox {
-  display: flex;
-  align-items: center;
-}
-.flex-container .destination-section h2 {
-  font-size: 1.5rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
 }/*# sourceMappingURL=style.css.map */
