@@ -33,6 +33,7 @@ function createCard(destination) {
     const header = card.querySelector('[data-header]');
     const img = card.querySelector('[data-image]');
     const link = card.querySelector('[data-link]');
+    const info = card.querySelector('[data-info]');
     const catContainer = card.querySelector('[data-categorys]');
     const  likeIcons = document.querySelectorAll('.like-icon');
 
@@ -61,6 +62,7 @@ function createCard(destination) {
     header.textContent = destination.name;
     img.setAttribute('src', `assets/${destination.imageURL}`);
     header.textContent =  destination.name;
+    info.textContent = destination.info;
     
     dataUserCards.append(card);
 }
