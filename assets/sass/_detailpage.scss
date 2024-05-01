@@ -1,5 +1,5 @@
 .accommodation {
-  .detail-section {
+  .detail-main {
     margin: 1rem 0rem 4rem 0rem;
     .seasonPrice-box {
       display: flex;
@@ -14,6 +14,31 @@
       }
       .price-box {
         display: flex;
+      }
+    }
+
+    .location-box {
+      display: flex;
+      align-items: center;
+    }
+    //!Detta kan man ta ut och göra som en komponent göra till en komponent
+    .circle-box {
+      margin-bottom: 0.8rem;
+      margin-top: 0.75rem;
+      display: flex;
+
+      align-self: flex-start;
+      column-gap: 0.2rem;
+      width: 3.9rem;
+
+      .ellipse {
+        border-radius: 0.3rem;
+        background: #e7ae4d;
+        width: 0.6rem;
+        height: 0.6rem;
+        &. {
+          border: 1px solid #e7ae4d;
+        }
       }
     }
   }

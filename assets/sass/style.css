@@ -1210,20 +1210,39 @@ main {
   height: 0.8rem;
 }
 
-.accommodation .detail-section {
+.accommodation .detail-main {
   margin: 1rem 0rem 4rem 0rem;
 }
-.accommodation .detail-section .seasonPrice-box {
+.accommodation .detail-main .seasonPrice-box {
   display: flex;
   justify-content: space-between;
   flex: 1 0 auto;
   margin-bottom: 1rem;
 }
-.accommodation .detail-section .seasonPrice-box .season-box {
+.accommodation .detail-main .seasonPrice-box .season-box {
   display: flex;
   flex: 0 0 60%;
   justify-content: space-between;
 }
-.accommodation .detail-section .seasonPrice-box .price-box {
+.accommodation .detail-main .seasonPrice-box .price-box {
   display: flex;
+}
+.accommodation .detail-main .location-box {
+  display: flex;
+  align-items: center;
+}
+.accommodation .detail-main .circle-box {
+  margin-bottom: 0.8rem;
+  margin-top: 0.75rem;
+  display: flex;
+  align-self: flex-start;
+  -moz-column-gap: 0.2rem;
+       column-gap: 0.2rem;
+  width: 3.9rem;
+}
+.accommodation .detail-main .circle-box .ellipse {
+  border-radius: 0.3rem;
+  background: #e7ae4d;
+  width: 0.6rem;
+  height: 0.6rem;
 }/*# sourceMappingURL=style.css.map */

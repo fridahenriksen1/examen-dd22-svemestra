@@ -21,6 +21,8 @@ fetch('../json/accommodation.json')
             //Här skapar ni ref till era element i destiantions sidan
             const heading = destination.querySelector('[data-name]');
             heading.textContent = item.name;
+            const info = destination.querySelector('[data-info]');
+            info.textContent = item.info;
             //Gör en ny variabel  för varje html som ska ha data
             const img = destination.querySelector('[data-img]');
             img.setAttribute('src', `../${item.imageURL}`);
