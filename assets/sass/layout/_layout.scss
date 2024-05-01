@@ -7,3 +7,16 @@
 main {
     padding: 1rem;
 }
+.show-all-container {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    &.start{
+        justify-content: space-between;
+    }
+}
+.saved-resorts-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}

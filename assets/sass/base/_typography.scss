@@ -1,38 +1,72 @@
 //Style för all typografi, dvs lägg inget som har med typ i någon annan partial
 //Eftersom vi har nollställt all style, så kommer all text per default bli 16px, dvs ni måste bestämma storlek på allt
-
+@font-face {
+  font-family: SwedenSansBook;
+  src: url(font/SwedenSansBook.otf);
+}
+@font-face {
+  font-family: SwedenSansRegular;
+  src: url(font/SwedenSansRegular.otf);
+}
+@font-face {
+  font-family: SwedenSansSemiBold;
+  src: url(font/SwedenSansSemiBold.otf);
+}
+@font-face {
+  font-family: SwedenSansBold;
+  src: url(font/SwedenSansBold.otf);
+}
 body {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  font-family: "SwedenSansBold", sans-serif;
   font-style: normal;
 }
+// a-taggarnas stik
+a, .link-tagg {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+// stil på rubriker
+.heading{
+  font-size: 1rem;
+  &.head-1{
+    font-size: 2rem;
+  }
+}
+// tillfärlligt namn för <span>
+.link_1{
+  font-family: SwedenSansBook;
+  font-size: 0.87;
+}
+
+// Denna sätts på minikorten "dina sparade besöksmål" tillfälligt i index alltså
+.p-card-mini{
+  font-family: SwedenSansBook;
+  font-size: 0.75;
+}
+
+// ____________________Arbetar om dessa under till de övre, använd de övre istället
+// ________________________
 
 h1 {
   font-size: 3rem;
-  margin-top: 4.25rem;
-  margin-bottom: 0.5rem;
 }
 
 h4 {
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
   font-weight: 800;
+  // hejhej
 }
 
-a {
-  text-decoration: none;
-  color: black;
-}
+
 
 .card {
   h2 {}
 }
 
 .saved-resorts {
-  h2 {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-  }
 
   p {
     font-size: 0.75rem;

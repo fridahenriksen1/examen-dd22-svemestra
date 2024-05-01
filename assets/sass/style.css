@@ -178,16 +178,52 @@ ol {
   list-style-type: "";
 }
 
+@font-face {
+  font-family: SwedenSansBook;
+  src: url(font/SwedenSansBook.otf);
+}
+@font-face {
+  font-family: SwedenSansRegular;
+  src: url(font/SwedenSansRegular.otf);
+}
+@font-face {
+  font-family: SwedenSansSemiBold;
+  src: url(font/SwedenSansSemiBold.otf);
+}
+@font-face {
+  font-family: SwedenSansBold;
+  src: url(font/SwedenSansBold.otf);
+}
 body {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  font-family: "SwedenSansBold", sans-serif;
   font-style: normal;
+}
+
+a, .link-tagg {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+.heading {
+  font-size: 1rem;
+}
+.heading.head-1 {
+  font-size: 2rem;
+}
+
+.link_1 {
+  font-family: SwedenSansBook;
+  font-size: 0.87;
+}
+
+.p-card-mini {
+  font-family: SwedenSansBook;
+  font-size: 0.75;
 }
 
 h1 {
   font-size: 3rem;
-  margin-top: 4.25rem;
-  margin-bottom: 0.5rem;
 }
 
 h4 {
@@ -196,15 +232,6 @@ h4 {
   font-weight: 800;
 }
 
-a {
-  text-decoration: none;
-  color: black;
-}
-
-.saved-resorts h2 {
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
-}
 .saved-resorts p {
   font-size: 0.75rem;
 }
@@ -286,6 +313,31 @@ a {
   font-weight: 500;
   font-size: 1rem;
   color: #141414;
+}
+
+.mb1 {
+  margin-bottom: 1rem;
+}
+
+.mbt4 {
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+}
+
+.mt1 {
+  margin-top: 1rem;
+}
+
+.link-tagg {
+  padding: 1rem;
+}
+
+.saved-resorts {
+  margin-top: 2.5rem;
+}
+
+.p-card-mini:first-child {
+  margin-bottom: 0.2rem;
 }
 
 .bottom-menu-container {
@@ -410,6 +462,22 @@ main {
   padding: 1rem;
 }
 
+.show-all-container {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+}
+.show-all-container.start {
+  justify-content: space-between;
+}
+
+.saved-resorts-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/*If you have page-specific styles, it is better to put them in a pages/ folder, in a file named after the page. For instance, it’s not uncommon to have very specific styles for the home page hence the need for a _home.scss file in pages/.*/
 .visually-hidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -422,11 +490,6 @@ main {
   white-space: nowrap;
 }
 
-.show-all-container {
-  flex: 0 0 100%;
-  display: flex;
-  justify-content: center;
-}
 .show-all-container .show-all-link {
   display: flex;
   align-items: center;
@@ -736,32 +799,34 @@ main {
 }
 .saved-resorts .saved-resorts-container .saved-resort {
   flex: 0 0 calc(50% - 0.5rem);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background-color: #ededed;
   height: 2.75rem;
   width: 10rem;
 }
-.saved-resorts .saved-resorts-container .saved-resort figure {
+.saved-resort figure {
   width: 2.75rem;
   height: 2.75rem;
 }
-.saved-resorts .saved-resorts-container .saved-resort figure img {
+.saved-resort figure img {
   height: 100%;
   width: 100%;
 }
-.saved-resorts .saved-resorts-container .saved-resort p {
+.saved-resort p {
   white-space: nowrap;
   padding-right: 0.375rem;
 }
-.saved-resorts .showAll {
+
+.showAll {
   background: #ffffff;
   display: flex;
   justify-content: center;
   margin-top: 1.5rem;
 }
-.saved-resorts .showAll .arrow-forrward-icon {
+.showAll .arrow-forrward-icon {
   width: 1rem;
   height: 1rem;
 }
@@ -961,7 +1026,12 @@ main {
   transition: background-color 0.7s ease;
 }
 
-/*If you have page-specific styles, it is better to put them in a pages/ folder, in a file named after the page. For instance, it’s not uncommon to have very specific styles for the home page hence the need for a _home.scss file in pages/.*/
+.deviderLine {
+  height: 1px;
+  width: 100%;
+  color: grey;
+}
+
 .account-container {
   background: #ffffff;
   display: flex;

@@ -1,18 +1,11 @@
 //! sektionen saved resorts på index sidan
-.saved-resorts {
-  margin-top: 2.5rem;
-
-  .saved-resorts-container {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-
     .saved-resort {
       flex: 0 0 calc((100% / 2) - (((2 - 1) / 2) * 1rem));
+      box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+      background-color: #ffffff;
       display: flex;
       align-items: center;
       gap: 0.5rem;
-      background-color: #ededed;
       height: 2.75rem;
       width: 10rem;
       figure {
@@ -31,7 +24,6 @@
         padding-right: 0.375rem;
       }
     }
-  }
 
   //! Vissa alla knappen
   .showAll {
@@ -45,4 +37,3 @@
       height: 1rem;
     }
   }
-}
