@@ -1,0 +1,20 @@
+.accommodation {
+  .detail-section {
+    margin: 1rem 0rem 4rem 0rem;
+    .seasonPrice-box {
+      display: flex;
+      justify-content: space-between;
+      flex: 1 0 auto;
+      margin-bottom: 1rem;
+      .season-box {
+        display: flex;
+        flex: 0 0 60%;
+
+        justify-content: space-between;
+      }
+      .price-box {
+        display: flex;
+      }
+    }
+  }
+}
