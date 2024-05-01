@@ -1265,6 +1265,7 @@ main {
   margin-bottom: 0.5rem;
   margin-top: 0.5rem;
   display: flex;
+  flex-wrap: wrap;
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
 }
@@ -1273,6 +1274,7 @@ main {
   border: 0.1rem solid #141414;
   display: flex;
   padding: 0.3rem 1rem;
+  margin-top: 0.5rem;
   align-items: center;
 }
 .accommodation .detail-main .chipsBox .chipsFilter .iconChipsBox .chipsIcon {
