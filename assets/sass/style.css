@@ -1256,4 +1256,29 @@ main {
 }
 .accommodation .detail-main .circleRating-box p {
   margin-left: 0.5rem;
+}
+.accommodation .detail-main .readMore {
+  margin-top: 0.5rem;
+  text-decoration: underline;
+}
+.accommodation .detail-main .chipsBox {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  display: flex;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+.accommodation .detail-main .chipsBox .chipsFilter {
+  border-radius: 6.3rem;
+  border: 0.1rem solid #141414;
+  display: flex;
+  padding: 0.3rem 1rem;
+  align-items: center;
+}
+.accommodation .detail-main .chipsBox .chipsFilter .iconChipsBox .chipsIcon {
+  font-size: 1rem;
+}
+.accommodation .detail-main .chipsBox .chipsFilter .chipsTxt {
+  padding-left: 0.25rem;
+  font-size: 12px;
 }/*# sourceMappingURL=style.css.map */

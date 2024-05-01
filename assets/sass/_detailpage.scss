@@ -49,5 +49,33 @@
         margin-left: 0.5rem;
       }
     }
+    //!Lär mer knappen/collapsiblen under info texten
+    .readMore {
+      margin-top: 0.5rem;
+      text-decoration: underline;
+    }
+    .chipsBox {
+      margin-bottom: 0.5rem;
+      margin-top: 0.5rem;
+      display: flex;
+      column-gap: 0.5rem;
+
+      .chipsFilter {
+        border-radius: 6.3rem;
+        border: 0.1rem solid #141414;
+        display: flex;
+        padding: 0.3rem 1rem;
+        align-items: center;
+        .iconChipsBox {
+          .chipsIcon {
+            font-size: 1rem;
+          }
+        }
+        .chipsTxt {
+          padding-left: 0.25rem;
+          font-size: 12px;
+        }
+      }
+    }
   }
 }
