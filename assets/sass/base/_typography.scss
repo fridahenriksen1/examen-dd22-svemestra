@@ -17,7 +17,7 @@
   src: url(font/SwedenSansBold.otf);
 }
 body {
-  font-family: "SwedenSansBold", sans-serif;
+  font-family: "SwedenSansBold", arial, sans-serif;
   font-style: normal;
 }
 // a-taggarnas stik
@@ -26,13 +26,56 @@ a, .link-tagg {
   text-decoration: none;
   color: black;
 }
-
-// stil på rubriker
+// STYLES FRÅN FIGMA
 .heading{
   font-size: 1rem;
-  &.head-1{
-    font-size: 2rem;
-  }
+}
+.heading_1{
+  font-size: 3rem;
+}
+.heading_2{
+  font-size: 2rem;
+}
+.heading_3{
+  font-size: 1.75rem;
+}
+.heading_4{
+  font-size: 1.25rem;
+}
+.heading_5{
+  font-size: 1.125rem;
+  font-family: "SwedenSansSemiBold", arial, sans-serif;
+}
+.bodyMD-Bold{
+  font-size: 1rem;
+}
+.bodyMD{
+  font-size: 1rem;
+  font-family: "SwedenSansBook", arial, sans-serif;
+}
+.bodySM{
+  font-size: 0.75rem;
+  font-family: "SwedenSansBook", arial, sans-serif;
+}
+.bodySM-Bold{
+  font-size: 0.75rem;
+}
+.bodySM-SemiBold{
+  font-size: 0.75rem;
+  font-family: "SwedenSansSemiBold", arial, sans-serif;
+}
+.badge{
+  font-size: 0.75rem;
+  font-family: "SwedenSansSemiBold", arial, sans-serif;
+}
+// Button primary fungerar på både Outlined/Filled
+// Gör mixin av denna eller gör en button-primary på button styling i button.scss
+.button-primary{
+  font-size: 1rem;
+}
+.buttonText{
+  font-size: 1rem;
+  font-family: "SwedenSansSemiBold", arial, sans-serif;
 }
 // tillfärlligt namn för <span>
 .link_1{
@@ -45,6 +88,20 @@ a, .link-tagg {
   font-family: SwedenSansBook;
   font-size: 0.75;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // ____________________Arbetar om dessa under till de övre, använd de övre istället
 // ________________________
