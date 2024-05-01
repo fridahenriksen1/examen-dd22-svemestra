@@ -21,24 +21,32 @@
       display: flex;
       align-items: center;
     }
-    //!Detta kan man ta ut och göra som en komponent göra till en komponent
-    .circle-box {
-      margin-bottom: 0.8rem;
-      margin-top: 0.75rem;
+    .circleRating-box {
       display: flex;
+      align-items: center;
+      //!Detta kan man ta ut och göra som en komponent göra till en komponent
+      .circle-box {
+        margin-bottom: 0.8rem;
+        margin-top: 0.75rem;
+        display: flex;
 
-      align-self: flex-start;
-      column-gap: 0.2rem;
-      width: 3.9rem;
+        align-self: flex-start;
+        column-gap: 0.2rem;
+        width: 3.9rem;
 
-      .ellipse {
-        border-radius: 0.3rem;
-        background: #e7ae4d;
-        width: 0.6rem;
-        height: 0.6rem;
-        &. {
-          border: 1px solid #e7ae4d;
+        .ellipse {
+          border-radius: 0.3rem;
+          background: #e7ae4d;
+          width: 0.6rem;
+          height: 0.6rem;
+          &.border {
+            border: 1px solid #e7ae4d;
+            background-color: white;
+          }
         }
+      }
+      p {
+        margin-left: 0.5rem;
       }
     }
   }
