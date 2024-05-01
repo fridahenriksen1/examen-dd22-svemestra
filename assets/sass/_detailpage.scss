@@ -112,12 +112,54 @@
         white-space: nowrap;
         font-size: 12px;
       }
+
       .openNewIcon {
         color: white;
         font-size: 20px;
       }
-
-      //align-items: center;
     }
+    .accommodationSection {
+      margin-top: 6rem;
+      .h2 {
+        font-size: 20px;
+      }
+      ul {
+        font-family: SwedenSansBook;
+        color: #646464;
+        list-style-type: disc;
+        li {
+          margin-left: 1rem;
+          margin-top: 1rem;
+        }
+      }
+      .accoPic-box {
+        margin-top: 1.25rem;
+        display: flex;
+        gap: 0.13rem;
+        justify-content: center;
+        .highPic-box {
+          width: 10.125rem;
+          //   height: 18.875rem;
+          height: 302px;
+          img {
+            height: 100%;
+          }
+        }
+        .twoPic-box {
+          margin-bottom: 0.13rem;
+          width: 10.125rem;
+          //   height: 9.375rem;
+          height: 150px;
+          img {
+            height: 100%;
+          }
+          .mt-accoPic {
+            margin-top: 0.13rem;
+          }
+        }
+      }
+    }
+
+    //align-items: center;
   }
 }
