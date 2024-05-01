@@ -1268,4 +1268,96 @@ main {
 .big-container .shared-icon {
   width: 1.3rem;
   height: 0.8rem;
+}
+
+.accommodation .detail-main {
+  margin: 1rem 0rem 4rem 0rem;
+}
+.accommodation .detail-main h1 {
+  font-size: 2rem;
+}
+.accommodation .detail-main .seasonPrice-box {
+  display: flex;
+  justify-content: space-between;
+  flex: 1 0 auto;
+  margin-bottom: 1rem;
+  color: #8b8f73;
+}
+.accommodation .detail-main .seasonPrice-box .season-box {
+  display: flex;
+  flex: 0 0 60%;
+  justify-content: space-between;
+}
+.accommodation .detail-main .seasonPrice-box .price-box {
+  display: flex;
+}
+.accommodation .detail-main .seasonPrice-box .price-box p {
+  text-transform: uppercase;
+}
+.accommodation .detail-main .location-box {
+  display: flex;
+  align-items: center;
+}
+.accommodation .detail-main .circleRating-box {
+  display: flex;
+  align-items: center;
+}
+.accommodation .detail-main .circleRating-box .circle-box {
+  margin-bottom: 0.8rem;
+  margin-top: 0.75rem;
+  display: flex;
+  align-self: flex-start;
+  -moz-column-gap: 0.2rem;
+       column-gap: 0.2rem;
+  width: 3.9rem;
+}
+.accommodation .detail-main .circleRating-box .circle-box .ellipse {
+  border-radius: 0.3rem;
+  background: #e7ae4d;
+  width: 0.6rem;
+  height: 0.6rem;
+}
+.accommodation .detail-main .circleRating-box .circle-box .ellipse.border {
+  border: 1px solid #e7ae4d;
+  background-color: white;
+}
+.accommodation .detail-main .circleRating-box p {
+  margin-left: 0.5rem;
+}
+.accommodation .detail-main .regularTxt {
+  font-family: SwedenSansRegular;
+}
+.accommodation .detail-main .readMore {
+  margin-top: 0.5rem;
+  text-decoration: underline;
+}
+.accommodation .detail-main .chipsBox {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+.accommodation .detail-main .chipsBox .chipsFilter {
+  border-radius: 6.3rem;
+  border: 0.1rem solid #141414;
+  display: flex;
+  padding: 0.3rem 1rem;
+  margin-top: 0.5rem;
+  align-items: center;
+}
+.accommodation .detail-main .chipsBox .chipsFilter .iconChipsBox .chipsIcon {
+  font-size: 1rem;
+}
+.accommodation .detail-main .chipsBox .chipsFilter .chipsTxt {
+  padding-left: 0.25rem;
+  font-size: 12px;
+}
+.accommodation .detail-main .btnBookWebsite {
+  border-radius: 6.3rem;
+  border: 0.1rem solid #141414;
+  display: flex;
+  padding: 1.2rem 1rem;
+  margin-top: 0.5rem;
 }/*# sourceMappingURL=style.css.map */

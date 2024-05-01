@@ -1,9 +1,9 @@
 [
     {
         "id": 1,
-        "name": "Hyssna",
+        "name": "Hyssna Forest Resort",
         "categories": ["trädhotell","glamping"],
-        "info": "Lorem ipsum dolor sit amet consectetur. Convallis amet nisi amet eget at.",
+        "info": "Hyssna Forest Resort är en fridfull oas belägen i den vackra naturen i Västsverige. Resorten är en perfekt reträtt för dem som söker en paus från stadens liv och ett tillfälle att återansluta med naturen.",
         "imageURL": "img/cottage.jpg",
         "price": "Budget",
         "htmlUrl": "assets/accommodation/hyssna.html"
