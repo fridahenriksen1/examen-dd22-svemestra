@@ -195,7 +195,7 @@ ol {
   src: url(font/SwedenSansBold.otf);
 }
 body {
-  font-family: "SwedenSansBold", sans-serif;
+  font-family: "SwedenSansBold", arial, sans-serif;
   font-style: normal;
 }
 
@@ -208,8 +208,63 @@ a, .link-tagg {
 .heading {
   font-size: 1rem;
 }
-.heading.head-1 {
+
+.heading_1 {
+  font-size: 3rem;
+}
+
+.heading_2 {
   font-size: 2rem;
+}
+
+.heading_3 {
+  font-size: 1.75rem;
+}
+
+.heading_4 {
+  font-size: 1.25rem;
+}
+
+.heading_5 {
+  font-size: 1.125rem;
+  font-family: "SwedenSansSemiBold", arial, sans-serif;
+}
+
+.bodyMD-Bold {
+  font-size: 1rem;
+}
+
+.bodyMD {
+  font-size: 1rem;
+  font-family: "SwedenSansBook", arial, sans-serif;
+}
+
+.bodySM {
+  font-size: 0.75rem;
+  font-family: "SwedenSansBook", arial, sans-serif;
+}
+
+.bodySM-Bold {
+  font-size: 0.75rem;
+}
+
+.bodySM-SemiBold {
+  font-size: 0.75rem;
+  font-family: "SwedenSansSemiBold", arial, sans-serif;
+}
+
+.badge {
+  font-size: 0.75rem;
+  font-family: "SwedenSansSemiBold", arial, sans-serif;
+}
+
+.button {
+  font-size: 1rem;
+}
+
+.buttonText {
+  font-size: 1rem;
+  font-family: "SwedenSansSemiBold", arial, sans-serif;
 }
 
 .link_1 {
@@ -338,6 +393,13 @@ h4 {
 
 .p-card-mini:first-child {
   margin-bottom: 0.2rem;
+}
+
+.blurEffect {
+  border-radius: var(--Border-radius-Radius-full, 9999px);
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 
 .bottom-menu-container {
@@ -789,15 +851,7 @@ main {
   font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 0, "opsz" 48;
 }
 
-.saved-resorts {
-  margin-top: 2.5rem;
-}
-.saved-resorts .saved-resorts-container {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-.saved-resorts .saved-resorts-container .saved-resort {
+.saved-resort {
   flex: 0 0 calc(50% - 0.5rem);
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
   background-color: #ffffff;
@@ -1027,9 +1081,7 @@ main {
 }
 
 .deviderLine {
-  height: 1px;
-  width: 100%;
-  color: grey;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1019607843);
 }
 
 .account-container {
