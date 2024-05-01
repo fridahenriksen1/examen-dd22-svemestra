@@ -1213,11 +1213,15 @@ main {
 .accommodation .detail-main {
   margin: 1rem 0rem 4rem 0rem;
 }
+.accommodation .detail-main h1 {
+  font-size: 2rem;
+}
 .accommodation .detail-main .seasonPrice-box {
   display: flex;
   justify-content: space-between;
   flex: 1 0 auto;
   margin-bottom: 1rem;
+  color: #8b8f73;
 }
 .accommodation .detail-main .seasonPrice-box .season-box {
   display: flex;
@@ -1226,6 +1230,9 @@ main {
 }
 .accommodation .detail-main .seasonPrice-box .price-box {
   display: flex;
+}
+.accommodation .detail-main .seasonPrice-box .price-box p {
+  text-transform: uppercase;
 }
 .accommodation .detail-main .location-box {
   display: flex;
@@ -1256,6 +1263,9 @@ main {
 }
 .accommodation .detail-main .circleRating-box p {
   margin-left: 0.5rem;
+}
+.accommodation .detail-main .regularTxt {
+  font-family: SwedenSansRegular;
 }
 .accommodation .detail-main .readMore {
   margin-top: 0.5rem;
