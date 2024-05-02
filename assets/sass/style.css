@@ -1443,4 +1443,35 @@ main {
 }
 .accommodation .detail-main .accommodationSection .accoPic-box .twoPic-box .mt-accoPic {
   margin-top: 0.13rem;
+}
+.accommodation .detail-main .accommodationSection .seeAllPicBtn {
+  display: flex;
+  width: 9.75rem;
+  padding: 0.75rem 1.8125rem;
+  margin-top: 1.25rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6.3rem;
+  border: 0.1rem solid #485c55;
+}
+.accommodation .detail-main .accommodationSection .seeAllPicBtn a {
+  white-space: nowrap;
+}
+.accommodation .detail-main .activitiesSection {
+  margin-top: 3rem;
+}
+.accommodation .detail-main .activitiesSection .li-activites {
+  display: flex;
+  align-items: center;
+  padding-top: 1.125rem;
+}
+.accommodation .detail-main .activitiesSection .li-activites .icons-li {
+  font-size: 20px;
+}
+.accommodation .detail-main .activitiesSection .li-activites p {
+  padding-left: 0.813rem;
+}
+.accommodation .detail-main .activitiesSection a {
+  margin-top: 1.125rem;
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */

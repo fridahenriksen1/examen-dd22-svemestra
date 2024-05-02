@@ -158,6 +158,39 @@
           }
         }
       }
+      .seeAllPicBtn {
+        display: flex;
+        width: 9.75rem;
+        padding: 0.75rem 1.8125rem;
+        margin-top: 1.25rem;
+
+        justify-content: center;
+        align-items: center;
+        border-radius: 6.3rem;
+        border: 0.1rem solid #485c55;
+        a {
+          white-space: nowrap;
+        }
+      }
+    }
+    .activitiesSection {
+      margin-top: 3rem;
+
+      .li-activites {
+        display: flex;
+        align-items: center;
+        padding-top: 1.125rem;
+        .icons-li {
+          font-size: 20px;
+        }
+        p {
+          padding-left: 0.813rem;
+        }
+      }
+      a {
+        margin-top: 1.125rem;
+        text-decoration: underline;
+      }
     }
 
     //align-items: center;
