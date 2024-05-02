@@ -1478,7 +1478,30 @@ main {
 .accommodation .detail-main .whereItIs-section {
   margin-top: 6rem;
 }
+.accommodation .detail-main .whereItIs-section .showPlaceMap {
+  margin-top: 1rem;
+}
 .accommodation .detail-main .whereItIs-section .map-box {
   display: flex;
+  margin-top: 1rem;
   justify-content: center;
+}
+.accommodation .detail-main .whereItIs-section .info-box {
+  margin-top: 1rem;
+}
+.accommodation .detail-main .whereItIs-section .info-box p {
+  font-size: 12px;
+  margin-top: 4px;
+}
+.accommodation .detail-main .whereItIs-section p {
+  font-size: 12px;
+}
+.accommodation .detail-main .whereItIs-section .blackColor {
+  background-color: black;
+}
+.accommodation h2 {
+  font-size: 20px;
+}
+.accommodation .sweBookFont {
+  font-family: SwedenSansBook;
 }/*# sourceMappingURL=style.css.map */

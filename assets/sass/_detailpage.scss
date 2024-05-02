@@ -194,12 +194,35 @@
     }
     .whereItIs-section {
       margin-top: 6rem;
+      .showPlaceMap {
+        margin-top: 1rem;
+      }
       .map-box {
         display: flex;
+        margin-top: 1rem;
         justify-content: center;
+      }
+      .info-box {
+        margin-top: 1rem;
+        p {
+          font-size: 12px;
+          margin-top: 4px;
+        }
+      }
+      p {
+        font-size: 12px;
+      }
+      .blackColor {
+        background-color: black;
       }
     }
 
     //align-items: center;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .sweBookFont {
+    font-family: SwedenSansBook;
   }
 }
