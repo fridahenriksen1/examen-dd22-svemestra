@@ -1590,6 +1590,14 @@ main {
   align-items: center;
   margin-top: 1rem;
 }
+.accommodation .detail-main .socialMedia-box {
+  display: flex;
+  margin-top: 1.5rem;
+  margin-bottom: 3.5rem;
+}
+.accommodation .detail-main .margin-left {
+  margin-left: 0.75rem;
+}
 .accommodation .location-box {
   display: flex;
   align-items: center;
@@ -1613,6 +1621,10 @@ main {
 }
 .accommodation .icons-li {
   font-size: 20px;
+}
+.accommodation .socialMedia-icon {
+  width: 34px;
+  height: 34px;
 }
 .accommodation .reviews-box::-webkit-scrollbar {
   display: none;
