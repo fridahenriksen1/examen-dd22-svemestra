@@ -878,7 +878,7 @@ main {
   -webkit-backdrop-filter: blur(5.89px);
           backdrop-filter: blur(5.89px);
 }
-.like-icon.filled .material-symbols-outlined {
+.like-icon.filled {
   font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 0, "opsz" 48;
 }
 
@@ -1474,4 +1474,11 @@ main {
 .accommodation .detail-main .activitiesSection a {
   margin-top: 1.125rem;
   text-decoration: underline;
+}
+.accommodation .detail-main .whereItIs-section {
+  margin-top: 6rem;
+}
+.accommodation .detail-main .whereItIs-section .map-box {
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */

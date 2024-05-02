@@ -192,6 +192,13 @@
         text-decoration: underline;
       }
     }
+    .whereItIs-section {
+      margin-top: 6rem;
+      .map-box {
+        display: flex;
+        justify-content: center;
+      }
+    }
 
     //align-items: center;
   }
