@@ -1496,12 +1496,49 @@ main {
 .accommodation .detail-main .whereItIs-section p {
   font-size: 12px;
 }
-.accommodation .detail-main .whereItIs-section .blackColor {
-  background-color: black;
+.accommodation .detail-main .reviews-section .reviews-box .review-card {
+  display: flex;
+  padding: 0.875rem 1rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+.accommodation .detail-main .reviews-section .reviews-box .review-card figure {
+  width: 2.1875rem;
+  height: 2.1875rem;
+  border-radius: 3.4375rem;
+  background: url(/assets/img/profilpic.jpg);
+  background-size: cover;
 }
 .accommodation h2 {
   font-size: 20px;
 }
 .accommodation .sweBookFont {
   font-family: SwedenSansBook;
+}
+.accommodation .circleRating-box {
+  display: flex;
+  align-items: center;
+}
+.accommodation .circleRating-box .circle-box {
+  margin-bottom: 0.8rem;
+  margin-top: 0.75rem;
+  display: flex;
+  align-self: flex-start;
+  -moz-column-gap: 0.2rem;
+       column-gap: 0.2rem;
+  width: 3.9rem;
+}
+.accommodation .circleRating-box .circle-box .ellipse {
+  border-radius: 0.3rem;
+  background: #e7ae4d;
+  width: 0.6rem;
+  height: 0.6rem;
+}
+.accommodation .circleRating-box .circle-box .ellipse.border {
+  border: 1px solid #e7ae4d;
+  background-color: white;
+}
+.accommodation .circleRating-box p {
+  margin-left: 0.5rem;
 }/*# sourceMappingURL=style.css.map */
