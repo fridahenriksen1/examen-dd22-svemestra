@@ -1392,6 +1392,19 @@ main {
   justify-content: center;
   color: white;
 }
+.accommodation .detail-pic .number-box {
+  position: absolute;
+  display: flex;
+  padding: 0.25rem 0.75rem;
+  align-items: flex-end;
+  gap: 0.5rem;
+  left: 9.8125rem;
+  bottom: 1.25rem;
+  border-radius: 0.25rem;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 12px;
+}
 .accommodation .detail-main {
   margin: 1rem 0rem 4rem 0rem;
 }
