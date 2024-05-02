@@ -216,6 +216,10 @@
     .reviews-section {
       .reviews-box {
         margin-top: 1rem;
+        display: flex;
+        max-width: 300px;
+        overflow-x: auto;
+
         .review-card {
           display: flex;
           padding: 0.875rem 1rem;
@@ -224,6 +228,7 @@
           gap: 0.75rem;
           border: 1px solid #dedede;
           border-radius: 2px;
+
           width: 14.625rem;
           .PicContent-box {
             display: flex;
@@ -262,6 +267,19 @@
   }
   .sweBookFont {
     font-family: SwedenSansBook;
+  }
+  .ml {
+    margin-left: 1rem;
+  }
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .reviews-box::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .reviews-box {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
   //! Denna koden används dubbelt här och längre upp, detta kan man göra bättre/återanvända
   .circleRating-box {
