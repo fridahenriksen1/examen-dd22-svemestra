@@ -1,6 +1,10 @@
 // Lägg in effekter så som blur här
-.blurEffect{
-    border-radius: var(--Border-radius-Radius-full, 9999px);
-    background: rgba(0, 0, 0, 0.50);
-    backdrop-filter: blur(5px);
+.blurEffect-Light {
+  border-radius: var(--Border-radius-Radius-full, 9999px);
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+}
+.blurEffect-Dark {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
 }

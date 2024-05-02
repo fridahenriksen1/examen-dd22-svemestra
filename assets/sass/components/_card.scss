@@ -1,26 +1,25 @@
 .card {
-    &.card-inspo {
-        flex: 0 0 calc(100% / 2 - 0.5rem);
-        position: relative;
-
-        .card-content-frost {
-            position: absolute;
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(10px);
-            color: #f4f4f4;
-            padding: 0.5rem 1.625rem;
-            bottom: 3rem;
-            left: 50%;
-            transform: translateX(-50%) translateY(100%);
-        }
+  &.card-inspo {
+    flex: 0 0 calc(100% / 2 - 0.5rem);
+    position: relative;
+    .card-content-frost {
+      position: absolute;
+      // background: rgba(255, 255, 255, 0.15);
+      // backdrop-filter: blur(10px);
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(10px);
+      color: #f4f4f4;
+      padding: 0.5rem 1rem;
+      bottom: 3rem;
+      left: 50%;
+      transform: translateX(-50%) translateY(100%);
     }
-
-    &.card-square {
-        height: 150px;
-
-        img {
-            height: 100%;
-            object-fit: cover;
-        }
+  }
+  &.card-square {
+    // height: 150px;
+    img {
+      height: 100%;
+      object-fit: cover;
     }
+  }
 }

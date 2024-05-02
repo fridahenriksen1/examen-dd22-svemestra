@@ -21,116 +21,123 @@ body {
   font-style: normal;
 }
 // a-taggarnas stik
-a, .link-tagg {
+a,
+.link-tagg {
   display: block;
   text-decoration: none;
   color: black;
 }
 // STYLES FRÅN FIGMA
-.heading{
+.heading {
   font-size: 1rem;
 }
-.heading_1{
+.heading_1 {
   font-size: 3rem;
 }
-.heading_2{
+.heading_2 {
   font-size: 2rem;
 }
-.heading_3{
+.heading_3 {
   font-size: 1.75rem;
 }
-.heading_4{
+.heading_4 {
   font-size: 1.25rem;
 }
-.heading_5{
+.heading_5 {
   font-size: 1.125rem;
   font-family: "SwedenSansSemiBold", arial, sans-serif;
 }
-.bodyMD-Bold{
+.bodyMD-Bold {
   font-size: 1rem;
 }
-.bodyMD{
+.bodyMD {
   font-size: 1rem;
+  line-height: 135%;
   font-family: "SwedenSansBook", arial, sans-serif;
 }
-.bodySM{
+// Typografin på de frostade rutorna i start
+.body-mini {
+  font-size: 0.875rem;
+  font-family: "SwedenSansRegular", arial, sans-serif;
+  white-space: nowrap;
+}
+.bodySM {
   font-size: 0.75rem;
   font-family: "SwedenSansBook", arial, sans-serif;
 }
-.bodySM-Bold{
-  font-size: 0.75rem;
-}
-.bodySM-SemiBold{
+.bodySM-Bold {
   font-size: 0.75rem;
   font-family: "SwedenSansSemiBold", arial, sans-serif;
 }
-.badge{
+.bodySM-SemiBold {
+  font-size: 0.75rem;
+  font-family: "SwedenSansSemiBold", arial, sans-serif;
+}
+.badge {
   font-size: 0.75rem;
   font-family: "SwedenSansSemiBold", arial, sans-serif;
 }
 // Button primary fungerar på både Outlined/Filled
 // Gör mixin av denna eller gör en button-primary på button styling i button.scss
-.button-primary{
+.button-primary {
   font-size: 1rem;
 }
-.buttonText{
+.buttonText {
   font-size: 1rem;
   font-family: "SwedenSansSemiBold", arial, sans-serif;
 }
-// tillfärlligt namn för <span>
-.link_1{
+// tillfälligt namn för <span>??
+.link_1 {
   font-family: SwedenSansBook;
   font-size: 0.87;
 }
-
 // Denna sätts på minikorten "dina sparade besöksmål" tillfälligt i index alltså
-.p-card-mini{
+.p-card-mini {
   font-family: SwedenSansBook;
   font-size: 0.75;
 }
+// här stylas den aktiva klassen i naven
+.menu-link {
+  p {
+    font-size: 0.75rem;
+    font-family: "SwedenSansBook", arial, sans-serif;
+    &.active-text {
+      font-size: 0.75rem;
+      font-family: "SwedenSansSemiBold", arial, sans-serif;
+    }
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//padding-right: 1rem;
+// p {
+//   white-space: nowrap;
+//   //padding-right: 0.875rem;
+//   padding-right: 0.375rem;
+// }
 // ____________________Arbetar om dessa under till de övre, använd de övre istället
 // ________________________
 
-h1 {
-  font-size: 3rem;
-}
+// h1 {
+//   font-size: 3rem;
+// }
 
-h4 {
-  margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
-  font-weight: 800;
-  // hejhej
-}
-
-
+// h4 {
+//   margin-top: 1.5rem;
+//   margin-bottom: 0.5rem;
+//   font-weight: 800;
+//   // hejhej
+// }
 
 .card {
-  h2 {}
+  h2 {
+  }
 }
 
 .saved-resorts {
-
   p {
     font-size: 0.75rem;
   }
 }
-
-
 
 //! Förslag på resmål text
 .textbox-suggestions {

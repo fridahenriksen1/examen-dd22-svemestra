@@ -1,22 +1,30 @@
 .flex-container-wrap {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 main {
-    padding: 1rem;
+  padding: 1rem;
 }
+// på startsidan "Visa alla"
 .show-all-container {
-    flex: 0 0 100%;
-    display: flex;
-    justify-content: center;
-    &.start{
-        justify-content: space-between;
-    }
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+  &.start {
+    justify-content: space-between;
+  }
 }
+// mini mini korten
 .saved-resorts-container {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+// flex för Besöksmål nära dig
+.destination-section {
+  .card-inspo:first-child {
+    flex: 0 0 100%;
+  }
 }
