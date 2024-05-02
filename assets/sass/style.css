@@ -1359,9 +1359,6 @@ main {
 .accommodation .detail-main .circleRating-box p {
   margin-left: 0.5rem;
 }
-.accommodation .detail-main .regularTxt {
-  font-family: SwedenSansRegular;
-}
 .accommodation .detail-main .readMore {
   margin-top: 0.5rem;
   text-decoration: underline;
@@ -1469,9 +1466,6 @@ main {
   align-items: center;
   padding-top: 1.125rem;
 }
-.accommodation .detail-main .activitiesSection .li-activites .icons-li {
-  font-size: 20px;
-}
 .accommodation .detail-main .activitiesSection .li-activites p {
   padding-left: 0.813rem;
 }
@@ -1539,14 +1533,54 @@ main {
   line-height: 135%;
   width: 12.5rem;
 }
+.accommodation .detail-main .reviews-section .seeMoreReviweBtn {
+  display: flex;
+  width: 13.875rem;
+  padding: 0.75rem 1.8125rem;
+  margin-top: 1.25rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6.3rem;
+  border: 0.1rem solid #485c55;
+}
+.accommodation .detail-main .reviews-section .seeMoreReviweBtn a {
+  white-space: nowrap;
+  font-family: "Sweden Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.02rem;
+  text-transform: uppercase;
+}
+.accommodation .detail-main .contact-section .location-box {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+.accommodation .location-box {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+.accommodation .location-box .contactTxt-box {
+  margin-left: 0.5rem;
+  line-height: 135%;
+}
 .accommodation h2 {
   font-size: 20px;
 }
 .accommodation .sweBookFont {
   font-family: SwedenSansBook;
 }
+.accommodation .regularTxt {
+  font-family: SwedenSansRegular;
+}
 .accommodation .ml {
   margin-left: 1rem;
+}
+.accommodation .icons-li {
+  font-size: 20px;
 }
 .accommodation .reviews-box::-webkit-scrollbar {
   display: none;
