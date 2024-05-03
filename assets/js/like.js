@@ -125,20 +125,31 @@
 
 
 
+// document.addEventListener('DOMContentLoaded', () => {
+//     const likeIcons = document.querySelectorAll('.like-icon');
+
+//     likeIcons.forEach(icon => {
+//         icon.addEventListener('click', () => {
+//             const isLiked = icon.getAttribute('data-liked') === 'true';
+            
+//             if (isLiked) {
+//                 icon.classList.remove('filled'); // Ta bort klassen om det är markerat som "gillat"
+//                 icon.setAttribute('data-liked', 'false');
+//             } else {
+//                 icon.classList.add('filled'); // Lägg till klassen om det inte är markerat som "gillat"
+//                 icon.setAttribute('data-liked', 'true');
+//             }
+//         });
+//     });
+// });
+
 document.addEventListener('DOMContentLoaded', () => {
     const likeIcons = document.querySelectorAll('.like-icon');
 
     likeIcons.forEach(icon => {
         icon.addEventListener('click', () => {
-            const isLiked = icon.getAttribute('data-liked') === 'true';
-            
-            if (isLiked) {
-                icon.classList.remove('filled'); // Ta bort klassen om det är markerat som "gillat"
-                icon.setAttribute('data-liked', 'false');
-            } else {
-                icon.classList.add('filled'); // Lägg till klassen om det inte är markerat som "gillat"
-                icon.setAttribute('data-liked', 'true');
-            }
+            icon.classList.toggle('filled'); 
+            icon.setAttribute('data-liked', icon.classList.contains('filled')); 
         });
     });
 });

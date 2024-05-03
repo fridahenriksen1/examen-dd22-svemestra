@@ -1337,6 +1337,74 @@ main {
   /* Hide scrollbar for Chrome, Safari and Opera */
   /* Hide scrollbar for IE, Edge and Firefox */
 }
+.accommodation .detail-pic {
+  display: flex;
+  height: 23.875rem;
+  position: relative;
+}
+.accommodation .detail-pic .arrowBack-icon {
+  position: absolute;
+  color: #fff;
+  border-radius: 6rem;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  padding: 0.4375rem 0.3125rem;
+  align-items: center;
+  gap: 0.625rem;
+  left: 1rem;
+  top: 1rem;
+}
+.accommodation .detail-pic .detailIcon {
+  font-weight: 200;
+}
+.accommodation .detail-pic .share-icon {
+  position: absolute;
+  right: 1rem;
+  bottom: 4rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border-radius: 6rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-variation-settings: "FILL" 1, "wght" 200, "GRAD" 0, "opsz" 24;
+}
+.accommodation .detail-pic .likeIcon {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border-radius: 6rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.accommodation .detail-pic .number-box {
+  position: absolute;
+  display: flex;
+  padding: 0.25rem 0.75rem;
+  align-items: flex-end;
+  gap: 0.5rem;
+  left: 9.8125rem;
+  bottom: 1.25rem;
+  border-radius: 0.25rem;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 12px;
+}
 .accommodation .detail-main {
   margin: 1rem 0rem 4rem 0rem;
 }
@@ -1348,6 +1416,7 @@ main {
   justify-content: space-between;
   flex: 1 0 auto;
   margin-bottom: 1rem;
+  font-size: 11px;
   color: #8b8f73;
 }
 .accommodation .detail-main .seasonPrice-box .season-box {
@@ -1462,6 +1531,18 @@ main {
 .accommodation .detail-main .accommodationSection .accoPic-box .highPic-box {
   width: 10.125rem;
   height: 302px;
+  position: relative;
+}
+.accommodation .detail-main .accommodationSection .accoPic-box .highPic-box .card-content-frost {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  color: #f4f4f4;
+  padding: 0.5rem 1rem;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(100%);
 }
 .accommodation .detail-main .accommodationSection .accoPic-box .highPic-box img {
   height: 100%;
@@ -1590,6 +1671,14 @@ main {
   align-items: center;
   margin-top: 1rem;
 }
+.accommodation .detail-main .socialMedia-box {
+  display: flex;
+  margin-top: 1.5rem;
+  margin-bottom: 3.5rem;
+}
+.accommodation .detail-main .margin-left {
+  margin-left: 0.75rem;
+}
 .accommodation .location-box {
   display: flex;
   align-items: center;
@@ -1613,6 +1702,27 @@ main {
 }
 .accommodation .icons-li {
   font-size: 20px;
+}
+.accommodation .socialMedia-icon {
+  width: 34px;
+  height: 34px;
+}
+.accommodation .color-black {
+  color: #0c0c0c;
+}
+.accommodation .sweSemiBold {
+  font-family: SwedenSansSemiBold;
+}
+.accommodation .sweBold {
+  font-family: "SwedenSansBold", arial, sans-serif;
+}
+.accommodation .fontstyle-info {
+  color: #2b2a25;
+  /* Body MD */
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%; /* 1.35rem */
 }
 .accommodation .reviews-box::-webkit-scrollbar {
   display: none;

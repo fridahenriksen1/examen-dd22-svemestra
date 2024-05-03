@@ -1,4 +1,75 @@
 .accommodation {
+  .detail-pic {
+    display: flex;
+    height: 23.875rem;
+    position: relative;
+
+    .arrowBack-icon {
+      position: absolute;
+      color: #fff;
+      border-radius: 6rem;
+      background: rgba(0, 0, 0, 0.5);
+
+      backdrop-filter: blur(5px);
+      display: flex;
+      width: 2rem;
+      height: 2rem;
+      padding: 0.4375rem 0.3125rem;
+
+      align-items: center;
+      gap: 0.625rem;
+      left: 1rem;
+      top: 1rem;
+    }
+    .detailIcon {
+      font-weight: 200;
+    }
+    .share-icon {
+      position: absolute;
+      right: 1rem;
+      bottom: 4rem;
+      width: 2rem;
+      height: 2rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(5px);
+      border-radius: 6rem;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      color: white;
+      font-variation-settings: "FILL" 1, "wght" 200, "GRAD" 0, "opsz" 24;
+    }
+    .likeIcon {
+      position: absolute;
+      right: 1rem;
+      bottom: 1rem;
+      width: 2rem;
+      height: 2rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(5px);
+      border-radius: 6rem;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      color: white;
+    }
+    .number-box {
+      position: absolute;
+      display: flex;
+      padding: 0.25rem 0.75rem;
+
+      align-items: flex-end;
+      gap: 0.5rem;
+      left: 9.8125rem;
+
+      bottom: 1.25rem;
+      border-radius: 0.25rem;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      font-size: 12px;
+    }
+  }
+
   .detail-main {
     margin: 1rem 0rem 4rem 0rem;
     h1 {
@@ -12,6 +83,7 @@
       justify-content: space-between;
       flex: 1 0 auto;
       margin-bottom: 1rem;
+      font-size: 11px;
       color: #8b8f73;
       .season-box {
         display: flex;
@@ -140,6 +212,17 @@
           width: 10.125rem;
           //   height: 18.875rem;
           height: 302px;
+          position: relative;
+          .card-content-frost {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(10px);
+            color: #f4f4f4;
+            padding: 0.5rem 1rem;
+            bottom: 3rem;
+            left: 50%;
+            transform: translateX(-50%) translateY(100%);
+          }
           img {
             height: 100%;
           }
@@ -287,6 +370,14 @@
         // }
       }
     }
+    .socialMedia-box {
+      display: flex;
+      margin-top: 1.5rem;
+      margin-bottom: 3.5rem;
+    }
+    .margin-left {
+      margin-left: 0.75rem;
+    }
 
     //align-items: center;
   }
@@ -318,6 +409,28 @@
   }
   .icons-li {
     font-size: 20px;
+  }
+  .socialMedia-icon {
+    width: 34px;
+    height: 34px;
+  }
+  .color-black {
+    color: #0c0c0c;
+  }
+  .sweSemiBold {
+    font-family: SwedenSansSemiBold;
+  }
+  .sweBold {
+    font-family: "SwedenSansBold", arial, sans-serif;
+  }
+  .fontstyle-info {
+    color: #2b2a25;
+
+    /* Body MD */
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135%; /* 1.35rem */
   }
 
   /* Hide scrollbar for Chrome, Safari and Opera */
