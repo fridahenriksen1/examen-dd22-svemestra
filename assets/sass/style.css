@@ -233,12 +233,14 @@ a,
 
 .bodyMD-Bold {
   font-size: 1rem;
+  font-family: "SwedenSansBold", arial, sans-serif;
 }
 
 .bodyMD {
   font-size: 1rem;
   line-height: 135%;
   font-family: "SwedenSansBook", arial, sans-serif;
+  padding-top: 1.8px;
 }
 
 .body-mini {
@@ -253,6 +255,21 @@ a,
 }
 
 .bodySM-Bold {
+  font-size: 0.75rem;
+  font-family: "SwedenSansSemiBold", arial, sans-serif;
+}
+
+.bodyXS {
+  font-size: 0.75rem;
+  font-family: "SwedenSansBook", arial, sans-serif;
+}
+
+.bodyXS-Bold {
+  font-size: 0.75rem;
+  font-family: "SwedenSansBold", arial, sans-serif;
+}
+
+.bodyXS-Semibold {
   font-size: 0.75rem;
   font-family: "SwedenSansSemiBold", arial, sans-serif;
 }
@@ -278,12 +295,12 @@ a,
 
 .link_1 {
   font-family: SwedenSansBook;
-  font-size: 0.87;
+  font-size: 0.87rem;
 }
 
 .p-card-mini {
   font-family: SwedenSansBook;
-  font-size: 0.75;
+  font-size: 0.75rem;
 }
 
 .menu-link p {
@@ -293,6 +310,10 @@ a,
 .menu-link p.active-text {
   font-size: 0.75rem;
   font-family: "SwedenSansSemiBold", arial, sans-serif;
+}
+
+.upperCASE {
+  text-transform: uppercase;
 }
 
 .saved-resorts p {
@@ -378,8 +399,28 @@ a,
   color: #141414;
 }
 
+.mt1 {
+  margin-top: 1rem;
+}
+
+.mt2 {
+  margin-top: 2rem;
+}
+
+.mt3 {
+  margin-top: 3rem;
+}
+
+.mt4 {
+  margin-top: 4rem;
+}
+
 .mb1 {
   margin-bottom: 1rem;
+}
+
+.mb1-5 {
+  margin-bottom: 1.5rem;
 }
 
 .mb2 {
@@ -414,20 +455,8 @@ a,
   margin: 4rem 0rem;
 }
 
-.mt1 {
-  margin-top: 1rem;
-}
-
-.mt2 {
-  margin-top: 2rem;
-}
-
-.mt3 {
-  margin-top: 3rem;
-}
-
-.mt4 {
-  margin-top: 4rem;
+.mleft05 {
+  margin-left: 0.5rem;
 }
 
 .link-tagg {
@@ -442,6 +471,14 @@ a,
   margin-bottom: 0.2rem;
 }
 
+.detail-main {
+  margin: 1rem 0rem 4rem 0rem;
+}
+
+.h1-color {
+  color: #485c55;
+}
+
 .blurEffect-Light {
   border-radius: var(--Border-radius-Radius-full, 9999px);
   background: rgba(0, 0, 0, 0.5);
@@ -453,6 +490,71 @@ a,
   background: rgba(0, 0, 0, 0.4);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
+}
+
+.circle-box {
+  margin-bottom: 0.8rem;
+  margin-top: 0.75rem;
+  display: flex;
+  align-self: flex-start;
+  -moz-column-gap: 0.2rem;
+       column-gap: 0.2rem;
+  width: 3.9rem;
+}
+.circle-box .ellipse {
+  border-radius: 0.3rem;
+  background: #e7ae4d;
+  width: 0.6rem;
+  height: 0.6rem;
+}
+.circle-box .ellipse.border {
+  border: 1px solid #e7ae4d;
+  background-color: white;
+}
+
+.arrowBack-icon {
+  position: absolute;
+  color: #fff;
+  border-radius: 6rem;
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  padding: 0.4375rem 0.3125rem;
+  align-items: center;
+  gap: 0.625rem;
+  left: 1rem;
+  top: 1rem;
+}
+
+.detailIcon {
+  font-weight: 200;
+}
+
+.share-icon {
+  position: absolute;
+  right: 1rem;
+  bottom: 4rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 6rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-variation-settings: "FILL" 1, "wght" 200, "GRAD" 0, "opsz" 24;
+}
+
+.likeIcon {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 6rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: white;
 }
 
 .bottom-menu-container {
@@ -486,7 +588,7 @@ a,
 }
 .bottom-menu-container .bottom-menu .menu-item .menu-link .nav-icons {
   height: 24px;
-  fill: #485C55;
+  fill: #485c55;
 }
 .bottom-menu-container .bottom-menu .menu-item .menu-link .nav-p {
   padding-top: 0.5rem;
@@ -628,6 +730,10 @@ main {
   font-size: 1rem;
 }
 .show-all-container .show-all-link .show-all-text {
+  text-decoration: underline;
+}
+
+.readMore {
   text-decoration: underline;
 }
 
@@ -1147,6 +1253,10 @@ main {
   border-bottom: 2px solid rgba(0, 0, 0, 0.1019607843);
 }
 
+.devider-mini {
+  border-right: 1px solid #70735b;
+}
+
 .account-container {
   background: #ffffff;
   display: flex;
@@ -1333,64 +1443,10 @@ main {
   height: 0.8rem;
 }
 
-.accommodation {
-  /* Hide scrollbar for Chrome, Safari and Opera */
-  /* Hide scrollbar for IE, Edge and Firefox */
-}
 .accommodation .detail-pic {
   display: flex;
   height: 23.875rem;
   position: relative;
-}
-.accommodation .detail-pic .arrowBack-icon {
-  position: absolute;
-  color: #fff;
-  border-radius: 6rem;
-  background: rgba(0, 0, 0, 0.5);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
-  display: flex;
-  width: 2rem;
-  height: 2rem;
-  padding: 0.4375rem 0.3125rem;
-  align-items: center;
-  gap: 0.625rem;
-  left: 1rem;
-  top: 1rem;
-}
-.accommodation .detail-pic .detailIcon {
-  font-weight: 200;
-}
-.accommodation .detail-pic .share-icon {
-  position: absolute;
-  right: 1rem;
-  bottom: 4rem;
-  width: 2rem;
-  height: 2rem;
-  background-color: rgba(0, 0, 0, 0.5);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
-  border-radius: 6rem;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  color: white;
-  font-variation-settings: "FILL" 1, "wght" 200, "GRAD" 0, "opsz" 24;
-}
-.accommodation .detail-pic .likeIcon {
-  position: absolute;
-  right: 1rem;
-  bottom: 1rem;
-  width: 2rem;
-  height: 2rem;
-  background-color: rgba(0, 0, 0, 0.5);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
-  border-radius: 6rem;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  color: white;
 }
 .accommodation .detail-pic .number-box {
   position: absolute;
@@ -1405,66 +1461,28 @@ main {
   color: white;
   font-size: 12px;
 }
-.accommodation .detail-main {
-  margin: 1rem 0rem 4rem 0rem;
-}
-.accommodation .detail-main h1 {
-  font-size: 2rem;
-}
 .accommodation .detail-main .seasonPrice-box {
   display: flex;
   justify-content: space-between;
   flex: 1 0 auto;
-  margin-bottom: 1rem;
   font-size: 11px;
   color: #8b8f73;
 }
 .accommodation .detail-main .seasonPrice-box .season-box {
   display: flex;
   flex: 0 0 60%;
+  color: #70735b;
   justify-content: space-between;
 }
-.accommodation .detail-main .seasonPrice-box .price-box {
+.accommodation .detail-main .price-box {
   display: flex;
+  color: black;
 }
-.accommodation .detail-main .seasonPrice-box .price-box p {
-  text-transform: uppercase;
-}
-.accommodation .detail-main .location-box {
+.accommodation .circleRating-box {
   display: flex;
   align-items: center;
 }
-.accommodation .detail-main .circleRating-box {
-  display: flex;
-  align-items: center;
-}
-.accommodation .detail-main .circleRating-box .circle-box {
-  margin-bottom: 0.8rem;
-  margin-top: 0.75rem;
-  display: flex;
-  align-self: flex-start;
-  -moz-column-gap: 0.2rem;
-       column-gap: 0.2rem;
-  width: 3.9rem;
-}
-.accommodation .detail-main .circleRating-box .circle-box .ellipse {
-  border-radius: 0.3rem;
-  background: #e7ae4d;
-  width: 0.6rem;
-  height: 0.6rem;
-}
-.accommodation .detail-main .circleRating-box .circle-box .ellipse.border {
-  border: 1px solid #e7ae4d;
-  background-color: white;
-}
-.accommodation .detail-main .circleRating-box p {
-  margin-left: 0.5rem;
-}
-.accommodation .detail-main .readMore {
-  margin-top: 0.5rem;
-  text-decoration: underline;
-}
-.accommodation .detail-main .chipsBox {
+.accommodation .chipsBox {
   margin-bottom: 0.5rem;
   margin-top: 0.5rem;
   display: flex;
@@ -1472,7 +1490,7 @@ main {
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
 }
-.accommodation .detail-main .chipsBox .chipsFilter {
+.accommodation .chipsBox .chipsFilter {
   border-radius: 6.3rem;
   border: 0.1rem solid #141414;
   display: flex;
@@ -1480,17 +1498,16 @@ main {
   margin-top: 0.5rem;
   align-items: center;
 }
-.accommodation .detail-main .chipsBox .chipsFilter .iconChipsBox .chipsIcon {
+.accommodation .chipsBox .chipsFilter .iconChipsBox .chipsIcon {
   font-size: 1rem;
 }
-.accommodation .detail-main .chipsBox .chipsFilter .chipsTxt {
+.accommodation .chipsBox .chipsFilter .chipsTxt {
   padding-left: 0.25rem;
   font-size: 12px;
 }
-.accommodation .detail-main .btnBookWebsite {
+.accommodation .btnBookWebsite {
   border-radius: 6.3rem;
   border: 0.1rem solid #485c55;
-  margin-top: 3rem;
   display: flex;
   padding: 0.75rem 1.8125rem;
   justify-content: space-between;
@@ -1498,42 +1515,36 @@ main {
   width: 192px;
   background-color: #485c55;
 }
-.accommodation .detail-main .btnBookWebsite a {
+.accommodation .btnBookWebsite a {
   color: white;
   white-space: nowrap;
   font-size: 12px;
 }
-.accommodation .detail-main .btnBookWebsite .openNewIcon {
+.accommodation .btnBookWebsite .openNewIcon {
   color: white;
   font-size: 20px;
 }
-.accommodation .detail-main .accommodationSection {
-  margin-top: 6rem;
-}
-.accommodation .detail-main .accommodationSection .h2 {
-  font-size: 20px;
-}
-.accommodation .detail-main .accommodationSection ul {
+.accommodation .accommodationSection ul {
   font-family: SwedenSansBook;
   color: #646464;
   list-style-type: disc;
 }
-.accommodation .detail-main .accommodationSection ul li {
+.accommodation .accommodationSection ul li {
   margin-left: 1rem;
   margin-top: 1rem;
 }
-.accommodation .detail-main .accommodationSection .accoPic-box {
+.accommodation .accommodationSection .accoPic-box {
   margin-top: 1.25rem;
   display: flex;
   gap: 0.13rem;
   justify-content: center;
 }
-.accommodation .detail-main .accommodationSection .accoPic-box .highPic-box {
+.accommodation .accommodationSection .accoPic-box .highPic-box {
   width: 10.125rem;
   height: 302px;
   position: relative;
 }
-.accommodation .detail-main .accommodationSection .accoPic-box .highPic-box .card-content-frost {
+.accommodation .accommodationSection .accoPic-box .highPic-box .card-content-frost {
   position: absolute;
   background: rgba(0, 0, 0, 0.4);
   -webkit-backdrop-filter: blur(10px);
@@ -1544,21 +1555,21 @@ main {
   left: 50%;
   transform: translateX(-50%) translateY(100%);
 }
-.accommodation .detail-main .accommodationSection .accoPic-box .highPic-box img {
+.accommodation .accommodationSection .accoPic-box .highPic-box img {
   height: 100%;
 }
-.accommodation .detail-main .accommodationSection .accoPic-box .twoPic-box {
+.accommodation .accommodationSection .accoPic-box .twoPic-box {
   margin-bottom: 0.13rem;
   width: 10.125rem;
   height: 150px;
 }
-.accommodation .detail-main .accommodationSection .accoPic-box .twoPic-box img {
+.accommodation .accommodationSection .accoPic-box .twoPic-box img {
   height: 100%;
 }
-.accommodation .detail-main .accommodationSection .accoPic-box .twoPic-box .mt-accoPic {
+.accommodation .accommodationSection .accoPic-box .twoPic-box .mt-accoPic {
   margin-top: 0.13rem;
 }
-.accommodation .detail-main .accommodationSection .seeAllPicBtn {
+.accommodation .accommodationSection .seeAllPicBtn {
   display: flex;
   width: 9.75rem;
   padding: 0.75rem 1.8125rem;
@@ -1568,52 +1579,29 @@ main {
   border-radius: 6.3rem;
   border: 0.1rem solid #485c55;
 }
-.accommodation .detail-main .accommodationSection .seeAllPicBtn a {
+.accommodation .accommodationSection .seeAllPicBtn a {
   white-space: nowrap;
 }
-.accommodation .detail-main .activitiesSection {
-  margin-top: 3rem;
-}
-.accommodation .detail-main .activitiesSection .li-activites {
+.accommodation .activitiesSection .li-activites {
   display: flex;
   align-items: center;
   padding-top: 1.125rem;
 }
-.accommodation .detail-main .activitiesSection .li-activites p {
-  padding-left: 0.813rem;
-}
-.accommodation .detail-main .activitiesSection a {
+.accommodation .activitiesSection a {
   margin-top: 1.125rem;
   text-decoration: underline;
 }
-.accommodation .detail-main .whereItIs-section {
-  margin-top: 6rem;
-}
-.accommodation .detail-main .whereItIs-section .showPlaceMap {
-  margin-top: 1rem;
-}
-.accommodation .detail-main .whereItIs-section .map-box {
+.accommodation .whereItIs-section .map-box {
   display: flex;
-  margin-top: 1rem;
   justify-content: center;
 }
-.accommodation .detail-main .whereItIs-section .info-box {
-  margin-top: 1rem;
-}
-.accommodation .detail-main .whereItIs-section .info-box p {
-  font-size: 12px;
-  margin-top: 4px;
-}
-.accommodation .detail-main .whereItIs-section p {
-  font-size: 12px;
-}
-.accommodation .detail-main .reviews-section .reviews-box {
+.accommodation .reviews-section .reviews-box {
   margin-top: 1rem;
   display: flex;
   max-width: 300px;
   overflow-x: auto;
 }
-.accommodation .detail-main .reviews-section .reviews-box .review-card {
+.accommodation .reviews-section .reviews-box .review-card {
   display: flex;
   padding: 0.875rem 1rem;
   flex-direction: column;
@@ -1623,21 +1611,22 @@ main {
   border-radius: 2px;
   width: 14.625rem;
 }
-.accommodation .detail-main .reviews-section .reviews-box .review-card .PicContent-box {
+.accommodation .reviews-section .reviews-box .review-card .PicContent-box {
   display: flex;
   align-items: center;
 }
-.accommodation .detail-main .reviews-section .reviews-box .review-card .PicContent-box figure {
+.accommodation .reviews-section .reviews-box .review-card .PicContent-box figure {
   width: 2.1875rem;
   height: 2.1875rem;
   border-radius: 3.4375rem;
   background: url(/assets/img/profilpic.jpg);
   background-size: cover;
+  background-position: center;
 }
-.accommodation .detail-main .reviews-section .reviews-box .review-card .PicContent-box .nameCircle-box {
+.accommodation .reviews-section .reviews-box .review-card .PicContent-box .nameCircle-box {
   margin-left: 1rem;
 }
-.accommodation .detail-main .reviews-section .reviews-box .review-card p {
+.accommodation .reviews-section .reviews-box .review-card p {
   color: #141414;
   font-family: "Sweden Sans";
   font-size: 0.75rem;
@@ -1646,7 +1635,7 @@ main {
   line-height: 135%;
   width: 12.5rem;
 }
-.accommodation .detail-main .reviews-section .seeMoreReviweBtn {
+.accommodation .reviews-section .seeMoreReviweBtn {
   display: flex;
   width: 13.875rem;
   padding: 0.75rem 1.8125rem;
@@ -1656,7 +1645,7 @@ main {
   border-radius: 6.3rem;
   border: 0.1rem solid #485c55;
 }
-.accommodation .detail-main .reviews-section .seeMoreReviweBtn a {
+.accommodation .reviews-section .seeMoreReviweBtn a {
   white-space: nowrap;
   font-family: "Sweden Sans";
   font-size: 1rem;
@@ -1666,93 +1655,67 @@ main {
   letter-spacing: 0.02rem;
   text-transform: uppercase;
 }
-.accommodation .detail-main .contact-section .location-box {
+.accommodation .contact-section .location-box {
   display: flex;
   align-items: center;
   margin-top: 1rem;
 }
-.accommodation .detail-main .socialMedia-box {
+.accommodation .socialMedia-box {
   display: flex;
   margin-top: 1.5rem;
   margin-bottom: 3.5rem;
 }
-.accommodation .detail-main .margin-left {
+.accommodation .margin-left {
   margin-left: 0.75rem;
 }
-.accommodation .location-box {
+
+.location-box {
   display: flex;
   align-items: center;
-  margin-top: 1rem;
+  margin: 1rem 0rem 0.5rem 0rem;
 }
-.accommodation .location-box .contactTxt-box {
+.location-box .contactTxt-box {
   margin-left: 0.5rem;
   line-height: 135%;
 }
-.accommodation h2 {
-  font-size: 20px;
-}
-.accommodation .sweBookFont {
-  font-family: SwedenSansBook;
-}
-.accommodation .regularTxt {
-  font-family: SwedenSansRegular;
-}
-.accommodation .ml {
+
+.ml {
   margin-left: 1rem;
 }
-.accommodation .icons-li {
+
+.icons-li {
   font-size: 20px;
 }
-.accommodation .socialMedia-icon {
+
+.socialMedia-icon {
   width: 34px;
   height: 34px;
 }
-.accommodation .color-black {
+
+.color-black {
   color: #0c0c0c;
 }
-.accommodation .sweSemiBold {
+
+.sweSemiBold {
   font-family: SwedenSansSemiBold;
 }
-.accommodation .sweBold {
+
+.sweBold {
   font-family: "SwedenSansBold", arial, sans-serif;
 }
-.accommodation .fontstyle-info {
-  color: #2b2a25;
-  /* Body MD */
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 135%; /* 1.35rem */
-}
-.accommodation .reviews-box::-webkit-scrollbar {
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.reviews-box::-webkit-scrollbar {
   display: none;
 }
-.accommodation .reviews-box {
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.reviews-box {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
-.accommodation .circleRating-box {
+
+.circleRating-box {
   display: flex;
   align-items: center;
-}
-.accommodation .circleRating-box .circle-box {
-  margin-bottom: 0.8rem;
-  display: flex;
-  align-self: flex-start;
-  -moz-column-gap: 0.2rem;
-       column-gap: 0.2rem;
-  width: 3.9rem;
-}
-.accommodation .circleRating-box .circle-box .ellipse {
-  border-radius: 0.3rem;
-  background: #e7ae4d;
-  width: 0.6rem;
-  height: 0.6rem;
-}
-.accommodation .circleRating-box .circle-box .ellipse.border {
-  border: 1px solid #e7ae4d;
-  background-color: white;
-}
-.accommodation .circleRating-box p {
-  margin-left: 0.5rem;
 }/*# sourceMappingURL=style.css.map */

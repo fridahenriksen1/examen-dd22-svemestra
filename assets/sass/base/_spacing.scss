@@ -1,7 +1,23 @@
 // SPACING
+// MARGIN TOP
+.mt1 {
+  margin-top: 1rem;
+}
+.mt2 {
+  margin-top: 2rem;
+}
+.mt3 {
+  margin-top: 3rem;
+}
+.mt4 {
+  margin-top: 4rem;
+}
 // MARGIN BOTTOM
 .mb1 {
   margin-bottom: 1rem;
+}
+.mb1-5 {
+  margin-bottom: 1.5rem;
 }
 .mb2 {
   margin-bottom: 2rem;
@@ -28,35 +44,25 @@
 .mbt4 {
   margin: 4rem 0rem;
 }
-// MARGIN TOP
-.mt1 {
-  margin-top: 1rem;
-}
-.mt2 {
-  margin-top: 2rem;
-}
-.mt3 {
-  margin-top: 3rem;
-}
-.mt4 {
-  margin-top: 4rem;
+
+.mleft05 {
+  margin-left: 0.5rem;
 }
 // <a> taggarnas padding
 .link-tagg {
   padding: 1rem;
 }
-// kommentar
-// sorteras:
-
 .saved-resorts {
   margin-top: 2.5rem;
 }
-
 //   Lite marign för att få rum åt p-taggarna i sparade besöksmåls componenten
 .p-card-mini {
   &:first-child {
     margin-bottom: 0.2rem;
   }
+}
+.detail-main {
+  margin: 1rem 0rem 4rem 0rem;
 }
 // SPACINGREGLER-FRÅN FIGMA VARIABLER
 // 0px
