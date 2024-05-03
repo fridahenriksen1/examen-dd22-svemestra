@@ -1,76 +1,65 @@
 [
-    {
-        "id": 1,
-        "name": "Hyssna Forest Resort",
-        "categories": ["trädhotell","glamping"],
-        "info": "Hyssna Forest Resort är en fridfull oas belägen i den vackra naturen i Västsverige. Resorten är en perfekt reträtt för dem som söker en paus från stadens liv och ett tillfälle att återansluta med naturen.",
-        "imageURL": "img/cottage.jpg",
-        "price": "Budget",
-        "htmlUrl": "assets/accommodation/hyssna.html"
-
-    },
-    {
-        "id": 2,
-        "name": "Böda camping",
-        "categories": ["camping"],
-        "info": "Lorem ipsum dolor sit amet consectetur. Convallis amet nisi amet eget at.",
-        "imageURL": "img/camping.jpg",
-        "price": "Medel",
-        "htmlUrl": "assets/accommodation/bodaCamping.html"
-
-    },
-    {
-        "id": 3,
-        "name": "Sago hotellet",
-        "categories": ["trädhotell","spa"],
-        "info": "Lorem ipsum dolor sit amet consectetur. Convallis amet nisi amet eget at.",
-        "imageURL": "img/hotel.jpg",
-        "price": "Premium",
-        "htmlUrl": "assets/accommodation/sagoHotell.html"
-
-    },
-    {
-        "id": 4,
-        "name": "Vätten rundan",
-        "categories": ["cyckla"],
-        "info": "Lorem ipsum dolor sit amet consectetur. Convallis amet nisi amet eget at.",
-        "imageURL": "img/hotel.jpg",
-        "price": "Budget",
-        "htmlUrl": "assets/accommodation/sagoHotell.html"
-
-    },
-    {
-        "id": 5,
-        "name": "Sjön",
-        "categories": ["vatten"],
-        "info": "Lorem ipsum dolor sit amet consectetur. Convallis amet nisi amet eget at.",
-        "imageURL": "img/hotel.jpg",
-        "price": "Budget",
-        "htmlUrl": "assets/accommodation/sagoHotell.html"
-
-    },
-    {
-        "id": 6,
-        "name": "Kinnekulle",
-        "categories": ["vandra"],
-        "info": "Lorem ipsum dolor sit amet consectetur. Convallis amet nisi amet eget at.",
-        "imageURL": "img/hotel.jpg",
-        "price": "Medel",
-        "htmlUrl": "assets/accommodation/sagoHotell.html"
-
-    },
-    {
-        "id": 7,
-        "name": "Vämland glamping",
-        "categories": ["glamping"],
-        "info": "Lorem ipsum dolor sit amet consectetur. Convallis amet nisi amet eget at.",
-        "imageURL": "img/hotel.jpg",
-        "price": "Premium",
-        "htmlUrl": "assets/accommodation/sagoHotell.html"
-
-    }
-
-
-
-
-    ]
+  {
+    "id": 1,
+    "name": "Hyssna Forest Resort",
+    "categories": ["trädhotell", "glamping"],
+    "info": "Hyssna Forest Resort är en fridfull oas belägen i den vackra naturen i Västsverige. Resorten är en perfekt reträtt för dem som söker en paus från stadens liv och ett tillfälle att återansluta med naturen.",
+    "imageURL": "img/cottage.jpg",
+    "price": "Budget",
+    "htmlUrl": "assets/accommodation/hyssna.html"
+  },
+  {
+    "id": 2,
+    "name": "Böda camping",
+    "categories": ["camping"],
+    "info": "Lorem ipsum dolor sit amet consectetur. Convallis amet nisi amet eget at.",
+    "imageURL": "img/camping.jpg",
+    "price": "Medel",
+    "htmlUrl": "assets/accommodation/hyssna.html"
+  },
+  {
+    "id": 3,
+    "name": "Sago hotellet",
+    "categories": ["trädhotell", "spa"],
+    "info": "Lorem ipsum dolor sit amet consectetur. Convallis amet nisi amet eget at.",
+    "imageURL": "img/hotel.jpg",
+    "price": "Premium",
+    "htmlUrl": "assets/accommodation/hyssna.html"
+  },
+  {
+    "id": 4,
+    "name": "Vätten rundan",
+    "categories": ["cyckla"],
+    "info": "Lorem ipsum dolor sit amet consectetur. Convallis amet nisi amet eget at.",
+    "imageURL": "img/hotel.jpg",
+    "price": "Budget",
+    "htmlUrl": "assets/accommodation/hyssna.html"
+  },
+  {
+    "id": 5,
+    "name": "Sjön",
+    "categories": ["vatten"],
+    "info": "Lorem ipsum dolor sit amet consectetur. Convallis amet nisi amet eget at.",
+    "imageURL": "img/hotel.jpg",
+    "price": "Budget",
+    "htmlUrl": "assets/accommodation/hyssna.html"
+  },
+  {
+    "id": 6,
+    "name": "Kinnekulle",
+    "categories": ["vandra"],
+    "info": "Lorem ipsum dolor sit amet consectetur. Convallis amet nisi amet eget at.",
+    "imageURL": "img/hotel.jpg",
+    "price": "Medel",
+    "htmlUrl": "assets/accommodation/hyssna.html"
+  },
+  {
+    "id": 7,
+    "name": "Vämland glamping",
+    "categories": ["glamping"],
+    "info": "Lorem ipsum dolor sit amet consectetur. Convallis amet nisi amet eget at.",
+    "imageURL": "img/hotel.jpg",
+    "price": "Premium",
+    "htmlUrl": "assets/accommodation/hyssna.html"
+  }
+]
