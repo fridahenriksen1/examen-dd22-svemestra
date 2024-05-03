@@ -1,1 +1,44 @@
-// Styling på ikoner i alla dess färger, använd färger från variablerna
+// Styling på ikoner i alla dess färger, använd färger från variablern
+
+.arrowBack-icon {
+  position: absolute;
+  color: #fff;
+  border-radius: 6rem;
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  padding: 0.4375rem 0.3125rem;
+  align-items: center;
+  gap: 0.625rem;
+  left: 1rem;
+  top: 1rem;
+}
+.detailIcon {
+  font-weight: 200;
+}
+.share-icon {
+  //! Share iconen vill inte bli outlined, material icons stoppar det
+  position: absolute;
+  right: 1rem;
+  bottom: 4rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 6rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-variation-settings: "FILL" 1, "wght" 200, "GRAD" 0, "opsz" 24;
+}
+.likeIcon {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 6rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: white;
+}

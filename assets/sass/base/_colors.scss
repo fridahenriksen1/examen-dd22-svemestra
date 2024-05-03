@@ -2,32 +2,34 @@
 // PRIMARY BACKGROUND
 $primary-BG: #fafafa;
 // PRIMARY COLORS
-$skogsgron300: #485C55;
-$skogsgron200: #96B5AA;
+$skogsgron600: #485c55;
+$skogsgron200: #96b5aa;
 // ACCENTCOLORS
 // Guldkorn
-$guldkorn600: #E7AE4D;
+$guldkorn600: #e7ae4d;
 // Djupsjö
-$djupsjo600: #333A4C;
-$djupsjo400: #9BB1EA;
+$djupsjo600: #333a4c;
+$djupsjo400: #9bb1ea;
 // Trädstam
-$tradstam600: #594E2A;
-$tradstam400: #7D7046;
+$tradstam600: #594e2a;
+$tradstam400: #7d7046;
 // Sandstrand
-$sandstrand600: #8B8F73;
-$sandstrand400: #CDD0B6;
+$sandstrand600: #70735b;
+$sandstrand400: #cdd0b6;
 // Granskott
 $granskott600: #889583;
-$granskott400: #B9CEB0;
+$granskott400: #b9ceb0;
 // ___
 // TEXT COLORS
 $text-White: white;
 $text-Black: black;
-
 // NEUTRALS
-$black500: #0C0C0C;
+$black500: #0c0c0c;
 $greyblack: #3d3d3d;
 $grey: #6d6d6d;
 $lightgrey: #9e9e9e;
 $greywhite: #cecece;
 $white: #fafafa;
+.h1-color {
+  color: $skogsgron600;
+}

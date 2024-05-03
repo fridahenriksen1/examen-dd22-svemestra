@@ -49,11 +49,13 @@ a,
 }
 .bodyMD-Bold {
   font-size: 1rem;
+  font-family: "SwedenSansBold", arial, sans-serif;
 }
 .bodyMD {
   font-size: 1rem;
   line-height: 135%;
   font-family: "SwedenSansBook", arial, sans-serif;
+  padding-top: 1.8px;
 }
 // Typografin på de frostade rutorna i start
 .body-mini {
@@ -66,6 +68,18 @@ a,
   font-family: "SwedenSansBook", arial, sans-serif;
 }
 .bodySM-Bold {
+  font-size: 0.75rem;
+  font-family: "SwedenSansSemiBold", arial, sans-serif;
+}
+.bodyXS {
+  font-size: 0.75rem;
+  font-family: "SwedenSansBook", arial, sans-serif;
+}
+.bodyXS-Bold {
+  font-size: 0.75rem;
+  font-family: "SwedenSansBold", arial, sans-serif;
+}
+.bodyXS-Semibold {
   font-size: 0.75rem;
   font-family: "SwedenSansSemiBold", arial, sans-serif;
 }
@@ -89,12 +103,12 @@ a,
 // tillfälligt namn för <span>??
 .link_1 {
   font-family: SwedenSansBook;
-  font-size: 0.87;
+  font-size: 0.87rem;
 }
 // Denna sätts på minikorten "dina sparade besöksmål" tillfälligt i index alltså
 .p-card-mini {
   font-family: SwedenSansBook;
-  font-size: 0.75;
+  font-size: 0.75rem;
 }
 // här stylas den aktiva klassen i naven
 .menu-link {
@@ -107,14 +121,16 @@ a,
     }
   }
 }
-
+.upperCASE {
+  text-transform: uppercase;
+}
 //padding-right: 1rem;
 // p {
 //   white-space: nowrap;
 //   //padding-right: 0.875rem;
 //   padding-right: 0.375rem;
 // }
-// ____________________Arbetar om dessa under till de övre, använd de övre istället
+//! ____________________Arbetar om dessa under till de övre, använd de övre istället
 // ________________________
 
 // h1 {

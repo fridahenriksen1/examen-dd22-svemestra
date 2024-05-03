@@ -3,17 +3,20 @@
 //Visa alla style
 // Denna jobbar jag på att sortera upp vart den ska vara, lite av den finns i layout redan
 .show-all-container {
-    // flex: 0 0 100%;
-    // display: flex;
-    // justify-content: center;
+  // flex: 0 0 100%;
+  // display: flex;
+  // justify-content: center;
 
-    .show-all-link {
-        display: flex;
-        align-items: center;
-        font-size: 1rem;
+  .show-all-link {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
 
-        .show-all-text {
-            text-decoration: underline;
-        }
+    .show-all-text {
+      text-decoration: underline;
     }
+  }
+}
+.readMore {
+  text-decoration: underline;
 }
