@@ -83,6 +83,7 @@
       justify-content: space-between;
       flex: 1 0 auto;
       margin-bottom: 1rem;
+      font-size: 11px;
       color: #8b8f73;
       .season-box {
         display: flex;
@@ -412,6 +413,24 @@
   .socialMedia-icon {
     width: 34px;
     height: 34px;
+  }
+  .color-black {
+    color: #0c0c0c;
+  }
+  .sweSemiBold {
+    font-family: SwedenSansSemiBold;
+  }
+  .sweBold {
+    font-family: "SwedenSansBold", arial, sans-serif;
+  }
+  .fontstyle-info {
+    color: #2b2a25;
+
+    /* Body MD */
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135%; /* 1.35rem */
   }
 
   /* Hide scrollbar for Chrome, Safari and Opera */

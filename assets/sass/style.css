@@ -1416,6 +1416,7 @@ main {
   justify-content: space-between;
   flex: 1 0 auto;
   margin-bottom: 1rem;
+  font-size: 11px;
   color: #8b8f73;
 }
 .accommodation .detail-main .seasonPrice-box .season-box {
@@ -1705,6 +1706,23 @@ main {
 .accommodation .socialMedia-icon {
   width: 34px;
   height: 34px;
+}
+.accommodation .color-black {
+  color: #0c0c0c;
+}
+.accommodation .sweSemiBold {
+  font-family: SwedenSansSemiBold;
+}
+.accommodation .sweBold {
+  font-family: "SwedenSansBold", arial, sans-serif;
+}
+.accommodation .fontstyle-info {
+  color: #2b2a25;
+  /* Body MD */
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%; /* 1.35rem */
 }
 .accommodation .reviews-box::-webkit-scrollbar {
   display: none;
