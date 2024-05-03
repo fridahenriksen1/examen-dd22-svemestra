@@ -35,21 +35,34 @@ function createCard(destination) {
     const link = card.querySelector('[data-link]');
     const info = card.querySelector('[data-info]');
     const catContainer = card.querySelector('[data-categorys]');
-    const  likeIcons = document.querySelectorAll('.like-icon');
-
-    likeIcons.forEach(icon => {
-    icon.addEventListener('click', () => {
-        const isLiked = icon.getAttribute('data-liked') === 'true';
+    // const  likeIcons = document.querySelectorAll('.like-icon');
+    const  likeButton = card.querySelector('.like-icon');
+    likeButton.addEventListener('click',() => {
+        const isLiked = likeButton.getAttribute('data-liked') === 'true';
         console.log('klick');
-        if (isLiked) {
-            icon.src = '/assets/icons/heart-like-large-card.svg';
-            icon.setAttribute('data-liked', 'false');
-        } else {
-            icon.src = '/assets/icons/heartIconFilled.svg';
-            icon.setAttribute('data-liked', 'true');
+        if (isLiked){
+            likeButton.src = '/assets/icons/heart-like-large-card.svg';
+            likeButton.setAttribute('data-liked', 'false');
+        }else{
+            likeButton.src= '/assets/icons/heartIconFilled.svg';
+            likeButton.setAttribute('data-liked', 'true');
         }
-    });
-});
+        
+    })
+
+//     likeIcons.forEach(icon => {
+//     icon.addEventListener('click', () => {
+//         const isLiked = icon.getAttribute('data-liked') === 'true';
+//         console.log('klick');
+//         if (isLiked) {
+//             icon.src = '/assets/icons/heart-like-large-card.svg';
+//             icon.setAttribute('data-liked', 'false');
+//         } else {
+//             icon.src = '/assets/icons/heartIconFilled.svg';
+//             icon.setAttribute('data-liked', 'true');
+//         }
+//     });
+// });
 
     destination.categories.forEach(cat => {
         const newSpan = document.createElement('span');
