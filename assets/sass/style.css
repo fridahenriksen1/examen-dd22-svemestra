@@ -1350,7 +1350,6 @@ nav svg {
 .card-box {
   display: flex;
   flex: 1 0 auto;
-  margin: 0 1rem 1.4rem 1rem;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -1397,7 +1396,7 @@ nav svg {
 }
 .card-box .card-medium .contentSaved-Box .circle-box .ellipse-11 {
   border-radius: 0.3rem;
-  background: #141414;
+  background: #e7ae4d;
   width: 0.4rem;
   height: 0.4rem;
 }
@@ -1444,6 +1443,8 @@ nav svg {
   margin: 0 0.3rem 2rem 0.1rem;
   display: flex;
   justify-content: space-between;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .map-section .icon-box .share-filter-box {
   display: flex;
@@ -1498,14 +1499,14 @@ nav svg {
 .icon-mapp-box .text-box-saved-maps .maps-box {
   display: flex;
   flex: 0 0 50%;
-  border: 1px solid black;
+  border: 1px solid #485c55;
   text-align: center;
   padding: 0.625rem;
   justify-content: center;
   cursor: pointer;
 }
 .icon-mapp-box .text-box-saved-maps .active {
-  background-color: black;
+  background-color: #485c55;
   color: white;
   transition: background-color 0.7s ease;
 }
@@ -1655,23 +1656,16 @@ nav svg {
 .big-container {
   margin-bottom: 7rem;
 }
-.big-container .besksml-4 {
-  overflow-wrap: break-word;
-  font-family: "Roboto";
-  font-weight: 500;
-  font-size: 1rem;
-  color: rgba(43, 43, 43, 0.5);
-}
 .big-container .mappar-text {
   overflow-wrap: break-word;
   font-family: "Roboto";
   font-weight: 500;
   font-size: 1rem;
-  color: #2b2b2b;
+  color: #fafafa;
   text-decoration: none;
 }
 .big-container .mappar-text.txtColor {
-  color: #959595;
+  color: #485c55;
 }
 .big-container .icround-plus {
   margin: 0.1rem 1.3rem 0.1rem 0;
