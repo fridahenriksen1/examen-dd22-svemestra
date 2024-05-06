@@ -36,6 +36,9 @@ canvas,
 svg {
   display: block;
   width: 100%;
+  background-size: contain; /* Anpassa storleken utan att sträcka ut */
+  background-position: center center; /* Placera bilden i mitten */
+  background-repeat: no-repeat;
 }
 
 input,
@@ -217,6 +220,7 @@ a,
 
 .heading_2 {
   font-size: 2rem;
+  line-height: 110%;
 }
 
 .heading_3 {
@@ -256,8 +260,8 @@ a,
 }
 
 .bodySM-Bold {
-  font-size: 0.75rem;
-  font-family: "SwedenSansSemiBold", arial, sans-serif;
+  font-size: 0.875rem;
+  font-family: "SwedenSansBold", arial, sans-serif;
 }
 
 .bodyXS {
@@ -292,6 +296,15 @@ a,
 .buttonText {
   font-size: 1rem;
   font-family: "SwedenSansSemiBold", arial, sans-serif;
+}
+
+.button {
+  font-size: 1rem;
+  font-family: "SwedenSansBook", arial, sans-serif;
+  letter-spacing: 1px;
+  color: white;
+  white-space: nowrap;
+  padding-top: 3px;
 }
 
 .link_1 {
@@ -413,8 +426,16 @@ a,
   margin-top: 4rem;
 }
 
+.mbt1-25 {
+  margin-bottom: 1.25rem;
+}
+
 .mb1 {
   margin-bottom: 1rem;
+}
+
+.mb1-25 {
+  margin-bottom: 1.25rem;
 }
 
 .mb1-5 {
@@ -446,7 +467,7 @@ a,
 }
 
 .mbt3 {
-  margin: 2rem 0rem;
+  margin: 3rem 0rem;
 }
 
 .mbt4 {
@@ -473,8 +494,53 @@ a,
   margin: 1rem 0rem 4rem 0rem;
 }
 
+.chipsTxt p {
+  padding-top: 2px;
+}
+
 .h1-color {
   color: #485c55;
+}
+
+.chipsFilter:nth-child(1) {
+  border: 0.1rem solid #485c55;
+}
+.chipsFilter:nth-child(2) {
+  border: 0.1rem solid #333a4c;
+}
+.chipsFilter:nth-child(3) {
+  border: 0.1rem solid #70735b;
+}
+.chipsFilter:nth-child(4) {
+  border: 0.1rem solid #333a4c;
+}
+
+.unikaboenden {
+  color: #485c55;
+}
+
+.unikaboenden-txt {
+  color: #485c55;
+}
+
+.water {
+  color: #333a4c;
+}
+
+.water-txt {
+  color: #333a4c;
+}
+
+.childcare {
+  color: #70735b;
+}
+
+.childcare-txt {
+  color: #70735b;
+}
+
+.ejtillatet-txt {
+  color: #333a4c;
 }
 
 .blurEffect-Light {
@@ -524,10 +590,6 @@ a,
   top: 1rem;
 }
 
-.detailIcon {
-  font-weight: 200;
-}
-
 .share-icon {
   position: absolute;
   right: 1rem;
@@ -553,6 +615,10 @@ a,
   display: flex;
   justify-content: center;
   color: white;
+}
+
+.detailIcon {
+  font-weight: 300 !important;
 }
 
 .bottom-menu-container {
@@ -991,8 +1057,11 @@ nav svg {
   text-decoration: underline;
 }
 
-.readMore {
+.ShowMoreBtn {
   text-decoration: underline;
+  text-underline-offset: 8px;
+  font-size: 1rem;
+  font-family: "SwedenSansSemiBold", arial, sans-serif;
 }
 
 #categorys {
@@ -1519,7 +1588,7 @@ nav svg {
 }
 
 .devider-mini {
-  border-right: 1px solid #70735b;
+  border-right: 1px solid #889583;
 }
 
 .account-container {
@@ -1702,6 +1771,17 @@ nav svg {
   height: 0.8rem;
 }
 
+.accommodation .card-content-frost {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  color: #f4f4f4;
+  padding: 0.5rem 1rem;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(100%);
+}
 .accommodation .detail-pic {
   display: flex;
   height: 23.875rem;
@@ -1713,37 +1793,39 @@ nav svg {
   padding: 0.25rem 0.75rem;
   align-items: flex-end;
   gap: 0.5rem;
-  left: 9.8125rem;
-  bottom: 1.25rem;
+  left: 50%;
+  bottom: 4rem;
   border-radius: 0.25rem;
   background: rgba(0, 0, 0, 0.6);
   color: white;
   font-size: 12px;
+  transform: translateX(-50%) translateY(100%);
 }
 .accommodation .detail-main .seasonPrice-box {
   display: flex;
   justify-content: space-between;
   flex: 1 0 auto;
   font-size: 11px;
-  color: #8b8f73;
+  color: #889583;
 }
 .accommodation .detail-main .seasonPrice-box .season-box {
   display: flex;
-  flex: 0 0 60%;
-  color: #70735b;
+  gap: 0.5rem;
+  color: #889583;
   justify-content: space-between;
 }
 .accommodation .detail-main .price-box {
   display: flex;
   color: black;
 }
+.accommodation .detail-main .price-box p {
+  color: #889583;
+}
 .accommodation .circleRating-box {
   display: flex;
   align-items: center;
 }
 .accommodation .chipsBox {
-  margin-bottom: 0.5rem;
-  margin-top: 0.5rem;
   display: flex;
   flex-wrap: wrap;
   -moz-column-gap: 0.5rem;
@@ -1751,14 +1833,16 @@ nav svg {
 }
 .accommodation .chipsBox .chipsFilter {
   border-radius: 6.3rem;
-  border: 0.1rem solid #141414;
   display: flex;
-  padding: 0.3rem 1rem;
+  padding: 0.5rem 0.75rem;
   margin-top: 0.5rem;
   align-items: center;
+  max-height: 32px;
 }
 .accommodation .chipsBox .chipsFilter .iconChipsBox .chipsIcon {
   font-size: 1rem;
+  font-weight: 300;
+  padding-top: 3px;
 }
 .accommodation .chipsBox .chipsFilter .chipsTxt {
   padding-left: 0.25rem;
@@ -1766,22 +1850,18 @@ nav svg {
 }
 .accommodation .btnBookWebsite {
   border-radius: 6.3rem;
-  border: 0.1rem solid #485c55;
   display: flex;
   padding: 0.75rem 1.8125rem;
   justify-content: space-between;
   align-items: center;
-  width: 192px;
   background-color: #485c55;
-}
-.accommodation .btnBookWebsite a {
-  color: white;
-  white-space: nowrap;
-  font-size: 12px;
+  max-width: 230px;
 }
 .accommodation .btnBookWebsite .openNewIcon {
   color: white;
   font-size: 20px;
+  color: white;
+  font-weight: 400;
 }
 .accommodation .accommodationSection ul {
   font-family: SwedenSansBook;
@@ -1791,6 +1871,38 @@ nav svg {
 .accommodation .accommodationSection ul li {
   margin-left: 1rem;
   margin-top: 1rem;
+}
+.accommodation .accommodationSection .flexbox-boenden {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.125rem;
+}
+.accommodation .accommodationSection .flexbox-boenden .boxOne {
+  flex: 0 0 50%;
+  min-height: 302px;
+  position: relative;
+}
+.accommodation .accommodationSection .flexbox-boenden .boxTwo {
+  flex: 1;
+  min-height: 302px;
+}
+.accommodation .accommodationSection .flexbox-boenden .boxTwo .box50-50 {
+  display: flex;
+  flex: 1 0;
+  position: relative;
+}
+.accommodation .accommodationSection .flexbox-boenden .boxTwo .box50-50:nth-child(1) .box50-50:nth-child(1) {
+  margin-bottom: 0.125rem;
+}
+.accommodation .accommodationSection .flexbox-boenden .text-on {
+  z-index: 9;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  margin: 0;
 }
 .accommodation .accommodationSection .accoPic-box {
   margin-top: 1.25rem;
@@ -1803,19 +1915,11 @@ nav svg {
   height: 302px;
   position: relative;
 }
-.accommodation .accommodationSection .accoPic-box .highPic-box .card-content-frost {
-  position: absolute;
-  background: rgba(0, 0, 0, 0.4);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  color: #f4f4f4;
-  padding: 0.5rem 1rem;
-  bottom: 3rem;
-  left: 50%;
-  transform: translateX(-50%) translateY(100%);
-}
 .accommodation .accommodationSection .accoPic-box .highPic-box img {
   height: 100%;
+  background-size: contain; /* Anpassa storleken utan att sträcka ut */
+  background-position: center center; /* Placera bilden i mitten */
+  background-repeat: no-repeat;
 }
 .accommodation .accommodationSection .accoPic-box .twoPic-box {
   margin-bottom: 0.13rem;
@@ -1845,10 +1949,6 @@ nav svg {
   display: flex;
   align-items: center;
   padding-top: 1.125rem;
-}
-.accommodation .activitiesSection a {
-  margin-top: 1.125rem;
-  text-decoration: underline;
 }
 .accommodation .whereItIs-section .map-box {
   display: flex;
@@ -1914,28 +2014,29 @@ nav svg {
   letter-spacing: 0.02rem;
   text-transform: uppercase;
 }
-.accommodation .contact-section .location-box {
-  display: flex;
-  align-items: center;
-  margin-top: 1rem;
-}
-.accommodation .socialMedia-box {
-  display: flex;
-  margin-top: 1.5rem;
-  margin-bottom: 3.5rem;
-}
-.accommodation .margin-left {
-  margin-left: 0.75rem;
-}
 
 .location-box {
   display: flex;
   align-items: center;
-  margin: 1rem 0rem 0.5rem 0rem;
+  margin-top: 1rem;
 }
-.location-box .contactTxt-box {
+.location-box .material-symbols-outlined {
+  font-weight: 300;
+}
+
+.contactTxt-box {
   margin-left: 0.5rem;
   line-height: 135%;
+}
+
+.socialMedia-box {
+  display: flex;
+  margin-top: 1.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.margin-left {
+  margin-left: 0.75rem;
 }
 
 .ml {
@@ -1949,6 +2050,10 @@ nav svg {
 .socialMedia-icon {
   width: 34px;
   height: 34px;
+}
+.socialMedia-icon.chipsgilter-icon {
+  width: 16px;
+  height: 16px;
 }
 
 .color-black {

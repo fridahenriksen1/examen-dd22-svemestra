@@ -25,15 +25,15 @@
           <figure class="detail-pic">
             <img data-img />
             <div class="arrowBack-icon blurEffect-Dark">
-              <span class="material-symbols-outlined detailIcon">
+              <span class="detailIcon material-symbols-outlined">
                 arrow_left_alt
               </span>
             </div>
             <div class="share-icon blurEffect-Dark">
-              <span class="material-symbols-outlined detailIcon"> share </span>
+              <span class="detailIcon material-symbols-outlined"> share </span>
             </div>
             <div class="likeIcon blurEffect-Dark">
-              <span class="material-symbols-outlined detailIcon">
+              <span class="detailIcon material-symbols-outlined">
                 favorite
               </span>
             </div>
@@ -54,7 +54,7 @@
               </div>
 
               <div class="price-box">
-                <p class="bodyXS-Semibold upperCASE">Premium</p>
+                <p class="bodySM-Bold upperCASE">Premium</p>
               </div>
             </div>
 
@@ -74,81 +74,96 @@
               <p class="bodyMD-Bold mleft05">4.2</p>
             </div>
             <p data-info class="bodyMD mb1 fontstyle-info"></p>
-            <a class="readMore" href="#">Läs mer</a>
-            <div class="chipsBox">
+            <a class="ShowMoreBtn mb1-5" href="#">Läs mer</a>
+            <div class="chipsBox mb3">
               <div class="chipsFilter">
-                <div class="iconChipsBox">
-                  <span class="material-symbols-outlined chipsIcon">
+                <div class="iconChipsBox one1">
+                  <span
+                    class="material-symbols-outlined chipsIcon unikaboenden"
+                  >
                     foundation
                   </span>
                 </div>
-                <div class="chipsTxt">
-                  <p>Trädhotell</p>
+                <div class="chipsTxt unikaboenden-txt">
+                  <p>Unika boenden</p>
                 </div>
               </div>
               <!-- ETT ANNAT CHIPS -->
               <div class="chipsFilter">
-                <div class="iconChipsBox">
-                  <span class="material-symbols-outlined chipsIcon"> spa </span>
-                </div>
-                <div class="chipsTxt">
-                  <p>Trädhotell</p>
-                </div>
-              </div>
-              <!-- ETT ANNAT CHIPS -->
-              <div class="chipsFilter">
-                <div class="iconChipsBox">
-                  <span class="material-symbols-outlined chipsIcon">
-                    hiking
+                <div class="iconChipsBox two2">
+                  <span class="material-symbols-outlined chipsIcon water">
+                    water
                   </span>
                 </div>
-                <div class="chipsTxt">
-                  <p>Vandring</p>
+                <div class="chipsTxt water-txt">
+                  <p>Nära vatten</p>
                 </div>
               </div>
               <!-- ETT ANNAT CHIPS -->
-              <div class="chipsFilter">
+              <div class="chipsFilter three3">
                 <div class="iconChipsBox">
-                  <span class="material-symbols-outlined chipsIcon">
-                    pedal_bike
+                  <span class="material-symbols-outlined chipsIcon childcare">
+                    child_care
                   </span>
                 </div>
-                <div class="chipsTxt">
-                  <p>Cykla</p>
+                <div class="chipsTxt childcare-txt">
+                  <p>Barnvänligt</p>
                 </div>
               </div>
               <!-- ETT ANNAT CHIPS -->
-              <div class="chipsFilter">
+              <div class="chipsFilter four4">
                 <div class="iconChipsBox">
-                  <span class="material-symbols-outlined chipsIcon">
-                    kayaking
-                  </span>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100094686330200"
+                  >
+                    <img
+                      class="socialMedia-icon chipsgilter-icon"
+                      src="/assets/icons/cil_animal.svg"
+                      alt=""
+                    />
+                  </a>
                 </div>
-                <div class="chipsTxt">
-                  <p>Kajak</p>
+                <div class="chipsTxt ejtillatet-txt">
+                  <p>Ej tillåtet</p>
                 </div>
               </div>
             </div>
-
             <div class="btnBookWebsite regularTxt">
-              <a href="https://www.hyssnaforestresort.com/sv/"
+              <a
+                class="button upperCASE"
+                href="https://www.hyssnaforestresort.com/sv/"
                 >BOKA PÅ HEMSIDAN</a
               >
               <span class="material-symbols-outlined openNewIcon">
                 open_in_new
               </span>
             </div>
-            <div class="deviderLine mbt4"></div>
-
+            <div class="deviderLine mbt3"></div>
             <section class="accommodationSection">
-              <h2>Boenden</h2>
-              <ul class="regularTxt">
+              <h2 class="heading_4">Boenden</h2>
+              <ul class="regularTxt mbt1-25">
                 <li>Treetop Cabin - 2 till 4 bäddar</li>
                 <li>Creek Cabins - 2 + 2 bäddar</li>
                 <li>Cliffhang Cabins - 2 bäddar</li>
               </ul>
 
-              <div class="accoPic-box">
+              <div class="flexbox-boenden">
+                <div class="boxOne">
+                  <img src="/assets/img/hyssna-treetop-fönster.jpg" alt="" />
+                  <p class="text-on">Treetop Cabin</p>
+                </div>
+                <div class="boxTwo">
+                  <div class="box50-50">
+                    <img src="/assets/img/hyssna-cabincreek-bron.jpg" alt="" />
+                    <p class="text-on">Creek Cabins</p>
+                  </div>
+                  <div class="box50-50">
+                    <img src="/assets/img/hyssna-cliffhang.jpg" alt="" />
+                    <p class="text-on">Cliffhang Cabin</p>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="accoPic-box">
                 <div class="highPic-box">
                   <img src="/assets/img/glamping.jpg" alt="" />
                   <div class="card-content-frost">
@@ -167,6 +182,7 @@
                   </div>
                 </div>
               </div>
+               -->
               <div class="seeAllPicBtn regularTxt">
                 <a href="">Se alla bilder</a>
               </div>
@@ -316,7 +332,7 @@
                     Spenderade en helg på Hyssna med sambon, och wow vilket
                     ställe! Vi bodde i Cliffhang Cabin och bokade restaura...
                   </p>
-                  <a class="readMore" href="#">Läs mer</a>
+                  <a class="ShowMoreBtn" href="#">Läs mer</a>
                 </article>
                 <!-- ETT KORT -->
                 <article class="review-card ml">
@@ -344,7 +360,7 @@
                     Bokade en “offline-helg”med några tjejkompisar och bodde i
                     deras Treetop Cabin. Kan starkt rekommendera Hys...
                   </p>
-                  <a class="readMore" href="#">Läs mer</a>
+                  <a class="ShowMoreBtn" href="#">Läs mer</a>
                 </article>
                 <!-- ETT KORT -->
                 <article class="review-card ml">
@@ -373,7 +389,7 @@
                     underbart! Vi testade att åka dit på vintern och det va
                     magiskt!
                   </p>
-                  <a class="readMore" href="#">Läs mer</a>
+                  <a class="ShowMoreBtn" href="#">Läs mer</a>
                 </article>
                 <!-- ETT KORT -->
                 <article class="review-card ml">
@@ -401,7 +417,7 @@
                     Verkligen ett toppenställe när du vill få en paus från
                     stadsbubblan!
                   </p>
-                  <a class="readMore" href="#">Läs mer</a>
+                  <a class="ShowMoreBtn" href="#">Läs mer</a>
                 </article>
               </div>
 

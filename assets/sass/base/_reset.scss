@@ -19,6 +19,8 @@ html {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  // !!Julia
+  // width: 360px;
   // background-color: $primary-BG;
 }
 
@@ -29,6 +31,9 @@ canvas,
 svg {
   display: block;
   width: 100%;
+  background-size: contain; /* Anpassa storleken utan att sträcka ut */
+  background-position: center center; /* Placera bilden i mitten */
+  background-repeat: no-repeat;
   //!Jag la till height 100% med
   // height: 100%;
 }
