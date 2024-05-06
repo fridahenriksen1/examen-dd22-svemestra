@@ -1,15 +1,37 @@
 //! Tillbaka ikonen längst upp på sidan i mappar och besöksmål
-.arrow-back-top-left {
-  position: absolute;
-  left: 1.2rem;
-  top: 1.2rem;
-  padding: 1rem;
+.notification-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem 1rem 0rem 1rem;
 
-  width: 2rem;
-  height: 2rem;
+  .circle-box {
+    // position: absolute;
+    // left: 1.2rem;
+    // top: 1.2rem;
+    // padding: 1rem;
 
-  .backArrow-icon {
-    width: 4rem;
-    height: 4rem;
+    // width: 2rem;
+    // height: 2rem;
+    display: flex;
+    width: 2.25rem;
+    height: 2.25rem;
+    padding: 0.6875rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    flex-shrink: 0;
+    border-radius: 3.125rem;
+    border: 1px solid #cecece;
+    background-color: #fff;
+
+    .backArrow-icon {
+      // width: 4rem;
+      // height: 4rem;
+      font-size: 20px;
+    }
+    .notification-icon {
+      width: 1.25rem;
+      height: 1.25rem;
+    }
   }
 }

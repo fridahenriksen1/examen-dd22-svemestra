@@ -21,12 +21,24 @@
   </head>
   <body>
     <div class="big-container">
-      <header>
-        <a class="arrow-back-top-left" href="savedDestinations.html">
-          <img
+      <header class="notification-header">
+        <a class="circle-box" href="savedDestinations.html">
+          <!-- <img
             class="backArrow-icon"
             src="/assets/icons/ArrowBackTop-left.svg"
+          /> -->
+          <span class="material-symbols-outlined backArrow-icon">
+            arrow_back
+          </span>
+        </a>
+        <a class="circle-box" href="savedDestinations.html">
+          <img
+            class="notification-icon"
+            src="/assets/icons/notifications_unread.svg"
           />
+          <!-- <span class="material-symbols-outlined backArrow-icon">
+            arrow_back
+          </span> -->
         </a>
       </header>
       <main class="main-saved">
@@ -37,12 +49,16 @@
           Sparade besöksmål
           </h1>
         </section> -->
-        <h1 class="heading_3">Mina favoriter</h1>
+        <h1 class="heading_3 colorHeading">Mina favoriter</h1>
+        <p>
+          Här hittar du alla dina gillade besöksmål och både egna och delade
+          mappar.
+        </p>
         <div class="icon-mapp-box">
           <div class="text-box-saved-maps">
             <div class="saved-box">
               <a class="mappar-text txtColor" href="savedDestinations.html">
-                Besöksmål (4)
+                Alla besöksmål (6)
               </a>
             </div>
             <div class="maps-box">
@@ -54,25 +70,32 @@
             <div class="icon-box">
               <div class="share-filter-box">
                 <div class="misort">
-                  <img class="columnIcon" src="/assets/icons/sortIcon.svg" />
+                  <!-- <img class="columnIcon" src="/assets/icons/sortIcon.svg" /> -->
+                  <span class="material-symbols-outlined"> swap_vert </span>
                 </div>
+
                 <div class="active">
-                  <img class="columnIcon" src="/assets/icons/columnIcon.svg" />
+                  <!-- <img class="columnIcon" src="/assets/icons/columnIcon.svg" /> -->
+                  <span class="material-symbols-outlined"> view_column_2 </span>
                 </div>
                 <div class="format-list-bulleted">
-                  <img src="/assets/icons/listIcon.svg" />
+                  <!-- <img src="/assets/icons/listIcon.svg" /> -->
+                  <span class="material-symbols-outlined">
+                    format_list_bulleted
+                  </span>
                 </div>
               </div>
               <div class="search-add-box">
                 <div class="icround-plus">
-                  <img src="/assets/icons/addIcon.svg" />
+                  <!-- <img src="/assets/icons/addIcon.svg" /> -->
+                  <span class="material-symbols-outlined icon-size"> add </span>
                 </div>
                 <div class="search">
-                  <img class="columnIcon" src="/assets/icons/searchIcon.svg" />
+                  <img class="search-img" src="/assets/icons/Search.svg" />
                 </div>
-
                 <div class="format-list-bulleted">
-                  <img src="/assets/icons/threeDotIcon.svg" />
+                  <!-- <img src="/assets/icons/threeDotIcon.svg" /> -->
+                  <span class="material-symbols-outlined"> more_horiz </span>
                 </div>
               </div>
             </div>

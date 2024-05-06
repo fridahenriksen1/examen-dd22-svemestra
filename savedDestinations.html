@@ -22,12 +22,24 @@
   </head>
   <body>
     <div class="big-container">
-      <header>
-        <a class="arrow-back-top-left" href="profil.html">
-          <img
+      <header class="notification-header">
+        <a class="circle-box" href="savedDestinations.html">
+          <!-- <img
             class="backArrow-icon"
             src="/assets/icons/ArrowBackTop-left.svg"
+          /> -->
+          <span class="material-symbols-outlined backArrow-icon">
+            arrow_back
+          </span>
+        </a>
+        <a class="circle-box" href="savedDestinations.html">
+          <img
+            class="notification-icon"
+            src="/assets/icons/notifications_unread.svg"
           />
+          <!-- <span class="material-symbols-outlined backArrow-icon">
+            arrow_back
+          </span> -->
         </a>
       </header>
       <main class="main-saved">
@@ -35,7 +47,7 @@
           <div class="profil-pic-box"></div>
           <h1 class="h1-saved">Sparade besöksmål</h1>
         </section> -->
-        <h1 class="heading_3">Mina favoriter</h1>
+        <h1 class="heading_3 colorHeading">Mina favoriter</h1>
         <div class="icon-mapp-box">
           <div class="text-box-saved-maps">
             <div class="saved-box">
@@ -71,13 +83,14 @@
               <div class="search-add-box">
                 <div class="icround-plus">
                   <!-- <img src="/assets/icons/addIcon.svg" /> -->
-                  <span class="material-symbols-outlined"> add </span>
+                  <span class="material-symbols-outlined icon-size"> add </span>
                 </div>
                 <div class="search">
-                  <img src="/assets/icons/searchIcon.svg" />
+                  <img class="search-img" src="/assets/icons/Search.svg" />
                 </div>
                 <div class="format-list-bulleted">
-                  <img src="/assets/icons/threeDotIcon.svg" />
+                  <!-- <img src="/assets/icons/threeDotIcon.svg" /> -->
+                  <span class="material-symbols-outlined"> more_horiz </span>
                 </div>
               </div>
             </div>

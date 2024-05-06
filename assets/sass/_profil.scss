@@ -1,10 +1,11 @@
 .big-container {
   background: #ffffff;
-  padding: 3.9rem 0 0rem 0;
+  //padding: 3.9rem 0 0rem 0;
   .main-saved {
-    margin: 0 1rem 1.4rem 1rem;
+    // margin: 0 1rem 1.4rem 1rem;
     display: flex;
-    flex-direction: column;
+    // flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
 
     .profilPic-textBox {

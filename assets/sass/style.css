@@ -1035,7 +1035,6 @@ nav svg {
     transform: rotate(45deg);
   }
 }
-/*If you have page-specific styles, it is better to put them in a pages/ folder, in a file named after the page. For instance, it’s not uncommon to have very specific styles for the home page hence the need for a _home.scss file in pages/.*/
 .visually-hidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -1493,17 +1492,30 @@ nav svg {
   margin-bottom: 0.3rem;
 }
 
-.arrow-back-top-left {
-  position: absolute;
-  left: 1.2rem;
-  top: 1.2rem;
-  padding: 1rem;
-  width: 2rem;
-  height: 2rem;
+.notification-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem 1rem 0rem 1rem;
 }
-.arrow-back-top-left .backArrow-icon {
-  width: 4rem;
-  height: 4rem;
+.notification-header .circle-box {
+  display: flex;
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0.6875rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  flex-shrink: 0;
+  border-radius: 3.125rem;
+  border: 1px solid #cecece;
+  background-color: #fff;
+}
+.notification-header .circle-box .backArrow-icon {
+  font-size: 20px;
+}
+.notification-header .circle-box .notification-icon {
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
 .map-section {
@@ -1629,12 +1641,10 @@ nav svg {
 
 .big-container {
   background: #ffffff;
-  padding: 3.9rem 0 0rem 0;
 }
 .big-container .main-saved {
-  margin: 0 1rem 1.4rem 1rem;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
 }
 .big-container .main-saved .profilPic-textBox {
@@ -1724,6 +1734,9 @@ nav svg {
   width: 1.3rem;
   height: 0.8rem;
 }
+.big-container .colorHeading {
+  color: #485c55;
+}
 
 .big-container {
   margin-bottom: 7rem;
@@ -1745,18 +1758,17 @@ nav svg {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 0.9rem;
-  height: 0.9rem;
-  box-sizing: border-box;
+  font-size: 1rem;
 }
 .big-container .search {
   margin-right: 1.2rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 1.1rem;
-  height: 1.1rem;
-  box-sizing: border-box;
+}
+.big-container .search .search-img {
+  width: 24px;
+  height: 24px;
 }
 .big-container .more-vert {
   margin: 0.4rem 0;
@@ -1765,6 +1777,9 @@ nav svg {
   justify-content: center;
   width: 1rem;
   height: 0.3rem;
+}
+.big-container .icon-size {
+  font-size: 1.5rem;
 }
 .big-container .shared-icon {
   width: 1.3rem;
