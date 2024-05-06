@@ -36,6 +36,7 @@ a,
 }
 .heading_2 {
   font-size: 2rem;
+  line-height: 110%;
 }
 .heading_3 {
   font-size: 1.75rem;
@@ -68,8 +69,9 @@ a,
   font-family: "SwedenSansBook", arial, sans-serif;
 }
 .bodySM-Bold {
-  font-size: 0.75rem;
-  font-family: "SwedenSansSemiBold", arial, sans-serif;
+  font-size: 0.875rem;
+
+  font-family: "SwedenSansBold", arial, sans-serif;
 }
 .bodyXS {
   font-size: 0.75rem;
@@ -99,6 +101,14 @@ a,
 .buttonText {
   font-size: 1rem;
   font-family: "SwedenSansSemiBold", arial, sans-serif;
+}
+.button {
+  font-size: 1rem;
+  font-family: "SwedenSansBook", arial, sans-serif;
+  letter-spacing: 1px;
+  color: white;
+  white-space: nowrap;
+  padding-top: 3px;
 }
 // tillfälligt namn för <span>??
 .link_1 {

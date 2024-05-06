@@ -1,5 +1,4 @@
 // Styling på ikoner i alla dess färger, använd färger från variablern
-
 .arrowBack-icon {
   position: absolute;
   color: #fff;
@@ -12,9 +11,6 @@
   gap: 0.625rem;
   left: 1rem;
   top: 1rem;
-}
-.detailIcon {
-  font-weight: 200;
 }
 .share-icon {
   //! Share iconen vill inte bli outlined, material icons stoppar det
@@ -41,4 +37,7 @@
   display: flex;
   justify-content: center;
   color: white;
+}
+.detailIcon {
+  font-weight: 300 !important;
 }
