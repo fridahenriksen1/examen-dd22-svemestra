@@ -1397,6 +1397,7 @@ nav svg {
 .folder-card .bigFolder-picBox {
   display: flex;
   gap: 0.25rem;
+  flex: 1;
 }
 .folder-card .bigFolder-picBox .folderHighPic-box {
   width: 76px;
