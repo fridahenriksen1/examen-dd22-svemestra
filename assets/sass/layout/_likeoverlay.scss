@@ -136,7 +136,7 @@ nav svg {
   display: none;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 768px) {
   .links-container {
     flex-direction: column;
     align-items: center; /* Center horizontally */
@@ -152,6 +152,9 @@ nav svg {
     // box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
     transition: 0.75s ease-out;
     border-radius: 0.625rem;
+    @media (min-width: 380px) {
+      height: 80vh;
+    }
   }
   //   nav a {
   //     box-sizing: border-box;
@@ -246,7 +249,7 @@ nav svg {
   }
 
   /* Hide the browser's default radio button */
-  .container input {
+  .radio-container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -266,12 +269,12 @@ nav svg {
   }
 
   /* On mouse-over, add a grey background color */
-  .container:hover input ~ .checkmark {
+  .radio-container:hover input ~ .checkmark {
     background-color: #ccc;
   }
 
   /* When the radio button is checked, add a blue background */
-  .container input:checked ~ .checkmark {
+  .radio-container input:checked ~ .checkmark {
     background-color: #485c55;
   }
 
@@ -283,12 +286,12 @@ nav svg {
   }
 
   /* Show the indicator (dot/circle) when checked */
-  .container input:checked ~ .checkmark:after {
+  .radio-container input:checked ~ .checkmark:after {
     display: block;
   }
 
   /* Style the indicator (dot/circle) */
-  .container .checkmark:after {
+  .radio-container .checkmark:after {
     // top: 8.5px;
     // left: 8.5px;
 

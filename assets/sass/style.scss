@@ -32,6 +32,7 @@
 @import "components/tabsDestinationMapps";
 @import "components/devider-lines";
 @import "components/circle-box";
+@import "components/popup";
 
 //Detta måste sorteras
 @import "filterpage";
@@ -40,6 +41,12 @@
 @import "saveddestinations";
 @import "savedmaps";
 @import "detailpage";
+
+body {
+  // max-width: 375px;
+  // margin: 0 auto; /* Centrera innehållet på skärmen */
+  //height: 50vh;
+}
 
 // .flex-container {
 //   max-width: 1200px;
