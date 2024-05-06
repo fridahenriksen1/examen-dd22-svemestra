@@ -1749,9 +1749,15 @@ nav svg {
   color: #fafafa;
   text-decoration: none;
   white-space: nowrap;
+  display: flex;
+  align-items: center;
 }
 .big-container .mappar-text.txtColor {
   color: #485c55;
+}
+.big-container .mappar-text .redDott-icon {
+  color: #d66e38;
+  font-variation-settings: "FILL" 1, "wght" 200, "GRAD" 0, "opsz" 24;
 }
 .big-container .icround-plus {
   margin: 0.1rem 1.3rem 0.1rem 0;

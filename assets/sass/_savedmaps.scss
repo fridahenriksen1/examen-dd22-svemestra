@@ -18,9 +18,16 @@
     color: #fafafa;
     text-decoration: none;
     white-space: nowrap;
+    display: flex;
+    align-items: center;
 
     &.txtColor {
       color: #485c55;
+    }
+    .redDott-icon {
+      color: #d66e38;
+
+      font-variation-settings: "FILL" 1, "wght" 200, "GRAD" 0, "opsz" 24;
     }
   }
 
