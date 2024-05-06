@@ -44,7 +44,7 @@
 
 
       <!-- Sök container -->
-    <section id="search" class="container">
+    <section id="search" class="searchcontainer">
         <!-- <h1>Boenden</h1> -->
 
         <!-- Boxen för sökbaren och filter -->
@@ -72,6 +72,7 @@
         </a>
     
     </div>
+  
 
 
 
@@ -116,39 +117,188 @@
 
          <!-- Sektion med cards som hämtas från json med js, filtreringskorten för boende -->
     <section class="user-accomodation" data-user-cards>
-        <!-- Use <template> to hold some content that will be hidden when the page loads. Use JavaScript to display it:  -->
-           
-        
-
     </section>
     <template data-user-template>
       <article class="card">
-        <span class="material-symbols-outlined like-icon">
-          favorite
-          </span>
-        
+        <input type="checkbox" id="sidebar-active" />
+        <label for="sidebar-active" class="open-sidebar-button">
 
-
+        <style>
+          .like-icon[data-liked="true"]{
+            font-variation-settings:
+            'FILL' 1
+          }
+        </style>
+      
+        <!-- HÄR LIGGER SPARA BESÖKS MÅL OVERLAY -->
+        <!-- <nav> -->
+       
+            <span class="material-symbols-outlined like-icon"> favorite </span>
+          </label>
+          <label id="overlay" for="sidebar-active"></label>
+          <div class="links-container">
+            <div class="rectangle"></div>
     
+            <div class="headingBox">
+              <h2 class="HeadingFont heading_4">Vart vill du spara?</h2>
+            </div>
+    
+            <div class="mapp-box">
+              <!-- EN SEKTION -->
+              <section class="contentBtn-box">
+                <!-- <a href="#"> -->
+                <div class="imgContent-box">
+                  <figure>
+                    <img src="/assets/img/MappPic_01.jpg" alt="map picture for the maps" />
+                  </figure>
+                  <div class="txtbox-popup">
+                    <p class="bodyMD">Mina favoriter</p>
+                    <p class="bodyXS">5st besöksmål</p>
+                  </div>
+               
+                </div>
+                     <!-- RADIOKNAPPEN -->
+                     <label class="radio-container">
+                      <input type="checkbox" checked="checked" />
+                      <span class="checkmark"></span>
+                    </label>
+    
+                <!-- </a> -->
+              
+              </section>
+              <!-- EN SEKTION -->
+              <section class="contentBtn-box">
+                <!-- <a href="#"> -->
+                <div class="imgContent-box">
+                  <figure>
+                    <img src="/assets/img/MappPic_02.jpg" alt="map picture for the maps" />
+                  </figure>
+                  <div class="txtbox-popup">
+                    <p class="bodyMD">Familjemappen</p>
+                    <p class="bodyXS">8st besöksmål</p>
+                  </div>
+    
+                  <div class="group-box groupBox-One">
+                    <p class="numberFont">5</p>
+                    <span
+                      class="material-symbols-outlined numberFont paddingLeft-icon"
+                    >
+                      group
+                    </span>
+                  </div>
+                
+                </div>
+                    <!-- RADIOKNAPPEN -->
+                    <label class="radio-container">
+                      <input type="checkbox" checked="checked" />
+                      <span class="checkmark"></span>
+                    </label>
+    
+                <!-- </a> -->
+              
+              </section>
+              <!-- EN SEKTION -->
+              <section class="contentBtn-box">
+                <!-- <a href="#"> -->
+                <div class="imgContent-box">
+                  <figure>
+                    <img src="/assets/img/MappPic_03.jpg" alt="map picture for the maps" />
+                  </figure>
+                  <div class="txtbox-popup">
+                    <p class="bodyMD">30-års present</p>
+                    <p class="bodyXS">3st besöksmål</p>
+                  </div>
+                  
+               
+                </div>
+                     <!-- RADIOKNAPPEN -->
+                     <label class="radio-container">
+                      <input type="checkbox" checked="checked" />
+                      <span class="checkmark"></span>
+                    </label>
+    
+                <!-- </a> -->
+              
+              </section>
+              <!-- EN SEKTION -->
+              <section class="contentBtn-box">
+                <!-- <a href="#"> -->
+                <div class="imgContent-box">
+                  <figure>
+                    <img src="/assets/img/MappPic_04.jpg" alt="map picture for the maps" />
+                  </figure>
+                  <div class="txtbox-popup">
+                    <p class="bodyMD">Tjejhelg</p>
+                    <p class="bodyXS">10st besöksmål</p>
+                  </div>
+    
+                  <div class="group-box groupBox-Two">
+                    <p class="numberFont">8</p>
+                    <span
+                      class="material-symbols-outlined numberFont paddingLeft-icon"
+                    >
+                      group
+                    </span>
+                  </div>
+                
+                </div>
+                    <!-- RADIOKNAPPEN -->
+                    <label class="radio-container">
+                      <input type="checkbox" checked="checked" />
+                      <span class="checkmark"></span>
+                    </label>
+    
+                <!-- </a> -->
+              
+              </section>
+            </div>
+            <div class="mapTextBox">
+              <div class="iconTextBox">
+                <span class="material-symbols-outlined"> add </span>
+                <p class="bodyMD">Skapa ny mapp</p>
+              </div>
+              <div class="iconTextBox">
+                <span class="material-symbols-outlined"> close </span>
+                <p class="bodyMD">Spara inte i en mapp</p>
+              </div>
 
+            </div>
+       
+    
+            <label for="sidebar-active" class="close-sidebar-button">
+              <div class="btn-ok">
+                <p>KLAR</p>
+              </div>
+            </label>
+            <label for="sidebar-active" class="close-sidebar-button">
+              <div class="btn-ok outlined mb">
+                <p>AVBRYT</p>
+              </div>
+            </label>
+          </div>
+        <!-- </nav> -->
+        <!-- POP UP:EN -->
+        <!-- <div class="row pop-up">
+          <div class="box small-6 large-centered">
+            <a href="#" class="close-button">&#10006;</a>
+            <h3>lorem ipsum</h3>
+            <p>
+              Integer non odio id ante rutrum dictum. Nam ac dapibus felis, at
+              pharetra sapien.
+            </p>
+            <p>
+              Maecenas lacus nisi, pellentesque a congue vel, rhoncus sit amet
+              lacus. Sed mattis ultrices risus in tincidunt.
+            </p>
+            <a href="#" class="button">Learn More</a>
+          </div>
+        </div> -->
 
-           <!-- Thin outlined heart -->
-    <!-- <div id="heartContainer" style="font-variation-settings: 'FILL' 0, 'wght' 100, 'GRAD' 0, 'opsz' 48;">
-      <span id="heartIcon" class="material-symbols-outlined">favorite</span>
-  </div> -->
-
-          <!-- <div class="heart-container" onclick="toggleHeart()">
-            <span class="material-symbols-outlined" id="heartIcon">favorite</span>
-          </div> -->
-          
-          <!-- <img class="like-icon" src="/assets/icons/heart-like-large-card.svg"> -->
           <a class="card-content" href="" data-link>
               
-              <figure>
+             <figure>
                   <div class="img-box">
                       <img data-image>
-                      <!-- <img class="like-icon" src="/assets/icons/heart-like-large-card.svg"> -->
-
                   </div>
                   <div class="circle-box">
                       <div class="ellipse">
@@ -216,7 +366,9 @@
 <!-- <script src="/assets/js/script.js"></script> -->
 <!-- <script src="/assets/js/getAccommodation.js" defer></script> -->
 <!-- <script  src="/assets/js/filterpage.js"></script> -->
+<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
 <script src="assets/js/filtering.js"></script>
 <script src="assets/js/like.js"></script>
+<script src="assets/js/popup.js"></script>
 </body>
 </html>

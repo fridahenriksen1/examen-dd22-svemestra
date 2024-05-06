@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root {
   /* Variable for gap */
   --flex-gap: 1rem;
@@ -392,15 +393,12 @@ a,
 .short-infoTxt {
   font-size: 0.8rem;
   color: #141414;
+  padding-top: 0.5rem;
+  padding-bottom: 1.25rem;
 }
 
 .saved-accommodations {
   font-size: 0.8rem;
-  color: #141414;
-}
-
-.treehouses {
-  font-size: 0.6rem;
   color: #141414;
 }
 
@@ -777,6 +775,267 @@ main {
   flex: 0 0 100%;
 }
 
+:root {
+  --color-1: #0f1016;
+  --text-color: #f0f0f0;
+  --accent-color: #006aff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 12pt;
+  font-family: Poppins, Segoe UI, Tahoma, sans-serif;
+}
+
+.links-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Start at the bottom */
+  position: fixed; /* Fixed positioning */
+  bottom: -100%; /* Initially hide off the bottom */
+  left: 0; /* Start from the left */
+  z-index: 10;
+  background-color: var(--color-1);
+  box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+  transition: 0.75s ease-out;
+}
+.links-container .contentBtn-box {
+  align-items: center;
+  justify-content: space-between;
+  width: 320px;
+  padding: 4px 0rem;
+}
+.links-container .contentBtn-box .imgContent-box {
+  display: flex;
+  align-items: center;
+}
+.links-container .contentBtn-box .imgContent-box figure {
+  height: 44px;
+  width: 44px;
+}
+.links-container .contentBtn-box .imgContent-box figure img {
+  width: 100%;
+  height: 100%;
+}
+.links-container .contentBtn-box .txtbox-popup {
+  margin-left: 0.5rem;
+}
+
+.group-box {
+  display: flex;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background-color: #979797;
+  align-items: center;
+  border-radius: 1rem;
+  height: 24px;
+  padding: 0.05rem 0.5rem;
+  color: white;
+  margin-left: 3.5rem;
+}
+
+.numberFont {
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.paddingLeft-icon {
+  padding-left: 0.222rem;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.mapTextBox {
+  padding: 2rem 0rem;
+}
+.mapTextBox .iconTextBox {
+  display: flex;
+  align-items: center;
+  width: 320px;
+  margin-bottom: 1rem;
+}
+.mapTextBox .iconTextBox p {
+  padding-left: 0.375rem;
+}
+
+nav a:hover {
+  background-color: var(--accent-color);
+}
+
+nav .home-link {
+  margin-right: auto;
+}
+
+nav svg {
+  fill: var(--text-color);
+}
+
+#sidebar-active {
+  display: none;
+}
+
+.open-sidebar-button,
+.close-sidebar-button {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .links-container {
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: flex-end; /* Start at the bottom */
+    position: fixed;
+    bottom: -100%; /* Initially hide off the bottom */
+    left: 0; /* Start from the left */
+    z-index: 10;
+    width: 100%;
+    height: 95vh;
+    background: #fafafa;
+    transition: 0.75s ease-out;
+    border-radius: 0.625rem;
+  }
+  /* Customize the label (the container) */
+  /* Hide the browser's default radio button */
+  /* Create a custom radio button */
+  /* On mouse-over, add a grey background color */
+  /* When the radio button is checked, add a blue background */
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  /* Show the indicator (dot/circle) when checked */
+  /* Style the indicator (dot/circle) */
+}
+@media (max-width: 768px) and (min-width: 380px) {
+  .links-container {
+    height: 80vh;
+  }
+}
+@media (max-width: 768px) {
+  .open-sidebar-button,
+  .close-sidebar-button {
+    display: block;
+    margin-top: 0.5rem;
+  }
+  #sidebar-active:checked ~ .links-container {
+    bottom: 0; /* Slide up from the bottom */
+  }
+  #sidebar-active:checked ~ #overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+  }
+  .like-icon {
+    color: white;
+  }
+  .btn-ok {
+    display: flex;
+    min-width: 17.5rem;
+    padding: 0.75rem 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 624.9375rem;
+    border: 1px solid #485c55;
+    background-color: #485c55;
+    color: white;
+  }
+  .btn-ok.outlined {
+    background-color: transparent;
+    color: #485c55;
+  }
+  .mb {
+    margin-bottom: 1.5rem;
+  }
+  .rectangle {
+    width: 7.125rem;
+    height: 0.375rem;
+    border-radius: 1rem;
+    background: #c8cfd8;
+  }
+  .headingBox {
+    display: flex;
+    justify-content: left;
+    width: 320px;
+    margin: 2rem 0rem;
+  }
+  .HeadingFont {
+    color: #485c55;
+    display: flex;
+    /* Heading 4 */
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .groupBox-One {
+    margin-left: 4.5rem;
+  }
+  .groupBox-Two {
+    margin-left: 6rem;
+  }
+  .radio-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  .radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .checkmark {
+    position: absolute;
+    top: -2.3rem;
+    right: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  .radio-container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  .radio-container input:checked ~ .checkmark {
+    background-color: #485c55;
+  }
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .radio-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  .radio-container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+}
+/*If you have page-specific styles, it is better to put them in a pages/ folder, in a file named after the page. For instance, it’s not uncommon to have very specific styles for the home page hence the need for a _home.scss file in pages/.*/
 .visually-hidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -1157,7 +1416,6 @@ main {
 .card-box {
   display: flex;
   flex: 1 0 auto;
-  margin: 0 1rem 1.4rem 1rem;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -1168,6 +1426,7 @@ main {
   align-items: center;
   justify-content: center;
   flex: 1;
+  border: 0.5px solid #cecece;
 }
 @media (min-width: 375px) {
   .card-box .card-medium {
@@ -1175,22 +1434,35 @@ main {
   }
 }
 .card-box .card-medium .card-img {
-  background-image: url(/assets/img/cottage.jpg);
   background-size: cover;
   position: relative;
-  margin-bottom: 0.8rem;
-  width: 9.7rem;
+  width: 9rem;
   height: 7.4rem;
-  opacity: 0.8;
   flex: 1;
   gap: 1rem;
 }
 .card-box .card-medium .card-img .heartBox {
   position: absolute;
-  top: 0.8rem;
-  right: 1.1rem;
-  width: 0.8rem;
-  height: 0.8rem;
+  top: 0.4rem;
+  right: 0.4rem;
+  font-variation-settings: "FILL" 1, "wght" 300, "GRAD" 0, "opsz" 24;
+  color: #ffffff;
+  display: flex;
+  width: 1.875rem;
+  height: 1.875rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6.25rem;
+  background: rgba(0, 0, 0, 0.15);
+  /* Name tag BLUR */
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+.card-box .card-medium .card-img .heartBox .heartIcon-card {
+  font-size: 1rem;
+}
+.card-box .card-medium .contentSaved-Box {
+  padding-left: 8px;
 }
 .card-box .card-medium .contentSaved-Box .circle-box {
   margin-bottom: 0.8rem;
@@ -1204,7 +1476,7 @@ main {
 }
 .card-box .card-medium .contentSaved-Box .circle-box .ellipse-11 {
   border-radius: 0.3rem;
-  background: #141414;
+  background: #e7ae4d;
   width: 0.4rem;
   height: 0.4rem;
 }
@@ -1216,14 +1488,6 @@ main {
   margin-bottom: 0.8rem;
   display: flex;
   flex-direction: column;
-}
-.card-box .card-medium .txtChips-box .chipsFilterS {
-  border-radius: 6.3rem;
-  border: 0.1rem solid #141414;
-  background: #ffffff;
-  display: flex;
-  align-self: flex-start;
-  padding: 0.2rem 0.4rem;
 }
 .card-box .card-medium .txtChips-box .headline {
   margin-bottom: 0.3rem;
@@ -1251,6 +1515,8 @@ main {
   margin: 0 0.3rem 2rem 0.1rem;
   display: flex;
   justify-content: space-between;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .map-section .icon-box .share-filter-box {
   display: flex;
@@ -1305,14 +1571,14 @@ main {
 .icon-mapp-box .text-box-saved-maps .maps-box {
   display: flex;
   flex: 0 0 50%;
-  border: 1px solid black;
+  border: 1px solid #485c55;
   text-align: center;
   padding: 0.625rem;
   justify-content: center;
   cursor: pointer;
 }
 .icon-mapp-box .text-box-saved-maps .active {
-  background-color: black;
+  background-color: #485c55;
   color: white;
   transition: background-color 0.7s ease;
 }
@@ -1462,23 +1728,17 @@ main {
 .big-container {
   margin-bottom: 7rem;
 }
-.big-container .besksml-4 {
-  overflow-wrap: break-word;
-  font-family: "Roboto";
-  font-weight: 500;
-  font-size: 1rem;
-  color: rgba(43, 43, 43, 0.5);
-}
 .big-container .mappar-text {
   overflow-wrap: break-word;
   font-family: "Roboto";
   font-weight: 500;
   font-size: 1rem;
-  color: #2b2b2b;
+  color: #fafafa;
   text-decoration: none;
+  white-space: nowrap;
 }
 .big-container .mappar-text.txtColor {
-  color: #959595;
+  color: #485c55;
 }
 .big-container .icround-plus {
   margin: 0.1rem 1.3rem 0.1rem 0;

@@ -2,24 +2,25 @@
 
 .big-container {
   margin-bottom: 7rem;
-  .besksml-4 {
-    overflow-wrap: break-word;
-    font-family: "Roboto";
-    font-weight: 500;
-    font-size: 1rem;
-    color: rgba(43, 43, 43, 0.5);
-  }
+  // .besksml-4 {
+  //   overflow-wrap: break-word;
+  //   font-family: "Roboto";
+  //   font-weight: 500;
+  //   font-size: 1rem;
+  //   color: rgba(43, 43, 43, 0.5);
+  // }
 
   .mappar-text {
     overflow-wrap: break-word;
     font-family: "Roboto";
     font-weight: 500;
     font-size: 1rem;
-    color: #2b2b2b;
+    color: #fafafa;
     text-decoration: none;
+    white-space: nowrap;
 
     &.txtColor {
-      color: #959595;
+      color: #485c55;
     }
   }
 
@@ -57,5 +58,4 @@
     width: 1.3rem;
     height: 0.8rem;
   }
-
 }
