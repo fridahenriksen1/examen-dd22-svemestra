@@ -153,19 +153,15 @@ nav svg {
     transition: 0.75s ease-out;
     border-radius: 0.625rem;
   }
-  nav a {
-    box-sizing: border-box;
-    height: auto;
-    width: 100%;
-    // padding: 20px 30px;
-    //justify-content: flex-start;
-    color: black;
-  }
+  //   nav a {
+  //     box-sizing: border-box;
+  //     height: auto;
+  //     width: 100%;
+  //     color: black;
+  //   }
   .open-sidebar-button,
   .close-sidebar-button {
-    // padding: 20px;
     display: block;
-    // color: black;
     margin-top: 0.5rem;
   }
   #sidebar-active:checked ~ .links-container {
@@ -225,6 +221,12 @@ nav svg {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+  }
+  .groupBox-One {
+    margin-left: 4.5rem;
+  }
+  .groupBox-Two {
+    margin-left: 6rem;
   }
   //!Radio knappen
   /* Customize the label (the container) */
