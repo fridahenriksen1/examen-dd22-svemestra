@@ -746,7 +746,7 @@ html {
   align-items: center;
   justify-content: space-between;
   width: 320px;
-  padding: 4px 28px;
+  padding: 4px 0rem;
 }
 .links-container .contentBtn-box .imgContent-box {
   display: flex;
