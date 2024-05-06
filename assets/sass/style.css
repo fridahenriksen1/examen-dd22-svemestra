@@ -1360,6 +1360,7 @@ nav svg {
   align-items: center;
   justify-content: center;
   flex: 1;
+  border: 0.5px solid #cecece;
 }
 @media (min-width: 375px) {
   .card-box .card-medium {
@@ -1371,7 +1372,7 @@ nav svg {
   background-size: cover;
   position: relative;
   margin-bottom: 0.8rem;
-  width: 9.7rem;
+  width: 9rem;
   height: 7.4rem;
   opacity: 0.8;
   flex: 1;
