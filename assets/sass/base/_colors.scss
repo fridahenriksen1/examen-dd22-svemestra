@@ -13,7 +13,7 @@ $djupsjo400: #9bb1ea;
 // Trädstam
 $tradstam600: #594e2a;
 $tradstam400: #7d7046;
-// Sandstrand
+// Sandstrandheter numera Björklöv
 $sandstrand600: #70735b;
 $sandstrand400: #cdd0b6;
 // Granskott
@@ -32,4 +32,41 @@ $greywhite: #cecece;
 $white: #fafafa;
 .h1-color {
   color: $skogsgron600;
+}
+// Färg för chipsfilter delarna, separata färger
+.chipsFilter {
+  &:nth-child(1) {
+    border: 0.1rem solid $skogsgron600;
+  }
+  &:nth-child(2) {
+    border: 0.1rem solid $djupsjo600;
+  }
+  &:nth-child(3) {
+    border: 0.1rem solid $sandstrand600;
+  }
+  &:nth-child(4) {
+    border: 0.1rem solid $djupsjo600;
+  }
+}
+.unikaboenden {
+  color: $skogsgron600;
+}
+.unikaboenden-txt {
+  color: $skogsgron600;
+}
+.water {
+  color: $djupsjo600;
+}
+.water-txt {
+  color: $djupsjo600;
+}
+.childcare {
+  color: $sandstrand600;
+}
+.childcare-txt {
+  color: $sandstrand600;
+}
+// ejtillatet fungerar redan med sin SVG färg
+.ejtillatet-txt {
+  color: $djupsjo600;
 }

@@ -1,4 +1,14 @@
 .accommodation {
+  .card-content-frost {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    color: #f4f4f4;
+    padding: 0.5rem 1rem;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(100%);
+  }
   .detail-pic {
     display: flex;
     height: 23.875rem;
@@ -9,12 +19,13 @@
       padding: 0.25rem 0.75rem;
       align-items: flex-end;
       gap: 0.5rem;
-      left: 9.8125rem;
-      bottom: 1.25rem;
+      left: 50%;
+      bottom: 4rem;
       border-radius: 0.25rem;
       background: rgba(0, 0, 0, 0.6);
       color: white;
       font-size: 12px;
+      transform: translateX(-50%) translateY(100%);
     }
   }
   .detail-main {
@@ -23,45 +34,45 @@
       justify-content: space-between;
       flex: 1 0 auto;
       font-size: 11px;
-      color: #8b8f73;
+      color: $granskott600;
       .season-box {
         display: flex;
-        flex: 0 0 60%;
-        color: $sandstrand600;
+        // flex: 0 0 60%;
+        gap: 0.5rem;
+        color: $granskott600;
         justify-content: space-between;
       }
     }
     .price-box {
       display: flex;
       color: $text-Black;
+      p {
+        color: $granskott600;
+      }
     }
   }
   .circleRating-box {
     display: flex;
     align-items: center;
   }
-  //!Lär mer knappen/collapsiblen under info texten
-  // .readMore {
-  //   text-decoration: underline;
-  // }
   .chipsBox {
-    margin-bottom: 0.5rem;
-    margin-top: 0.5rem;
     display: flex;
     flex-wrap: wrap;
     column-gap: 0.5rem;
 
     .chipsFilter {
       border-radius: 6.3rem;
-      border: 0.1rem solid #141414;
       display: flex;
-      padding: 0.3rem 1rem;
+      padding: 0.5rem 0.75rem;
       margin-top: 0.5rem;
       align-items: center;
+      max-height: 32px;
 
       .iconChipsBox {
         .chipsIcon {
           font-size: 1rem;
+          font-weight: 300;
+          padding-top: 3px;
         }
       }
       .chipsTxt {
@@ -72,25 +83,18 @@
   }
   .btnBookWebsite {
     border-radius: 6.3rem;
-    border: 0.1rem solid #485c55;
     display: flex;
     padding: 0.75rem 1.8125rem;
     justify-content: space-between;
     align-items: center;
-    width: 192px;
-
-    //gap: var(--Spacing-spacing-6, 0.625rem);
-
     background-color: #485c55;
-    a {
-      color: white;
-      white-space: nowrap;
-      font-size: 12px;
-    }
+    max-width: 230px;
 
     .openNewIcon {
       color: white;
       font-size: 20px;
+      color: white;
+      font-weight: 400;
     }
   }
   .accommodationSection {
@@ -103,6 +107,41 @@
         margin-top: 1rem;
       }
     }
+    // !! här testar jag att skapa en ny flexbox box för bilderna
+    .flexbox-boenden {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.125rem;
+      .boxOne {
+        flex: 0 0 50%;
+        min-height: 302px;
+        position: relative;
+      }
+      .boxTwo {
+        // två divar har boxTwo
+        flex: 1;
+        min-height: 302px;
+        .box50-50 {
+          display: flex;
+          flex: 1 0;
+          position: relative;
+          &:nth-child(1) .box50-50:nth-child(1) {
+            margin-bottom: 0.125rem;
+          }
+        }
+      }
+      .text-on {
+        z-index: 9;
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+        right: 0;
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 10px;
+        margin: 0;
+      }
+    }
+
     .accoPic-box {
       margin-top: 1.25rem;
       display: flex;
@@ -113,18 +152,12 @@
         //   height: 18.875rem;
         height: 302px;
         position: relative;
-        .card-content-frost {
-          position: absolute;
-          background: rgba(0, 0, 0, 0.4);
-          backdrop-filter: blur(10px);
-          color: #f4f4f4;
-          padding: 0.5rem 1rem;
-          bottom: 3rem;
-          left: 50%;
-          transform: translateX(-50%) translateY(100%);
-        }
+
         img {
           height: 100%;
+          background-size: contain; /* Anpassa storleken utan att sträcka ut */
+          background-position: center center; /* Placera bilden i mitten */
+          background-repeat: no-repeat;
         }
       }
       .twoPic-box {
@@ -160,24 +193,13 @@
       display: flex;
       align-items: center;
       padding-top: 1.125rem;
-
-      // p {
-      //   padding-left: 0.813rem;
-      // }
-    }
-    a {
-      margin-top: 1.125rem;
-      text-decoration: underline;
     }
   }
   .whereItIs-section {
-    // margin-top: 6rem;
     .showPlaceMap {
-      // margin-top: 1rem;
     }
     .map-box {
       display: flex;
-      // margin-top: 1rem;
       justify-content: center;
     }
   }
@@ -217,7 +239,6 @@
         }
         p {
           color: #141414;
-
           font-family: "Sweden Sans";
           font-size: 0.75rem;
           font-style: normal;
@@ -249,34 +270,31 @@
       }
     }
   }
-  .contact-section {
-    .location-box {
-      display: flex;
-      align-items: center;
-      margin-top: 1rem;
-    }
-  }
-  .socialMedia-box {
-    display: flex;
-    margin-top: 1.5rem;
-    margin-bottom: 3.5rem;
-  }
-  .margin-left {
-    margin-left: 0.75rem;
-  }
-
-  //align-items: center;
 }
-//! Fick flytta ut dessa från nestlandet, fungerade bara när jag tog ut det här
 .location-box {
   display: flex;
   align-items: center;
-  margin: 1rem 0rem 0.5rem 0rem;
-  .contactTxt-box {
-    margin-left: 0.5rem;
-    line-height: 135%;
+  margin-top: 1rem;
+  .material-symbols-outlined {
+    font-weight: 300;
   }
 }
+.contactTxt-box {
+  margin-left: 0.5rem;
+  line-height: 135%;
+}
+.socialMedia-box {
+  display: flex;
+  margin-top: 1.5rem;
+  margin-bottom: 3.5rem;
+}
+.margin-left {
+  margin-left: 0.75rem;
+}
+
+//align-items: center
+//! Fick flytta ut dessa från nestlandet, fungerade bara när jag tog ut det här
+
 .ml {
   margin-left: 1rem;
 }
@@ -286,6 +304,11 @@
 .socialMedia-icon {
   width: 34px;
   height: 34px;
+
+  &.chipsgilter-icon {
+    width: 16px;
+    height: 16px;
+  }
 }
 .color-black {
   color: #0c0c0c;
