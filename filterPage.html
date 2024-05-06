@@ -119,27 +119,156 @@
     </section>
     <template data-user-template>
       <article class="card">
+        <input type="checkbox" id="sidebar-active" />
+        <label for="sidebar-active" class="open-sidebar-button">
+
         <style>
           .like-icon[data-liked="true"]{
             font-variation-settings:
             'FILL' 1
           }
         </style>
-        <span class="material-symbols-outlined like-icon">
-          favorite
-          </span>
-          <!-- <div class="heart-container" onclick="toggleHeart()">
-            <span class="material-symbols-outlined" id="heartIcon">favorite</span>
-          </div> -->
-          
-          <!-- <img class="like-icon" src="/assets/icons/heart-like-large-card.svg"> -->
+      
+        <!-- HÄR LIGGER SPARA BESÖKS MÅL OVERLAY -->
+        <!-- <nav> -->
+       
+            <span class="material-symbols-outlined like-icon"> favorite </span>
+          </label>
+          <label id="overlay" for="sidebar-active"></label>
+          <div class="links-container">
+            <div class="rectangle"></div>
+    
+            <div class="headingBox">
+              <h2 class="HeadingFont">Vart vill du spara?</h2>
+            </div>
+    
+            <div class="mapp-box">
+              <!-- EN SEKTION -->
+              <section class="contentBtn-box">
+                <!-- <a href="#"> -->
+                <div class="imgContent-box">
+                  <figure>
+                    <img src="/assets/img/MappPic_01.jpg" alt="map picture for the maps" />
+                  </figure>
+                  <div class="txtbox-popup">
+                    <p>Mina favoriter</p>
+                    <p>5st besöksmål</p>
+                  </div>
+                </div>
+    
+                <!-- </a> -->
+                <!-- RADIOKNAPPEN -->
+                <label class="container">
+                  <input type="checkbox" checked="checked" />
+                  <span class="checkmark"></span>
+                </label>
+              </section>
+              <!-- EN SEKTION -->
+              <section class="contentBtn-box">
+                <!-- <a href="#"> -->
+                <div class="imgContent-box">
+                  <figure>
+                    <img src="/assets/img/MappPic_02.jpg" alt="map picture for the maps" />
+                  </figure>
+                  <div class="txtbox-popup">
+                    <p>Familjemappen</p>
+                    <p>8st besöksmål</p>
+                  </div>
+    
+                  <div class="group-box">
+                    <p class="numberFont">5</p>
+                    <span
+                      class="material-symbols-outlined numberFont paddingLeft-icon"
+                    >
+                      group
+                    </span>
+                  </div>
+                </div>
+    
+                <!-- </a> -->
+                <!-- RADIOKNAPPEN -->
+                <label class="container">
+                  <input type="checkbox" checked="checked" />
+                  <span class="checkmark"></span>
+                </label>
+              </section>
+              <!-- EN SEKTION -->
+              <section class="contentBtn-box">
+                <!-- <a href="#"> -->
+                <div class="imgContent-box">
+                  <figure>
+                    <img src="/assets/img/MappPic_03.jpg" alt="map picture for the maps" />
+                  </figure>
+                  <div class="txtbox-popup">
+                    <p>30-års present</p>
+                    <p>3st besöksmål</p>
+                  </div>
+                </div>
+    
+                <!-- </a> -->
+                <!-- RADIOKNAPPEN -->
+                <label class="radio-container">
+                  <input type="checkbox" checked="checked" />
+                  <span class="checkmark"></span>
+                </label>
+              </section>
+              <!-- EN SEKTION -->
+              <section class="contentBtn-box">
+                <!-- <a href="#"> -->
+                <div class="imgContent-box">
+                  <figure>
+                    <img src="/assets/img/MappPic_04.jpg" alt="map picture for the maps" />
+                  </figure>
+                  <div class="txtbox-popup">
+                    <p>Tjejhelg</p>
+                    <p>10st besöksmål</p>
+                  </div>
+    
+                  <div class="group-box">
+                    <p class="numberFont">8</p>
+                    <span
+                      class="material-symbols-outlined numberFont paddingLeft-icon"
+                    >
+                      group
+                    </span>
+                  </div>
+                </div>
+    
+                <!-- </a> -->
+                <!-- RADIOKNAPPEN -->
+                <label class="container">
+                  <input type="checkbox" checked="checked" />
+                  <span class="checkmark"></span>
+                </label>
+              </section>
+            </div>
+            <div class="iconTextBox">
+              <span class="material-symbols-outlined"> add </span>
+              <p>Skapa ny mapp</p>
+            </div>
+            <div class="iconTextBox">
+              <span class="material-symbols-outlined"> close </span>
+              <p>Spara inte i en mapp</p>
+            </div>
+    
+            <label for="sidebar-active" class="close-sidebar-button">
+              <div class="btn-ok">
+                <p>KLAR</p>
+              </div>
+            </label>
+            <label for="sidebar-active" class="close-sidebar-button">
+              <div class="btn-ok outlined mb">
+                <p>AVBRYT</p>
+              </div>
+            </label>
+          </div>
+        <!-- </nav> -->
+
           <a class="card-content" href="" data-link>
               
-              <figure>
+             <figure>
                   <div class="img-box">
                       <img data-image>
-                      <!-- <img class="like-icon" src="/assets/icons/heart-like-large-card.svg"> -->
-
                   </div>
                   <div class="circle-box">
                       <div class="ellipse">
