@@ -1616,11 +1616,12 @@ nav svg {
 }
 
 .account-container {
-  background: #ffffff;
+  background: #485c55;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 8.6rem;
+  height: 100vh;
 }
 .account-container .main-account {
   display: flex;
@@ -1629,26 +1630,37 @@ nav svg {
 }
 .account-container .main-account .signIn-box {
   border-radius: 6.3rem;
-  border: 0.1rem solid #000000;
-  background: #262626;
+  border: 0.1rem solid white;
+  background: white;
   margin-bottom: 1rem;
   display: flex;
   justify-content: center;
-  padding: 0.4rem 4rem 0.4rem 4rem;
+  width: 100%;
+  padding: 0.4rem 0rem;
+}
+.account-container .main-account .signIn-box .sign-in {
+  color: black;
 }
 .account-container .main-account .createBtn-box {
   border-radius: 6.3rem;
-  border: 0.1rem solid #000000;
+  border: 0.1rem solid white;
   margin: 0 0.1rem 1rem 0.1rem;
   padding: 0.4rem 3rem 0.4rem 3rem;
+  color: white;
 }
 .account-container .main-account .btn-txt-box {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 2rem;
 }
-.account-container .main-account .btn-txt-box .click-txt {
-  text-decoration: underline;
+.account-container .main-account .btn-txt-box .accontTxt-box {
+  display: flex;
+  color: white;
+}
+.account-container .main-account .btn-txt-box .accontTxt-box .click-txt a {
+  padding-left: 0.2rem;
+  color: white;
 }
 
 .big-container {
