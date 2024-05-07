@@ -1783,7 +1783,13 @@ nav svg {
   width: 1.3rem;
   height: 0.8rem;
 }
-.big-container .colorHeading {
+.big-container .headingBoox {
+  display: flex;
+  flex: 1 auto;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+.big-container .headingBoox .colorHeading {
   color: #485c55;
 }
 
