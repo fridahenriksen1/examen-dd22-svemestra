@@ -380,7 +380,7 @@ a,
 .h1-saved {
   font-weight: 400;
   font-size: 1.5rem;
-  color: #111010;
+  color: #70735b;
   margin-top: 0.5rem;
 }
 
@@ -1670,11 +1670,12 @@ nav svg {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 }
 .big-container .main-saved .profilPic-textBox {
   margin: 0 0rem 1rem 0;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   width: -moz-fit-content;
   width: fit-content;
@@ -1707,7 +1708,18 @@ nav svg {
   border-radius: 6.3rem;
   border: 0.1rem solid #141414;
   display: flex;
-  padding: 0.7rem 2rem;
+  padding: 0.5rem 0.75rem;
+  align-items: center;
+}
+.big-container .main-saved .textChips-container .container-fakeChips .chipsFilter .chipsIcon {
+  font-size: 1rem;
+}
+.big-container .main-saved .textChips-container .container-fakeChips .chipsFilter p {
+  padding-left: 0.1rem;
+  color: #485c55;
+}
+.big-container .main-saved .textChips-container .container-fakeChips .chipsFilter .chipsColor-brown {
+  color: #594e2a;
 }
 .big-container .main-saved .editPenBox {
   display: flex;
