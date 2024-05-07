@@ -1721,6 +1721,9 @@ nav svg {
 .big-container .main-saved .textChips-container .container-fakeChips .chipsFilter .chipsColor-brown {
   color: #594e2a;
 }
+.big-container .main-saved .textChips-container .container-fakeChips .chipsFilter .chipsColor-green {
+  color: #8b8f73;
+}
 .big-container .main-saved .editPenBox {
   display: flex;
 }
