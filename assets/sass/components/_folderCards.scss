@@ -19,7 +19,9 @@
     }
     .twoPix-box {
       display: flex;
+      //flex-direction: column;
       flex-wrap: wrap;
+      flex: inherit;
       gap: 0.25rem;
       .folder-open {
         position: relative;
@@ -30,15 +32,35 @@
         // display: flex;
         // padding: 0.5rem 0 0 0.5rem;
         // min-height: 9.4rem;
-        width: 76px;
+        // width: 76px;
         .group-pill {
           //backdrop-filter: blur(10px);
           background-color: rgba(0, 0, 0, 0.4);
+          border-radius: 1rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          backdrop-filter: blur(10px);
+          padding: 0.25rem 0.5rem;
+          right: 0.5rem;
+          position: absolute;
+
+          top: 0.5rem;
+
+          // top: 1rem;
+          //right: 1rem;
+          p {
+            color: white;
+            padding-right: 0.219rem;
+            //font-size: 12px;
+            padding-top: 0.1rem;
+          }
           .groupPic-icon {
-            position: absolute;
-            top: 0;
-            right: 0;
+            //position: absolute;
+            //top: 0;
+            //right: 0;
             color: #fafafa;
+            font-size: 1rem;
           }
         }
 

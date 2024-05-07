@@ -404,6 +404,7 @@ a,
 
 .map-txt .mapTxt-headline {
   margin-bottom: 0.3rem;
+  padding-top: 1rem;
   align-self: flex-start;
   font-weight: 500;
   font-size: 1rem;
@@ -1408,20 +1409,33 @@ nav svg {
 .folder-card .bigFolder-picBox .twoPix-box {
   display: flex;
   flex-wrap: wrap;
+  flex: inherit;
   gap: 0.25rem;
 }
 .folder-card .bigFolder-picBox .twoPix-box .folder-open {
   position: relative;
-  width: 76px;
 }
 .folder-card .bigFolder-picBox .twoPix-box .folder-open .group-pill {
   background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  padding: 0.25rem 0.5rem;
+  right: 0.5rem;
+  position: absolute;
+  top: 0.5rem;
+}
+.folder-card .bigFolder-picBox .twoPix-box .folder-open .group-pill p {
+  color: white;
+  padding-right: 0.219rem;
+  padding-top: 0.1rem;
 }
 .folder-card .bigFolder-picBox .twoPix-box .folder-open .group-pill .groupPic-icon {
-  position: absolute;
-  top: 0;
-  right: 0;
   color: #fafafa;
+  font-size: 1rem;
 }
 
 .card-box {
@@ -1804,6 +1818,9 @@ nav svg {
 
 .big-container {
   margin-bottom: 7rem;
+}
+.big-container .marginTxt-maps {
+  margin-bottom: 1rem;
 }
 .big-container .mappar-text {
   overflow-wrap: break-word;
