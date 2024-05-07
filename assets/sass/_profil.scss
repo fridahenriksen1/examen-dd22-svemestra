@@ -24,6 +24,9 @@
         background-size: cover;
       }
     }
+    .icon-pen {
+      font-size: 20px;
+    }
 
     //! containern för texten och fake chipsen
     .textChips-container {
@@ -49,7 +52,7 @@
 
         .chipsFilter {
           border-radius: 6.3rem;
-          border: 0.1rem solid #141414;
+          border: 0.1rem solid #485c55;
           display: flex;
           padding: 0.5rem 0.75rem;
           align-items: center;
@@ -117,6 +120,9 @@
           }
         }
       }
+    }
+    .deviderLine {
+      border-bottom: 2px solid #0000001a;
     }
   }
 }

@@ -1685,6 +1685,9 @@ nav svg {
   background-image: url("/assets/img/profilpic.jpg");
   background-size: cover;
 }
+.big-container .main-saved .icon-pen {
+  font-size: 20px;
+}
 .big-container .main-saved .textChips-container {
   margin: 2rem 1rem 2rem 1rem;
   display: flex;
@@ -1706,7 +1709,7 @@ nav svg {
 }
 .big-container .main-saved .textChips-container .container-fakeChips .chipsFilter {
   border-radius: 6.3rem;
-  border: 0.1rem solid #141414;
+  border: 0.1rem solid #485c55;
   display: flex;
   padding: 0.5rem 0.75rem;
   align-items: center;
@@ -1763,6 +1766,9 @@ nav svg {
 .big-container .main-saved .profilSetting-box .iconTxt-containerBtm .iconBox .icoon {
   width: 2rem;
   height: 2rem;
+}
+.big-container .main-saved .deviderLine {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1019607843);
 }
 
 .big-container .profilPic-textBox {
