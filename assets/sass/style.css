@@ -1745,18 +1745,22 @@ nav svg {
   color: black;
   text-decoration: none;
 }
-.big-container .main-saved .iconTxt-containerBtm {
+.big-container .main-saved .profilSetting-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+.big-container .main-saved .profilSetting-box .iconTxt-containerBtm {
   margin: 0 1rem 6.8rem 1rem;
   display: flex;
   flex-direction: column;
   align-self: flex-start;
 }
-.big-container .main-saved .iconTxt-containerBtm .iconBox {
+.big-container .main-saved .profilSetting-box .iconTxt-containerBtm .iconBox {
   margin-right: 1rem;
   display: flex;
   align-items: center;
 }
-.big-container .main-saved .iconTxt-containerBtm .iconBox .icoon {
+.big-container .main-saved .profilSetting-box .iconTxt-containerBtm .iconBox .icoon {
   width: 2rem;
   height: 2rem;
 }

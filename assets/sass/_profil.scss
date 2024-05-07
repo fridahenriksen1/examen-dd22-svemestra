@@ -97,21 +97,24 @@
       color: black;
       text-decoration: none;
     }
-
-    //! container runt ikoner och texten längst ner
-    .iconTxt-containerBtm {
-      margin: 0 1rem 6.8rem 1rem;
+    .profilSetting-box {
       display: flex;
-      flex-direction: column;
-      align-self: flex-start;
-
-      .iconBox {
-        margin-right: 1rem;
+      flex-wrap: wrap;
+      //! container runt ikoner och texten längst ner
+      .iconTxt-containerBtm {
+        margin: 0 1rem 6.8rem 1rem;
         display: flex;
-        align-items: center;
-        .icoon {
-          width: 2rem;
-          height: 2rem;
+        flex-direction: column;
+        align-self: flex-start;
+
+        .iconBox {
+          margin-right: 1rem;
+          display: flex;
+          align-items: center;
+          .icoon {
+            width: 2rem;
+            height: 2rem;
+          }
         }
       }
     }
