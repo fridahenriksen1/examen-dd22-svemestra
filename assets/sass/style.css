@@ -1844,6 +1844,10 @@ nav svg {
 .big-container .mapNotification-box {
   display: flex;
   align-items: center;
+  padding-top: 0.5rem;
+}
+.big-container .mapTextSpace {
+  padding-top: 0.3rem;
 }
 .big-container .redDott-icon-bigger {
   color: #d66e38;
