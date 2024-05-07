@@ -1255,6 +1255,9 @@ nav svg {
   width: 0.6rem;
   height: 0.6rem;
 }
+.user-accomodation .card .card-content .circle-box.circleMargin {
+  margin-top: 0rem !important;
+}
 .user-accomodation .card .card-content .img-box {
   position: relative;
   display: flex;
