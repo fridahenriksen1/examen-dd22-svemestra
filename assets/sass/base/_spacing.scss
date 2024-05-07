@@ -12,10 +12,20 @@
 .mt4 {
   margin-top: 4rem;
 }
+.mt1-25 {
+  margin-top: 1.25rem;
+}
+.mbt1-125 {
+  margin-top: 1.125rem;
+}
+// MARGIN TOP+BOTTOM
 .mbt1-25 {
-  margin-bottom: 1.25rem;
+  margin: 1.25rem 0rem;
 }
 // MARGIN BOTTOM
+.mb05 {
+  margin-bottom: 0.5rem;
+}
 .mb1 {
   margin-bottom: 1rem;
 }
@@ -101,7 +111,7 @@ $spacing-10: 1.125rem;
 // 20px
 $spacing-11: 1.25rem;
 // 24px
-$spacing-12: 1.5px;
+$spacing-12: 1.5rem;
 // 28px
 $spacing-13: 1.75rem;
 // 32px

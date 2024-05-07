@@ -20,7 +20,7 @@
       align-items: flex-end;
       gap: 0.5rem;
       left: 50%;
-      bottom: 4rem;
+      bottom: 2rem;
       border-radius: 0.25rem;
       background: rgba(0, 0, 0, 0.6);
       color: white;
@@ -81,22 +81,6 @@
       }
     }
   }
-  .btnBookWebsite {
-    border-radius: 6.3rem;
-    display: flex;
-    padding: 0.75rem 1.8125rem;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #485c55;
-    max-width: 230px;
-
-    .openNewIcon {
-      color: white;
-      font-size: 20px;
-      color: white;
-      font-weight: 400;
-    }
-  }
   .accommodationSection {
     ul {
       font-family: SwedenSansBook;
@@ -123,10 +107,11 @@
         min-height: 302px;
         .box50-50 {
           display: flex;
-          flex: 1 0;
+          justify-content: space-between;
+          flex: 1 0 auto;
           position: relative;
-          &:nth-child(1) .box50-50:nth-child(1) {
-            margin-bottom: 0.125rem;
+          &:nth-child(1) {
+            // margin-bottom: 0.4rem;
           }
         }
       }
@@ -135,64 +120,57 @@
         position: absolute;
         bottom: 1rem;
         left: 1rem;
-        right: 0;
         background-color: rgba(255, 255, 255, 0.7);
-        padding: 10px;
+        padding: 8px;
         margin: 0;
+        background: rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(10px);
+        color: white;
       }
     }
 
-    .accoPic-box {
-      margin-top: 1.25rem;
-      display: flex;
-      gap: 0.13rem;
-      justify-content: center;
-      .highPic-box {
-        width: 10.125rem;
-        //   height: 18.875rem;
-        height: 302px;
-        position: relative;
+    // .accoPic-box {
+    //   margin-top: 1.25rem;
+    //   display: flex;
+    //   gap: 0.13rem;
+    //   justify-content: center;
+    //   .highPic-box {
+    //     width: 10.125rem;
+    //     //   height: 18.875rem;
+    //     height: 302px;
+    //     position: relative;
 
-        img {
-          height: 100%;
-          background-size: contain; /* Anpassa storleken utan att sträcka ut */
-          background-position: center center; /* Placera bilden i mitten */
-          background-repeat: no-repeat;
-        }
-      }
-      .twoPic-box {
-        margin-bottom: 0.13rem;
-        width: 10.125rem;
-        //   height: 9.375rem;
-        height: 150px;
-        img {
-          height: 100%;
-        }
-        .mt-accoPic {
-          margin-top: 0.13rem;
-        }
-      }
-    }
-    .seeAllPicBtn {
-      display: flex;
-      width: 9.75rem;
-      padding: 0.75rem 1.8125rem;
-      margin-top: 1.25rem;
-
-      justify-content: center;
-      align-items: center;
-      border-radius: 6.3rem;
-      border: 0.1rem solid #485c55;
-      a {
-        white-space: nowrap;
-      }
-    }
+    //     img {
+    //       height: 100%;
+    //       background-size: contain; /* Anpassa storleken utan att sträcka ut */
+    //       background-position: center center; /* Placera bilden i mitten */
+    //       background-repeat: no-repeat;
+    //     }
+    //   }
+    //   .twoPic-box {
+    //     margin-bottom: 0.13rem;
+    //     width: 10.125rem;
+    //     //   height: 9.375rem;
+    //     height: 150px;
+    //     img {
+    //       height: 100%;
+    //     }
+    //     .mt-accoPic {
+    //       margin-top: 0.13rem;
+    //     }
+    //   }
+    // }
   }
   .activitiesSection {
+    color: $tradstam600;
+    p {
+      color: $text-Black;
+    }
     .li-activites {
       display: flex;
       align-items: center;
       padding-top: 1.125rem;
+      color: $tradstam600;
     }
   }
   .whereItIs-section {
@@ -226,10 +204,12 @@
           figure {
             width: 2.1875rem;
             height: 2.1875rem;
-            border-radius: 3.4375rem;
-            background: url(/assets/img/profilpic.jpg);
+
             background-size: cover;
             background-position: center;
+            img {
+              border-radius: 3.4375rem;
+            }
           }
           .nameCircle-box {
             margin-left: 1rem;
@@ -271,17 +251,21 @@
     }
   }
 }
+
 .location-box {
   display: flex;
   align-items: center;
   margin-top: 1rem;
+
   .material-symbols-outlined {
     font-weight: 300;
   }
 }
 .contactTxt-box {
+  display: flex;
   margin-left: 0.5rem;
   line-height: 135%;
+  display: inline;
 }
 .socialMedia-box {
   display: flex;
@@ -299,7 +283,10 @@
   margin-left: 1rem;
 }
 .icons-li {
-  font-size: 20px;
+  // här behövdes !important i undantagsfall, annars tar materialsymbols över dessa koder
+  font-size: 20px !important;
+  font-weight: 300 !important;
+  padding-right: 0.87rem;
 }
 .socialMedia-icon {
   width: 34px;
@@ -309,15 +296,6 @@
     width: 16px;
     height: 16px;
   }
-}
-.color-black {
-  color: #0c0c0c;
-}
-.sweSemiBold {
-  font-family: SwedenSansSemiBold;
-}
-.sweBold {
-  font-family: "SwedenSansBold", arial, sans-serif;
 }
 /* Hide scrollbar for Chrome, Safari and Opera */
 .reviews-box::-webkit-scrollbar {
@@ -332,4 +310,9 @@
 .circleRating-box {
   display: flex;
   align-items: center;
+}
+.info-box {
+  .first-p {
+    margin-bottom: 0.5rem;
+  }
 }
