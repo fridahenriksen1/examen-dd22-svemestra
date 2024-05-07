@@ -1685,6 +1685,14 @@ nav svg {
   background-image: url("/assets/img/profilpic.jpg");
   background-size: cover;
 }
+.big-container .main-saved .profilPic-textBox .editPenBox {
+  display: flex;
+  padding-top: 8px;
+  align-items: center;
+}
+.big-container .main-saved .profilPic-textBox .editPenBox .icon-pen {
+  padding-left: 0.2rem;
+}
 .big-container .main-saved .icon-pen {
   font-size: 20px;
 }
@@ -1726,14 +1734,6 @@ nav svg {
 }
 .big-container .main-saved .textChips-container .container-fakeChips .chipsFilter .chipsColor-green {
   color: #8b8f73;
-}
-.big-container .main-saved .editPenBox {
-  display: flex;
-}
-.big-container .main-saved .editPenBox .penEditimg {
-  height: 1rem;
-  width: 1rem;
-  margin-left: 0.5rem;
 }
 .big-container .main-saved .txt-box-about {
   margin: 0 1rem 2.9rem 1rem;
