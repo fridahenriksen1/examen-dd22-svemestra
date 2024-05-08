@@ -26,6 +26,17 @@ body {
     -10px 10px 50px rgba(0, 0, 0, 0.1), -50px 50px 70px rgba(0, 0, 0, 0.05),
     -100px 100px 100px rgba(0, 0, 0, 0.03),
     -150px 150px 150px rgba(0, 0, 0, 0.02);
+  .front-speaker {
+    width: 50px;
+    height: 7px;
+    border-radius: 10px;
+    background-color: #f3f3f3;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
 }
 .container-mobil::-webkit-scrollbar {
   display: none;
