@@ -61,7 +61,7 @@
 
         .chipsFilter {
           border-radius: 6.3rem;
-          border: 0.1rem solid #485c55;
+          //border: 0.1rem solid #485c55;
           display: flex;
           padding: 0.5rem 0.75rem;
           align-items: center;
@@ -76,9 +76,16 @@
           }
           .chipsColor-brown {
             color: #594e2a;
+            // border: 0.1rem solid #594e2a;
           }
           .chipsColor-green {
             color: #8b8f73;
+          }
+          &:nth-child(1) {
+            border: 0.1rem solid #485c55;
+          }
+          &:nth-child(2) {
+            border: 0.1rem solid #594e2a;
           }
         }
       }
@@ -105,12 +112,14 @@
     .profilSetting-box {
       display: flex;
       flex-wrap: wrap;
+      padding-top: 0.5rem;
       //! container runt ikoner och texten längst ner
       .iconTxt-containerBtm {
         margin: 0 1rem 6.8rem 1rem;
         display: flex;
         flex-direction: column;
         align-self: flex-start;
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 
         .iconBox {
           margin-right: 1rem;

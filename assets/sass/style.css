@@ -1728,7 +1728,6 @@ nav svg {
 }
 .big-container .main-saved .textChips-container .container-fakeChips .chipsFilter {
   border-radius: 6.3rem;
-  border: 0.1rem solid #485c55;
   display: flex;
   padding: 0.5rem 0.75rem;
   align-items: center;
@@ -1746,6 +1745,12 @@ nav svg {
 .big-container .main-saved .textChips-container .container-fakeChips .chipsFilter .chipsColor-green {
   color: #8b8f73;
 }
+.big-container .main-saved .textChips-container .container-fakeChips .chipsFilter:nth-child(1) {
+  border: 0.1rem solid #485c55;
+}
+.big-container .main-saved .textChips-container .container-fakeChips .chipsFilter:nth-child(2) {
+  border: 0.1rem solid #594e2a;
+}
 .big-container .main-saved .txt-box-about {
   margin: 0 1rem 2.9rem 1rem;
   display: flex;
@@ -1762,12 +1767,14 @@ nav svg {
 .big-container .main-saved .profilSetting-box {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 0.5rem;
 }
 .big-container .main-saved .profilSetting-box .iconTxt-containerBtm {
   margin: 0 1rem 6.8rem 1rem;
   display: flex;
   flex-direction: column;
   align-self: flex-start;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }
 .big-container .main-saved .profilSetting-box .iconTxt-containerBtm .iconBox {
   margin-right: 1rem;
