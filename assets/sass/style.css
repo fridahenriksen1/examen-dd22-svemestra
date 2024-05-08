@@ -1804,6 +1804,36 @@ nav svg {
 }
 .big-container .main-saved .textChips-container .container-fakeChips .chipsFilter:nth-child(2) {
   border: 0.1rem solid #594e2a;
+  color: #594e2a;
+}
+.big-container .main-saved .textChips-container .container-fakeChips .chipsFilter:nth-child(3) {
+  border: 0.1rem solid #8b8f73;
+}
+.big-container .main-saved .textChips-container .container-fakeChips .chipsFilter:nth-child(4) {
+  border: 0.1rem solid #594e2a;
+}
+.big-container .main-saved .textChips-container .container-fakeChips .chipsFilter:nth-child(5) {
+  border: 0.1rem solid #333a4c;
+}
+.big-container .main-saved .textChips-container .container-fakeChips .chipsFilter-Two {
+  border-radius: 6.3rem;
+  display: flex;
+  padding: 0.5rem 0.75rem;
+  align-items: center;
+}
+.big-container .main-saved .textChips-container .container-fakeChips .chipsFilter-Two .chipsIcon {
+  font-size: 1rem;
+}
+.big-container .main-saved .textChips-container .container-fakeChips .chipsFilter-Two p {
+  padding-left: 0.1rem;
+}
+.big-container .main-saved .textChips-container .container-fakeChips .chipsFilter-Two:nth-child(1) {
+  border: 0.1rem solid #594e2a;
+  color: #594e2a;
+}
+.big-container .main-saved .textChips-container .container-fakeChips .chipsFilter-Two:nth-child(2) {
+  border: 0.1rem solid #333a4c;
+  color: #333a4c;
 }
 .big-container .main-saved .txt-box-about {
   margin: 0 1rem 2.9rem 1rem;

@@ -86,6 +86,38 @@
           }
           &:nth-child(2) {
             border: 0.1rem solid #594e2a;
+            color: #594e2a;
+          }
+          &:nth-child(3) {
+            border: 0.1rem solid #8b8f73;
+          }
+          &:nth-child(4) {
+            border: 0.1rem solid #594e2a;
+          }
+          &:nth-child(5) {
+            border: 0.1rem solid #333a4c;
+          }
+        }
+        .chipsFilter-Two {
+          border-radius: 6.3rem;
+          //border: 0.1rem solid #485c55;
+          display: flex;
+          padding: 0.5rem 0.75rem;
+          align-items: center;
+          .chipsIcon {
+            font-size: 1rem;
+          }
+          p {
+            padding-left: 0.1rem;
+            //color: #594e2a;
+          }
+          &:nth-child(1) {
+            border: 0.1rem solid #594e2a;
+            color: #594e2a;
+          }
+          &:nth-child(2) {
+            border: 0.1rem solid #333a4c;
+            color: #333a4c;
           }
         }
       }
