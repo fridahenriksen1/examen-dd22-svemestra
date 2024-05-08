@@ -87,6 +87,9 @@
           width: 0.6rem;
           height: 0.6rem;
         }
+        &.circleMargin {
+          margin-top: 0rem !important;
+        }
       }
 
       .img-box {
@@ -229,15 +232,11 @@
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(5.89px);
 
-  // .liked:active {
-  //   color: red; // Uppdatera färgen för markerade hjärtikonen om så önskas
-  //   font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 0, "opsz" 48;
-  // }
-
-  // &.liked {
-  //   font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 0, "opsz" 48;
-  // }
   &.filled {
     font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 0, "opsz" 48;
+  }
+  /* Added CSS from the given style tag */
+  &[data-liked="true"] {
+    font-variation-settings: "FILL" 1;
   }
 }

@@ -40,6 +40,7 @@ function createCard(destination) {
     likeButton.addEventListener('click',() => {
         const isLiked = likeButton.getAttribute('data-liked') === 'true';
         console.log('klick');
+        console.dir(document.location);
         if (isLiked){
             likeButton.src = '/assets/icons/heart-like-large-card.svg';
             likeButton.setAttribute('data-liked', 'false');

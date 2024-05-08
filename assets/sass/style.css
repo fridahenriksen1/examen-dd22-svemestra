@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root {
   /* Variable for gap */
   --flex-gap: 1rem;
@@ -372,7 +371,7 @@ a,
 .h1-saved {
   font-weight: 400;
   font-size: 1.5rem;
-  color: #111010;
+  color: #70735b;
   margin-top: 0.5rem;
 }
 
@@ -396,6 +395,7 @@ a,
 
 .map-txt .mapTxt-headline {
   margin-bottom: 0.3rem;
+  padding-top: 1rem;
   align-self: flex-start;
   font-weight: 500;
   font-size: 1rem;
@@ -794,22 +794,6 @@ main {
   flex: 0 0 100%;
 }
 
-:root {
-  --color-1: #0f1016;
-  --text-color: #f0f0f0;
-  --accent-color: #006aff;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-size: 12pt;
-  font-family: Poppins, Segoe UI, Tahoma, sans-serif;
-}
-
 .links-container {
   height: 100%;
   width: 100%;
@@ -879,7 +863,6 @@ html {
   display: flex;
   align-items: center;
   width: 320px;
-  margin-bottom: 1rem;
 }
 .mapTextBox .iconTextBox p {
   padding-left: 0.375rem;
@@ -916,7 +899,7 @@ nav svg {
     left: 0; /* Start from the left */
     z-index: 10;
     width: 100%;
-    height: 95vh;
+    height: 86vh;
     background: #fafafa;
     transition: 0.75s ease-out;
     border-radius: 0.625rem;
@@ -991,7 +974,6 @@ nav svg {
   .HeadingFont {
     color: #485c55;
     display: flex;
-    /* Heading 4 */
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 700;
@@ -1296,6 +1278,9 @@ nav svg {
   width: 0.6rem;
   height: 0.6rem;
 }
+.user-accomodation .card .card-content .circle-box.circleMargin {
+  margin-top: 0rem !important;
+}
 .user-accomodation .card .card-content .img-box {
   position: relative;
   display: flex;
@@ -1387,9 +1372,13 @@ nav svg {
   background: rgba(255, 255, 255, 0.15);
   -webkit-backdrop-filter: blur(5.89px);
           backdrop-filter: blur(5.89px);
+  /* Added CSS from the given style tag */
 }
 .like-icon.filled {
   font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 0, "opsz" 48;
+}
+.like-icon[data-liked=true] {
+  font-variation-settings: "FILL" 1;
 }
 
 .saved-resort {
@@ -1436,22 +1425,47 @@ nav svg {
   flex: 0 0 calc(50% - 0.5rem);
   flex-direction: column;
 }
-.folder-card .folder-open {
-  background-image: url("/assets/img/camping.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-bottom: 0.8rem;
+.folder-card .bigFolder-picBox {
   display: flex;
-  padding: 0.5rem 0 0 0.5rem;
-  min-height: 9.4rem;
+  gap: 0.25rem;
+  flex: 1;
 }
-.folder-card .folder-open .share-icon-box {
-  border-radius: 6.3rem;
-  background: #ffffff;
-  margin-bottom: 4.1rem;
-  padding: 0.5rem 0.3rem 0.4rem 0.3rem;
-  height: 2rem;
-  width: 2rem;
+.folder-card .bigFolder-picBox .folderHighPic-box {
+  width: 76px;
+}
+.folder-card .bigFolder-picBox .folderHighPic-box img {
+  height: 100%;
+}
+.folder-card .bigFolder-picBox .twoPix-box {
+  display: flex;
+  flex-wrap: wrap;
+  flex: inherit;
+  gap: 0.25rem;
+}
+.folder-card .bigFolder-picBox .twoPix-box .folder-open {
+  position: relative;
+}
+.folder-card .bigFolder-picBox .twoPix-box .folder-open .group-pill {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  padding: 0.25rem 0.5rem;
+  right: 0.5rem;
+  position: absolute;
+  top: 0.5rem;
+}
+.folder-card .bigFolder-picBox .twoPix-box .folder-open .group-pill p {
+  color: white;
+  padding-right: 0.219rem;
+  padding-top: 0.1rem;
+}
+.folder-card .bigFolder-picBox .twoPix-box .folder-open .group-pill .groupPic-icon {
+  color: #fafafa;
+  font-size: 1rem;
 }
 
 .card-box {
@@ -1534,17 +1548,30 @@ nav svg {
   margin-bottom: 0.3rem;
 }
 
-.arrow-back-top-left {
-  position: absolute;
-  left: 1.2rem;
-  top: 1.2rem;
-  padding: 1rem;
-  width: 2rem;
-  height: 2rem;
+.notification-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem 1rem 0rem;
 }
-.arrow-back-top-left .backArrow-icon {
-  width: 4rem;
-  height: 4rem;
+.notification-header .circle-box {
+  display: flex;
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0.6875rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  flex-shrink: 0;
+  border-radius: 3.125rem;
+  border: 1px solid #cecece;
+  background-color: #fff;
+}
+.notification-header .circle-box .backArrow-icon {
+  font-size: 20px;
+}
+.notification-header .circle-box .notification-icon {
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
 .map-section {
@@ -1558,6 +1585,14 @@ nav svg {
   justify-content: space-between;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 48;
+}
+.map-section .icon-box .active {
+  border-bottom: 0.1rem solid #000000;
+  padding: 0.1rem 0.1rem 0.3rem 0.1rem;
+}
+.map-section .icon-box .bulletList-color {
+  color: #9e9e9e;
 }
 .map-section .icon-box .share-filter-box {
   display: flex;
@@ -1586,6 +1621,7 @@ nav svg {
   flex: 0 0 100px;
   height: -moz-fit-content;
   height: fit-content;
+  justify-content: space-between;
 }
 .map-section .map-box {
   margin-bottom: 1rem;
@@ -1645,11 +1681,12 @@ nav svg {
 }
 
 .account-container {
-  background: #ffffff;
+  background: #485c55;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 8.6rem;
+  height: 100vh;
 }
 .account-container .main-account {
   display: flex;
@@ -1658,42 +1695,52 @@ nav svg {
 }
 .account-container .main-account .signIn-box {
   border-radius: 6.3rem;
-  border: 0.1rem solid #000000;
-  background: #262626;
+  border: 0.1rem solid white;
+  background: white;
   margin-bottom: 1rem;
   display: flex;
   justify-content: center;
-  padding: 0.4rem 4rem 0.4rem 4rem;
+  width: 100%;
+  padding: 0.4rem 0rem;
+}
+.account-container .main-account .signIn-box .sign-in {
+  color: black;
 }
 .account-container .main-account .createBtn-box {
   border-radius: 6.3rem;
-  border: 0.1rem solid #000000;
+  border: 0.1rem solid white;
   margin: 0 0.1rem 1rem 0.1rem;
   padding: 0.4rem 3rem 0.4rem 3rem;
+  color: white;
 }
 .account-container .main-account .btn-txt-box {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 2rem;
 }
-.account-container .main-account .btn-txt-box .click-txt {
-  text-decoration: underline;
+.account-container .main-account .btn-txt-box .accontTxt-box {
+  display: flex;
+  color: white;
+}
+.account-container .main-account .btn-txt-box .accontTxt-box .click-txt a {
+  padding-left: 0.2rem;
+  color: white;
 }
 
 .big-container {
   background: #ffffff;
-  padding: 3.9rem 0 0rem 0;
 }
 .big-container .main-saved {
-  margin: 0 1rem 1.4rem 1rem;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 }
 .big-container .main-saved .profilPic-textBox {
   margin: 0 0rem 1rem 0;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   width: -moz-fit-content;
   width: fit-content;
@@ -1702,6 +1749,17 @@ nav svg {
   border-radius: 4.1rem;
   background-image: url("/assets/img/profilpic.jpg");
   background-size: cover;
+}
+.big-container .main-saved .profilPic-textBox .editPenBox {
+  display: flex;
+  padding-top: 8px;
+  align-items: center;
+}
+.big-container .main-saved .profilPic-textBox .editPenBox .icon-pen {
+  padding-left: 0.2rem;
+}
+.big-container .main-saved .icon-pen {
+  font-size: 20px;
 }
 .big-container .main-saved .textChips-container {
   margin: 2rem 1rem 2rem 1rem;
@@ -1724,17 +1782,28 @@ nav svg {
 }
 .big-container .main-saved .textChips-container .container-fakeChips .chipsFilter {
   border-radius: 6.3rem;
-  border: 0.1rem solid #141414;
   display: flex;
-  padding: 0.7rem 2rem;
+  padding: 0.5rem 0.75rem;
+  align-items: center;
 }
-.big-container .main-saved .editPenBox {
-  display: flex;
+.big-container .main-saved .textChips-container .container-fakeChips .chipsFilter .chipsIcon {
+  font-size: 1rem;
 }
-.big-container .main-saved .editPenBox .penEditimg {
-  height: 1rem;
-  width: 1rem;
-  margin-left: 0.5rem;
+.big-container .main-saved .textChips-container .container-fakeChips .chipsFilter p {
+  padding-left: 0.1rem;
+  color: #485c55;
+}
+.big-container .main-saved .textChips-container .container-fakeChips .chipsFilter .chipsColor-brown {
+  color: #594e2a;
+}
+.big-container .main-saved .textChips-container .container-fakeChips .chipsFilter .chipsColor-green {
+  color: #8b8f73;
+}
+.big-container .main-saved .textChips-container .container-fakeChips .chipsFilter:nth-child(1) {
+  border: 0.1rem solid #485c55;
+}
+.big-container .main-saved .textChips-container .container-fakeChips .chipsFilter:nth-child(2) {
+  border: 0.1rem solid #594e2a;
 }
 .big-container .main-saved .txt-box-about {
   margin: 0 1rem 2.9rem 1rem;
@@ -1749,20 +1818,34 @@ nav svg {
   color: black;
   text-decoration: none;
 }
-.big-container .main-saved .iconTxt-containerBtm {
+.big-container .main-saved .profilSetting-box {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 0.5rem;
+}
+.big-container .main-saved .profilSetting-box .iconTxt-containerBtm {
   margin: 0 1rem 6.8rem 1rem;
   display: flex;
   flex-direction: column;
   align-self: flex-start;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }
-.big-container .main-saved .iconTxt-containerBtm .iconBox {
+.big-container .main-saved .profilSetting-box .iconTxt-containerBtm .iconBox {
   margin-right: 1rem;
   display: flex;
   align-items: center;
 }
-.big-container .main-saved .iconTxt-containerBtm .iconBox .icoon {
+.big-container .main-saved .profilSetting-box .iconTxt-containerBtm .iconBox .icoon {
   width: 2rem;
   height: 2rem;
+}
+.big-container .main-saved .deviderLine {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 3rem;
+}
+.big-container .main-saved .deviderLine-Two {
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+  padding-top: 2rem;
 }
 
 .big-container .profilPic-textBox {
@@ -1777,9 +1860,21 @@ nav svg {
   width: 1.3rem;
   height: 0.8rem;
 }
+.big-container .headingBoox {
+  display: flex;
+  flex: 1 auto;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+.big-container .headingBoox .colorHeading {
+  color: #485c55;
+}
 
 .big-container {
   margin-bottom: 7rem;
+}
+.big-container .marginTxt-maps {
+  margin-bottom: 1rem;
 }
 .big-container .mappar-text {
   overflow-wrap: break-word;
@@ -1789,27 +1884,46 @@ nav svg {
   color: #fafafa;
   text-decoration: none;
   white-space: nowrap;
+  display: flex;
+  align-items: center;
 }
 .big-container .mappar-text.txtColor {
   color: #485c55;
+}
+.big-container .redDott-icon {
+  color: #d66e38;
+  font-size: 1.1rem;
+  font-variation-settings: "FILL" 1, "wght" 200, "GRAD" 0, "opsz" 24;
+}
+.big-container .mapNotification-box {
+  display: flex;
+  align-items: center;
+  padding-top: 0.5rem;
+}
+.big-container .mapTextSpace {
+  padding-top: 0.3rem;
+}
+.big-container .redDott-icon-bigger {
+  color: #d66e38;
+  font-size: 1.4rem;
+  font-variation-settings: "FILL" 1, "wght" 200, "GRAD" 0, "opsz" 24;
 }
 .big-container .icround-plus {
   margin: 0.1rem 1.3rem 0.1rem 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 0.9rem;
-  height: 0.9rem;
-  box-sizing: border-box;
+  font-size: 1rem;
 }
 .big-container .search {
   margin-right: 1.2rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 1.1rem;
-  height: 1.1rem;
-  box-sizing: border-box;
+}
+.big-container .search .search-img {
+  width: 24px;
+  height: 24px;
 }
 .big-container .more-vert {
   margin: 0.4rem 0;
