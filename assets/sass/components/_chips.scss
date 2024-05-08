@@ -3,22 +3,22 @@
 }
 .category-label {
   position: relative;
+  font-size: 0.75rem;
+  font-family: "SwedenSansBook", arial, sans-serif;
+  &.one {
+    font-size: 0.75rem;
+    font-family: "SwedenSansBold", arial, sans-serif;
+  }
 }
 .icon-chips-img {
   height: 24px;
   width: 24px;
   display: block;
   position: absolute;
-  left: 0.5rem; /* Adjust the left position as needed */
+  left: 0.6rem;
   top: 0rem;
-  // transform: translateY(-50%);
-}
-.category-label {
-  font-size: 0.75rem;
-  font-family: "SwedenSansBook", arial, sans-serif;
-  &.one {
-    font-size: 0.75rem;
-    font-family: "SwedenSansBold", arial, sans-serif;
+  &.vatten-icon {
+    left: 1rem;
   }
 }
 // .chip {
@@ -83,7 +83,8 @@
       &:checked {
         + label {
           // background-color: yellow;
-          color: red;
+          font-family: "SwedenSansBold", arial, sans-serif;
+          color: $skogsgron600;
         }
       }
     }
