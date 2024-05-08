@@ -17,6 +17,10 @@
   align-self: flex-start;
   column-gap: 0.2rem;
   width: 3.9rem;
+  &.detailpagcircles {
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+  }
 
   .ellipse {
     border-radius: 0.3rem;

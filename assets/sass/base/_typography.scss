@@ -30,6 +30,7 @@ a,
 // STYLES FRÅN FIGMA
 .heading {
   font-size: 1rem;
+  line-height: 100%;
 }
 .heading_1 {
   font-size: 3rem;
@@ -120,40 +121,14 @@ a,
   font-family: SwedenSansBook;
   font-size: 0.75rem;
 }
-// här stylas den aktiva klassen i naven
-.menu-link {
-  p {
-    font-size: 0.75rem;
-    font-family: "SwedenSansBook", arial, sans-serif;
-    &.active-text {
-      font-size: 0.75rem;
-      font-family: "SwedenSansSemiBold", arial, sans-serif;
-    }
-  }
-}
 .upperCASE {
   text-transform: uppercase;
 }
-//padding-right: 1rem;
-// p {
-//   white-space: nowrap;
-//   //padding-right: 0.875rem;
-//   padding-right: 0.375rem;
-// }
-//! ____________________Arbetar om dessa under till de övre, använd de övre istället
-// ________________________
-
-// h1 {
-//   font-size: 3rem;
-// }
-
-// h4 {
-//   margin-top: 1.5rem;
-//   margin-bottom: 0.5rem;
-//   font-weight: 800;
-//   // hejhej
-// }
-
+.carousel-head {
+}
+.carousel-p {
+}
+//!! får ta bort dessa sen här nere ---
 .card {
   h2 {
   }
