@@ -51,3 +51,23 @@
     font-weight: 400;
   }
 }
+
+.btn-ok {
+  display: block;
+  // min-width: 17.5rem;
+  width: 100%;
+  padding: 0.75rem 2rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  border: 1px solid #485c55;
+  background-color: #485c55;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  &.outlined {
+    background-color: transparent;
+    color: #485c55;
+  }
+}

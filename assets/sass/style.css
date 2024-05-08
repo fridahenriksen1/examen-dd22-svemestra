@@ -795,11 +795,8 @@ main {
 }
 
 .links-container {
-  height: 100%;
   width: 100%;
-  display: flex;
-  align-items: center; /* Center horizontally */
-  justify-content: center; /* Start at the bottom */
+  padding: 1rem;
   position: fixed; /* Fixed positioning */
   bottom: -100%; /* Initially hide off the bottom */
   left: 0; /* Start from the left */
@@ -807,12 +804,10 @@ main {
   background-color: var(--color-1);
   box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
   transition: 0.75s ease-out;
-}
-.links-container .contentBtn-box {
-  align-items: center;
-  justify-content: space-between;
-  width: 320px;
-  padding: 4px 0rem;
+  position: fixed;
+  background: #fafafa;
+  transition: 0.75s ease-out;
+  border-radius: 0.625rem;
 }
 .links-container .contentBtn-box .imgContent-box {
   display: flex;
@@ -857,12 +852,11 @@ main {
 }
 
 .mapTextBox {
-  padding: 2rem 0rem;
+  margin: 2rem 0rem;
 }
 .mapTextBox .iconTextBox {
   display: flex;
   align-items: center;
-  width: 320px;
 }
 .mapTextBox .iconTextBox p {
   padding-left: 0.375rem;
@@ -890,35 +884,6 @@ nav svg {
 }
 
 @media (max-width: 768px) {
-  .links-container {
-    flex-direction: column;
-    align-items: center; /* Center horizontally */
-    justify-content: flex-end; /* Start at the bottom */
-    position: fixed;
-    bottom: -100%; /* Initially hide off the bottom */
-    left: 0; /* Start from the left */
-    z-index: 10;
-    width: 100%;
-    height: 86vh;
-    background: #fafafa;
-    transition: 0.75s ease-out;
-    border-radius: 0.625rem;
-  }
-  /* Customize the label (the container) */
-  /* Hide the browser's default radio button */
-  /* Create a custom radio button */
-  /* On mouse-over, add a grey background color */
-  /* When the radio button is checked, add a blue background */
-  /* Create the indicator (the dot/circle - hidden when not checked) */
-  /* Show the indicator (dot/circle) when checked */
-  /* Style the indicator (dot/circle) */
-}
-@media (max-width: 768px) and (min-width: 380px) {
-  .links-container {
-    height: 80vh;
-  }
-}
-@media (max-width: 768px) {
   .open-sidebar-button,
   .close-sidebar-button {
     display: block;
@@ -938,24 +903,6 @@ nav svg {
   .like-icon {
     color: white;
   }
-  .btn-ok {
-    display: flex;
-    min-width: 17.5rem;
-    padding: 0.75rem 2rem;
-    justify-content: center;
-    align-items: center;
-    gap: 0.25rem;
-    flex: 1 0 0;
-    align-self: stretch;
-    border-radius: 624.9375rem;
-    border: 1px solid #485c55;
-    background-color: #485c55;
-    color: white;
-  }
-  .btn-ok.outlined {
-    background-color: transparent;
-    color: #485c55;
-  }
   .mb {
     margin-bottom: 1.5rem;
   }
@@ -964,11 +911,9 @@ nav svg {
     height: 0.375rem;
     border-radius: 1rem;
     background: #c8cfd8;
+    margin: auto;
   }
   .headingBox {
-    display: flex;
-    justify-content: left;
-    width: 320px;
     margin: 2rem 0rem;
   }
   .HeadingFont {
@@ -985,6 +930,7 @@ nav svg {
   .groupBox-Two {
     margin-left: 6rem;
   }
+  /* Customize the label (the container) */
   .radio-container {
     display: block;
     position: relative;
@@ -996,6 +942,7 @@ nav svg {
     -moz-user-select: none;
     user-select: none;
   }
+  /* Hide the browser's default radio button */
   .radio-container input {
     position: absolute;
     opacity: 0;
@@ -1003,6 +950,7 @@ nav svg {
     height: 0;
     width: 0;
   }
+  /* Create a custom radio button */
   .checkmark {
     position: absolute;
     top: -2.3rem;
@@ -1012,23 +960,28 @@ nav svg {
     background-color: #eee;
     border-radius: 50%;
   }
+  /* On mouse-over, add a grey background color */
   .radio-container:hover input ~ .checkmark {
     background-color: #ccc;
   }
+  /* When the radio button is checked, add a blue background */
   .radio-container input:checked ~ .checkmark {
     background-color: #485c55;
   }
+  /* Create the indicator (the dot/circle - hidden when not checked) */
   .checkmark:after {
     content: "";
     position: absolute;
     display: none;
   }
+  /* Show the indicator (dot/circle) when checked */
   .radio-container input:checked ~ .checkmark:after {
     display: block;
   }
+  /* Style the indicator (dot/circle) */
   .radio-container .checkmark:after {
-    left: 9px;
-    top: 5px;
+    left: 10px;
+    top: 7px;
     width: 5px;
     height: 10px;
     border: solid white;
@@ -1091,6 +1044,25 @@ nav svg {
   font-size: 20px;
   color: white;
   font-weight: 400;
+}
+
+.btn-ok {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 2rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  border: 1px solid #485c55;
+  background-color: #485c55;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+.btn-ok.outlined {
+  background-color: transparent;
+  color: #485c55;
 }
 
 #categorys {
@@ -1351,31 +1323,9 @@ nav svg {
   right: 0rem;
   border-radius: 6.25rem;
   background: rgba(255, 255, 255, 0.15);
-  -webkit-backdrop-filter: blur(5.8976049423px);
-          backdrop-filter: blur(5.8976049423px);
-}
-
-.like-icon {
-  color: white;
-  cursor: pointer;
-  position: absolute;
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 3rem;
-  height: 3rem;
-  display: flex;
-  top: 0.5rem;
-  right: 0rem;
-  border-radius: 6.25rem;
-  background: rgba(255, 255, 255, 0.15);
   -webkit-backdrop-filter: blur(5.89px);
           backdrop-filter: blur(5.89px);
   /* Added CSS from the given style tag */
-}
-.like-icon.filled {
-  font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 0, "opsz" 48;
 }
 .like-icon[data-liked=true] {
   font-variation-settings: "FILL" 1;
@@ -1666,6 +1616,25 @@ nav svg {
 
 .devider-mini {
   border-right: 1px solid #889583;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  display: none;
+}
+.overlay.show {
+  display: block;
+}
+.overlay .popup-box {
+  position: fixed;
+  bottom: 6rem;
+  left: 1rem;
+  right: 1rem;
+  background-color: white;
+  padding: 1rem;
 }
 
 .text-box h1 {

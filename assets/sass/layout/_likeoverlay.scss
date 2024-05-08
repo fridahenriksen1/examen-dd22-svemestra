@@ -1,11 +1,12 @@
 .links-container {
-  height: 100%;
+  // height: 100%;
   width: 100%;
-  display: flex;
+  // display: flex;
+  padding: 1rem;
 
   //flex-direction: column; /* Change direction to column */
-  align-items: center; /* Center horizontally */
-  justify-content: center; /* Start at the bottom */
+  // align-items: center; /* Center horizontally */
+  // justify-content: center; /* Start at the bottom */
   position: fixed; /* Fixed positioning */
   bottom: -100%; /* Initially hide off the bottom */
   left: 0; /* Start from the left */
@@ -13,13 +14,32 @@
   background-color: var(--color-1);
   box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
   transition: 0.75s ease-out;
+ 
+    // flex-direction: column;
+    // align-items: center; /* Center horizontally */
+    // justify-content: flex-end; /* Start at the bottom */
+    position: fixed;
+    // bottom: -100%; /* Initially hide off the bottom */
+    // left: 0; /* Start from the left */
+    // z-index: 10;
+    // width: 100%;
+    // background-color: var(--color-1);
+    // height: 86vh;
+    background: #fafafa;
+    // box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+    transition: 0.75s ease-out;
+    border-radius: 0.625rem;
+    @media (min-width: 380px) {
+      // height: 80vh;
+    }
+  
 
   .contentBtn-box {
-    align-items: center;
-    justify-content: space-between;
-    width: 320px;
+    // align-items: center;
+    // justify-content: space-between;
+    // width: 320px;
 
-    padding: 4px 0rem;
+    // padding: 4px 0rem;
 
     .imgContent-box {
       display: flex;
@@ -67,11 +87,11 @@
   font-weight: 300;
 }
 .mapTextBox {
-  padding: 2rem 0rem;
+  margin: 2rem 0rem;
   .iconTextBox {
     display: flex;
     align-items: center;
-    width: 320px;
+    // width: 320px;
     // margin-bottom: 1rem;
     p {
       padding-left: 0.375rem;
@@ -112,25 +132,25 @@ nav svg {
 //   display: block;
 // }
 @media (max-width: 768px) {
-  .links-container {
-    flex-direction: column;
-    align-items: center; /* Center horizontally */
-    justify-content: flex-end; /* Start at the bottom */
-    position: fixed;
-    bottom: -100%; /* Initially hide off the bottom */
-    left: 0; /* Start from the left */
-    z-index: 10;
-    width: 100%;
-    // background-color: var(--color-1);
-    height: 86vh;
-    background: #fafafa;
-    // box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
-    transition: 0.75s ease-out;
-    border-radius: 0.625rem;
-    @media (min-width: 380px) {
-      height: 80vh;
-    }
-  }
+  // .links-container {
+  //   flex-direction: column;
+  //   align-items: center; /* Center horizontally */
+  //   justify-content: flex-end; /* Start at the bottom */
+  //   position: fixed;
+  //   bottom: -100%; /* Initially hide off the bottom */
+  //   left: 0; /* Start from the left */
+  //   z-index: 10;
+  //   width: 100%;
+  //   // background-color: var(--color-1);
+  //   // height: 86vh;
+  //   background: #fafafa;
+  //   // box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+  //   transition: 0.75s ease-out;
+  //   border-radius: 0.625rem;
+  //   @media (min-width: 380px) {
+  //     // height: 80vh;
+  //   }
+  // }
 
   .open-sidebar-button,
   .close-sidebar-button {
@@ -151,24 +171,7 @@ nav svg {
   .like-icon {
     color: white;
   }
-  .btn-ok {
-    display: flex;
-    min-width: 17.5rem;
-    padding: 0.75rem 2rem;
-    justify-content: center;
-    align-items: center;
-    gap: 0.25rem;
-    flex: 1 0 0;
-    align-self: stretch;
-    border-radius: 624.9375rem;
-    border: 1px solid #485c55;
-    background-color: #485c55;
-    color: white;
-    &.outlined {
-      background-color: transparent;
-      color: #485c55;
-    }
-  }
+  
   .mb {
     margin-bottom: 1.5rem;
   }
@@ -177,11 +180,12 @@ nav svg {
     height: 0.375rem;
     border-radius: 1rem;
     background: #c8cfd8;
+    margin: auto;
   }
   .headingBox {
-    display: flex;
-    justify-content: left;
-    width: 320px;
+    // display: flex;
+    // justify-content: left;
+    // width: 320px;
     margin: 2rem 0rem;
   }
   .HeadingFont {
@@ -261,8 +265,8 @@ nav svg {
 
   /* Style the indicator (dot/circle) */
   .radio-container .checkmark:after {
-    left: 9px;
-    top: 5px;
+    left: 10px;
+    top: 7px;
     width: 5px;
     height: 10px;
     border: solid white;
@@ -270,3 +274,4 @@ nav svg {
     transform: rotate(45deg);
   }
 }
+

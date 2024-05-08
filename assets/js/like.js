@@ -143,16 +143,17 @@
 //     });
 // });
 //!Denna verkar inte göra något, funkar via scss just nu
-document.addEventListener('DOMContentLoaded', () => {
-    const likeIcons = document.querySelectorAll('.like-icon');
 
-    likeIcons.forEach(icon => {
-        icon.addEventListener('click', () => {
-            icon.classList.toggle('filled'); 
-            icon.setAttribute('data-liked', icon.classList.contains('filled')); 
-        });
-    });
-});
+    // const likeIcons = document.querySelectorAll('.like-icon');
+
+    // likeIcons.forEach(icon => {
+    //     console.log(icon);
+    //     icon.addEventListener('click', () => {
+    //         icon.classList.toggle('filled'); 
+    //         icon.setAttribute('data-liked', icon.classList.contains('filled')); 
+    //     });
+    // });
+
 
 // document.addEventListener('DOMContentLoaded', () => {
 //     const likeIcons = document.querySelectorAll('.like-icon');
@@ -167,19 +168,19 @@ document.addEventListener('DOMContentLoaded', () => {
 //   });
   
 //! Popup js
-document.addEventListener('DOMContentLoaded', () => {
-    // Lägg till eventlyssnare för knappen med klassen btn-ok
-    const btnOk = document.querySelector('.btn-ok');
-    btnOk.addEventListener('click', () => {
-        // Visa popup när knappen klickas på
-        const popup = document.querySelector('.popup');
-        popup.style.display = 'block';
-        // Låt popupen visas i 2 sekunder innan den göms igen
-        setTimeout(() => {
-            popup.style.display = 'none';
-        }, 9000);
-    });
-});
+// document.addEventListener('DOMContentLoaded', () => {
+//     // Lägg till eventlyssnare för knappen med klassen btn-ok
+//     const btnOk = document.querySelector('.btn-ok');
+//     btnOk.addEventListener('click', () => {
+//         // Visa popup när knappen klickas på
+//         const popup = document.querySelector('.popup');
+//         popup.style.display = 'block';
+//         // Låt popupen visas i 2 sekunder innan den göms igen
+//         setTimeout(() => {
+//             popup.style.display = 'none';
+//         }, 9000);
+//     });
+// });
 
 
 
