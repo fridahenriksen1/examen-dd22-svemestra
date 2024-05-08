@@ -15,6 +15,7 @@ body {
   width: 375px;
   height: 667px;
   overflow: auto;
+  //overflow: hidden;
   position: relative;
   //!Här tog jag in mer kod
   // width: 375px;
@@ -26,6 +27,15 @@ body {
     -100px 100px 100px rgba(0, 0, 0, 0.03),
     -150px 150px 150px rgba(0, 0, 0, 0.02);
 }
+.container-mobil::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.container-mobil {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 .bottom-menu-container {
   width: 100%;
   position: sticky;

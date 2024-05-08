@@ -649,6 +649,16 @@ body {
   box-shadow: 0 0 60px 10px rgba(70, 70, 70, 0.03), -10px 10px 50px rgba(0, 0, 0, 0.1), -50px 50px 70px rgba(0, 0, 0, 0.05), -100px 100px 100px rgba(0, 0, 0, 0.03), -150px 150px 150px rgba(0, 0, 0, 0.02);
 }
 
+.container-mobil::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.container-mobil {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 .bottom-menu-container {
   width: 100%;
   position: sticky;
@@ -1847,7 +1857,7 @@ nav svg {
   padding-top: 0.5rem;
 }
 .big-container .main-saved .profilSetting-box .iconTxt-containerBtm {
-  margin: 0 1rem 6.8rem 1rem;
+  margin: 0 1rem 1rem 1rem;
   display: flex;
   flex-direction: column;
   align-self: flex-start;
@@ -1893,9 +1903,6 @@ nav svg {
   color: #485c55;
 }
 
-.big-container {
-  margin-bottom: 7rem;
-}
 .big-container .marginTxt-maps {
   margin-bottom: 1rem;
 }
