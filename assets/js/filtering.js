@@ -28,7 +28,7 @@ fetch('assets/json/accommodation.json')
     })
     .catch(error => console.log(error));
 function createCard(destination) {
-    console.log('create');
+    // console.log('create');
     const card = dataUserTemplate.content.cloneNode(true).children[0];
     const header = card.querySelector('[data-header]');
     const img = card.querySelector('[data-image]');
@@ -39,7 +39,19 @@ function createCard(destination) {
     const  likeButton = card.querySelector('.like-icon');
     likeButton.addEventListener('click',() => {
         const isLiked = likeButton.getAttribute('data-liked') === 'true';
+        const fillCon = document.querySelector('.links-container');
+        const klarbtn = fillCon.querySelector('#okBtn');
+        console.log(fillCon);
         console.log('klick');
+        const popUp = document.querySelector('.overlay');
+        klarbtn.addEventListener('click' , () =>{
+            setTimeout(() => {
+                popUp.classList.add('show');
+            }, 500);
+            setTimeout(() => {
+                popUp.classList.remove('show');
+            }, 3000);
+        });
         if (isLiked){
             likeButton.src = '/assets/icons/heart-like-large-card.svg';
             likeButton.setAttribute('data-liked', 'false');

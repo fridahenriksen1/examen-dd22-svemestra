@@ -1,9 +1,10 @@
 .account-container {
-  background: #ffffff;
+  background: #485c55;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 8.6rem;
+  height: 100vh;
 
   .main-account {
     display: flex;
@@ -12,27 +13,42 @@
 
     .signIn-box {
       border-radius: 6.3rem;
-      border: 0.1rem solid #000000;
-      background: #262626;
+      border: 0.1rem solid white;
+      background: white;
       margin-bottom: 1rem;
       display: flex;
       justify-content: center;
-      padding: 0.4rem 4rem 0.4rem 4rem;
+      // padding: 0.4rem 4rem 0.4rem 4rem;
+      width: 100%;
+      padding: 0.4rem 0rem;
+      .sign-in {
+        color: black;
+      }
     }
 
     .createBtn-box {
       border-radius: 6.3rem;
-      border: 0.1rem solid #000000;
+      border: 0.1rem solid white;
       margin: 0 0.1rem 1rem 0.1rem;
       padding: 0.4rem 3rem 0.4rem 3rem;
+      color: white;
     }
     .btn-txt-box {
       display: flex;
       flex-direction: column;
       align-items: center;
-      //! klicka här texten
-      .click-txt {
-        text-decoration: underline;
+      padding-top: 2rem;
+      .accontTxt-box {
+        display: flex;
+        color: white;
+        //! klicka här texten
+        .click-txt {
+          //text-decoration: underline;
+          a {
+            padding-left: 0.2rem;
+            color: white;
+          }
+        }
       }
     }
   }

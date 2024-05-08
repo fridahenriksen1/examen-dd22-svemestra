@@ -12,8 +12,13 @@
     width: 1.3rem;
     height: 0.8rem;
   }
-
-
-
-
+  .headingBoox {
+    display: flex;
+    flex: 1 auto;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    .colorHeading {
+      color: #485c55;
+    }
+  }
 }

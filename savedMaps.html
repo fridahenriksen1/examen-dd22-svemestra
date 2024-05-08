@@ -21,12 +21,24 @@
   </head>
   <body>
     <div class="big-container">
-      <header>
-        <a class="arrow-back-top-left" href="savedDestinations.html">
-          <img
+      <header class="notification-header">
+        <a class="circle-box" href="savedDestinations.html">
+          <!-- <img
             class="backArrow-icon"
             src="/assets/icons/ArrowBackTop-left.svg"
+          /> -->
+          <span class="material-symbols-outlined backArrow-icon">
+            arrow_back
+          </span>
+        </a>
+        <a class="circle-box" href="savedDestinations.html">
+          <img
+            class="notification-icon"
+            src="/assets/icons/notifications_unread.svg"
           />
+          <!-- <span class="material-symbols-outlined backArrow-icon">
+            arrow_back
+          </span> -->
         </a>
       </header>
       <main class="main-saved">
@@ -37,103 +49,211 @@
           Sparade besöksmål
           </h1>
         </section> -->
-        <h1 class="heading_3">Mina favoriter</h1>
+        <div class="headingBoox">
+          <h1 class="heading_3 colorHeading">Mina favoriter</h1>
+        </div>
+        <p class="bodyMD marginTxt-maps">
+          Här hittar du alla dina gillade besöksmål och både egna och delade
+          mappar.
+        </p>
         <div class="icon-mapp-box">
           <div class="text-box-saved-maps">
             <div class="saved-box">
               <a class="mappar-text txtColor" href="savedDestinations.html">
-                Besöksmål (4)
+                Alla besöksmål (6)
               </a>
             </div>
             <div class="maps-box">
-              <a class="mappar-text" href="#"> Mappar (4) </a>
+              <a class="mappar-text" href="#">
+                Mappar (4)
+                <span class="material-symbols-outlined redDott-icon">
+                  fiber_manual_record
+                </span></a
+              >
             </div>
           </div>
           <section class="map-section">
             <!-- IKONER UNDER PROFIL -->
             <div class="icon-box">
-              <div class="share-filter-box">
+              <div class="search-add-box">
                 <div class="misort">
-                  <img class="columnIcon" src="/assets/icons/sortIcon.svg" />
+                  <!-- <img class="columnIcon" src="/assets/icons/sortIcon.svg" /> -->
+                  <span class="material-symbols-outlined"> swap_vert </span>
                 </div>
+
                 <div class="active">
-                  <img class="columnIcon" src="/assets/icons/columnIcon.svg" />
+                  <!-- <img class="columnIcon" src="/assets/icons/columnIcon.svg" /> -->
+                  <span class="material-symbols-outlined"> view_column_2 </span>
                 </div>
                 <div class="format-list-bulleted">
-                  <img src="/assets/icons/listIcon.svg" />
+                  <!-- <img src="/assets/icons/listIcon.svg" /> -->
+                  <span class="material-symbols-outlined bulletList-color">
+                    format_list_bulleted
+                  </span>
                 </div>
               </div>
               <div class="search-add-box">
                 <div class="icround-plus">
-                  <img src="/assets/icons/addIcon.svg" />
+                  <!-- <img src="/assets/icons/addIcon.svg" /> -->
+                  <span class="material-symbols-outlined icon-size"> add </span>
                 </div>
                 <div class="search">
-                  <img class="columnIcon" src="/assets/icons/searchIcon.svg" />
+                  <img class="search-img" src="/assets/icons/Search.svg" />
                 </div>
-
                 <div class="format-list-bulleted">
-                  <img src="/assets/icons/threeDotIcon.svg" />
+                  <!-- <img src="/assets/icons/threeDotIcon.svg" /> -->
+                  <span class="material-symbols-outlined"> more_horiz </span>
                 </div>
               </div>
             </div>
 
             <section class="map-box">
+              <!-- Ett kort -->
               <article class="folder-card">
-                <div class="folder-open">
-                  <div class="share-icon-box">
-                    <img
+                <div class="bigFolder-picBox">
+                  <div class="folderHighPic-box">
+                    <img src="/assets/img/myFavorites_01.jpg" alt="" />
+                  </div>
+
+                  <div class="twoPix-box">
+                    <div class="folder-open">
+                      <!-- <img
                       class="shared-icon"
                       src="/assets/icons/sharedIcon.svg"
-                    />
+                    /> -->
+                      <img src="/assets/img/myFavorites_02.jpg" alt="" />
+                      <div class="group-pill">
+                        <p class="body-mini">2</p>
+                        <span class="material-symbols-outlined groupPic-icon">
+                          group
+                        </span>
+                      </div>
+                    </div>
+                    <div class="folder-opeen">
+                      <!-- <img
+                      class="shared-icon"
+                      src="/assets/icons/sharedIcon.svg"
+                    /> -->
+                      <img src="/assets/img/myFavorites_03.jpg" alt="" />
+                    </div>
                   </div>
                 </div>
                 <div class="map-txt">
-                  <h2 class="mapTxt-headline">Trähus</h2>
-                  <p class="saved-accommodations">5st besöksmål</p>
+                  <h2 class="mapTxt-headline">Mina favoriter</h2>
+                  <p class="bodyXS">5 besöksmål</p>
                 </div>
               </article>
+              <!-- Ett kort -->
               <article class="folder-card">
-                <div class="folder-open">
-                  <div class="share-icon-box">
-                    <img
-                      class="shared-icon"
-                      src="/assets/icons/sharedIcon.svg"
-                    />
+                <div class="bigFolder-picBox">
+                  <div class="folderHighPic-box">
+                    <img src="/assets/img/mapPicLong_01.jpg" alt="" />
+                  </div>
+
+                  <div class="twoPix-box">
+                    <div class="folder-open">
+                      <!-- <img
+                  class="shared-icon"
+                  src="/assets/icons/sharedIcon.svg"
+                /> -->
+                      <img src="/assets/img/mapPic_01.jpg" alt="" />
+                      <div class="group-pill">
+                        <p class="body-mini">5</p>
+                        <span class="material-symbols-outlined groupPic-icon">
+                          group
+                        </span>
+                      </div>
+                    </div>
+                    <div class="folder-opeen">
+                      <!-- <img
+                  class="shared-icon"
+                  src="/assets/icons/sharedIcon.svg"
+                /> -->
+                      <img src="/assets/img/mapPic_02.jpg" alt="" />
+                    </div>
                   </div>
                 </div>
                 <div class="map-txt">
-                  <h2 class="mapTxt-headline">Familjesemester</h2>
-                  <p class="saved-accommodations">27st besöksmål</p>
+                  <div class="mapNotification-box">
+                    <h2 class="bodyMD-Bold">Familjemappen</h2>
+                    <span class="material-symbols-outlined redDott-icon-bigger">
+                      fiber_manual_record
+                    </span>
+                  </div>
+
+                  <p class="bodyXS mapTextSpace">27 besöksmål</p>
                 </div>
               </article>
             </section>
             <section class="map-box">
+              <!-- Ett kort -->
               <article class="folder-card">
-                <div class="folder-open">
-                  <div class="share-icon-box">
-                    <img
-                      class="shared-icon"
-                      src="/assets/icons/sharedIcon.svg"
-                    />
+                <div class="bigFolder-picBox">
+                  <div class="folderHighPic-box">
+                    <img src="/assets/img/mapPicLong_02.jpg" alt="" />
+                  </div>
+
+                  <div class="twoPix-box">
+                    <div class="folder-open">
+                      <!-- <img
+                        class="shared-icon"
+                        src="/assets/icons/sharedIcon.svg"
+                      /> -->
+                      <img src="/assets/img/mapPic_03.jpg" alt="" />
+                      <!-- <div class="group-pill">
+                        <p class="body-mini">2</p>
+                        <span class="material-symbols-outlined groupPic-icon">
+                          group
+                        </span>
+                      </div> -->
+                    </div>
+                    <div class="folder-opeen">
+                      <!-- <img
+                        class="shared-icon"
+                        src="/assets/icons/sharedIcon.svg"
+                      /> -->
+                      <img src="/assets/img/mapPic_04.jpg" alt="" />
+                    </div>
                   </div>
                 </div>
                 <div class="map-txt">
-                  <h2 class="mapTxt-headline">Tjejkväll</h2>
-                  <p class="saved-accommodations">24st besöksmål</p>
+                  <h2 class="mapTxt-headline">30-årspresent</h2>
+                  <p class="bodyXS">6 besöksmål</p>
                 </div>
               </article>
+              <!-- Ett kort -->
               <article class="folder-card">
-                <div class="folder-open">
-                  <div class="share-icon-box">
-                    <img
-                      class="shared-icon"
-                      src="/assets/icons/sharedIcon.svg"
-                    />
+                <div class="bigFolder-picBox">
+                  <div class="folderHighPic-box">
+                    <img src="/assets/img/mapPicLong_03.jpg" alt="" />
+                  </div>
+
+                  <div class="twoPix-box">
+                    <div class="folder-open">
+                      <!-- <img
+                    class="shared-icon"
+                    src="/assets/icons/sharedIcon.svg"
+                  /> -->
+                      <img src="/assets/img/mapPic_05.jpg" alt="" />
+                      <div class="group-pill">
+                        <p class="body-mini">8</p>
+                        <span class="material-symbols-outlined groupPic-icon">
+                          group
+                        </span>
+                      </div>
+                    </div>
+                    <div class="folder-opeen">
+                      <!-- <img
+                    class="shared-icon"
+                    src="/assets/icons/sharedIcon.svg"
+                  /> -->
+                      <img src="/assets/img/mapPic_06.jpg" alt="" />
+                    </div>
                   </div>
                 </div>
                 <div class="map-txt">
-                  <h2 class="mapTxt-headline">30 års present</h2>
-                  <p class="saved-accommodations">14st besöksmål</p>
+                  <h2 class="mapTxt-headline">Tjejhelg</h2>
+                  <p class="bodyXS">6 besöksmål</p>
                 </div>
               </article>
             </section>
