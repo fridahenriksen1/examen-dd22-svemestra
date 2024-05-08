@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root {
   /* Variable for gap */
   --flex-gap: 1rem;
@@ -776,22 +775,6 @@ main {
   flex: 0 0 100%;
 }
 
-:root {
-  --color-1: #0f1016;
-  --text-color: #f0f0f0;
-  --accent-color: #006aff;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-size: 12pt;
-  font-family: Poppins, Segoe UI, Tahoma, sans-serif;
-}
-
 .links-container {
   height: 100%;
   width: 100%;
@@ -972,7 +955,6 @@ nav svg {
   .HeadingFont {
     color: #485c55;
     display: flex;
-    /* Heading 4 */
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 700;
@@ -1348,9 +1330,13 @@ nav svg {
   background: rgba(255, 255, 255, 0.15);
   -webkit-backdrop-filter: blur(5.89px);
           backdrop-filter: blur(5.89px);
+  /* Added CSS from the given style tag */
 }
 .like-icon.filled {
   font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 0, "opsz" 48;
+}
+.like-icon[data-liked=true] {
+  font-variation-settings: "FILL" 1;
 }
 
 .saved-resort {
@@ -1793,7 +1779,12 @@ nav svg {
   height: 2rem;
 }
 .big-container .main-saved .deviderLine {
-  border-bottom: 2px solid rgba(0, 0, 0, 0.1019607843);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 3rem;
+}
+.big-container .main-saved .deviderLine-Two {
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+  padding-top: 2rem;
 }
 
 .big-container .profilPic-textBox {

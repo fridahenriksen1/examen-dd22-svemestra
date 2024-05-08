@@ -120,22 +120,19 @@
     </section>
     <template data-user-template>
       <article class="card">
+         <!-- HÄR LIGGER SPARA BESÖKS MÅL OVERLAY -->
         <input type="checkbox" id="sidebar-active" />
         <label for="sidebar-active" class="open-sidebar-button">
-
-        <style>
-          .like-icon[data-liked="true"]{
-            font-variation-settings:
-            'FILL' 1
-          }
-        </style>
       
-        <!-- HÄR LIGGER SPARA BESÖKS MÅL OVERLAY -->
-        <!-- <nav> -->
-       
             <span class="material-symbols-outlined like-icon"> favorite </span>
           </label>
           <label id="overlay" for="sidebar-active"></label>
+
+          <!-- <input type="checkbox" id="sidebar-active" />
+          <label for="sidebar-active" class="like-overlay"></label>
+          <span class="material-symbols-outlined like-icon"> favorite </span>
+          <label id="overlay" for="sidebar-active"></label>     -->
+
           <div class="links-container">
             <div class="rectangle"></div>
     
@@ -293,6 +290,12 @@
             <a href="#" class="button">Learn More</a>
           </div>
         </div> -->
+            <!-- Popup-rutan -->
+    <div class="popup" style="display: none;">
+      <div class="popup-content">
+          <span>Sparad i familjemappen!</span>
+      </div>
+  </div>
 
           <a class="card-content" href="" data-link>
               
