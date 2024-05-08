@@ -1,7 +1,26 @@
 #categorys {
   margin-top: 1rem;
 }
-
+.category-label {
+  position: relative;
+}
+.icon-chips-img {
+  height: 24px;
+  width: 24px;
+  display: block;
+  position: absolute;
+  left: 0.5rem; /* Adjust the left position as needed */
+  top: 0rem;
+  // transform: translateY(-50%);
+}
+.category-label {
+  font-size: 0.75rem;
+  font-family: "SwedenSansBook", arial, sans-serif;
+  &.one {
+    font-size: 0.75rem;
+    font-family: "SwedenSansBold", arial, sans-serif;
+  }
+}
 // .chip {
 //   + label {
 //     display: inline-block;
@@ -35,26 +54,20 @@
 }
 .m1b {
   display: flex;
-  max-width: 300px;
   overflow-x: auto;
-
   // overflow-x: hidden;
   .chip {
     + label {
       //display: inline-block;
-
       // align-items: flex-start;
       display: flex;
       justify-content: center;
       align-items: center;
       text-align: center;
-
       background-color: transparent;
       white-space: nowrap;
       flex: 0 0 10%;
-
       padding: 2rem 0rem;
-
       margin-bottom: 0.4rem;
       margin-right: 0.5rem;
       margin-left: 0.5rem;
@@ -65,10 +78,8 @@
       cursor: pointer;
       font-size: 12px;
     }
-
     &[type="checkbox"] {
       display: none;
-
       &:checked {
         + label {
           // background-color: yellow;
@@ -77,34 +88,33 @@
       }
     }
   }
-
-  $background-images: (
-    categoryOne: url("/assets/icons/iconCabin.svg"),
-    categoryTwo: url("/assets/icons/iconCabin.svg"),
-    categoryThree: url("/assets/icons/iconCabin.svg"),
-    categoryFour: url("/assets/icons/iconCabin.svg"),
-    categoryFive: url("/assets/icons/iconCabin.svg"),
-    categorySix: url("/assets/icons/iconCabin.svg"),
-    categorySeven: url("/assets/icons/iconCabin.svg"),
-    // Add more categories and corresponding images as needed
-  );
-
-  // Loop through each category ID and apply the background image
-  @each $id, $image in $background-images {
-    ##{$id} {
-      + label {
-        background-image: $image; // Set background image for each label
-        background-repeat: no-repeat;
-      }
-    }
-  }
 }
+// !!jag provar att använda svg ikoner i html istället för backgroundimage
+// $background-images: (
+//   categoryOne: url("/assets/icons/iconCabin.svg"),
+//   categoryTwo: url("/assets/icons/iconCabin.svg"),
+//   categoryThree: url("/assets/icons/iconCabin.svg"),
+//   categoryFour: url("/assets/icons/iconCabin.svg"),
+//   categoryFive: url("/assets/icons/iconCabin.svg"),
+//   categorySix: url("/assets/icons/iconCabin.svg"),
+//   categorySeven: url("/assets/icons/iconCabin.svg"),
+//   // Add more categories and corresponding images as needed
+// );
 
+// Loop through each category ID and apply the background image
+//   @each $id, $image in $background-images {
+//     ##{$id} {
+//       + label {
+//         background-image: $image; // Set background image for each label
+//         background-repeat: no-repeat;
+//       }
+//     }
+//   }
+// }
 /* Hide scrollbar for Chrome, Safari and Opera */
 .m1b::-webkit-scrollbar {
   display: none;
 }
-
 /* Hide scrollbar for IE, Edge and Firefox */
 .m1b {
   -ms-overflow-style: none; /* IE and Edge */

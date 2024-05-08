@@ -19,7 +19,35 @@
 }
 .ShowMoreBtn {
   text-decoration: underline;
-  text-underline-offset: 8px;
+  text-underline-offset: 4px;
   font-size: 1rem;
   font-family: "SwedenSansSemiBold", arial, sans-serif;
+}
+.seeAllPicBtn {
+  display: flex;
+  width: 9.75rem;
+  padding: 0.75rem 1.8125rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6.3rem;
+  border: 0.1rem solid $black500;
+  white-space: nowrap;
+  padding: 0.75rem 2rem;
+  color: $text-Black;
+}
+.btnBookWebsite {
+  border-radius: 6.3rem;
+  display: flex;
+  padding: 0.75rem 1.8125rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #485c55;
+  max-width: 230px;
+
+  .openNewIcon {
+    color: white;
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+  }
 }
