@@ -629,6 +629,14 @@ a,
   font-weight: 300 !important;
 }
 
+body {
+  background-color: #fcfcfc;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
 .container-mobil {
   margin: auto;
   margin-top: 8rem;
@@ -636,6 +644,9 @@ a,
   height: 667px;
   overflow: auto;
   position: relative;
+  border-radius: 30px;
+  background-color: #fbfbfb;
+  box-shadow: 0 0 60px 10px rgba(70, 70, 70, 0.03), -10px 10px 50px rgba(0, 0, 0, 0.1), -50px 50px 70px rgba(0, 0, 0, 0.05), -100px 100px 100px rgba(0, 0, 0, 0.03), -150px 150px 150px rgba(0, 0, 0, 0.02);
 }
 
 .bottom-menu-container {

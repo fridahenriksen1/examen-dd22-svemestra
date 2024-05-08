@@ -1,3 +1,14 @@
+body {
+  // background: url(/assets/img/erikson\ cottage.jpg);
+  //background-color: green;
+
+  //background-repeat: no-repeat;
+  background-color: #fcfcfc;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
 .container-mobil {
   margin: auto;
   margin-top: 8rem;
@@ -5,6 +16,15 @@
   height: 667px;
   overflow: auto;
   position: relative;
+  //!Här tog jag in mer kod
+  // width: 375px;
+  // height: 700px;
+  border-radius: 30px;
+  background-color: #fbfbfb;
+  box-shadow: 0 0 60px 10px rgba(70, 70, 70, 0.03),
+    -10px 10px 50px rgba(0, 0, 0, 0.1), -50px 50px 70px rgba(0, 0, 0, 0.05),
+    -100px 100px 100px rgba(0, 0, 0, 0.03),
+    -150px 150px 150px rgba(0, 0, 0, 0.02);
 }
 .bottom-menu-container {
   width: 100%;
