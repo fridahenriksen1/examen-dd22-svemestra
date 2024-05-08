@@ -94,21 +94,26 @@
     // !! här testar jag att skapa en ny flexbox box för bilderna
     .flexbox-boenden {
       display: flex;
-      flex-wrap: wrap;
+      // flex-wrap: wrap;
       gap: 0.125rem;
       .boxOne {
-        flex: 0 0 50%;
-        min-height: 302px;
+        // flex: 0 0 50%;
+        // flex: 0 0 calc(50% - 0rem);
+        // min-height: 302px;
         position: relative;
       }
       .boxTwo {
         // två divar har boxTwo
-        flex: 1;
-        min-height: 302px;
+        // flex: 0 0 calc(50% - 0rem);
+        // flex: 1;
+        gap: 0.125rem;
+        // min-height: 302px;
+        display: flex;
+        flex-wrap: wrap;
         .box50-50 {
-          display: flex;
-          justify-content: space-between;
-          flex: 1 0 auto;
+          // display: flex;
+          flex: 0 0 calc(50% - 0.04rem);
+          // flex: 1 0 auto;
           position: relative;
           &:nth-child(1) {
             // margin-bottom: 0.4rem;
@@ -185,7 +190,7 @@
     .reviews-box {
       margin-top: 1rem;
       display: flex;
-      max-width: 300px;
+      // max-width: 300px;
       overflow-x: auto;
 
       .review-card {
@@ -204,7 +209,7 @@
           figure {
             width: 2.1875rem;
             height: 2.1875rem;
-
+            margin-top: -0.5rem;
             background-size: cover;
             background-position: center;
             img {
@@ -213,16 +218,10 @@
           }
           .nameCircle-box {
             margin-left: 1rem;
-            .circleHowLong-box {
-            }
           }
         }
         p {
           color: #141414;
-          font-family: "Sweden Sans";
-          font-size: 0.75rem;
-          font-style: normal;
-          font-weight: 400;
           line-height: 135%;
           width: 12.5rem;
         }
@@ -250,6 +249,9 @@
       }
     }
   }
+}
+.weeks {
+  margin-bottom: 0.25rem;
 }
 
 .location-box {
