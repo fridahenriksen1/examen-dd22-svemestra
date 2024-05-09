@@ -134,6 +134,7 @@
           </form>
           <!-- Sektion med cards som hämtas från json med js, filtreringskorten för boende -->
           <section class="user-accomodation" data-user-cards></section>
+          <!-- CARDS -->
           <template data-user-template>
             <article class="card">
               <input type="checkbox" id="sidebar-active" />
@@ -146,7 +147,6 @@
               <label id="overlay" for="sidebar-active"></label>
               <div class="links-container">
                 <div class="rectangle"></div>
-
                 <div class="headingBox">
                   <h2 class="HeadingFont heading_4">
                     I vilka mappar vill du spara?
@@ -320,21 +320,39 @@
                   <div class="img-box">
                     <img data-image />
                   </div>
-                  <div class="circle-box">
-                    <div class="ellipse"></div>
-                    <div class="ellipse"></div>
-                    <div class="ellipse"></div>
-                    <div class="ellipse"></div>
-                    <div class="ellipse"></div>
+                  <div class="location-box">
+                    <span class="material-symbols-outlined"> location_on </span>
+                    <p class="bodySMregular">Hyssna</p>
                   </div>
-                  <figcaption class="card-text">
-                    <h2 data-header></h2>
-                    <!-- <p class="style-chips" data-cat></p> -->
-                    <p data-info></p>
-                  </figcaption>
-                </figure>
-                <section class="category-box" data-categorys></section>
-                <!-- <div class="gradient"></div> -->
+                  <div class="circleRating-box">
+                    <div class="circle-box">
+                      <div class="ellipse"></div>
+                      <div class="ellipse"></div>
+                      <div class="ellipse"></div>
+                      <div class="ellipse"></div>
+                      <div class="ellipse border"></div>
+                    </div>
+                    <p class="bodyMD-Bold mleft05 review-number">4.2</p>
+                  </div>
+                  <div class="details-container">
+                    
+                    <!--  <div class="circle-box">
+                      <div class="ellipse"></div>
+                      <div class="ellipse"></div>
+                      <div class="ellipse"></div>
+                      <div class="ellipse"></div>
+                      <div class="ellipse"></div>
+                      <span class="review-numbers bodySMBold">4.1</span>
+                    </div> -->
+                    <figcaption class="card-text">
+                      <h2 class="heading_4" data-header></h2>
+                      <!-- <p class="style-chips" data-cat></p> -->
+                      <p class="bodyXS" data-info></p>
+                    </figcaption>
+                    </figure>
+                    <section class="category-box" data-categorys></section>
+                    <!-- <div class="gradient"></div> -->
+                  </div>
               </a>
             </article>
           </template>

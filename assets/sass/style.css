@@ -259,6 +259,11 @@ a,
   font-family: "SwedenSansBook", arial, sans-serif;
 }
 
+.bodySMregular {
+  font-size: 0.75rem;
+  font-family: "SwedenSansRegular", arial, sans-serif;
+}
+
 .bodySM-Bold {
   font-size: 0.875rem;
   font-family: "SwedenSansBold", arial, sans-serif;
@@ -1280,41 +1285,27 @@ nav svg {
   justify-content: space-between;
   text-decoration: none;
 }
-.user-accomodation .card .card-content .circle-box {
-  margin-bottom: 0.8rem;
-  margin-top: 0.75rem;
-  display: flex;
-  align-self: flex-start;
-  -moz-column-gap: 0.2rem;
-       column-gap: 0.2rem;
-  width: 3.9rem;
+.user-accomodation .card .details-container .material-symbols-outlined {
+  width: 16px;
+  height: 10;
 }
-.user-accomodation .card .card-content .circle-box .ellipse {
-  border-radius: 0.3rem;
-  background: #141414;
-  width: 0.6rem;
-  height: 0.6rem;
+.user-accomodation .card .details-container p {
+  line-height: 130%;
 }
-.user-accomodation .card .card-content .circle-box.circleMargin {
-  margin-top: 0rem !important;
-}
-.user-accomodation .card .card-content .img-box {
+.user-accomodation .card .img-box {
   position: relative;
   display: flex;
   flex: 1;
 }
-.user-accomodation .card .card-content .img-box .like-icon {
+.user-accomodation .card .img-box .like-icon {
   position: absolute;
   width: 44px;
   height: 44px;
   top: 0.5rem;
   right: 0.5rem;
 }
-.user-accomodation .card .card-content .img-box img {
+.user-accomodation .card .img-box img {
   pointer-events: none;
-}
-.user-accomodation .card h2 {
-  font-size: 1.25rem;
 }
 .user-accomodation .img-box {
   height: 280px;
