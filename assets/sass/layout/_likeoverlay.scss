@@ -14,25 +14,24 @@
   background-color: var(--color-1);
   box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
   transition: 0.75s ease-out;
- 
-    // flex-direction: column;
-    // align-items: center; /* Center horizontally */
-    // justify-content: flex-end; /* Start at the bottom */
-    position: fixed;
-    // bottom: -100%; /* Initially hide off the bottom */
-    // left: 0; /* Start from the left */
-    // z-index: 10;
-    // width: 100%;
-    // background-color: var(--color-1);
-    // height: 86vh;
-    background: #fafafa;
-    // box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
-    transition: 0.75s ease-out;
-    border-radius: 0.625rem;
-    @media (min-width: 380px) {
-      // height: 80vh;
-    }
-  
+
+  // flex-direction: column;
+  // align-items: center; /* Center horizontally */
+  // justify-content: flex-end; /* Start at the bottom */
+  position: fixed;
+  // bottom: -100%; /* Initially hide off the bottom */
+  // left: 0; /* Start from the left */
+  // z-index: 10;
+  // width: 100%;
+  // background-color: var(--color-1);
+  // height: 86vh;
+  background: #fafafa;
+  // box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+  transition: 0.75s ease-out;
+  border-radius: 0.625rem;
+  @media (min-width: 380px) {
+    // height: 80vh;
+  }
 
   .contentBtn-box {
     // align-items: center;
@@ -131,7 +130,7 @@ nav svg {
 // .like-icon.filled + .like-overlay {
 //   display: block;
 // }
-@media (max-width: 768px) {
+@media (min-width: 30px) {
   // .links-container {
   //   flex-direction: column;
   //   align-items: center; /* Center horizontally */
@@ -171,7 +170,7 @@ nav svg {
   .like-icon {
     color: white;
   }
-  
+
   .mb {
     margin-bottom: 1.5rem;
   }
@@ -274,4 +273,3 @@ nav svg {
     transform: rotate(45deg);
   }
 }
-
