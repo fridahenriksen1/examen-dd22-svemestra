@@ -932,7 +932,7 @@ nav svg {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 30px) {
   .open-sidebar-button,
   .close-sidebar-button {
     display: block;
