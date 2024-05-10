@@ -1,15 +1,18 @@
 #categorys {
   margin-top: 1rem;
 }
+
 .category-label {
   position: relative;
   font-size: 0.75rem;
   font-family: "SwedenSansBook", arial, sans-serif;
+
   &.one {
     font-size: 0.75rem;
     font-family: "SwedenSansBold", arial, sans-serif;
   }
 }
+
 .icon-chips-img {
   height: 24px;
   width: 24px;
@@ -17,10 +20,12 @@
   position: absolute;
   left: 0.6rem;
   top: 0rem;
+
   &.vatten-icon {
     left: 1rem;
   }
 }
+
 // .chip {
 //   + label {
 //     display: inline-block;
@@ -52,12 +57,14 @@
   margin-top: 1rem;
   font-weight: 800;
 }
+
 .m1b {
   display: flex;
   overflow-x: auto;
+
   // overflow-x: hidden;
   .chip {
-    + label {
+    +label {
       //display: inline-block;
       // align-items: flex-start;
       display: flex;
@@ -78,10 +85,12 @@
       cursor: pointer;
       font-size: 12px;
     }
+
     &[type="checkbox"] {
       display: none;
+
       &:checked {
-        + label {
+        +label {
           // background-color: yellow;
           font-family: "SwedenSansBold", arial, sans-serif;
           color: $skogsgron600;
@@ -90,6 +99,7 @@
     }
   }
 }
+
 // !!jag provar att använda svg ikoner i html istället för backgroundimage
 // $background-images: (
 //   categoryOne: url("/assets/icons/iconCabin.svg"),
@@ -116,8 +126,11 @@
 .m1b::-webkit-scrollbar {
   display: none;
 }
+
 /* Hide scrollbar for IE, Edge and Firefox */
 .m1b {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
