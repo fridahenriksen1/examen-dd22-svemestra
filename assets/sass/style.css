@@ -555,14 +555,12 @@ a,
 .blurEffect-Light {
   border-radius: var(--Border-radius-Radius-full, 9999px);
   background: rgba(0, 0, 0, 0.5);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 }
 
 .blurEffect-Dark {
   background: rgba(0, 0, 0, 0.4);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
 .circle-box {
@@ -570,8 +568,7 @@ a,
   margin-top: 0.75rem;
   display: flex;
   align-self: flex-start;
-  -moz-column-gap: 0.2rem;
-       column-gap: 0.2rem;
+  column-gap: 0.2rem;
   width: 3.9rem;
 }
 .circle-box.detailpagcircles {
@@ -645,7 +642,7 @@ body {
 .container-mobil {
   width: 390px;
   height: 884px;
-  overflow: auto;
+  overflow-y: scroll;
   position: relative;
   border-radius: 30px;
   background-color: #fbfbfb;
@@ -669,8 +666,10 @@ body {
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .container-mobil {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .bottom-menu-container {
@@ -682,8 +681,7 @@ body {
   z-index: 3;
   border-top: 1px solid #e9e9e9;
   background: rgba(255, 255, 255, 0.85);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 .bottom-menu-container .bottom-menu {
   position: sticky;
@@ -778,8 +776,7 @@ body {
 .suggestions-container .suggestionCard-box .card-large .contentBox-card .txtChip-box .ellipse-box {
   margin-bottom: 0.8rem;
   display: flex;
-  -moz-column-gap: 0.2rem;
-       column-gap: 0.2rem;
+  column-gap: 0.2rem;
 }
 .suggestions-container .suggestionCard-box .card-large .contentBox-card .txtChip-box .ellipse-box .ellipse {
   border-radius: 0.3rem;
@@ -845,9 +842,9 @@ main {
   width: 100%;
   padding: 1rem;
   visibility: hidden;
-  position: absolute; /* Fixed positioning */
-  bottom: -100%; /* Initially hide off the bottom */
-  left: 0; /* Start from the left */
+  position: sticky;
+  bottom: -100%;
+  left: 0;
   right: 0;
   z-index: 10;
   background-color: var(--color-1);
@@ -879,8 +876,7 @@ main {
 
 .group-box {
   display: flex;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   background-color: #979797;
   align-items: center;
   border-radius: 1rem;
@@ -989,6 +985,7 @@ nav svg {
     font-size: 22px;
     -webkit-user-select: none;
     -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
   }
   /* Hide the browser's default radio button */
@@ -1163,9 +1160,7 @@ nav svg {
   margin-left: 0.5rem;
   color: #141414;
   font-size: 1rem;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
   cursor: pointer;
   font-size: 12px;
 }
@@ -1184,8 +1179,10 @@ nav svg {
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .m1b {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .card.card-inspo {
@@ -1195,8 +1192,7 @@ nav svg {
 .card.card-inspo .card-content-frost {
   position: absolute;
   background: rgba(0, 0, 0, 0.4);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   color: #f4f4f4;
   padding: 0.5rem 1rem;
   bottom: 3rem;
@@ -1205,8 +1201,7 @@ nav svg {
 }
 .card.card-square img {
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .searchFilter-box {
@@ -1229,9 +1224,6 @@ nav svg {
 .searchFilter-box #search-bar #header-search.focus-border {
   border: 1px solid #141414;
   outline: none;
-}
-.searchFilter-box #search-bar #header-search::-moz-placeholder {
-  font-size: 12px;
 }
 .searchFilter-box #search-bar #header-search::placeholder {
   font-size: 12px;
@@ -1314,8 +1306,7 @@ nav svg {
 .user-accomodation img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .user-accomodation.hide {
   display: none;
@@ -1335,9 +1326,7 @@ nav svg {
   border-radius: 5rem;
   padding: 0.5rem 1.5rem;
   font-size: 1rem;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
   cursor: pointer;
   margin-bottom: 1rem;
   text-transform: capitalize;
@@ -1359,8 +1348,7 @@ nav svg {
   right: 0rem;
   border-radius: 6.25rem;
   background: rgba(255, 255, 255, 0.15);
-  -webkit-backdrop-filter: blur(5.89px);
-          backdrop-filter: blur(5.89px);
+  backdrop-filter: blur(5.89px);
   /* Added CSS from the given style tag */
 }
 .like-icon[data-liked=true] {
@@ -1437,8 +1425,7 @@ nav svg {
   display: flex;
   align-items: center;
   justify-content: center;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   padding: 0.25rem 0.5rem;
   right: 0.5rem;
   position: absolute;
@@ -1496,8 +1483,7 @@ nav svg {
   border-radius: 6.25rem;
   background: rgba(0, 0, 0, 0.15);
   /* Name tag BLUR */
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 .card-box .card-medium .card-img .heartBox .heartIcon-card {
   font-size: 1rem;
@@ -1510,8 +1496,7 @@ nav svg {
   display: flex;
   flex-direction: row;
   align-self: flex-start;
-  -moz-column-gap: 0.2rem;
-       column-gap: 0.2rem;
+  column-gap: 0.2rem;
   width: 3.9rem;
   box-sizing: border-box;
 }
@@ -1605,7 +1590,6 @@ nav svg {
   display: flex;
   align-items: center;
   flex: 0 0 100px;
-  height: -moz-fit-content;
   height: fit-content;
   justify-content: space-between;
   cursor: pointer;
@@ -1656,11 +1640,12 @@ nav svg {
 }
 
 .overlay {
-  position: absolute;
+  position: sticky;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 9999;
   display: none;
+  height: 100%;
 }
 .overlay.show {
   display: block;
@@ -1670,7 +1655,7 @@ nav svg {
   display: flex;
   align-items: center;
   justify-content: center;
-  bottom: 6rem;
+  bottom: 5rem;
   left: 1rem;
   right: 1rem;
   background-color: white;
@@ -1783,7 +1768,6 @@ nav svg {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  width: -moz-fit-content;
   width: fit-content;
 }
 .big-container .main-saved .profilPic-textBox .profil-pic-box {
@@ -1818,8 +1802,7 @@ nav svg {
 .big-container .main-saved .textChips-container .container-fakeChips {
   margin-bottom: 0.5rem;
   display: flex;
-  -moz-column-gap: 0.5rem;
-       column-gap: 0.5rem;
+  column-gap: 0.5rem;
 }
 .big-container .main-saved .textChips-container .container-fakeChips .chipsFilter {
   border-radius: 6.3rem;
@@ -1924,7 +1907,6 @@ nav svg {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: -moz-fit-content;
   width: fit-content;
 }
 .big-container .shared-icon {
@@ -2009,8 +1991,7 @@ nav svg {
 .accommodation .card-content-frost {
   position: absolute;
   background: rgba(0, 0, 0, 0.4);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   color: #f4f4f4;
   padding: 0.5rem 1rem;
   bottom: 3rem;
@@ -2063,8 +2044,7 @@ nav svg {
 .accommodation .chipsBox {
   display: flex;
   flex-wrap: wrap;
-  -moz-column-gap: 0.5rem;
-       column-gap: 0.5rem;
+  column-gap: 0.5rem;
 }
 .accommodation .chipsBox .chipsFilter {
   border-radius: 6.3rem;
@@ -2117,8 +2097,7 @@ nav svg {
   padding: 8px;
   margin: 0;
   background: rgba(0, 0, 0, 0.4);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   color: white;
 }
 .accommodation .activitiesSection {

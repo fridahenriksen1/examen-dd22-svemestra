@@ -35,22 +35,18 @@ function createCard(destination) {
     const link = card.querySelector('[data-link]');
     const info = card.querySelector('[data-info]');
     const catContainer = card.querySelector('[data-categorys]');
-    
-    // const  likeIcons = document.querySelectorAll('.like-icon');
-    const  likeButton = card.querySelector('.like-icon');
-    likeButton.addEventListener('click',() => {
-        const mobilCon = document.querySelector(".container-mobil");
+
+    const likeButton = card.querySelector('.like-icon');
+    likeButton.addEventListener('click', () => {
         const isLiked = likeButton.getAttribute('data-liked') === 'true';
         const fillCon = document.querySelector('.links-container');
         const klarbtn = fillCon.querySelector('#okBtn');
         console.log(fillCon);
         console.log('klick');
         const popUp = document.querySelector('.overlay');
-        mobilCon.style.overflowY = "hidden"
         fillCon.classList.toggle("show");
-        klarbtn.addEventListener('click' , () =>{
+        klarbtn.addEventListener('click', () => {
             fillCon.classList.remove("show");
-            mobilCon.style.overflowY = ""
             setTimeout(() => {
                 popUp.classList.add('show');
             }, 500);
@@ -58,29 +54,29 @@ function createCard(destination) {
                 popUp.classList.remove('show');
             }, 3000);
         });
-        if (isLiked){
+        if (isLiked) {
             likeButton.src = '/assets/icons/heart-like-large-card.svg';
             likeButton.setAttribute('data-liked', 'false');
-        }else{
-            likeButton.src= '/assets/icons/heartIconFilled.svg';
+        } else {
+            likeButton.src = '/assets/icons/heartIconFilled.svg';
             likeButton.setAttribute('data-liked', 'true');
         }
-        
+
     })
 
-//     likeIcons.forEach(icon => {
-//     icon.addEventListener('click', () => {
-//         const isLiked = icon.getAttribute('data-liked') === 'true';
-//         console.log('klick');
-//         if (isLiked) {
-//             icon.src = '/assets/icons/heart-like-large-card.svg';
-//             icon.setAttribute('data-liked', 'false');
-//         } else {
-//             icon.src = '/assets/icons/heartIconFilled.svg';
-//             icon.setAttribute('data-liked', 'true');
-//         }
-//     });
-// });
+    //     likeIcons.forEach(icon => {
+    //     icon.addEventListener('click', () => {
+    //         const isLiked = icon.getAttribute('data-liked') === 'true';
+    //         console.log('klick');
+    //         if (isLiked) {
+    //             icon.src = '/assets/icons/heart-like-large-card.svg';
+    //             icon.setAttribute('data-liked', 'false');
+    //         } else {
+    //             icon.src = '/assets/icons/heartIconFilled.svg';
+    //             icon.setAttribute('data-liked', 'true');
+    //         }
+    //     });
+    // });
 
     destination.categories.forEach(cat => {
         const newSpan = document.createElement('span');
@@ -88,13 +84,13 @@ function createCard(destination) {
         newSpan.classList.add('style-chips');
         catContainer.append(newSpan);
     });
-    
+
     link.setAttribute('href', destination.htmlUrl);
     header.textContent = destination.name;
     img.setAttribute('src', `assets/${destination.imageURL}`);
-    header.textContent =  destination.name;
+    header.textContent = destination.name;
     info.textContent = destination.info;
-    
+
     dataUserCards.append(card);
 }
 function render() {
@@ -106,7 +102,7 @@ function render() {
     if (filters.categories.length > 0) {
         console.log(filteredRecipies);
         filteredRecipies = filteredRecipies.filter(r => filters.categories.every(f => r.categories.includes(f)));
-      
+
     }
     // if (filters.seasons.length > 0) {
     //     filteredRecipies = filteredRecipies.filter(r => filters.seasons.every(f => r.seasons.includes(f)));

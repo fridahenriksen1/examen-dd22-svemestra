@@ -1,154 +1,87 @@
 <!DOCTYPE html>
 <html lang="sv">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Svemestra</title>
-    <!-- MATERIAL SYMBOLS -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
-    <link rel="stylesheet" href="assets/sass/style.css" />
-  </head>
-  <body>
-    <div class="container-mobil">
-      <div class="front-speaker"></div>
-      <main>
-        <div class="flex-container">
-          <div class="text-box mb3 mt3">
-            <h1 class="heading_1">Sök och hitta inspiration</h1>
-          </div>
-          <!-- Sök container -->
-          <section id="search" class="searchcontainer mb2">
-            <!-- <h1>Boenden</h1> -->
-            <!-- Boxen för sökbaren och filter -->
-            <div class="searchFilter-box">
-              <form id="search-bar" role="search">
-                <label for="header-search">
-                  <span class="visually-hidden">Search</span>
-                </label>
-                <input
-                  type="search"
-                  id="header-search"
-                  placeholder="Sök på område, boende, aktiviteter"
-                  data-search
-                />
-                <button type="submit" id="btn-search">
-                  <img class="searchbar-icon" src="/assets/icons/Search.svg" />
-                  <span class="visually-hidden">Submit Search</span>
-                </button>
-                <!-- <button type='submit' id="btn-search">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Svemestra</title>
+  <!-- MATERIAL SYMBOLS -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="assets/sass/style.css" />
+</head>
+<body>
+  <div class="container-mobil">
+    <div class="front-speaker"></div>
+    <main>
+      <div class="flex-container">
+        <div class="text-box mb3 mt3">
+          <h1 class="heading_1">Sök och hitta inspiration</h1>
+        </div>
+        <!-- Sök container -->
+        <section id="search" class="searchcontainer mb2">
+          <!-- <h1>Boenden</h1> -->
+          <!-- Boxen för sökbaren och filter -->
+          <div class="searchFilter-box">
+            <form id="search-bar" role="search">
+              <label for="header-search">
+                <span class="visually-hidden">Search</span>
+              </label>
+              <input type="search" id="header-search" placeholder="Sök på område, boende, aktiviteter" data-search />
+              <button type="submit" id="btn-search">
+                <img class="searchbar-icon" src="/assets/icons/Search.svg" />
+                <span class="visually-hidden">Submit Search</span>
+              </button>
+              <!-- <button type='submit' id="btn-search">
                 <span class="material-symbols-rounded">search</span>
                 <span class='visually-hidden'>Submit Search</span>
             </button> -->
-              </form>
-              <!-- filter ikone brevis sökbaren -->
-              <a class="filter-box-icon" href="#">
-                <img src="/assets/icons/page_info.svg" alt="" />
-              </a>
-            </div>
-          </section>
-          <!-- chips filtreringen -->
-          <!-- KATERGORI CHIPSEN -->
-          <form class="m1b mb3" id="categorys" action="">
-            <input
-              class="chip categoy"
-              type="checkbox"
-              id="categoryOne"
-              data-cat="trädhotell"
-            />
-            <label for="categoryOne" class="category-label one">
-              <img
-                class="icon-chips-img"
-                src="/assets/icons/glashus.svg"
-                alt=""
-              />
-              Glashus</label
-            >
-            <input
-              class="chip categoy"
-              type="checkbox"
-              id="categoryTwo"
-              data-cat="camping"
-            />
-            <label for="categoryTwo" class="category-label"
-              ><img
-                class="icon-chips-img"
-                src="/assets/icons/trahus.svg"
-                alt=""
-              />Trädhus</label
-            >
-            <input
-              class="chip categoy"
-              type="checkbox"
-              id="categoryThree"
-              data-cat="spa"
-            />
-            <label for="categoryThree" class="category-label"
-              ><img
-                class="icon-chips-img"
-                src="/assets/icons/glamping.svg"
-                alt=""
-              />Glamping</label
-            >
-            <input
-              class="chip categoy"
-              type="checkbox"
-              id="categoryFour"
-              data-cat="vatten"
-            />
-            <label for="categoryFour" class="category-label"
-              ><img
-                class="icon-chips-img"
-                src="/assets/icons/Camping.svg"
-                alt=""
-              />Camping</label
-            >
-            <input
-              class="chip categoy"
-              type="checkbox"
-              id="categoryFive"
-              data-cat="vandra"
-            />
-            <label for="categoryFive" class="category-label"
-              ><img
-                class="icon-chips-img vatten-icon"
-                src="/assets/icons/naravatten.svg"
-                alt=""
-              />Nära vatten</label
-            >
-            <input
-              class="chip categoy"
-              type="checkbox"
-              id="categorySix"
-              data-cat="cyckla"
-            />
-            <label for="categorySix" class="category-label"
-              ><img
-                class="icon-chips-img"
-                src="/assets/icons/romantiskt.svg"
-                alt=""
-              />Romantiskt</label
-            >
-          </form>
-          <!-- Sektion med cards som hämtas från json med js, filtreringskorten för boende -->
-          <section class="user-accomodation" data-user-cards></section>
-          <!-- CARDS -->
-          <template data-user-template>
-            <article class="card">
-              <input type="checkbox" id="sidebar-active" />
-              <input type="checkbox" id="sidebar-active" />
-              <label for="sidebar-active" class="open-sidebar-button">
-                <span class="material-symbols-outlined like-icon">
-                  favorite
-                </span>
-              </label>
-              <label id="overlay" for="sidebar-active"></label>
-              
-              <!-- </nav> -->
-              <!-- POP UP:EN -->
-              <!-- <div class="row pop-up">
+            </form>
+            <!-- filter ikone brevis sökbaren -->
+            <a class="filter-box-icon" href="#">
+              <img src="/assets/icons/page_info.svg" alt="" />
+            </a>
+          </div>
+        </section>
+        <!-- chips filtreringen -->
+        <!-- KATERGORI CHIPSEN -->
+        <form class="m1b mb3" id="categorys" action="">
+          <input class="chip categoy" type="checkbox" id="categoryOne" data-cat="trädhotell" />
+          <label for="categoryOne" class="category-label one">
+            <img class="icon-chips-img" src="/assets/icons/glashus.svg" alt="" />
+            Glashus</label>
+          <input class="chip categoy" type="checkbox" id="categoryTwo" data-cat="camping" />
+          <label for="categoryTwo" class="category-label"><img class="icon-chips-img" src="/assets/icons/trahus.svg"
+              alt="" />Trädhus</label>
+          <input class="chip categoy" type="checkbox" id="categoryThree" data-cat="spa" />
+          <label for="categoryThree" class="category-label"><img class="icon-chips-img" src="/assets/icons/glamping.svg"
+              alt="" />Glamping</label>
+          <input class="chip categoy" type="checkbox" id="categoryFour" data-cat="vatten" />
+          <label for="categoryFour" class="category-label"><img class="icon-chips-img" src="/assets/icons/Camping.svg"
+              alt="" />Camping</label>
+          <input class="chip categoy" type="checkbox" id="categoryFive" data-cat="vandra" />
+          <label for="categoryFive" class="category-label"><img class="icon-chips-img vatten-icon"
+              src="/assets/icons/naravatten.svg" alt="" />Nära vatten</label>
+          <input class="chip categoy" type="checkbox" id="categorySix" data-cat="cyckla" />
+          <label for="categorySix" class="category-label"><img class="icon-chips-img" src="/assets/icons/romantiskt.svg"
+              alt="" />Romantiskt</label>
+        </form>
+        <!-- Sektion med cards som hämtas från json med js, filtreringskorten för boende -->
+        <section class="user-accomodation" data-user-cards></section>
+        <!-- CARDS -->
+        <template data-user-template>
+          <article class="card">
+            <input type="checkbox" id="sidebar-active" />
+            <input type="checkbox" id="sidebar-active" />
+            <label for="sidebar-active" class="open-sidebar-button">
+              <span class="material-symbols-outlined like-icon">
+                favorite
+              </span>
+            </label>
+            <label id="overlay" for="sidebar-active"></label>
+
+            <!-- </nav> -->
+            <!-- POP UP:EN -->
+            <!-- <div class="row pop-up">
           <div class="box small-6 large-centered">
             <a href="#" class="close-button">&#10006;</a>
             <h3>lorem ipsum</h3>
@@ -163,30 +96,30 @@
             <a href="#" class="button">Learn More</a>
           </div>
         </div>  -->
-              
 
-              <a class="card-content" href="" data-link>
-                <figure>
-                  <div class="img-box">
-                    <img data-image />
+
+            <a class="card-content" href="" data-link>
+              <figure>
+                <div class="img-box">
+                  <img data-image />
+                </div>
+                <div class="location-box">
+                  <span class="material-symbols-outlined"> location_on </span>
+                  <p class="bodySMregular">Hyssna</p>
+                </div>
+                <div class="circleRating-box">
+                  <div class="circle-box">
+                    <div class="ellipse"></div>
+                    <div class="ellipse"></div>
+                    <div class="ellipse"></div>
+                    <div class="ellipse"></div>
+                    <div class="ellipse border"></div>
                   </div>
-                  <div class="location-box">
-                    <span class="material-symbols-outlined"> location_on </span>
-                    <p class="bodySMregular">Hyssna</p>
-                  </div>
-                  <div class="circleRating-box">
-                    <div class="circle-box">
-                      <div class="ellipse"></div>
-                      <div class="ellipse"></div>
-                      <div class="ellipse"></div>
-                      <div class="ellipse"></div>
-                      <div class="ellipse border"></div>
-                    </div>
-                    <p class="bodyMD-Bold mleft05 review-number">4.2</p>
-                  </div>
-                  <div class="details-container">
-                    
-                    <!--  <div class="circle-box">
+                  <p class="bodyMD-Bold mleft05 review-number">4.2</p>
+                </div>
+                <div class="details-container">
+
+                  <!--  <div class="circle-box">
                       <div class="ellipse"></div>
                       <div class="ellipse"></div>
                       <div class="ellipse"></div>
@@ -194,197 +127,182 @@
                       <div class="ellipse"></div>
                       <span class="review-numbers bodySMBold">4.1</span>
                     </div> -->
-                    <figcaption class="card-text">
-                      <h2 class="heading_4" data-header></h2>
-                      <!-- <p class="style-chips" data-cat></p> -->
-                      <p class="bodyXS" data-info></p>
-                    </figcaption>
-                    </figure>
-                    <section class="category-box" data-categorys></section>
-                    <!-- <div class="gradient"></div> -->
-                  </div>
-              </a>
-            </article>
-          </template>
-        </div>
-        <div class="overlay">
-          <div class="popup-box">
-            <div class="ckeckbox">
-              <!-- <div class="checkmark"></div> -->
-            </div>
-            <span>Sparad i Familjemappen!</span>
-          </div>
-        </div>
-        <div class="links-container">
-          <div class="rectangle"></div>
-          <div class="headingBox">
-            <h2 class="HeadingFont heading_4">
-              I vilka mappar vill du spara?
-            </h2>
-          </div>
-          <div class="mapp-box">
-            <!-- EN SEKTION -->
-            <section class="contentBtn-box">
-              <!-- <a href="#"> -->
-              <div class="imgContent-box">
-                <figure>
-                  <img
-                    src="/assets/img/MappPic_01.jpg"
-                    alt="map picture for the maps"
-                  />
-                </figure>
-                <div class="txtbox-popup">
-                  <p class="bodyMD">Mina favoriter</p>
-                  <p class="bodyXS">5st besöksmål</p>
-                </div>
-              </div>
-              <!-- RADIOKNAPPEN -->
-              <label class="radio-container">
-                <input type="checkbox" checked="checked" />
-                <span class="checkmark"></span>
-              </label>
-              <!-- </a> -->
-            </section>
-            <!-- EN SEKTION -->
-            <section class="contentBtn-box">
-              <!-- <a href="#"> -->
-              <div class="imgContent-box">
-                <figure>
-                  <img
-                    src="/assets/img/MappPic_02.jpg"
-                    alt="map picture for the maps"
-                  />
-                </figure>
-                <div class="txtbox-popup">
-                  <p class="bodyMD">Familjemappen</p>
-                  <p class="bodyXS">8st besöksmål</p>
-                </div>
+                  <figcaption class="card-text">
+                    <h2 class="heading_4" data-header></h2>
+                    <!-- <p class="style-chips" data-cat></p> -->
+                    <p class="bodyXS" data-info></p>
+                  </figcaption>
+              </figure>
+              <section class="category-box" data-categorys></section>
+              <!-- <div class="gradient"></div> -->
+      </div>
+      </a>
+      </article>
+      </template>
+  </div>
 
-                <div class="group-box groupBox-One">
-                  <p class="numberFont">5</p>
-                  <span
-                    class="material-symbols-outlined numberFont paddingLeft-icon"
-                  >
-                    group
-                  </span>
-                </div>
-              </div>
-              <!-- RADIOKNAPPEN -->
-              <label class="radio-container">
-                <input type="checkbox" checked="checked" />
-                <span class="checkmark"></span>
-              </label>
-              <!-- </a> -->
-            </section>
-            <!-- EN SEKTION -->
-            <section class="contentBtn-box">
-              <!-- <a href="#"> -->
-              <div class="imgContent-box">
-                <figure>
-                  <img
-                    src="/assets/img/MappPic_03.jpg"
-                    alt="map picture for the maps"
-                  />
-                </figure>
-                <div class="txtbox-popup">
-                  <p class="bodyMD">30-års present</p>
-                  <p class="bodyXS">3st besöksmål</p>
-                </div>
-              </div>
-              <!-- RADIOKNAPPEN -->
-              <label class="radio-container">
-                <input type="checkbox" checked="checked" />
-                <span class="checkmark"></span>
-              </label>
-              <!-- </a> -->
-            </section>
-            <!-- EN SEKTION -->
-            <section class="contentBtn-box">
-              <!-- <a href="#"> -->
-              <div class="imgContent-box">
-                <figure>
-                  <img
-                    src="/assets/img/MappPic_04.jpg"
-                    alt="map picture for the maps"
-                  />
-                </figure>
-                <div class="txtbox-popup">
-                  <p class="bodyMD">Tjejhelg</p>
-                  <p class="bodyXS">10st besöksmål</p>
-                </div>
-
-                <div class="group-box groupBox-Two">
-                  <p class="numberFont">8</p>
-                  <span
-                    class="material-symbols-outlined numberFont paddingLeft-icon"
-                  >
-                    group
-                  </span>
-                </div>
-              </div>
-              <!-- RADIOKNAPPEN -->
-              <label class="radio-container">
-                <input type="checkbox" checked="checked" />
-                <span class="checkmark"></span>
-              </label>
-              <!-- </a> -->
-            </section>
+  </main>
+  <div class="overlay">
+    <div class="popup-box">
+      <div class="ckeckbox">
+        <!-- <div class="checkmark"></div> -->
+      </div>
+      <span>Sparad i Familjemappen!</span>
+    </div>
+  </div>
+  <div class="links-container">
+    <div class="rectangle"></div>
+    <div class="headingBox">
+      <h2 class="HeadingFont heading_4">
+        I vilka mappar vill du spara?
+      </h2>
+    </div>
+    <div class="mapp-box">
+      <!-- EN SEKTION -->
+      <section class="contentBtn-box">
+        <!-- <a href="#"> -->
+        <div class="imgContent-box">
+          <figure>
+            <img src="/assets/img/MappPic_01.jpg" alt="map picture for the maps" />
+          </figure>
+          <div class="txtbox-popup">
+            <p class="bodyMD">Mina favoriter</p>
+            <p class="bodyXS">5st besöksmål</p>
           </div>
-          <div class="mapTextBox">
-            <div class="iconTextBox">
-              <span class="material-symbols-outlined"> add </span>
-              <p class="bodyMD">Skapa ny mapp</p>
-            </div>
-            <!-- <div class="iconTextBox">
+        </div>
+        <!-- RADIOKNAPPEN -->
+        <label class="radio-container">
+          <input type="checkbox" checked="checked" />
+          <span class="checkmark"></span>
+        </label>
+        <!-- </a> -->
+      </section>
+      <!-- EN SEKTION -->
+      <section class="contentBtn-box">
+        <!-- <a href="#"> -->
+        <div class="imgContent-box">
+          <figure>
+            <img src="/assets/img/MappPic_02.jpg" alt="map picture for the maps" />
+          </figure>
+          <div class="txtbox-popup">
+            <p class="bodyMD">Familjemappen</p>
+            <p class="bodyXS">8st besöksmål</p>
+          </div>
+
+          <div class="group-box groupBox-One">
+            <p class="numberFont">5</p>
+            <span class="material-symbols-outlined numberFont paddingLeft-icon">
+              group
+            </span>
+          </div>
+        </div>
+        <!-- RADIOKNAPPEN -->
+        <label class="radio-container">
+          <input type="checkbox" checked="checked" />
+          <span class="checkmark"></span>
+        </label>
+        <!-- </a> -->
+      </section>
+      <!-- EN SEKTION -->
+      <section class="contentBtn-box">
+        <!-- <a href="#"> -->
+        <div class="imgContent-box">
+          <figure>
+            <img src="/assets/img/MappPic_03.jpg" alt="map picture for the maps" />
+          </figure>
+          <div class="txtbox-popup">
+            <p class="bodyMD">30-års present</p>
+            <p class="bodyXS">3st besöksmål</p>
+          </div>
+        </div>
+        <!-- RADIOKNAPPEN -->
+        <label class="radio-container">
+          <input type="checkbox" checked="checked" />
+          <span class="checkmark"></span>
+        </label>
+        <!-- </a> -->
+      </section>
+      <!-- EN SEKTION -->
+      <section class="contentBtn-box">
+        <!-- <a href="#"> -->
+        <div class="imgContent-box">
+          <figure>
+            <img src="/assets/img/MappPic_04.jpg" alt="map picture for the maps" />
+          </figure>
+          <div class="txtbox-popup">
+            <p class="bodyMD">Tjejhelg</p>
+            <p class="bodyXS">10st besöksmål</p>
+          </div>
+
+          <div class="group-box groupBox-Two">
+            <p class="numberFont">8</p>
+            <span class="material-symbols-outlined numberFont paddingLeft-icon">
+              group
+            </span>
+          </div>
+        </div>
+        <!-- RADIOKNAPPEN -->
+        <label class="radio-container">
+          <input type="checkbox" checked="checked" />
+          <span class="checkmark"></span>
+        </label>
+        <!-- </a> -->
+      </section>
+    </div>
+    <div class="mapTextBox">
+      <div class="iconTextBox">
+        <span class="material-symbols-outlined"> add </span>
+        <p class="bodyMD">Skapa ny mapp</p>
+      </div>
+      <!-- <div class="iconTextBox">
           <span class="material-symbols-outlined"> close </span>
           <p class="bodyMD">Spara inte i en mapp</p>
         </div> -->
-          </div>
-          <label for="sidebar-active" class="close-sidebar-button">
-            <div class="btn-ok" id="okBtn">
-              <span>Klar</span>
-            </div>
-          </label>
-          <label for="sidebar-active" class="close-sidebar-button">
-            <div class="btn-ok outlined">
-              <span>Avbryt</span>
-            </div>
-          </label>
-        </div>
-      </main>
-      <!-- NAVIGATION -->
-      <nav class="bottom-menu-container">
-        <ul class="bottom-menu">
-          <!-- Aktivt state -->
-          <li class="menu-item">
-            <a class="menu-link" href="index.html">
-              <span class="material-symbols-outlined">home</span>
-              <p class="nav-p">Hem</p>
-            </a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link" href="filterPage.html">
-              <img class="nav-icons" src="/assets/icons/search-green.svg" />
-              <p class="active-text">Utforska</p>
-            </a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link" href="savedDestinations.html">
-              <span class="material-symbols-outlined"> favorite </span>
-              <p class="nav-p">Favoriter</p>
-            </a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link" href="profil.html">
-              <span class="material-symbols-outlined"> account_circle </span>
-              <p class="nav-p">Profil</p>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <script src="assets/js/popup.js"></script>
-      <script src="assets/js/filtering.js"></script>
-      <script src="assets/js/like.js"></script>
-    <!-- </div> -->
-  </body>
+    </div>
+    <label for="sidebar-active" class="close-sidebar-button">
+      <div class="btn-ok" id="okBtn">
+        <span>Klar</span>
+      </div>
+    </label>
+    <label for="sidebar-active" class="close-sidebar-button">
+      <div class="btn-ok outlined">
+        <span>Avbryt</span>
+      </div>
+    </label>
+  </div>
+  <!-- NAVIGATION -->
+  <nav class="bottom-menu-container">
+    <ul class="bottom-menu">
+      <!-- Aktivt state -->
+      <li class="menu-item">
+        <a class="menu-link" href="index.html">
+          <span class="material-symbols-outlined">home</span>
+          <p class="nav-p">Hem</p>
+        </a>
+      </li>
+      <li class="menu-item">
+        <a class="menu-link" href="filterPage.html">
+          <img class="nav-icons" src="/assets/icons/search-green.svg" />
+          <p class="active-text">Utforska</p>
+        </a>
+      </li>
+      <li class="menu-item">
+        <a class="menu-link" href="savedDestinations.html">
+          <span class="material-symbols-outlined"> favorite </span>
+          <p class="nav-p">Favoriter</p>
+        </a>
+      </li>
+      <li class="menu-item">
+        <a class="menu-link" href="profil.html">
+          <span class="material-symbols-outlined"> account_circle </span>
+          <p class="nav-p">Profil</p>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/filtering.js"></script>
+  <script src="assets/js/like.js"></script>
+  <!-- </div> -->
+</body>
 </html>
