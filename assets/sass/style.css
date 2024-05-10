@@ -1667,11 +1667,45 @@ nav svg {
 }
 .overlay .popup-box {
   position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   bottom: 6rem;
   left: 1rem;
   right: 1rem;
   background-color: white;
   padding: 1rem;
+}
+.overlay .popup-box .ckeckbox {
+  right: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #5e803c;
+  border-radius: 50%;
+  position: relative;
+}
+.overlay .popup-box .ckeckbox .checkmark {
+  position: absolute;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.overlay .popup-box .ckeckbox::before {
+  content: "";
+  position: absolute;
+  left: 40%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.overlay .popup-box span {
+  padding-left: 0.5rem;
 }
 
 .text-box h1 {
