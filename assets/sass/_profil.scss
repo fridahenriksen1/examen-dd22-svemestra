@@ -1,10 +1,9 @@
 .big-container {
   background: #ffffff;
-  //padding: 3.9rem 0 0rem 0;
+
   .main-saved {
-    // margin: 0 1rem 1.4rem 1rem;
     display: flex;
-    // flex-direction: column;
+
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -12,7 +11,7 @@
     .profilPic-textBox {
       margin: 0 0rem 1rem 0;
       display: flex;
-      // flex-direction: column;
+
       flex-wrap: wrap;
       align-items: center;
       width: fit-content;
@@ -61,7 +60,7 @@
 
         .chipsFilter {
           border-radius: 6.3rem;
-          //border: 0.1rem solid #485c55;
+
           display: flex;
           padding: 0.5rem 0.75rem;
           align-items: center;
@@ -76,7 +75,6 @@
           }
           .chipsColor-brown {
             color: #594e2a;
-            // border: 0.1rem solid #594e2a;
           }
           .chipsColor-green {
             color: #8b8f73;
@@ -100,7 +98,7 @@
         }
         .chipsFilter-Two {
           border-radius: 6.3rem;
-          //border: 0.1rem solid #485c55;
+
           display: flex;
           padding: 0.5rem 0.75rem;
           align-items: center;
@@ -109,7 +107,6 @@
           }
           p {
             padding-left: 0.1rem;
-            //color: #594e2a;
           }
           &:nth-child(1) {
             border: 0.1rem solid #594e2a;
@@ -121,7 +118,6 @@
           }
         }
       }
-      // border-bottom: 2px solid #0000001a;
     }
 
     //! text boxen för texten under bordern
