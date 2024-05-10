@@ -1,17 +1,6 @@
-// @import "/assets/sass/layout/nav";
-
 .big-container {
-  //margin-bottom: 7rem;
-  // .besksml-4 {
-  //   overflow-wrap: break-word;
-  //   font-family: "Roboto";
-  //   font-weight: 500;
-  //   font-size: 1rem;
-  //   color: rgba(43, 43, 43, 0.5);
-  // }
   .marginTxt-maps {
     margin-bottom: 1rem;
-    //margin-top: 0.62rem;
   }
   .mappar-text {
     overflow-wrap: break-word;
@@ -55,8 +44,6 @@
     flex-direction: row;
     justify-content: center;
     font-size: 1rem;
-    //width: 0.9rem;
-    //height: 0.9rem;
   }
 
   .search {
@@ -64,8 +51,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    // width: 1.5rem;
-    // height: 1.5rem;
+
     .search-img {
       width: 24px;
       height: 24px;
@@ -81,7 +67,6 @@
     height: 0.3rem;
   }
   .icon-size {
-    // font-size: 1.5rem;
   }
 
   //! Shared ikonerna (people icon)
