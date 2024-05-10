@@ -643,10 +643,8 @@ body {
 }
 
 .container-mobil {
-  margin: auto;
-  margin-top: 8rem;
-  width: 375px;
-  height: 667px;
+  width: 390px;
+  height: 884px;
   overflow: auto;
   position: relative;
   border-radius: 30px;
@@ -846,17 +844,22 @@ main {
 .links-container {
   width: 100%;
   padding: 1rem;
-  position: fixed; /* Fixed positioning */
+  visibility: hidden;
+  position: absolute; /* Fixed positioning */
   bottom: -100%; /* Initially hide off the bottom */
   left: 0; /* Start from the left */
+  right: 0;
   z-index: 10;
   background-color: var(--color-1);
   box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
   transition: 0.75s ease-out;
-  position: fixed;
   background: #fafafa;
   transition: 0.75s ease-out;
   border-radius: 0.625rem;
+}
+.links-container.show {
+  bottom: 0;
+  visibility: visible;
 }
 .links-container .contentBtn-box .imgContent-box {
   display: flex;
@@ -937,9 +940,6 @@ nav svg {
   .close-sidebar-button {
     display: block;
     margin-top: 0.5rem;
-  }
-  #sidebar-active:checked ~ .links-container {
-    bottom: 0; /* Slide up from the bottom */
   }
   #sidebar-active:checked ~ #overlay {
     height: 100%;
@@ -1656,7 +1656,7 @@ nav svg {
 }
 
 .overlay {
-  position: fixed;
+  position: absolute;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 9999;
@@ -1666,7 +1666,7 @@ nav svg {
   display: block;
 }
 .overlay .popup-box {
-  position: fixed;
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;

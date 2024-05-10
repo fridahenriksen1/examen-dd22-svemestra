@@ -35,16 +35,22 @@ function createCard(destination) {
     const link = card.querySelector('[data-link]');
     const info = card.querySelector('[data-info]');
     const catContainer = card.querySelector('[data-categorys]');
+    
     // const  likeIcons = document.querySelectorAll('.like-icon');
     const  likeButton = card.querySelector('.like-icon');
     likeButton.addEventListener('click',() => {
+        const mobilCon = document.querySelector(".container-mobil");
         const isLiked = likeButton.getAttribute('data-liked') === 'true';
         const fillCon = document.querySelector('.links-container');
         const klarbtn = fillCon.querySelector('#okBtn');
         console.log(fillCon);
         console.log('klick');
         const popUp = document.querySelector('.overlay');
+        mobilCon.style.overflowY = "hidden"
+        fillCon.classList.toggle("show");
         klarbtn.addEventListener('click' , () =>{
+            fillCon.classList.remove("show");
+            mobilCon.style.overflowY = ""
             setTimeout(() => {
                 popUp.classList.add('show');
             }, 500);

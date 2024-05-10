@@ -1,0 +1,1 @@
+const likeContainer = document.querySelector(".links-container")
