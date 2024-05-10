@@ -3,10 +3,6 @@
 //Visa alla style
 // Denna jobbar jag på att sortera upp vart den ska vara, lite av den finns i layout redan
 .show-all-container {
-  // flex: 0 0 100%;
-  // display: flex;
-  // justify-content: center;
-
   .show-all-link {
     display: flex;
     align-items: center;
@@ -54,7 +50,6 @@
 
 .btn-ok {
   display: block;
-  // min-width: 17.5rem;
   width: 100%;
   padding: 0.75rem 2rem;
   justify-content: center;

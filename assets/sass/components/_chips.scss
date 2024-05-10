@@ -26,33 +26,6 @@
   }
 }
 
-// .chip {
-//   + label {
-//     display: inline-block;
-//     background-color: transparent;
-//     border-radius: 5rem;
-//     padding: 0.6rem 1.5rem;
-//     // padding: 0.75rem 1.25rem;
-//     margin-bottom: 0.4rem;
-//     margin-right: 0.2rem;
-//     // margin: 0.5rem;
-//     color: #141414;
-//     font-size: 1rem;
-//     user-select: none;
-//     cursor: pointer;
-//     border: 1px solid #141414;
-//   }
-
-//   &[type="checkbox"] {
-//     display: none;
-
-//     &:checked {
-//       + label {
-//         background-color: yellow;
-//       }
-//     }
-//   }
-// }
 .categori-txt {
   margin-top: 1rem;
   font-weight: 800;
@@ -62,11 +35,8 @@
   display: flex;
   overflow-x: auto;
 
-  // overflow-x: hidden;
   .chip {
-    +label {
-      //display: inline-block;
-      // align-items: flex-start;
+    + label {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -90,8 +60,7 @@
       display: none;
 
       &:checked {
-        +label {
-          // background-color: yellow;
+        + label {
           font-family: "SwedenSansBold", arial, sans-serif;
           color: $skogsgron600;
         }
@@ -100,28 +69,6 @@
   }
 }
 
-// !!jag provar att använda svg ikoner i html istället för backgroundimage
-// $background-images: (
-//   categoryOne: url("/assets/icons/iconCabin.svg"),
-//   categoryTwo: url("/assets/icons/iconCabin.svg"),
-//   categoryThree: url("/assets/icons/iconCabin.svg"),
-//   categoryFour: url("/assets/icons/iconCabin.svg"),
-//   categoryFive: url("/assets/icons/iconCabin.svg"),
-//   categorySix: url("/assets/icons/iconCabin.svg"),
-//   categorySeven: url("/assets/icons/iconCabin.svg"),
-//   // Add more categories and corresponding images as needed
-// );
-
-// Loop through each category ID and apply the background image
-//   @each $id, $image in $background-images {
-//     ##{$id} {
-//       + label {
-//         background-image: $image; // Set background image for each label
-//         background-repeat: no-repeat;
-//       }
-//     }
-//   }
-// }
 /* Hide scrollbar for Chrome, Safari and Opera */
 .m1b::-webkit-scrollbar {
   display: none;

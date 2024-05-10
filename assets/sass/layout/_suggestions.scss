@@ -11,25 +11,19 @@
   }
   //! Boxen runt korten för suggestions
   .suggestionCard-box {
-    // margin: auto;
     display: flex;
     flex-wrap: wrap;
-    //flex: 0 0 100%;
-
     gap: 1rem;
     justify-content: center;
 
     //! STORA KORTET med margin-top
     .card-large {
       flex: 0 0 328px;
-      // flex: 0 0 48%;
       //! Boxen för bilden och hjärtikonen
       .img-heart-box {
         background: #d9d9d9;
         position: relative;
         margin-bottom: 0.8rem;
-
-        // min-height: 17.5rem;
         margin: auto;
       }
       .image {
