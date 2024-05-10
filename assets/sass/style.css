@@ -1675,6 +1675,7 @@ nav svg {
   right: 1rem;
   background-color: white;
   padding: 1rem;
+  border-radius: 0.375rem;
 }
 .overlay .popup-box .ckeckbox {
   right: 0;
