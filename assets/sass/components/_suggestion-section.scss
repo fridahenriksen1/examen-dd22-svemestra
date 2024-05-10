@@ -1,32 +1,22 @@
 .suggestion-section {
-    // margin-bottom: 8rem;
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 
-    .suggestion-cards {}
+  .suggestion-cards {
+  }
 
-    .inspoTxtBox {
-
-        // margin-left: 0.5rem;
-        //! TYpografia som ska flyttas till typografi partials
-        h1 {
-            font-size: 2rem;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 110%;
-        }
-
-        h2 {
-            // color: #514e4e;
-            // font-size: 1.5rem;
-            // font-style: normal;
-            // font-weight: 700;
-            // line-height: normal;
-            // margin-bottom: 1rem;
-            // margin-top: 3rem;
-            margin-left: 0;
-            margin-bottom: 1rem;
-        }
+  .inspoTxtBox {
+    //! TYpografia som ska flyttas till typografi partials
+    h1 {
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 110%;
     }
 
+    h2 {
+      margin-left: 0;
+      margin-bottom: 1rem;
+    }
+  }
 }

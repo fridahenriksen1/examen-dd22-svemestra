@@ -41,13 +41,11 @@
   }
 }
 
-
 .group-box {
   display: flex;
   backdrop-filter: blur(10px);
   background-color: #979797;
   align-items: center;
-  //border-radius: 624.9375rem;
   border-radius: 1rem;
   height: 24px;
   padding: 0.05rem 0.5rem;
@@ -102,46 +100,14 @@ nav svg {
   display: none;
 }
 
-// //!HÄR
-// .like-overlay {
-//   display: none;
-// }
-
-// .like-overlay.visible {
-//   //! Visa likeoverlay när det finns en filled hjärtikon */
-//   display: block;
-// }
-// .like-icon.filled + .like-overlay {
-//   display: block;
-// }
 @media (min-width: 30px) {
-  // .links-container {
-  //   flex-direction: column;
-  //   align-items: center; /* Center horizontally */
-  //   justify-content: flex-end; /* Start at the bottom */
-  //   position: fixed;
-  //   bottom: -100%; /* Initially hide off the bottom */
-  //   left: 0; /* Start from the left */
-  //   z-index: 10;
-  //   width: 100%;
-  //   // background-color: var(--color-1);
-  //   // height: 86vh;
-  //   background: #fafafa;
-  //   // box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
-  //   transition: 0.75s ease-out;
-  //   border-radius: 0.625rem;
-  //   @media (min-width: 380px) {
-  //     // height: 80vh;
-  //   }
-  // }
-
   .open-sidebar-button,
   .close-sidebar-button {
     display: block;
     margin-top: 0.5rem;
   }
 
-  #sidebar-active:checked~#overlay {
+  #sidebar-active:checked ~ #overlay {
     height: 100%;
     width: 100%;
     position: fixed;
@@ -167,9 +133,6 @@ nav svg {
   }
 
   .headingBox {
-    // display: flex;
-    // justify-content: left;
-    // width: 320px;
     margin: 2rem 0rem;
   }
 
@@ -198,7 +161,6 @@ nav svg {
     position: relative;
     padding-left: 35px;
 
-    //margin-top: 3.5rem;
     margin-bottom: 12px;
     cursor: pointer;
     font-size: 22px;
@@ -229,12 +191,12 @@ nav svg {
   }
 
   /* On mouse-over, add a grey background color */
-  .radio-container:hover input~.checkmark {
+  .radio-container:hover input ~ .checkmark {
     background-color: #ccc;
   }
 
   /* When the radio button is checked, add a blue background */
-  .radio-container input:checked~.checkmark {
+  .radio-container input:checked ~ .checkmark {
     background-color: #485c55;
   }
 
@@ -246,7 +208,7 @@ nav svg {
   }
 
   /* Show the indicator (dot/circle) when checked */
-  .radio-container input:checked~.checkmark:after {
+  .radio-container input:checked ~ .checkmark:after {
     display: block;
   }
 

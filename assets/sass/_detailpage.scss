@@ -37,7 +37,7 @@
       color: $granskott600;
       .season-box {
         display: flex;
-        // flex: 0 0 60%;
+
         gap: 0.5rem;
         color: $granskott600;
         justify-content: space-between;
@@ -94,29 +94,21 @@
     // !! här testar jag att skapa en ny flexbox box för bilderna
     .flexbox-boenden {
       display: flex;
-      // flex-wrap: wrap;
+
       gap: 0.125rem;
       .boxOne {
-        // flex: 0 0 50%;
-        // flex: 0 0 calc(50% - 0rem);
-        // min-height: 302px;
         position: relative;
       }
       .boxTwo {
-        // två divar har boxTwo
-        // flex: 0 0 calc(50% - 0rem);
-        // flex: 1;
         gap: 0.125rem;
-        // min-height: 302px;
+
         display: flex;
         flex-wrap: wrap;
         .box50-50 {
-          // display: flex;
           flex: 0 0 calc(50% - 0.04rem);
-          // flex: 1 0 auto;
+
           position: relative;
           &:nth-child(1) {
-            // margin-bottom: 0.4rem;
           }
         }
       }
@@ -133,38 +125,6 @@
         color: white;
       }
     }
-
-    // .accoPic-box {
-    //   margin-top: 1.25rem;
-    //   display: flex;
-    //   gap: 0.13rem;
-    //   justify-content: center;
-    //   .highPic-box {
-    //     width: 10.125rem;
-    //     //   height: 18.875rem;
-    //     height: 302px;
-    //     position: relative;
-
-    //     img {
-    //       height: 100%;
-    //       background-size: contain; /* Anpassa storleken utan att sträcka ut */
-    //       background-position: center center; /* Placera bilden i mitten */
-    //       background-repeat: no-repeat;
-    //     }
-    //   }
-    //   .twoPic-box {
-    //     margin-bottom: 0.13rem;
-    //     width: 10.125rem;
-    //     //   height: 9.375rem;
-    //     height: 150px;
-    //     img {
-    //       height: 100%;
-    //     }
-    //     .mt-accoPic {
-    //       margin-top: 0.13rem;
-    //     }
-    //   }
-    // }
   }
   .activitiesSection {
     color: $tradstam600;
@@ -278,9 +238,6 @@
   margin-left: 0.75rem;
 }
 
-//align-items: center
-//! Fick flytta ut dessa från nestlandet, fungerade bara när jag tog ut det här
-
 .ml {
   margin-left: 1rem;
 }
@@ -308,7 +265,7 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
-//! Denna koden används dubbelt här och längre upp, detta kan man nog göra bättre/återanvända
+
 .circleRating-box {
   display: flex;
   align-items: center;
