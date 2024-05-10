@@ -16,7 +16,7 @@
     "info": "Arctic Bath är ett flytande hotell som ligger vid Lule älv i den lilla byn Harads i svenska Lappland.",
     "imageURL": "img/articBath.jpg",
     "price": "Premium",
-    "htmlUrl": "assets/accommodation/sagoHotell.html"
+    "htmlUrl": "assets/accommodation/arctic.html"
   },
   {
     "id": 3,
@@ -36,6 +36,6 @@
     "info": "Erikson Cottage erbjuder en unik upplevelse med boende i glashus, välj om ni vill bo i den djupa skogen eller med utsikt över sjön. Välkomna!",
     "imageURL": "img/eriksonCottage.jpg",
     "price": "Budget",
-    "htmlUrl": "assets/accommodation/sagoHotell.html"
+    "htmlUrl": "assets/accommodation/erikson.html"
   }
 ]
