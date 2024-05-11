@@ -28,7 +28,7 @@
     .details-container {
       .material-symbols-outlined {
         width: 16px;
-        height: 10;
+        height: 10px;
       }
       p {
         line-height: 130%;
@@ -96,13 +96,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
   display: flex;
-  top: 0.5rem;
-  right: 0rem;
+  top: 1rem;
+  right: 1rem;
   border-radius: 6.25rem;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(5.89px);
   /* Added CSS from the given style tag */
   &[data-liked="true"] {
