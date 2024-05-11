@@ -7,7 +7,8 @@
     "info": "Örnvikens semesterparadis ligger ute i skärgården strax utanför Söderköping. Här finner du vår fantastiska Glamping, med komfort och närhet till naturen.",
     "imageURL": "img/ornvikenGlamping.jpg",
     "price": "Medel",
-    "htmlUrl": "assets/accommodation/ornviken.html"
+    "htmlUrl": "assets/accommodation/ornviken.html",
+    "location": "Söderköping"
   },
   {
     "id": 2,
@@ -16,7 +17,8 @@
     "info": "Arctic Bath är ett flytande hotell som ligger vid Lule älv i den lilla byn Harads i svenska Lappland.",
     "imageURL": "img/articBath.jpg",
     "price": "Premium",
-    "htmlUrl": "assets/accommodation/arctic.html"
+    "htmlUrl": "assets/accommodation/arctic.html",
+    "location": "Harads"
   },
   {
     "id": 3,
@@ -25,7 +27,8 @@
     "info": "Hyssna Forest Resort är en fridfull oas belägen i den vackra naturen i Västsverige. Resorten är en perfekt reträtt för dem som söker en paus från stadens liv och ett tillfälle att återansluta med naturen.",
     "imageURL": "img/HyssnaDetailPic.jpg",
     "price": "Budget",
-    "htmlUrl": "assets/accommodation/hyssna.html"
+    "htmlUrl": "assets/accommodation/hyssna.html",
+    "location": "Hyssna"
   },
 
 
@@ -36,6 +39,7 @@
     "info": "Erikson Cottage erbjuder en unik upplevelse med boende i glashus, välj om ni vill bo i den djupa skogen eller med utsikt över sjön. Välkomna!",
     "imageURL": "img/eriksonCottage.jpg",
     "price": "Budget",
-    "htmlUrl": "assets/accommodation/erikson.html"
+    "htmlUrl": "assets/accommodation/erikson.html",
+    "location": "Ljungsarp"
   }
 ]

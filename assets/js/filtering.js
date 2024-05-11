@@ -34,6 +34,7 @@ function createCard(destination) {
     const img = card.querySelector('[data-image]');
     const link = card.querySelector('[data-link]');
     const info = card.querySelector('[data-info]');
+    const location = card.querySelector('[data-location]');
     const catContainer = card.querySelector('[data-categorys]');
 
     const likeButton = card.querySelector('.like-icon');
@@ -64,19 +65,6 @@ function createCard(destination) {
 
     })
 
-    //     likeIcons.forEach(icon => {
-    //     icon.addEventListener('click', () => {
-    //         const isLiked = icon.getAttribute('data-liked') === 'true';
-    //         console.log('klick');
-    //         if (isLiked) {
-    //             icon.src = '/assets/icons/heart-like-large-card.svg';
-    //             icon.setAttribute('data-liked', 'false');
-    //         } else {
-    //             icon.src = '/assets/icons/heartIconFilled.svg';
-    //             icon.setAttribute('data-liked', 'true');
-    //         }
-    //     });
-    // });
 
     destination.categories.forEach(cat => {
         const newSpan = document.createElement('span');
@@ -90,6 +78,7 @@ function createCard(destination) {
     img.setAttribute('src', `assets/${destination.imageURL}`);
     header.textContent = destination.name;
     info.textContent = destination.info;
+    location.textContent = destination.location;
 
     dataUserCards.append(card);
 }
@@ -104,9 +93,7 @@ function render() {
         filteredRecipies = filteredRecipies.filter(r => filters.categories.every(f => r.categories.includes(f)));
 
     }
-    // if (filters.seasons.length > 0) {
-    //     filteredRecipies = filteredRecipies.filter(r => filters.seasons.every(f => r.seasons.includes(f)));
-    // }
+   
     dataUserCards.innerHTML = '';
     filteredRecipies.forEach(recept => createCard(recept));
 }
@@ -117,13 +104,7 @@ catyChips.forEach(chip => {
         render();
     });
 });
-// seasonChips.forEach(chip => {
-//     chip.addEventListener('change', (e) => {
-//         const currentSeason = e.target.dataset.season;
-//         toggleItemArray(currentSeason, filters.seasons);
-//         render();
-//     });
-// });
+
 
 function toggleItemArray(item, array) {
     //Om det finns i arrray ta bort
