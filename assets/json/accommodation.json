@@ -8,7 +8,8 @@
     "imageURL": "img/ornvikenGlamping.jpg",
     "price": "Medel",
     "htmlUrl": "assets/accommodation/ornviken.html",
-    "location": "Söderköping"
+    "location": "Söderköping",
+    "rating": "4.1"
   },
   {
     "id": 2,
@@ -18,7 +19,8 @@
     "imageURL": "img/articBath.jpg",
     "price": "Premium",
     "htmlUrl": "assets/accommodation/arctic.html",
-    "location": "Harads"
+    "location": "Harads",
+    "rating": "4.8"
   },
   {
     "id": 3,
@@ -28,7 +30,8 @@
     "imageURL": "img/HyssnaDetailPic.jpg",
     "price": "Budget",
     "htmlUrl": "assets/accommodation/hyssna.html",
-    "location": "Hyssna"
+    "location": "Hyssna",
+    "rating": "5.0"
   },
 
 
@@ -40,6 +43,7 @@
     "imageURL": "img/eriksonCottage.jpg",
     "price": "Budget",
     "htmlUrl": "assets/accommodation/erikson.html",
-    "location": "Ljungsarp"
+    "location": "Ljungsarp",
+    "rating": "3.9"
   }
 ]

@@ -35,7 +35,68 @@ function createCard(destination) {
     const link = card.querySelector('[data-link]');
     const info = card.querySelector('[data-info]');
     const location = card.querySelector('[data-location]');
+    const rating = card.querySelector('[data-rating]');
     const catContainer = card.querySelector('[data-categorys]');
+    // destination.categories.forEach(cat => {
+    //     const newSpan = document.createElement('span');
+    //     newSpan.textContent = cat;
+      
+        
+
+    //     switch (cat) {
+    //         case 'Glashus':
+    //             newSpan.innerHTML = '<img class="category-icon" src="/assets/icons/glashus.svg" alt="Glashus Icon">';
+    //             newSpan.classList.add('glashus-category');
+    //             break;
+    //         case 'Trädhus':
+    //             newSpan.innerHTML = '<img class="category-icon" src="/assets/icons/trahus.svg" alt="Trädhus Icon">';
+    //             newSpan.classList.add('trädhus-category');
+    //             break;
+    //         case 'Glamping':
+    //             newSpan.innerHTML = '<img class="category-icon" src="/assets/icons/trahus.svg" alt="Trädhus Icon">';
+    //             newSpan.classList.add('trädhus-category');
+    //             break;
+    //         // Fortsätt med andra kategorier...
+    //         default:
+    //             newSpan.classList.add('default-category');
+    //             break;
+    //     }
+
+    //     catContainer.append(newSpan);
+    // });
+    //!Här jag testar med chipsen
+    // destination.categories.forEach(cat => {
+    //     const categorySpan = document.createElement('span');
+    //     categorySpan.textContent = cat;
+    
+    //     // // Lägg till klass baserat på kategorinamnet
+    //     // categorySpan.classList.add('category-text', `${cat.toLowerCase()}-category`);
+    
+    //     const iconSpan = document.createElement('span');
+    //    // iconSpan.classList.add('material-icons', 'category-icon');
+    //     iconSpan.classList.add('material-symbols-outlined"');
+    
+    //     switch (cat) {
+    //         case 'Glashus':
+    //             iconSpan.textContent = 'home';
+    //             break;
+    //         case 'Trädhus':
+    //             iconSpan.textContent = 'tree';
+    //             break;
+    //         case 'Glamping':
+    //             iconSpan.textContent = 'camp';
+    //             break;
+    //         // Fortsätt med andra kategorier...
+    //         default:
+    //             iconSpan.textContent = 'category';
+    //             break;
+    //     }
+    
+    //     catContainer.appendChild(categorySpan);
+    //     catContainer.appendChild(iconSpan);
+    // });
+    
+    
 
     const likeButton = card.querySelector('.like-icon');
     likeButton.addEventListener('click', () => {
@@ -79,6 +140,7 @@ function createCard(destination) {
     header.textContent = destination.name;
     info.textContent = destination.info;
     location.textContent = destination.location;
+    rating.textContent = destination.rating;
 
     dataUserCards.append(card);
 }
