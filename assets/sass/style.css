@@ -1365,6 +1365,7 @@ nav svg {
   background: rgba(0, 0, 0, 0.4);
   -webkit-backdrop-filter: blur(5.89px);
           backdrop-filter: blur(5.89px);
+  font-weight: 300;
   /* Added CSS from the given style tag */
 }
 .like-icon[data-liked=true] {
