@@ -18,6 +18,14 @@
     display: flex;
     justify-content: center;
 
+    .contentCard-box {
+      padding: 0.75rem;
+    }
+    .category-box {
+      padding-left: 0.75rem;
+      padding-bottom: 1.25rem;
+    }
+
     .card-content {
       display: flex;
       flex-direction: column;
