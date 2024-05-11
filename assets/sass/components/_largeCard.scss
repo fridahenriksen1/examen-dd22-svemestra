@@ -104,6 +104,7 @@
   border-radius: 6.25rem;
   background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(5.89px);
+  font-weight: 300;
   /* Added CSS from the given style tag */
   &[data-liked="true"] {
     font-variation-settings: "FILL" 1;
