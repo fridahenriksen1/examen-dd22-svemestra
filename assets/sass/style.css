@@ -1294,6 +1294,19 @@ nav svg {
 .user-accomodation .card .category-box {
   padding-left: 0.75rem;
   padding-bottom: 1.25rem;
+  display: flex;
+}
+.user-accomodation .card .category-box .category-icon {
+  width: 16px;
+  height: 16px;
+  white-space: nowrap;
+}
+.user-accomodation .card .category-box .default-category {
+  white-space: nowrap;
+  color: #70735b;
+}
+.user-accomodation .card .glashus-category {
+  color: #70735b;
 }
 .user-accomodation .card .card-content {
   display: flex;
@@ -2137,7 +2150,8 @@ nav svg {
 .accommodation .accommodationSection .flexbox-boenden .text-on {
   z-index: 9;
   position: absolute;
-  transform: translate(50%, -140%);
+  bottom: 1rem;
+  left: 1rem;
   background-color: rgba(255, 255, 255, 0.7);
   padding: 8px;
   margin: 0;
