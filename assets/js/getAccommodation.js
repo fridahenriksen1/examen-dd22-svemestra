@@ -23,6 +23,8 @@ fetch('../json/accommodation.json')
             heading.textContent = item.name;
             const info = destination.querySelector('[data-info]');
             info.textContent = item.info;
+            const location = destination.querySelector('[data-location]');
+            location.textContent = item.location;
             //Gör en ny variabel  för varje html som ska ha data
             const img = destination.querySelector('[data-img]');
             img.setAttribute('src', `../${item.imageURL}`);
