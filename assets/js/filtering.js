@@ -35,6 +35,7 @@ function createCard(destination) {
     const link = card.querySelector('[data-link]');
     const info = card.querySelector('[data-info]');
     const location = card.querySelector('[data-location]');
+    const rating = card.querySelector('[data-rating]');
     const catContainer = card.querySelector('[data-categorys]');
 
     const likeButton = card.querySelector('.like-icon');
@@ -79,6 +80,7 @@ function createCard(destination) {
     header.textContent = destination.name;
     info.textContent = destination.info;
     location.textContent = destination.location;
+    rating.textContent = destination.rating;
 
     dataUserCards.append(card);
 }
