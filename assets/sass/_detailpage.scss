@@ -94,21 +94,18 @@
     // !! här testar jag att skapa en ny flexbox box för bilderna
     .flexbox-boenden {
       display: flex;
-
       gap: 0.125rem;
       .boxOne {
         position: relative;
       }
       .boxTwo {
         gap: 0.125rem;
-
-        display: flex;
         flex-wrap: wrap;
         .box50-50 {
           flex: 0 0 calc(50% - 0.04rem);
-
           position: relative;
-          &:nth-child(1) {
+          &:nth-child(2) {
+            padding-top: 0.125rem;
           }
         }
       }

@@ -1291,7 +1291,7 @@ nav svg {
 }
 .user-accomodation .card .details-container .material-symbols-outlined {
   width: 16px;
-  height: 10;
+  height: 10px;
 }
 .user-accomodation .card .details-container p {
   line-height: 130%;
@@ -1356,13 +1356,13 @@ nav svg {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
   display: flex;
-  top: 0.5rem;
-  right: 0rem;
+  top: 1rem;
+  right: 1rem;
   border-radius: 6.25rem;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(0, 0, 0, 0.4);
   -webkit-backdrop-filter: blur(5.89px);
           backdrop-filter: blur(5.89px);
   /* Added CSS from the given style tag */
@@ -2107,12 +2107,14 @@ nav svg {
 }
 .accommodation .accommodationSection .flexbox-boenden .boxTwo {
   gap: 0.125rem;
-  display: flex;
   flex-wrap: wrap;
 }
 .accommodation .accommodationSection .flexbox-boenden .boxTwo .box50-50 {
   flex: 0 0 calc(50% - 0.04rem);
   position: relative;
+}
+.accommodation .accommodationSection .flexbox-boenden .boxTwo .box50-50:nth-child(2) {
+  padding-top: 0.125rem;
 }
 .accommodation .accommodationSection .flexbox-boenden .text-on {
   z-index: 9;
