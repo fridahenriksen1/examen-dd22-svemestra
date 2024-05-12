@@ -1385,6 +1385,30 @@ nav svg {
   height: 16px;
   padding-right: 0.22rem;
 }
+.user-accomodation .style-chips.glashus {
+  color: #70735b;
+  border: 1px solid #70735b;
+}
+.user-accomodation .style-chips.tradhus {
+  color: #594e2a;
+  border: 1px solid #594e2a;
+}
+.user-accomodation .style-chips.glamping {
+  color: #594e2a;
+  border: 1px solid #594e2a;
+}
+.user-accomodation .style-chips.camping {
+  color: #333a4c;
+  border: 1px solid #333a4c;
+}
+.user-accomodation .style-chips.naravatten {
+  color: #70735b;
+  border: 1px solid #70735b;
+}
+.user-accomodation .style-chips.romantiskt {
+  color: #485c55;
+  border: 1px solid #485c55;
+}
 
 .like-icon {
   color: white;
