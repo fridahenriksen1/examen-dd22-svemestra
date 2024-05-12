@@ -126,63 +126,9 @@ function createCard(destination) {
 
     })
 
-//!DENNA
-    // destination.categories.forEach(cat => {
-    //     const newSpan = document.createElement('span');
-      
-    //     newSpan.textContent = cat;
-        
-    //     newSpan.classList.add('style-chips');
-    //     catContainer.append(newSpan);
-    // });
-    
-    
-    // destination.categories.forEach(cat => {
-    //     const newSpan = document.createElement('span');
-    
-    //     // Skapa ett <i> element för ikonen från Google Material Icons
-    //     const icon = document.createElement('span');
-    //     // Lägg till klassen för ikonen (du behöver ändra 'material-icons' beroende på din ikonstil)
-    //     icon.classList.add('material-icons');
-    //     // Lägg till den specifika ikonens namn (t.ex. om det är en hjärtikon, skriv 'favorite')
-    //     icon.textContent = 'favorite'; // Exempel: ikonen 'favorite'
-    
-    //     // Skapa en textnod för kategorinamnet
-    //     const categoryName = document.createTextNode(cat);
-    
-    //     // Lägg till både ikon och kategorinamn i det nya span-elementet
-    //     newSpan.appendChild(icon);
-    //     newSpan.appendChild(categoryName);
-    
-    //     // Lägg till klassen för stil på ditt span-element
-    //     newSpan.classList.add('style-chips');
-    
-    //     // Lägg till det nya span-elementet till din container (antagligen catContainer i ditt fall)
-    //     catContainer.append(newSpan);
-    // });
 
-    // destination.categories.forEach(cat => {
-    //     const newSpan = document.createElement('span');
-    
-    //     // Skapa ett <img> element för ikonen från Google Material Icons
-    //     const icon = document.createElement('img');
-    //     // Ange källan till ikonen från Google Material Icons
-    //     icon.src = '/assets/icons/trahus.svg'; // Exempel: URL till din ikon
-    
-    //     // Skapa en textnod för kategorinamnet
-    //     const categoryName = document.createTextNode(cat);
-    
-    //     // Lägg till både ikon och kategorinamn i det nya span-elementet
-    //     newSpan.appendChild(icon);
-    //     newSpan.appendChild(categoryName);
-    
-    //     // Lägg till klassen för stil på ditt span-element
-    //     newSpan.classList.add('style-chips');
-    
-    //     // Lägg till det nya span-elementet till din container (antagligen catContainer i ditt fall)
-    //     catContainer.append(newSpan);
-    // });
-
+   //!Här kommer chipsen med kategori och bilder/ikoner ut
+   
     destination.categories.forEach(cat => {
         const newSpan = document.createElement('span');
         
@@ -193,22 +139,28 @@ function createCard(destination) {
         // Använd en switch-sats för att välja ikonen baserat på kategorin
         switch(cat) {
             case 'Glashus':
-                iconPath = '/assets/icons/glashus.svg';
+                iconPath = '/assets/icons/glashus_01.svg';
+                newSpan.classList.add('glashus'); // Lägg till klassen för specifik färg
                 break;
             case 'Trädhus':
-                iconPath = '/assets/icons/trahus.svg';
+                iconPath = '/assets/icons/trahus_01.svg';
+                newSpan.classList.add('tradhus'); // Lägg till klassen för specifik färg
                 break;
             case 'Glamping':
-                iconPath = '/assets/icons/glamping.svg';
+                iconPath = '/assets/icons/glamping_01.svg';
+                newSpan.classList.add('glamping'); // Lägg till klassen för specifik färg
                 break;
             case 'Camping':
-                iconPath = '/assets/icons/Camping.svg';
+                iconPath = '/assets/icons/Camping_01.svg';
+                newSpan.classList.add('camping'); // Lägg till klassen för specifik färg
                 break;
             case 'Nära vatten':
-                iconPath = '/assets/icons/naravatten.svg';
+                iconPath = '/assets/icons/naravatten_01.svg';
+                newSpan.classList.add('naravatten'); // Lägg till klassen för specifik färg
                 break;
             case 'Romatiskt':
-                iconPath = '/assets/icons/romantiskt.svg';
+                iconPath = '/assets/icons/romantiskt_01.svg';
+                newSpan.classList.add('romantiskt'); // Lägg till klassen för specifik färg
                 break;
             default:
                 iconPath = ''; // Om ingen matchning hittas, lämna sökvägen tom
@@ -231,9 +183,13 @@ function createCard(destination) {
         catContainer.append(newSpan);
     });
     
-    
-    
 
+
+
+    
+    
+    
+    //! Rating bollarna i kortet 
     link.setAttribute('href', destination.htmlUrl);
     header.textContent = destination.name;
     img.setAttribute('src', `assets/${destination.imageURL}`);
@@ -242,8 +198,7 @@ function createCard(destination) {
     location.textContent = destination.location;
     rating.textContent = destination.rating;
 
-    // const circleBox = card.querySelector('div.circle-box');
-    // circleBox.innerHTML = `<div class`
+    
     const circleBox = card.querySelector('div.circle-box');
     circleBox.innerHTML = `<div class="ellipse"></div>`.repeat(Math.floor(destination.rating)) 
         + `<div class="ellipse border"></div>`.repeat(5 - Math.floor(destination.rating));
@@ -286,10 +241,10 @@ function toggleItemArray(item, array) {
         array.push(item);
     }
 }
-function createChip(container, iconName, text) {        //         Create the elements const 
-    chip = document.createElement('div'); chip.className = 'style-chips'; const icon = document.createElement('img'); icon.className = 'icon-chips-img'; icon.src = `/assets/icons/${iconName}`; icon.alt = 'altIcon'; const spanNode = document.createElement('span'); spanNode.innerText = text // Append elements to the chip chip.appendChild(icon); 
-    chip.appendChild(spanNode); // Append the chip to the container 
-    container.appendChild(chip); } 
+// function createChip(container, iconName, text) {        //         Create the elements const 
+//     chip = document.createElement('div'); chip.className = 'style-chips'; const icon = document.createElement('img'); icon.className = 'icon-chips-img'; icon.src = `/assets/icons/${iconName}`; icon.alt = 'altIcon'; const spanNode = document.createElement('span'); spanNode.innerText = text // Append elements to the chip chip.appendChild(icon); 
+//     chip.appendChild(spanNode); // Append the chip to the container 
+//     container.appendChild(chip); } 
 
     // function createChipTemplate(iconName, text) {
     //     return `
@@ -300,26 +255,18 @@ function createChip(container, iconName, text) {        //         Create the el
     //     `;
     // }
 
-    //!HÄR
-    function createChipTemplate(iconName, text) {
-        return `
-            <div class="chip">
-                <img src="/assets/icons/${iconName}" alt="Icon" />
-                ${text}
-                
-            </div>
-        `;
-    }
-   
-
-
-
-    // function Createchiptemplate('trahus.svg', 'trähus' ) {
+    // //!HÄR
+    // function createChipTemplate(iconName, text) {
     //     return `
     //         <div class="chip">
-    //             <img src="/assets/icons/${'trahus.svg'}" alt="Icon" />
-    //             ${'trähus' }
+    //             <img src="/assets/icons/${iconName}" alt="Icon" />
+    //             ${text}
                 
     //         </div>
     //     `;
     // }
+   
+
+
+
+   
