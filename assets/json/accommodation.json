@@ -56,5 +56,16 @@
     "htmlUrl": "assets/accommodation/trakt.html",
     "location": "Holsbybrunn",
     "rating": "4.1"
+  },
+  {
+    "id": 6,
+    "name": "Aurora Tepee Camp",
+    "categories": ["Glamping", "Romatiskt"],
+    "info": "På Aurora Tepee Camp kan du njuta av norrskenet från tepeetält omgiven av naturen och bort från stadens buller, med möjlighet att utforska omgivningarna med hundspann.",
+    "imageURL": "img/auroraTepe.jpg",
+    "price": "Budget",
+    "htmlUrl": "assets/accommodation/aurora.html",
+    "location": "Vindeln",
+    "rating": "4.5"
   }
 ]
