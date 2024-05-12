@@ -126,13 +126,113 @@ function createCard(destination) {
 
     })
 
+//!DENNA
+    // destination.categories.forEach(cat => {
+    //     const newSpan = document.createElement('span');
+      
+    //     newSpan.textContent = cat;
+        
+    //     newSpan.classList.add('style-chips');
+    //     catContainer.append(newSpan);
+    // });
+    
+    
+    // destination.categories.forEach(cat => {
+    //     const newSpan = document.createElement('span');
+    
+    //     // Skapa ett <i> element för ikonen från Google Material Icons
+    //     const icon = document.createElement('span');
+    //     // Lägg till klassen för ikonen (du behöver ändra 'material-icons' beroende på din ikonstil)
+    //     icon.classList.add('material-icons');
+    //     // Lägg till den specifika ikonens namn (t.ex. om det är en hjärtikon, skriv 'favorite')
+    //     icon.textContent = 'favorite'; // Exempel: ikonen 'favorite'
+    
+    //     // Skapa en textnod för kategorinamnet
+    //     const categoryName = document.createTextNode(cat);
+    
+    //     // Lägg till både ikon och kategorinamn i det nya span-elementet
+    //     newSpan.appendChild(icon);
+    //     newSpan.appendChild(categoryName);
+    
+    //     // Lägg till klassen för stil på ditt span-element
+    //     newSpan.classList.add('style-chips');
+    
+    //     // Lägg till det nya span-elementet till din container (antagligen catContainer i ditt fall)
+    //     catContainer.append(newSpan);
+    // });
+
+    // destination.categories.forEach(cat => {
+    //     const newSpan = document.createElement('span');
+    
+    //     // Skapa ett <img> element för ikonen från Google Material Icons
+    //     const icon = document.createElement('img');
+    //     // Ange källan till ikonen från Google Material Icons
+    //     icon.src = '/assets/icons/trahus.svg'; // Exempel: URL till din ikon
+    
+    //     // Skapa en textnod för kategorinamnet
+    //     const categoryName = document.createTextNode(cat);
+    
+    //     // Lägg till både ikon och kategorinamn i det nya span-elementet
+    //     newSpan.appendChild(icon);
+    //     newSpan.appendChild(categoryName);
+    
+    //     // Lägg till klassen för stil på ditt span-element
+    //     newSpan.classList.add('style-chips');
+    
+    //     // Lägg till det nya span-elementet till din container (antagligen catContainer i ditt fall)
+    //     catContainer.append(newSpan);
+    // });
 
     destination.categories.forEach(cat => {
         const newSpan = document.createElement('span');
-        newSpan.textContent = cat;
+        
+        // Skapa ett <img> element för ikonen från Google Material Icons
+        const icon = document.createElement('img');
+        // Skapa en variabel för att lagra sökvägen till ikonen baserat på kategorin
+        let iconPath;
+        // Använd en switch-sats för att välja ikonen baserat på kategorin
+        switch(cat) {
+            case 'Glashus':
+                iconPath = '/assets/icons/glashus.svg';
+                break;
+            case 'Trädhus':
+                iconPath = '/assets/icons/trahus.svg';
+                break;
+            case 'Glamping':
+                iconPath = '/assets/icons/glamping.svg';
+                break;
+            case 'Camping':
+                iconPath = '/assets/icons/Camping.svg';
+                break;
+            case 'Nära vatten':
+                iconPath = '/assets/icons/naravatten.svg';
+                break;
+            case 'Romatiskt':
+                iconPath = '/assets/icons/romantiskt.svg';
+                break;
+            default:
+                iconPath = ''; // Om ingen matchning hittas, lämna sökvägen tom
+                break;
+        }
+        // Ange källan till ikonen
+        icon.src = iconPath;
+        
+        // Skapa en textnod för kategorinamnet
+        const categoryName = document.createTextNode(cat);
+        
+        // Lägg till både ikon och kategorinamn i det nya span-elementet
+        newSpan.appendChild(icon);
+        newSpan.appendChild(categoryName);
+        
+        // Lägg till klassen för stil på ditt span-element
         newSpan.classList.add('style-chips');
+        
+        // Lägg till det nya span-elementet till din container (antagligen catContainer i ditt fall)
         catContainer.append(newSpan);
     });
+    
+    
+    
 
     link.setAttribute('href', destination.htmlUrl);
     header.textContent = destination.name;

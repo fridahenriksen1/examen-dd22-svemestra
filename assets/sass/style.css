@@ -1295,6 +1295,7 @@ nav svg {
   padding-left: 0.75rem;
   padding-bottom: 1.25rem;
   display: flex;
+  flex-wrap: wrap;
 }
 .user-accomodation .card .category-box .category-icon {
   width: 16px;
@@ -1359,7 +1360,9 @@ nav svg {
   font-size: 0.75rem;
 }
 .user-accomodation .style-chips {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: white;
   color: black;
   border-radius: 5rem;
@@ -1371,7 +1374,12 @@ nav svg {
   cursor: pointer;
   margin-bottom: 1rem;
   text-transform: capitalize;
+  white-space: nowrap;
   border: 1px solid #141414;
+}
+.user-accomodation .style-chips img {
+  width: 24px;
+  height: 24px;
 }
 
 .like-icon {
