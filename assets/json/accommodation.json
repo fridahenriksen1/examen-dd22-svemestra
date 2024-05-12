@@ -45,5 +45,16 @@
     "htmlUrl": "assets/accommodation/erikson.html",
     "location": "Ljungsarp",
     "rating": "3.9"
+  },
+  {
+    "id": 5,
+    "name": "Trakt Forest Hotel",
+    "categories": ["Trädhus", "Nära vatten", "Romatiskt"],
+    "info": "Trakt erbjuder skogs-sviter designade av Gert Wingårdh, där du kan sova under stjärnorna med en vidöppen utsikt över orörd skog och skydd från omvärldens brus.",
+    "imageURL": "img/traktForest.jpg",
+    "price": "Budget",
+    "htmlUrl": "assets/accommodation/trakt.html",
+    "location": "Holsbybrunn",
+    "rating": "4.1"
   }
 ]
