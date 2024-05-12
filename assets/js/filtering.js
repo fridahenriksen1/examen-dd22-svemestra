@@ -242,6 +242,12 @@ function createCard(destination) {
     location.textContent = destination.location;
     rating.textContent = destination.rating;
 
+    // const circleBox = card.querySelector('div.circle-box');
+    // circleBox.innerHTML = `<div class`
+    const circleBox = card.querySelector('div.circle-box');
+    circleBox.innerHTML = `<div class="ellipse"></div>`.repeat(Math.floor(destination.rating)) 
+        + `<div class="ellipse border"></div>`.repeat(5 - Math.floor(destination.rating));
+
     dataUserCards.append(card);
 }
 function render() {
