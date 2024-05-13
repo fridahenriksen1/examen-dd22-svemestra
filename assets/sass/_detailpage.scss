@@ -215,7 +215,7 @@
 .location-box {
   display: flex;
   align-items: center;
-  margin-top: 1rem;
+  // margin-top: 1rem;
 
   .material-symbols-outlined {
     font-weight: 300;
@@ -267,6 +267,7 @@
 .circleRating-box {
   display: flex;
   align-items: center;
+  margin-top: -0.5rem;
 }
 .info-box {
   .first-p {

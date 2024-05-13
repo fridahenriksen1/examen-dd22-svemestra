@@ -1357,7 +1357,7 @@ nav svg {
 }
 .user-accomodation .card-text {
   color: black;
-  margin: 0.75rem 0 1rem 0;
+  margin: 0.5rem 0 1rem 0;
 }
 .user-accomodation .card-text p {
   padding-top: 0.5rem;
@@ -2280,7 +2280,6 @@ nav svg {
 .location-box {
   display: flex;
   align-items: center;
-  margin-top: 1rem;
 }
 .location-box .material-symbols-outlined {
   font-weight: 300;
@@ -2336,6 +2335,7 @@ nav svg {
 .circleRating-box {
   display: flex;
   align-items: center;
+  margin-top: -0.5rem;
 }
 
 .info-box .first-p {
