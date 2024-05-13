@@ -1529,7 +1529,7 @@ nav svg {
   justify-content: space-between;
 }
 .card-box .card-medium {
-  margin: 0.5rem 0rem;
+  margin: 0.75rem 0rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -1680,7 +1680,7 @@ nav svg {
   cursor: pointer;
 }
 .map-section .map-box {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
