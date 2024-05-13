@@ -67,5 +67,16 @@
     "htmlUrl": "assets/accommodation/aurora.html",
     "location": "Vindeln",
     "rating": "4.5"
+  },
+  {
+    "id": 7,
+    "name": "Vide Natur",
+    "categories": ["Camping", "Glamping", "Nära vatten"],
+    "info": "Vide Naturs Skogsrum erbjuder övernattning i ett inrett tält mitt i skogen. Upplev lugnet, utforska stigar och njut av matlagning över öppen eld.",
+    "imageURL": "img/videNatur_01.jpg",
+    "price": "Budget",
+    "htmlUrl": "assets/accommodation/aurora.html",
+    "location": "Lerum",
+    "rating": "3.8"
   }
 ]
