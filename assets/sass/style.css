@@ -1198,6 +1198,9 @@ nav svg {
   /* Firefox */
 }
 
+.card {
+  margin-top: 2.25rem;
+}
 .card.card-inspo {
   flex: 0 0 calc(50% - 0.5rem);
   position: relative;
