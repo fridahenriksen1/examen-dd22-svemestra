@@ -49,7 +49,7 @@
   {
     "id": 5,
     "name": "Trakt Forest Hotel",
-    "categories": ["Trädhus", "Nära vatten", "Romatiskt"],
+    "categories": ["Trädhus", "Nära vatten", "Romatiskt", "Glashus"],
     "info": "Trakt erbjuder skogs-sviter designade av Gert Wingårdh, där du kan sova under stjärnorna med en vidöppen utsikt över orörd skog och skydd från omvärldens brus.",
     "imageURL": "img/traktForest.jpg",
     "price": "Budget",
@@ -60,7 +60,7 @@
   {
     "id": 6,
     "name": "Aurora Tepee Camp",
-    "categories": ["Glamping", "Romatiskt"],
+    "categories": ["Glamping", "Romatiskt","Glashus", "Trädhus", "Camping"],
     "info": "På Aurora Tepee Camp kan du njuta av norrskenet från tepeetält omgiven av naturen och bort från stadens buller, med möjlighet att utforska omgivningarna med hundspann.",
     "imageURL": "img/auroraTepe.jpg",
     "price": "Budget",
