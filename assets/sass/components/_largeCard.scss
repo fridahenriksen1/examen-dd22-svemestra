@@ -4,6 +4,7 @@
   flex: 1 auto;
   padding-top: 0rem;
   gap: 1rem;
+  min-height: 1450px;
   // margin-bottom: 7rem;
 
   @include flexbox(center, stretch, wrap);
