@@ -7,8 +7,11 @@
 main {
   padding: 1rem;
   height: 100%;
+
   @media (min-width: 480px) {
     height: auto;
+    min-height: 820px;
+   
   }
 }
 // på startsidan "Visa alla"

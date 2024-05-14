@@ -844,6 +844,7 @@ main {
 @media (min-width: 480px) {
   main {
     height: auto;
+    min-height: 820px;
   }
 }
 
@@ -1312,6 +1313,7 @@ nav svg {
   flex: 1 auto;
   padding-top: 0rem;
   gap: 1rem;
+  min-height: 1450px;
   display: flex;
   justify-content: center;
   align-items: stretch;
@@ -2262,7 +2264,6 @@ nav svg {
   margin-top: 1rem;
   display: flex;
   overflow-x: auto;
-  cursor: pointer;
 }
 .accommodation .reviews-section .reviews-box .review-card {
   display: flex;
@@ -2305,16 +2306,12 @@ nav svg {
   align-items: center;
   border-radius: 6.3rem;
   border: 0.1rem solid #485c55;
+  white-space: nowrap;
+  color: #485c55;
+  cursor: pointer;
 }
 .accommodation .reviews-section .seeMoreReviweBtn a {
-  white-space: nowrap;
-  font-family: "Sweden Sans";
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.02rem;
-  text-transform: uppercase;
+  color: #485c55;
 }
 
 .weeks {
@@ -2374,7 +2371,6 @@ nav svg {
 .reviews-box {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
-  overflow-x: scroll;
 }
 
 .circleRating-box {

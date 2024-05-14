@@ -150,7 +150,6 @@
       display: flex;
       // max-width: 300px;
       overflow-x: auto;
-      cursor: pointer;
 
       .review-card {
         display: flex;
@@ -196,15 +195,14 @@
       align-items: center;
       border-radius: 6.3rem;
       border: 0.1rem solid #485c55;
+      white-space: nowrap;
+      color:#485c55;
+      cursor: pointer;
+  
+      
       a {
-        white-space: nowrap;
-        font-family: "Sweden Sans";
-        font-size: 1rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        letter-spacing: 0.02rem;
-        text-transform: uppercase;
+     color:#485c55;
+ 
       }
     }
   }
@@ -244,6 +242,8 @@
   // här behövdes !important i undantagsfall, annars tar materialsymbols över dessa koder
   font-size: 20px !important;
   font-weight: 300 !important;
+  //font-size: 20px;
+  //font-weight: 300;
   padding-right: 0.87rem;
 }
 .socialMedia-icon {
@@ -263,7 +263,6 @@
 .reviews-box {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
-  overflow-x: scroll;
 }
 
 .circleRating-box {
