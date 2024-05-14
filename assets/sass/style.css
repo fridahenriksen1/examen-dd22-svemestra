@@ -1118,6 +1118,7 @@ nav svg {
   text-underline-offset: 4px;
   font-size: 1rem;
   font-family: "SwedenSansSemiBold", arial, sans-serif;
+  padding-top: 0.813rem;
 }
 
 .seeAllPicBtn {
@@ -1317,6 +1318,7 @@ nav svg {
   padding-top: 0rem;
   gap: 1rem;
   min-height: 1450px;
+  margin-bottom: 3.5rem;
   display: flex;
   justify-content: center;
   align-items: stretch;
@@ -1903,6 +1905,7 @@ nav svg {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  margin-bottom: 2.688rem;
 }
 .big-container .main-saved .profilPic-textBox {
   margin: 0 0rem 1rem 0;
@@ -2185,6 +2188,7 @@ nav svg {
 .accommodation .circleRating-box {
   display: flex;
   align-items: center;
+  margin-top: 0rem;
 }
 .accommodation .chipsBox {
   display: flex;
@@ -2280,7 +2284,7 @@ nav svg {
   padding: 0.875rem 1rem;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.75rem;
+  gap: 0.15rem;
   border: 1px solid #dedede;
   border-radius: 2px;
   width: 14.625rem;
@@ -2336,6 +2340,11 @@ nav svg {
 .location-box .material-symbols-outlined {
   font-weight: 300;
 }
+.location-box .icons-li {
+  font-size: 20px;
+  font-weight: 300;
+  padding-right: 0.87rem;
+}
 
 .contactTxt-box {
   display: flex;
@@ -2347,7 +2356,6 @@ nav svg {
 .socialMedia-box {
   display: flex;
   margin-top: 1.5rem;
-  margin-bottom: 3.5rem;
 }
 
 .margin-left {
@@ -2356,12 +2364,6 @@ nav svg {
 
 .ml {
   margin-left: 1rem;
-}
-
-.icons-li {
-  font-size: 20px !important;
-  font-weight: 300 !important;
-  padding-right: 0.87rem;
 }
 
 .socialMedia-icon {
