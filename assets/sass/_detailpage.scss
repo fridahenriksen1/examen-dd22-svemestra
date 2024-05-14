@@ -135,6 +135,11 @@
       padding-top: 1.125rem;
       color: $tradstam600;
     }
+    .icons-li {
+      font-size: 20px;
+      font-weight: 300;
+      padding-right: 0.87rem;
+    }
   }
   .whereItIs-section {
     .showPlaceMap {
@@ -215,6 +220,7 @@
   display: flex;
   align-items: center;
   // margin-top: 1rem;
+  padding-top: 1.5rem;
 
   .material-symbols-outlined {
     font-weight: 300;
