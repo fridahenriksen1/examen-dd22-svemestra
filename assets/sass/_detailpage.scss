@@ -150,6 +150,7 @@
       display: flex;
       // max-width: 300px;
       overflow-x: auto;
+      cursor: pointer;
 
       .review-card {
         display: flex;
@@ -262,6 +263,7 @@
 .reviews-box {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+  overflow-x: scroll;
 }
 
 .circleRating-box {
