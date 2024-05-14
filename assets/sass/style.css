@@ -1341,6 +1341,9 @@ nav svg {
 .user-accomodation .card .contentCard-box {
   padding: 0.75rem 0.75rem 0rem 0.75rem;
 }
+.user-accomodation .card .contentCard-box .location-box {
+  padding-top: 0.2rem;
+}
 .user-accomodation .card .category-box {
   padding-left: 0.75rem;
   padding-bottom: 0.5rem;
