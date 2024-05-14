@@ -1129,6 +1129,10 @@ nav svg {
   padding-top: 0.813rem;
 }
 
+.showMoreBtn-pt {
+  padding-top: 1.78rem;
+}
+
 .seeAllPicBtn {
   display: flex;
   width: 9.75rem;
