@@ -217,6 +217,22 @@
 .weeks {
   margin-bottom: 0.25rem;
 }
+.mapouter {
+  position: relative;
+  text-align: right;
+  width: 345px;
+  height: 200px;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  width: 345px;
+  height: 200px;
+}
+.gmap_iframe {
+  width: 345px !important;
+  height: 200px !important;
+}
 
 .location-box {
   display: flex;
