@@ -28,3 +28,5 @@ slider.addEventListener("mousemove", (e) => {
   const walk = (x - startX) * 2; // Justera hastigheten på scrollningen här
   slider.scrollLeft = scrollLeft - walk;
 });
+
+

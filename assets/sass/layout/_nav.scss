@@ -7,7 +7,11 @@ body {
 }
 
 .container-mobil {
-  width: 390px;
+  width: 100%;
+  height: 100vh;
+
+  @media (min-width: 480px) {
+    width: 390px;
   height: 884px;
   overflow-y: scroll;
 
@@ -20,6 +24,7 @@ body {
     -10px 10px 50px rgba(0, 0, 0, 0.1), -50px 50px 70px rgba(0, 0, 0, 0.05),
     -100px 100px 100px rgba(0, 0, 0, 0.03),
     -150px 150px 150px rgba(0, 0, 0, 0.02);
+  }
 
   .front-speaker {
     width: 50px;
@@ -48,7 +53,7 @@ body {
 
 .bottom-menu-container {
   width: 100%;
-  position: sticky;
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
@@ -57,6 +62,9 @@ body {
   border-top: 1px solid #e9e9e9;
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(10px);
+  @media (min-width: 480px) {
+    position: sticky;
+  }
 
   .bottom-menu {
     position: sticky;

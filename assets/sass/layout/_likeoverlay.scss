@@ -2,21 +2,65 @@
   width: 100%;
   padding: 1rem;
   visibility: hidden;
-  position: sticky;
+  position: fixed;
   bottom: -100%;
   left: 0;
   right: 0;
   z-index: 10;
   background-color: var(--color-1);
   box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
-  transition: 0.75s ease-out;
+  // transition: 0.75s ease-out;
   background: #fafafa;
-  transition: 0.75s ease-out;
+  transition: visibility 4s ease-out, bottom 0.60s ease-out ;
   border-radius: 0.625rem;
+  margin-top: 4rem;
+
+  // clip: rect(0 0 0 0); 
+  // clip-path: inset(50%);
+  // height: 1px;
+  // overflow: hidden;
+  // position: absolute;
+  // white-space: nowrap; 
+  // width: 1px;
+
+ // display: none;
+ @media (min-width: 480px) {
+  position: sticky;
+}
+
+ 
+
 
   &.show {
     bottom: 0;
     visibility: visible;
+    padding: 1rem;
+    width: auto;
+    position: fixed;
+    overflow: visible;
+    margin-top: 4rem;
+    clip: auto;
+    @media (min-width: 480px) {
+      position: sticky;
+    }
+   // display: block;
+
+       /* border: 0; */
+    /* clip: rect(0 0 0 0); */
+    /* height: auto; */
+    /* margin: 0; */
+    /* overflow: hidden; */
+    /* padding: 0; */
+    /* position: absolute; */
+    /* width: 1px; */
+    /* white-space: nowrap;*/
+
+ 
+
+
+
+  
+ 
   }
 
   .contentBtn-box {

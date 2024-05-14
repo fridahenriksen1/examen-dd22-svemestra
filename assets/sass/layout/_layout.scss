@@ -6,6 +6,10 @@
 
 main {
   padding: 1rem;
+  height: 100%;
+  @media (min-width: 480px) {
+    height: auto;
+  }
 }
 // på startsidan "Visa alla"
 .show-all-container {
@@ -27,4 +31,7 @@ main {
   .card-inspo:first-child {
     flex: 0 0 100%;
   }
+}
+.containerHeight{
+  
 }
