@@ -1523,6 +1523,7 @@ nav svg {
   display: flex;
   flex: 0 0 calc(50% - 0.5rem);
   flex-direction: column;
+  cursor: pointer;
 }
 .folder-card .bigFolder-picBox {
   display: flex;
@@ -1581,6 +1582,7 @@ nav svg {
   justify-content: center;
   flex: 1;
   box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 @media (min-width: 375px) {
   .card-box .card-medium {
