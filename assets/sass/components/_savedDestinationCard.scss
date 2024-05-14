@@ -2,10 +2,16 @@
 .card-box {
   display: flex;
   flex: 1 0 auto;
+  gap: 1rem;
 
   flex-wrap: wrap;
   justify-content: space-between;
- // margin-bottom: 2.688rem;
+  //padding-bottom: 4rem;
+  // margin-bottom: 2.688rem;
+
+  // @media (min-width: 480px) {
+  //   padding-bottom: 0rem;
+  // }
 
   .card-medium {
     margin: 0.75rem 0rem;
