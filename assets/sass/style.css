@@ -459,6 +459,10 @@ a,
   margin-bottom: 3rem;
 }
 
+.mb3-5 {
+  margin-bottom: 3.5rem;
+}
+
 .mb4 {
   margin-bottom: 4rem;
 }
@@ -500,7 +504,7 @@ a,
 }
 
 .detail-main {
-  margin: 1rem 0rem 4rem 0rem;
+  margin: 1rem 0rem 3.5rem 0rem;
 }
 
 .chipsTxt p {
@@ -750,7 +754,6 @@ body {
 .suggestions-container {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 7rem;
 }
 .suggestions-container .textbox-suggestions {
   padding-left: 0.5rem;
@@ -1523,6 +1526,7 @@ nav svg {
   display: flex;
   flex: 0 0 calc(50% - 0.5rem);
   flex-direction: column;
+  cursor: pointer;
 }
 .folder-card .bigFolder-picBox {
   display: flex;
@@ -1581,6 +1585,7 @@ nav svg {
   justify-content: center;
   flex: 1;
   box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 @media (min-width: 375px) {
   .card-box .card-medium {
@@ -2256,6 +2261,11 @@ nav svg {
   padding-top: 1.125rem;
   color: #594e2a;
 }
+.accommodation .activitiesSection .icons-li {
+  font-size: 20px;
+  font-weight: 300;
+  padding-right: 0.87rem;
+}
 .accommodation .whereItIs-section .map-box {
   display: flex;
   justify-content: center;
@@ -2321,6 +2331,7 @@ nav svg {
 .location-box {
   display: flex;
   align-items: center;
+  padding-top: 1.5rem;
 }
 .location-box .material-symbols-outlined {
   font-weight: 300;
