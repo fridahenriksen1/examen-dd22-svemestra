@@ -55,7 +55,7 @@
   .circleRating-box {
     display: flex;
     align-items: center;
-    margin-top: 0.0rem;
+    margin-top: 0rem;
   }
   .chipsBox {
     display: flex;
@@ -203,19 +203,33 @@
       border-radius: 6.3rem;
       border: 0.1rem solid #485c55;
       white-space: nowrap;
-      color:#485c55;
+      color: #485c55;
       cursor: pointer;
-  
-      
+
       a {
-     color:#485c55;
- 
+        color: #485c55;
       }
     }
   }
 }
 .weeks {
   margin-bottom: 0.25rem;
+}
+.mapouter {
+  position: relative;
+  text-align: right;
+  width: 345px;
+  height: 200px;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  width: 345px;
+  height: 200px;
+}
+.gmap_iframe {
+  width: 345px !important;
+  height: 200px !important;
 }
 
 .location-box {

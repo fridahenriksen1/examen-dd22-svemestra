@@ -1129,6 +1129,10 @@ nav svg {
   padding-top: 0.813rem;
 }
 
+.showMoreBtn-pt {
+  padding-top: 1.78rem;
+}
+
 .seeAllPicBtn {
   display: flex;
   width: 9.75rem;
@@ -2360,6 +2364,25 @@ nav svg {
 
 .weeks {
   margin-bottom: 0.25rem;
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  width: 345px;
+  height: 200px;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  width: 345px;
+  height: 200px;
+}
+
+.gmap_iframe {
+  width: 345px !important;
+  height: 200px !important;
 }
 
 .location-box {
