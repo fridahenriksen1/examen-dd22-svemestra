@@ -91,7 +91,7 @@
     "id": 8,
     "name": "Trädhushotell Islanna",
     "categories": ["Trädhus", "Nära vatten", "Romatiskt"],
-    "info": "Vide Naturs Skogsrum erbjuder övernattning i ett inrett tält mitt i skogen. Upplev lugnet, utforska stigar och njut av matlagning över öppen eld.",
+    "info": "I tranmarkerna vid Hornborgasjön finns trädhushotell belägna 7-9 meter upp i ekarna. Här kan du somna gott inbäddad i lövverket, lyssna till vinden som sjunger och vaggar dig till ro.",
     "imageURL": "img/islanna.jpg",
     "price": "Medium",
     "htmlUrl": "assets/accommodation/islanna.html",
@@ -101,6 +101,18 @@
   },
   {
     "id": 9,
+    "name": "Naturbyn",
+    "categories": ["Trädhus","Camping", "Glamping", "Nära vatten"],
+    "info": "Naturnära by vid Lake Eldan i Värmland med logstugor, trädkojor och husbåt. Perfekt för avkoppling och naturens njutningar som bastu och bad.",
+    "imageURL": "img/naturbyn.jpg",
+    "price": "Medium",
+    "htmlUrl": "assets/accommodation/naturbyn.html",
+    "location": "Långserud",
+    "rating": "3.9",
+    "altText": "A glamping tent in the forest"
+  },
+  {
+    "id": 10,
     "name": "Vide Natur",
     "categories": ["Camping", "Glamping", "Nära vatten"],
     "info": "Vide Naturs Skogsrum erbjuder övernattning i ett inrett tält mitt i skogen. Upplev lugnet, utforska stigar och njut av matlagning över öppen eld.",
