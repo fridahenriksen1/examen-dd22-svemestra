@@ -231,27 +231,4 @@ function toggleItemArray(item, array) {
     array.push(item);
   }
 }
-// function createChip(container, iconName, text) {        //         Create the elements const
-//     chip = document.createElement('div'); chip.className = 'style-chips'; const icon = document.createElement('img'); icon.className = 'icon-chips-img'; icon.src = `/assets/icons/${iconName}`; icon.alt = 'altIcon'; const spanNode = document.createElement('span'); spanNode.innerText = text // Append elements to the chip chip.appendChild(icon);
-//     chip.appendChild(spanNode); // Append the chip to the container
-//     container.appendChild(chip); }
 
-// function createChipTemplate(iconName, text) {
-//     return `
-//         <div class="chip">
-//             <img src="/assets/icons/${iconName}" alt="Icon" />
-//             ${text}
-//         </div>
-//     `;
-// }
-
-// //!HÄR
-// function createChipTemplate(iconName, text) {
-//     return `
-//         <div class="chip">
-//             <img src="/assets/icons/${iconName}" alt="Icon" />
-//             ${text}
-
-//         </div>
-//     `;
-// }

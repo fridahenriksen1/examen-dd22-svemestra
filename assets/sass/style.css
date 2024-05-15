@@ -1192,7 +1192,6 @@ nav svg {
 }
 .category-label.one {
   font-size: 0.75rem;
-  font-family: "SwedenSansBold", arial, sans-serif;
 }
 
 .icon-chips-img {
@@ -1268,7 +1267,7 @@ nav svg {
           backdrop-filter: blur(10px);
   color: #f4f4f4;
   padding: 0.5rem 1rem;
-  bottom: 3rem;
+  bottom: 2.5rem;
   left: 50%;
   transform: translateX(-50%) translateY(100%);
 }
