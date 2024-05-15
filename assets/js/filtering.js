@@ -1,4 +1,4 @@
-let recipies = [];
+let accommodation = [];
 const filters = {
   categories: [],
   seasons: [],
@@ -18,9 +18,9 @@ searchInput.addEventListener("input", (e) => {
 fetch("assets/json/accommodation.json")
   .then((response) => response.json())
   .then((data) => {
-    data.forEach((recept) => {
-      //recipies.push({ filtered: false, domNode: null, ...recept });
-      recipies.push(recept);
+    data.forEach((accomodation) => {
+      //recipies.push({ filtered: false, domNode: null, ...accomodation });
+      accommodation.push(accomodation);
     });
     render();
   })
@@ -35,63 +35,7 @@ function createCard(destination) {
   const location = card.querySelector("[data-location]");
   const rating = card.querySelector("[data-rating]");
   const catContainer = card.querySelector("[data-categorys]");
-  // destination.categories.forEach(cat => {
-  //     const newSpan = document.createElement('span');
-  //     newSpan.textContent = cat;
-
-  //     switch (cat) {
-  //         case 'Glashus':
-  //             newSpan.innerHTML = '<img class="category-icon" src="/assets/icons/glashus.svg" alt="Glashus Icon">';
-  //             newSpan.classList.add('glashus-category');
-  //             break;
-  //         case 'Trädhus':
-  //             newSpan.innerHTML = '<img class="category-icon" src="/assets/icons/trahus.svg" alt="Trädhus Icon">';
-  //             newSpan.classList.add('trädhus-category');
-  //             break;
-  //         case 'Glamping':
-  //             newSpan.innerHTML = '<img class="category-icon" src="/assets/icons/trahus.svg" alt="Trädhus Icon">';
-  //             newSpan.classList.add('trädhus-category');
-  //             break;
-  //         // Fortsätt med andra kategorier...
-  //         default:
-  //             newSpan.classList.add('default-category');
-  //             break;
-  //     }
-
-  //     catContainer.append(newSpan);
-  // });
-  //!Här jag testar med chipsen
-  // destination.categories.forEach(cat => {
-  //     const categorySpan = document.createElement('span');
-  //     categorySpan.textContent = cat;
-
-  //     // // Lägg till klass baserat på kategorinamnet
-  //     // categorySpan.classList.add('category-text', `${cat.toLowerCase()}-category`);
-
-  //     const iconSpan = document.createElement('span');
-  //    // iconSpan.classList.add('material-icons', 'category-icon');
-  //     iconSpan.classList.add('material-symbols-outlined"');
-
-  //     switch (cat) {
-  //         case 'Glashus':
-  //             iconSpan.textContent = 'home';
-  //             break;
-  //         case 'Trädhus':
-  //             iconSpan.textContent = 'tree';
-  //             break;
-  //         case 'Glamping':
-  //             iconSpan.textContent = 'camp';
-  //             break;
-  //         // Fortsätt med andra kategorier...
-  //         default:
-  //             iconSpan.textContent = 'category';
-  //             break;
-  //     }
-
-  //     catContainer.appendChild(categorySpan);
-  //     catContainer.appendChild(iconSpan);
-  // });
-
+ 
   const likeButton = card.querySelector(".like-icon");
   likeButton.addEventListener("click", () => {
     const isLiked = likeButton.getAttribute("data-liked") === "true";
@@ -121,60 +65,111 @@ function createCard(destination) {
 
   //!Här kommer chipsen med kategori och bilder/ikoner ut
 
-  destination.categories.forEach((cat) => {
-    const newSpan = document.createElement("span");
+//   destination.categories.forEach((cat) => {
+//     const newSpan = document.createElement("span");
 
-    // Skapa ett <img> element för ikonen från Google Material Icons
+//     // Skapa ett <img> element för ikonen från Google Material Icons
+//     const icon = document.createElement("img");
+//     // Skapa en variabel för att lagra sökvägen till ikonen baserat på kategorin
+//     let iconPath;
+//     // Använd en switch-sats för att välja ikonen baserat på kategorin
+//     switch (cat) {
+//       case "Glashus":
+//         iconPath = "/assets/icons/glashus_01.svg";
+//         newSpan.classList.add("glashus"); // Lägg till klassen för specifik färg
+//         break;
+//       case "Trädhus":
+//         iconPath = "/assets/icons/trahus_01.svg";
+//         newSpan.classList.add("tradhus"); // Lägg till klassen för specifik färg
+//         break;
+//       case "Glamping":
+//         iconPath = "/assets/icons/glamping_01.svg";
+//         newSpan.classList.add("glamping"); // Lägg till klassen för specifik färg
+//         break;
+//       case "Camping":
+//         iconPath = "/assets/icons/Camping_01.svg";
+//         newSpan.classList.add("camping"); // Lägg till klassen för specifik färg
+//         break;
+//       case "Nära vatten":
+//         iconPath = "/assets/icons/naravatten_01.svg";
+//         newSpan.classList.add("naravatten"); // Lägg till klassen för specifik färg
+//         break;
+//       case "Romatiskt":
+//         iconPath = "/assets/icons/romantiskt_01.svg";
+//         newSpan.classList.add("romantiskt"); // Lägg till klassen för specifik färg
+//         break;
+//       default:
+//         iconPath = ""; // Om ingen matchning hittas, lämna sökvägen tom
+//         break;
+//     }
+//     // Ange källan till ikonen
+//     icon.src = iconPath;
+
+//     // Skapa en textnod för kategorinamnet
+//     const categoryName = document.createTextNode(cat);
+
+//     // Lägg till både ikon och kategorinamn i det nya span-elementet
+//     newSpan.appendChild(icon);
+//     newSpan.appendChild(categoryName);
+
+//     // Lägg till klassen för stil på ditt span-element
+//     newSpan.classList.add("style-chips");
+
+//     // Lägg till det nya span-elementet till din container (antagligen catContainer i ditt fall)
+//     catContainer.append(newSpan);
+//   });
+destination.categories.forEach((cat) => {
+    const newSpan = document.createElement("span");
+  
+    // Create an <img> element for the icon
     const icon = document.createElement("img");
-    // Skapa en variabel för att lagra sökvägen till ikonen baserat på kategorin
     let iconPath;
-    // Använd en switch-sats för att välja ikonen baserat på kategorin
     switch (cat) {
       case "Glashus":
         iconPath = "/assets/icons/glashus_01.svg";
-        newSpan.classList.add("glashus"); // Lägg till klassen för specifik färg
+        newSpan.classList.add("glashus");
         break;
       case "Trädhus":
         iconPath = "/assets/icons/trahus_01.svg";
-        newSpan.classList.add("tradhus"); // Lägg till klassen för specifik färg
+        newSpan.classList.add("tradhus");
         break;
       case "Glamping":
         iconPath = "/assets/icons/glamping_01.svg";
-        newSpan.classList.add("glamping"); // Lägg till klassen för specifik färg
+        newSpan.classList.add("glamping");
         break;
       case "Camping":
         iconPath = "/assets/icons/Camping_01.svg";
-        newSpan.classList.add("camping"); // Lägg till klassen för specifik färg
+        newSpan.classList.add("camping");
         break;
       case "Nära vatten":
         iconPath = "/assets/icons/naravatten_01.svg";
-        newSpan.classList.add("naravatten"); // Lägg till klassen för specifik färg
+        newSpan.classList.add("naravatten");
         break;
       case "Romatiskt":
         iconPath = "/assets/icons/romantiskt_01.svg";
-        newSpan.classList.add("romantiskt"); // Lägg till klassen för specifik färg
+        newSpan.classList.add("romantiskt");
         break;
       default:
-        iconPath = ""; // Om ingen matchning hittas, lämna sökvägen tom
+        iconPath = "";
         break;
     }
-    // Ange källan till ikonen
     icon.src = iconPath;
-
-    // Skapa en textnod för kategorinamnet
-    const categoryName = document.createTextNode(cat);
-
-    // Lägg till både ikon och kategorinamn i det nya span-elementet
+  
+    // Create a text span
+    const textSpan = document.createElement("p");
+    textSpan.textContent = cat;
+  
+    // Append icon and textSpan to newSpan
     newSpan.appendChild(icon);
-    newSpan.appendChild(categoryName);
-
-    // Lägg till klassen för stil på ditt span-element
+    newSpan.appendChild(textSpan);
+  
+    // Add class for styling
     newSpan.classList.add("style-chips");
-
-    // Lägg till det nya span-elementet till din container (antagligen catContainer i ditt fall)
+  
+    // Append newSpan to container
     catContainer.append(newSpan);
   });
-
+  
   //! Rating bollarna i kortet
   link.setAttribute("href", destination.htmlUrl);
   header.textContent = destination.name;
@@ -194,22 +189,22 @@ function createCard(destination) {
   dataUserCards.append(card);
 }
 function render() {
-  let filteredRecipies = [...recipies];
+  let filterAccommodation = [...accommodation];
   if (filters.search.length > 0) {
     const search = filters.search.toLowerCase();
-    filteredRecipies = filteredRecipies.filter((r) =>
+    filterAccommodation = filterAccommodation.filter((r) =>
       r.name.toLowerCase().includes(search)
     );
   }
   if (filters.categories.length > 0) {
-    console.log(filteredRecipies);
-    filteredRecipies = filteredRecipies.filter((r) =>
+    console.log(filterAccommodation);
+    filterAccommodation = filterAccommodation.filter((r) =>
       filters.categories.every((f) => r.categories.includes(f))
     );
   }
 
   dataUserCards.innerHTML = "";
-  filteredRecipies.forEach((recept) => createCard(recept));
+  filterAccommodation.forEach((accomodation) => createCard(accomodation));
 }
 catyChips.forEach((chip) => {
   chip.addEventListener("change", (e) => {

@@ -1481,6 +1481,10 @@ nav svg {
   color: #485c55;
   border: 1px solid #485c55;
 }
+.user-accomodation .style-chips p {
+  padding-top: 3px;
+  padding-left: 3px;
+}
 
 .like-icon {
   color: white;
