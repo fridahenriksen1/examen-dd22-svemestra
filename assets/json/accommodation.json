@@ -9,7 +9,8 @@
     "price": "Medel",
     "htmlUrl": "assets/accommodation/ornviken.html",
     "location": "Söderköping",
-    "rating": "4.1"
+    "rating": "4.1",
+    "altText": "A glamping hut infront of a lake"
   },
   {
     "id": 2,
@@ -20,7 +21,8 @@
     "price": "Premium",
     "htmlUrl": "assets/accommodation/arctic.html",
     "location": "Harads",
-    "rating": "4.8"
+    "rating": "4.8",
+    "altText": "A hotel with snow outside"
   },
   {
     "id": 3,
@@ -31,7 +33,8 @@
     "price": "Budget",
     "htmlUrl": "assets/accommodation/hyssna.html",
     "location": "Hyssna",
-    "rating": "5.0"
+    "rating": "5.0",
+    "altText": "A tree house in the forest"
   },
 
 
@@ -44,7 +47,8 @@
     "price": "Budget",
     "htmlUrl": "assets/accommodation/erikson.html",
     "location": "Ljungsarp",
-    "rating": "3.9"
+    "rating": "3.9",
+    "altText": "A tree house in the forest"
   },
   {
     "id": 5,
@@ -55,7 +59,8 @@
     "price": "Budget",
     "htmlUrl": "assets/accommodation/trakt.html",
     "location": "Holsbybrunn",
-    "rating": "4.1"
+    "rating": "4.1",
+    "altText": "A tree house in the forest"
   },
   {
     "id": 6,
@@ -66,7 +71,8 @@
     "price": "Budget",
     "htmlUrl": "assets/accommodation/aurora.html",
     "location": "Vindeln",
-    "rating": "4.5"
+    "rating": "4.5",
+    "altText": "A tepee with the northern light above"
   },
   {
     "id": 7,
@@ -77,6 +83,7 @@
     "price": "Budget",
     "htmlUrl": "assets/accommodation/vide.html",
     "location": "Lerum",
-    "rating": "3.8"
+    "rating": "3.8",
+    "altText": "A glamping tent in the forest"
   }
 ]

@@ -1,13 +1,4 @@
-// document.querySelectorAll('.icon-mapp-box > .text-box-saved-maps > div, .icon-mapp-box > .map-section > .icon-box > .share-filter-box > div').forEach(tab => {
-//     tab.addEventListener('click', () => {
-//       // Remove 'active' class from all tabs
-//       document.querySelectorAll('.icon-mapp-box > .text-box-saved-maps > div, .icon-mapp-box > .map-section > .icon-box > .share-filter-box > div').forEach(t => {
-//         t.classList.remove('active');
-//       });
-//       // Add 'active' class to the clicked tab
-//       tab.classList.add('active');
-//     });
-  
+
 //!Till filter tabsen i saved destinations och mappar
 document.addEventListener('DOMContentLoaded', function() {
     // Hämta sidans URL
