@@ -90,7 +90,7 @@
   {
     "id": 8,
     "name": "Trädhushotell Islanna",
-    "categories": ["Camping", "Glamping", "Nära vatten"],
+    "categories": ["Trädhus", "Nära vatten", "Romatiskt"],
     "info": "Vide Naturs Skogsrum erbjuder övernattning i ett inrett tält mitt i skogen. Upplev lugnet, utforska stigar och njut av matlagning över öppen eld.",
     "imageURL": "img/islanna.jpg",
     "price": "Medium",
