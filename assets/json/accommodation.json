@@ -89,6 +89,18 @@
   },
   {
     "id": 8,
+    "name": "Trädhushotell Islanna",
+    "categories": ["Camping", "Glamping", "Nära vatten"],
+    "info": "Vide Naturs Skogsrum erbjuder övernattning i ett inrett tält mitt i skogen. Upplev lugnet, utforska stigar och njut av matlagning över öppen eld.",
+    "imageURL": "img/islanna.jpg",
+    "price": "Medium",
+    "htmlUrl": "assets/accommodation/islanna.html",
+    "location": "Falköping",
+    "rating": "4.0",
+    "altText": "A treehouse in the tree"
+  },
+  {
+    "id": 9,
     "name": "Vide Natur",
     "categories": ["Camping", "Glamping", "Nära vatten"],
     "info": "Vide Naturs Skogsrum erbjuder övernattning i ett inrett tält mitt i skogen. Upplev lugnet, utforska stigar och njut av matlagning över öppen eld.",
