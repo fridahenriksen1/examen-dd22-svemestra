@@ -28,6 +28,7 @@ fetch('../json/accommodation.json')
             //Gör en ny variabel  för varje html som ska ha data
             const img = destination.querySelector('[data-img]');
             img.setAttribute('src', `../${item.imageURL}`);
+            img.setAttribute('alt', `${item.altText}`);
             const slider = destination.querySelector(".reviews-box");
             let isDown = false;
             let startX;

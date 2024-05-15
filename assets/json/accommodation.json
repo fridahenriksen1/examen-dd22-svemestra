@@ -6,10 +6,11 @@
     "categories": ["Glamping", "Nära vatten", "Camping"],
     "info": "Örnvikens semesterparadis ligger ute i skärgården strax utanför Söderköping. Här finner du vår fantastiska Glamping, med komfort och närhet till naturen.",
     "imageURL": "img/ornvikenGlamping.jpg",
-    "price": "Medel",
+    "price": "Premium",
     "htmlUrl": "assets/accommodation/ornviken.html",
     "location": "Söderköping",
-    "rating": "4.1"
+    "rating": "4.1",
+    "altText": "A glamping hut infront of a lake"
   },
   {
     "id": 2,
@@ -20,7 +21,8 @@
     "price": "Premium",
     "htmlUrl": "assets/accommodation/arctic.html",
     "location": "Harads",
-    "rating": "4.8"
+    "rating": "4.8",
+    "altText": "A hotel with snow outside"
   },
   {
     "id": 3,
@@ -28,10 +30,11 @@
     "categories": ["Trädhus", "Romatiskt"],
     "info": "Hyssna Forest Resort är en fridfull oas belägen i den vackra naturen i Västsverige. Resorten är en perfekt reträtt för dem som söker en paus från stadens liv och ett tillfälle att återansluta med naturen.",
     "imageURL": "img/HyssnaDetailPic.jpg",
-    "price": "Budget",
+    "price": "Premium",
     "htmlUrl": "assets/accommodation/hyssna.html",
     "location": "Hyssna",
-    "rating": "5.0"
+    "rating": "5.0",
+    "altText": "A tree house in the forest"
   },
 
 
@@ -41,10 +44,11 @@
     "categories": ["Glashus", "Nära vatten"],
     "info": "Erikson Cottage erbjuder en unik upplevelse med boende i glashus, välj om ni vill bo i den djupa skogen eller med utsikt över sjön. Välkomna!",
     "imageURL": "img/eriksonCottage.jpg",
-    "price": "Budget",
+    "price": "Premium",
     "htmlUrl": "assets/accommodation/erikson.html",
     "location": "Ljungsarp",
-    "rating": "3.9"
+    "rating": "3.9",
+    "altText": "A tree house in the forest"
   },
   {
     "id": 5,
@@ -52,10 +56,11 @@
     "categories": ["Trädhus", "Glashus"],
     "info": "Trakt erbjuder skogs-sviter designade av Gert Wingårdh, där du kan sova under stjärnorna med en vidöppen utsikt över orörd skog och skydd från omvärldens brus.",
     "imageURL": "img/traktForest.jpg",
-    "price": "Budget",
+    "price": "Premium",
     "htmlUrl": "assets/accommodation/trakt.html",
     "location": "Holsbybrunn",
-    "rating": "4.1"
+    "rating": "4.1",
+    "altText": "A tree house in the forest"
   },
   {
     "id": 6,
@@ -63,20 +68,35 @@
     "categories": ["Glamping", "Romatiskt", "Camping","Glashus"],
     "info": "På Aurora Tepee Camp kan du njuta av norrskenet från tepeetält omgiven av naturen och bort från stadens buller, med möjlighet att utforska omgivningarna med hundspann.",
     "imageURL": "img/auroraTepe.jpg",
-    "price": "Budget",
+    "price": "Premium",
     "htmlUrl": "assets/accommodation/aurora.html",
     "location": "Vindeln",
-    "rating": "4.5"
+    "rating": "4.5",
+    "altText": "A tepee with the northern light above"
   },
+
   {
     "id": 7,
+    "name": "Treehotel",
+    "categories": ["Trädhus", "Glamping", "Nära vatten","Camping"],
+    "info": "Treehotel erbjuder en unik upplevelse i naturen för äventyr, avkoppling eller att bara njuta. Upplev naturen, vår restaurang och omgivningar på ett minnesvärt sätt.",
+    "imageURL": "img/hero_biosphere.jpg",
+    "price": "Budget",
+    "htmlUrl": "assets/accommodation/treehotel.html",
+    "location": "Harads",
+    "rating": "5.0",
+    "altText": "A treehouse hanging in the trees in the forest"
+  },
+  {
+    "id": 8,
     "name": "Vide Natur",
     "categories": ["Camping", "Glamping", "Nära vatten"],
     "info": "Vide Naturs Skogsrum erbjuder övernattning i ett inrett tält mitt i skogen. Upplev lugnet, utforska stigar och njut av matlagning över öppen eld.",
     "imageURL": "img/videNatur_01.jpg",
-    "price": "Budget",
+    "price": "Medium",
     "htmlUrl": "assets/accommodation/vide.html",
     "location": "Lerum",
-    "rating": "3.8"
+    "rating": "3.8",
+    "altText": "A glamping tent in the forest"
   }
 ]
