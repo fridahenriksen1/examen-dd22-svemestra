@@ -8,8 +8,8 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-   
-    
+
+
   <link rel="stylesheet" href="assets/sass/style.css" />
 </head>
 <body>
@@ -22,7 +22,7 @@
         </div>
         <!-- Sök container -->
         <section id="search" class="searchcontainer mb2">
-       
+
           <!-- Boxen för sökbaren och filter -->
           <div class="searchFilter-box">
             <form id="search-bar" role="search">
@@ -31,14 +31,14 @@
               </label>
               <input type="search" id="header-search" placeholder="Sök på område, boende, aktiviteter" data-search />
               <button type="submit" id="btn-search">
-                <img class="searchbar-icon" src="/assets/icons/Search.svg" />
+                <img class="searchbar-icon" src="assets/icons/Search.svg" />
                 <span class="visually-hidden">Submit Search</span>
               </button>
-            
+
             </form>
             <!-- filter ikoner brevid sökbaren -->
             <a class="filter-box-icon" href="#">
-              <img src="/assets/icons/page_info.svg" alt="a icon for the filter" />
+              <img src="assets/icons/page_info.svg" alt="a icon for the filter" />
             </a>
           </div>
         </section>
@@ -47,22 +47,22 @@
         <form class="m1b" id="categorys" action="">
           <input class="chip categoy" type="checkbox" id="categoryOne" data-cat="Glashus" />
           <label for="categoryOne" class="category-label one">
-            <img class="icon-chips-img" src="/assets/icons/glashus.svg" alt="glashouse icon" />
+            <img class="icon-chips-img" src="assets/icons/glashus.svg" alt="glashouse icon" />
             Glashus</label>
           <input class="chip categoy" type="checkbox" id="categoryTwo" data-cat="Trädhus" />
-          <label for="categoryTwo" class="category-label"><img class="icon-chips-img" src="/assets/icons/trahus.svg"
+          <label for="categoryTwo" class="category-label"><img class="icon-chips-img" src="assets/icons/trahus.svg"
               alt="treehouse icon" />Trädhus</label>
           <input class="chip categoy" type="checkbox" id="categoryThree" data-cat="Glamping" />
-          <label for="categoryThree" class="category-label"><img class="icon-chips-img" src="/assets/icons/glamping.svg"
+          <label for="categoryThree" class="category-label"><img class="icon-chips-img" src="assets/icons/glamping.svg"
               alt="Glamping icon" />Glamping</label>
           <input class="chip categoy" type="checkbox" id="categoryFour" data-cat="Camping" />
-          <label for="categoryFour" class="category-label"><img class="icon-chips-img" src="/assets/icons/Camping.svg"
+          <label for="categoryFour" class="category-label"><img class="icon-chips-img" src="assets/icons/camping.svg"
               alt="camping icon" />Camping</label>
           <input class="chip categoy" type="checkbox" id="categoryFive" data-cat="Nära vatten" />
           <label for="categoryFive" class="category-label"><img class="icon-chips-img vatten-icon"
-              src="/assets/icons/naravatten.svg" alt="water icon" />Nära vatten</label>
+              src="assets/icons/naravatten.svg" alt="water icon" />Nära vatten</label>
           <input class="chip categoy" type="checkbox" id="categorySix" data-cat="Romatiskt" />
-          <label for="categorySix" class="category-label"><img class="icon-chips-img" src="/assets/icons/romantiskt.svg"
+          <label for="categorySix" class="category-label"><img class="icon-chips-img" src="assets/icons/romantiskt.svg"
               alt="hand holding a heart icon" />Romantiskt</label>
         </form>
         <!-- Sektion med cards som hämtas från json med js, filtreringskorten för boende -->
@@ -79,15 +79,15 @@
             </label>
             <label id="overlay" for="sidebar-active"></label>
             <a class="card-content" href="" data-link>
-                <figure>
-                  <div class="img-box">
-                    <img data-image />
-                  </div>
-                  <div class="contentCard-box">
+              <figure>
+                <div class="img-box">
+                  <img data-image />
+                </div>
+                <div class="contentCard-box">
                   <div class="location-box">
                     <span class="material-symbols-outlined location-icon"> location_on </span>
                     <!-- <p class="bodySMregular">Hyssna</p> -->
-                    <p class="bodySMregular"data-location></p>
+                    <p class="bodySMregular" data-location></p>
                   </div>
                   <div class="circleRating-box">
                     <div class="circle-box">
@@ -97,7 +97,7 @@
                       <div class="ellipse"></div>
                       <div class="ellipse border"></div>
                     </div>
-                    <p class="bodySM-Bold mleft05 review-number"data-rating></p>
+                    <p class="bodySM-Bold mleft05 review-number" data-rating></p>
                   </div>
                   <div class="details-container">
 
@@ -106,20 +106,20 @@
                       <p class="bodyXS" data-info></p>
                     </figcaption>
                   </div>
-                </figure>
-                <section class="category-box" data-categorys>
-                  <!-- <span class="material-icons" data-categorys></span> -->
-                </section>
-                <!-- </div> -->
-             </a>
+              </figure>
+              <section class="category-box" data-categorys>
+                <!-- <span class="material-icons" data-categorys></span> -->
+              </section>
+              <!-- </div> -->
+            </a>
           </article>
-      </template>
-    </div>
+        </template>
+      </div>
     </main>
     <div class="overlay">
       <div class="popup-box">
         <div class="ckeckbox">
-        
+
         </div>
         <span>Sparad i Familjemappen!</span>
       </div>
@@ -134,10 +134,10 @@
       <div class="mapp-box">
         <!-- EN SEKTION -->
         <section class="contentBtn-box">
-        
+
           <div class="imgContent-box">
             <figure>
-              <img src="/assets/img/MappPic_01.jpg" alt="map picture for the maps" />
+              <img src="assets/img/MappPic_01.jpg" alt="map picture for the maps" />
             </figure>
             <div class="txtbox-popup">
               <p class="bodyMD">Mina favoriter</p>
@@ -149,14 +149,14 @@
             <input type="checkbox" checked="checked" />
             <span class="checkmark"></span>
           </label>
-        
+
         </section>
         <!-- EN SEKTION -->
         <section class="contentBtn-box">
-        
+
           <div class="imgContent-box">
             <figure>
-              <img src="/assets/img/MappPic_02.jpg" alt="map picture for the maps" />
+              <img src="assets/img/MappPic_02.jpg" alt="map picture for the maps" />
             </figure>
             <div class="txtbox-popup">
               <p class="bodyMD">Familjemappen</p>
@@ -175,14 +175,14 @@
             <input type="checkbox" checked="checked" />
             <span class="checkmark"></span>
           </label>
-        
+
         </section>
         <!-- EN SEKTION -->
         <section class="contentBtn-box">
-        
+
           <div class="imgContent-box">
             <figure>
-              <img src="/assets/img/MappPic_03.jpg" alt="map picture for the maps" />
+              <img src="assets/img/MappPic_03.jpg" alt="map picture for the maps" />
             </figure>
             <div class="txtbox-popup">
               <p class="bodyMD">30-års present</p>
@@ -194,14 +194,14 @@
             <input type="checkbox" checked="checked" />
             <span class="checkmark"></span>
           </label>
-        
+
         </section>
         <!-- EN SEKTION -->
         <section class="contentBtn-box">
-        
+
           <div class="imgContent-box">
             <figure>
-              <img src="/assets/img/MappPic_04.jpg" alt="map picture for the maps" />
+              <img src="assets/img/MappPic_04.jpg" alt="map picture for the maps" />
             </figure>
             <div class="txtbox-popup">
               <p class="bodyMD">Tjejhelg</p>
@@ -220,7 +220,7 @@
             <input type="checkbox" checked="checked" />
             <span class="checkmark"></span>
           </label>
-        
+
         </section>
       </div>
       <div class="mapTextBox">
@@ -228,7 +228,7 @@
           <span class="material-symbols-outlined"> add </span>
           <p class="bodyMD">Skapa ny mapp</p>
         </div>
-    
+
       </div>
       <label for="sidebar-active" class="close-sidebar-button">
         <a class="btn-ok" id="okBtn" href="#">
@@ -253,7 +253,7 @@
         </li>
         <li class="menu-item">
           <a class="menu-link" href="filterPage.html">
-            <img class="nav-icons" src="/assets/icons/search-green.svg" alt="search icon" />
+            <img class="nav-icons" src="assets/icons/search-green.svg" alt="search icon" />
             <p class="active-text">Utforska</p>
           </a>
         </li>

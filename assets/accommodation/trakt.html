@@ -1,491 +1,433 @@
 <!DOCTYPE html>
 <html lang="sv">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trakt Forest Hotel</title>
-    <!-- <link rel="stylesheet" href="../style.css"> -->
-    <link rel="stylesheet" href="/assets/sass/style.css" />
-    <!-- loads the entire Variable Font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-      rel="stylesheet"
-    />
-    <!-- GOOGLE SYMBOL -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="container-mobil">
-      <!-- <main class="flex-container "> -->
-      <div class="accommodation" id="5">
-        <template data-destination>
-          <section>
-            <figure class="detail-pic">
-              <img data-img />
-              <a class="arrowBack-icon blurEffect-Dark" href="/filterPage.html">
-                <span class="detailIcon material-symbols-outlined">
-                  arrow_left_alt
-                </span>
-              </a>
-              <a class="share-icon blurEffect-Dark" href="#">
-                <span class="detailIcon material-symbols-outlined">
-                  share
-                </span>
-              </a>
-              <a class="likeIcon blurEffect-Dark" href="#">
-                <span class="detailIcon material-symbols-outlined">
-                  favorite
-                </span>
-              </a>
-              <div class="number-box">
-                <p class="bodyXS-Bold">1 / 5</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trakt Forest Hotel</title>
+  <!-- <link rel="stylesheet" href="../style.css"> -->
+  <link rel="stylesheet" href="assets/sass/style.css" />
+  <!-- loads the entire Variable Font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    rel="stylesheet" />
+  <!-- GOOGLE SYMBOL -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    rel="stylesheet" />
+</head>
+<body>
+  <div class="container-mobil">
+    <!-- <main class="flex-container "> -->
+    <div class="accommodation" id="5">
+      <template data-destination>
+        <section>
+          <figure class="detail-pic">
+            <img data-img />
+            <a class="arrowBack-icon blurEffect-Dark" href="/filterPage.html">
+              <span class="detailIcon material-symbols-outlined">
+                arrow_left_alt
+              </span>
+            </a>
+            <a class="share-icon blurEffect-Dark" href="#">
+              <span class="detailIcon material-symbols-outlined">
+                share
+              </span>
+            </a>
+            <a class="likeIcon blurEffect-Dark" href="#">
+              <span class="detailIcon material-symbols-outlined">
+                favorite
+              </span>
+            </a>
+            <div class="number-box">
+              <p class="bodyXS-Bold">1 / 5</p>
+            </div>
+          </figure>
+          <main class="detail-main">
+            <div class="seasonPrice-box mb1-5">
+              <div class="season-box">
+                <p class="bodyXS-Bold sandstrand600">Vår</p>
+                <div class="devider-mini"></div>
+                <p class="bodyXS-Bold sandstrand600">Sommar</p>
+                <div class="devider-mini"></div>
+                <p class="bodyXS-Bold sandstrand600">Höst</p>
+                <div class="devider-mini"></div>
+                <p class="bodyXS-Bold sandstrand600">Vinter</p>
               </div>
-            </figure>
-            <main class="detail-main">
-              <div class="seasonPrice-box mb1-5">
-                <div class="season-box">
-                  <p class="bodyXS-Bold sandstrand600">Vår</p>
-                  <div class="devider-mini"></div>
-                  <p class="bodyXS-Bold sandstrand600">Sommar</p>
-                  <div class="devider-mini"></div>
-                  <p class="bodyXS-Bold sandstrand600">Höst</p>
-                  <div class="devider-mini"></div>
-                  <p class="bodyXS-Bold sandstrand600">Vinter</p>
-                </div>
 
-                <div class="price-box">
-                  <p class="bodySM-Bold upperCASE">Premium</p>
+              <div class="price-box">
+                <p class="bodySM-Bold upperCASE">Premium</p>
+              </div>
+            </div>
+            <h1 class="heading_2" data-name></h1>
+            <div class="location-box">
+              <span class="material-symbols-outlined"> location_on </span>
+              <p class="bodyMD mleft05" data-location></p>
+            </div>
+            <div class="circleRating-box">
+              <div class="circle-box">
+                <div class="ellipse"></div>
+                <div class="ellipse"></div>
+                <div class="ellipse"></div>
+                <div class="ellipse"></div>
+                <div class="ellipse border"></div>
+              </div>
+              <p class="bodyMD-Bold mleft05">4.1</p>
+            </div>
+            <p data-info class="bodyMD mb1 fontstyle-info"></p>
+            <a class="ShowMoreBtn mb1-5" href="#">Läs mer</a>
+            <div class="chipsBox mb3">
+              <div class="chipsFilter">
+                <div class="iconChipsBox one1">
+                  <span class="material-symbols-outlined chipsIcon unikaboenden">
+                    foundation
+                  </span>
+                </div>
+                <div class="chipsTxt unikaboenden-txt">
+                  <p>Unika boenden</p>
                 </div>
               </div>
-              <h1 class="heading_2" data-name></h1>
-              <div class="location-box">
-                <span class="material-symbols-outlined"> location_on </span>
-                <p class="bodyMD mleft05" data-location></p>
+              <!-- ETT ANNAT CHIPS -->
+              <div class="chipsFilter">
+                <div class="iconChipsBox two2">
+                  <span class="material-symbols-outlined chipsIcon water">
+                    water
+                  </span>
+                </div>
+                <div class="chipsTxt water-txt">
+                  <p>Nära vatten</p>
+                </div>
               </div>
-              <div class="circleRating-box">
-                <div class="circle-box">
-                  <div class="ellipse"></div>
-                  <div class="ellipse"></div>
-                  <div class="ellipse"></div>
-                  <div class="ellipse"></div>
-                  <div class="ellipse border"></div>
+              <!-- ETT ANNAT CHIPS -->
+              <div class="chipsFilter three3">
+                <div class="iconChipsBox">
+                  <span class="material-symbols-outlined chipsIcon childcare">
+                    child_care
+                  </span>
                 </div>
-                <p class="bodyMD-Bold mleft05">4.1</p>
+                <div class="chipsTxt childcare-txt">
+                  <p>Barnvänligt</p>
+                </div>
               </div>
-              <p data-info class="bodyMD mb1 fontstyle-info"></p>
-              <a class="ShowMoreBtn mb1-5" href="#">Läs mer</a>
-              <div class="chipsBox mb3">
-                <div class="chipsFilter">
-                  <div class="iconChipsBox one1">
-                    <span
-                      class="material-symbols-outlined chipsIcon unikaboenden"
-                    >
-                      foundation
-                    </span>
-                  </div>
-                  <div class="chipsTxt unikaboenden-txt">
-                    <p>Unika boenden</p>
-                  </div>
+              <!-- ETT ANNAT CHIPS -->
+              <div class="chipsFilter four4">
+                <div class="iconChipsBox">
+                  <a href="https://www.facebook.com/profile.php?id=100094686330200">
+                    <img class="socialMedia-icon chipsgilter-icon" src="assets/icons/cil_animal.svg" alt="a paw icon" />
+                  </a>
                 </div>
-                <!-- ETT ANNAT CHIPS -->
-                <div class="chipsFilter">
-                  <div class="iconChipsBox two2">
-                    <span class="material-symbols-outlined chipsIcon water">
-                      water
-                    </span>
-                  </div>
-                  <div class="chipsTxt water-txt">
-                    <p>Nära vatten</p>
-                  </div>
+                <div class="chipsTxt ejtillatet-txt">
+                  <p>Ej tillåtet</p>
                 </div>
-                <!-- ETT ANNAT CHIPS -->
-                <div class="chipsFilter three3">
-                  <div class="iconChipsBox">
-                    <span class="material-symbols-outlined chipsIcon childcare">
-                      child_care
-                    </span>
-                  </div>
-                  <div class="chipsTxt childcare-txt">
-                    <p>Barnvänligt</p>
-                  </div>
+              </div>
+            </div>
+            <a class="btnBookWebsite button upperCASE"
+              href="https://traktforesthotel.com/?gad_source=1&gclid=CjwKCAjw0YGyBhByEiwAQmBEWqwHVwYfPxVts8i8L3sKvbf2588236LM3DvubJXLWVNdzoQ_Ct9z1RoCJvwQAvD_BwE">BOKA
+              PÅ HEMSIDAN
+              <span class="material-symbols-outlined openNewIcon">
+                open_in_new
+              </span></a>
+            <div class="deviderLine mbt3"></div>
+            <section class="accommodationSection">
+              <h2 class="heading_4">Boenden</h2>
+              <ul class="regularTxt mbt1-25">
+                <li>Tilta</li>
+                <li>Betula</li>
+                <li>Salix</li>
+              </ul>
+              <div class="flexbox-boenden">
+                <div class="boxOne">
+                  <img src="assets/img/tilita.jpg" alt="A tree cabin in the forest" />
+                  <p class="text-on bodyXS">Tilta</p>
                 </div>
-                <!-- ETT ANNAT CHIPS -->
-                <div class="chipsFilter four4">
-                  <div class="iconChipsBox">
-                    <a
-                      href="https://www.facebook.com/profile.php?id=100094686330200"
-                    >
-                      <img
-                        class="socialMedia-icon chipsgilter-icon"
-                        src="/assets/icons/cil_animal.svg"
-                        alt="a paw icon"
-                      />
-                    </a>
+                <div class="boxTwo">
+                  <div class="box50-50">
+                    <img src="assets/img/betula.jpg" alt="A tree cabin in the forest" />
+                    <p class="text-on bodyXS">Betula</p>
                   </div>
-                  <div class="chipsTxt ejtillatet-txt">
-                    <p>Ej tillåtet</p>
+                  <div class="box50-50">
+                    <img src="assets/img/salix.jpg" alt="A tree cabin in the forest" />
+                    <p class="text-on bodyXS">Salix</p>
                   </div>
                 </div>
               </div>
-              <a
-                class="btnBookWebsite button upperCASE"
-                href="https://traktforesthotel.com/?gad_source=1&gclid=CjwKCAjw0YGyBhByEiwAQmBEWqwHVwYfPxVts8i8L3sKvbf2588236LM3DvubJXLWVNdzoQ_Ct9z1RoCJvwQAvD_BwE"
-                >BOKA PÅ HEMSIDAN
+              <a class="seeAllPicBtn button upperCASE mt1-25 mb3" href="#">Se alla bilder</a>
+            </section>
+            <section class="activitiesSection">
+              <h2 class="heading_4 mb05">Aktiviteter</h2>
+              <ul class="regularTxt">
+                <li class="li-activites">
+                  <span class="material-symbols-outlined icons-li">
+                    kayaking
+                  </span>
+                  <p class="bodyMD">Kajak</p>
+                </li>
+                <li class="li-activites">
+                  <span class="material-symbols-outlined icons-li">
+                    directions_bike
+                  </span>
+                  <p class="bodyMD">Tillgång till cykelleder</p>
+                </li>
+                <li class="li-activites">
+                  <span class="material-symbols-outlined icons-li">
+                    hiking
+                  </span>
+                  <p class="bodyMD">Vandringsleder</p>
+                </li>
+                <li class="li-activites">
+                  <span class="material-symbols-outlined icons-li">
+                    pool
+                  </span>
+                  <p class="bodyMD">Badplats</p>
+                </li>
+              </ul>
+
+              <a class="ShowMoreBtn mbt1-125 mb3" href="#">Visa mer</a>
+            </section>
+            <!-- Vad erbjuds sektionen -->
+            <section class="activitiesSection">
+              <h2 class="heading_4 mt3 mb05">Vad erbjuds?</h2>
+              <ul class="regularTxt">
+                <li class="li-activites">
+                  <span class="material-symbols-outlined icons-li">
+                    foundation
+                  </span>
+                  <p class="bodyMD">Trädhus</p>
+                </li>
+                <li class="li-activites">
+                  <span class="material-symbols-outlined icons-li">
+                    spa
+                  </span>
+                  <p class="bodyMD">Spabad</p>
+                </li>
+                <li class="li-activites">
+                  <span class="material-symbols-outlined icons-li">
+                    wifi
+                  </span>
+                  <p class="bodyMD">Fri Wifi</p>
+                </li>
+                <li class="li-activites">
+                  <span class="material-symbols-outlined icons-li">
+                    wine_bar
+                  </span>
+                  <p class="bodyMD">Mat och dryck (Egen tillagning)</p>
+                </li>
+              </ul>
+              <a class="ShowMoreBtn mbt1-125 mb3" href="#">Visa mer</a>
+            </section>
+            <div class="deviderLine mbt4"></div>
+            <!-- Sektionen vart finns det? -->
+            <section class="whereItIs-section">
+              <h2 class="heading_4 mb1">Vart finns det?</h2>
+              <p class="showPlaceMap bodyXS mb1">Visa platsen på kartan</p>
+              <!-- Kartan -->
+              <div class="map-box">
+                <div class="mapouter">
+                  <div class="gmap_canvas">
+                    <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                      src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Trakt Forest Hotel, SÄLLEHÄGNAD 6, 574 54 Holsbybrunn&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                      href="https://embed-googlemap.com">embed-googlemap.com</a>
+                  </div>
+                </div>
+              </div>
+              <div class="info-box mt1 mb3">
+                <p class="bodyXS first-p">Sällehägnad 6</p>
+                <p class="bodyXS">574 54 Holsbybrunn, Sverige</p>
+              </div>
+              <!-- Knappen till hemsidan, fast annan färg -->
+              <a class="btnBookWebsite button upperCASE"
+                href="https://traktforesthotel.com/?gad_source=1&gclid=CjwKCAjw0YGyBhByEiwAQmBEWqwHVwYfPxVts8i8L3sKvbf2588236LM3DvubJXLWVNdzoQ_Ct9z1RoCJvwQAvD_BwE">BOKA
+                PÅ HEMSIDAN
                 <span class="material-symbols-outlined openNewIcon">
                   open_in_new
-                </span></a
-              >
-              <div class="deviderLine mbt3"></div>
-              <section class="accommodationSection">
-                <h2 class="heading_4">Boenden</h2>
-                <ul class="regularTxt mbt1-25">
-                  <li>Tilta</li>
-                  <li>Betula</li>
-                  <li>Salix</li>
-                </ul>
-                <div class="flexbox-boenden">
-                  <div class="boxOne">
-                    <img
-                      src="/assets/img/tilita.jpg"
-                      alt="A tree cabin in the forest"
-                    />
-                    <p class="text-on bodyXS">Tilta</p>
-                  </div>
-                  <div class="boxTwo">
-                    <div class="box50-50">
-                      <img
-                        src="/assets/img/betula.jpg"
-                        alt="A tree cabin in the forest"
-                      />
-                      <p class="text-on bodyXS">Betula</p>
-                    </div>
-                    <div class="box50-50">
-                      <img
-                        src="/assets/img/salix.jpg"
-                        alt="A tree cabin in the forest"
-                      />
-                      <p class="text-on bodyXS">Salix</p>
+                </span></a>
+            </section>
+            <div class="deviderLine mbt4"></div>
+            <section class="reviews-section">
+              <h2 class="heading_4">Recensioner (4)</h2>
+              <div class="reviews-box">
+                <!-- ETT KORT -->
+                <article class="review-card">
+                  <div class="PicContent-box">
+                    <figure>
+                      <img src="assets/img/lasse.jpg" alt="Profil pic of a man" />
+                    </figure>
+                    <div class="nameCircle-box">
+                      <h3>Anton Bergsjö</h3>
+                      <div class="circleHowLong-box">
+                        <div class="circleRating-box">
+                          <div class="circle-box detailpagcircles">
+                            <div class="ellipse"></div>
+                            <div class="ellipse"></div>
+                            <div class="ellipse"></div>
+                            <div class="ellipse"></div>
+                            <div class="ellipse border"></div>
+                          </div>
+                          <p class="bodyXS weeks">1 vecka sedan</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <a class="seeAllPicBtn button upperCASE mt1-25 mb3" href="#"
-                  >Se alla bilder</a
-                >
-              </section>
-              <section class="activitiesSection">
-                <h2 class="heading_4 mb05">Aktiviteter</h2>
-                <ul class="regularTxt">
-                  <li class="li-activites">
-                    <span class="material-symbols-outlined icons-li">
-                      kayaking
-                    </span>
-                    <p class="bodyMD">Kajak</p>
-                  </li>
-                  <li class="li-activites">
-                    <span class="material-symbols-outlined icons-li">
-                      directions_bike
-                    </span>
-                    <p class="bodyMD">Tillgång till cykelleder</p>
-                  </li>
-                  <li class="li-activites">
-                    <span class="material-symbols-outlined icons-li">
-                      hiking
-                    </span>
-                    <p class="bodyMD">Vandringsleder</p>
-                  </li>
-                  <li class="li-activites">
-                    <span class="material-symbols-outlined icons-li">
-                      pool
-                    </span>
-                    <p class="bodyMD">Badplats</p>
-                  </li>
-                </ul>
-
-                <a class="ShowMoreBtn mbt1-125 mb3" href="#">Visa mer</a>
-              </section>
-              <!-- Vad erbjuds sektionen -->
-              <section class="activitiesSection">
-                <h2 class="heading_4 mt3 mb05">Vad erbjuds?</h2>
-                <ul class="regularTxt">
-                  <li class="li-activites">
-                    <span class="material-symbols-outlined icons-li">
-                      foundation
-                    </span>
-                    <p class="bodyMD">Trädhus</p>
-                  </li>
-                  <li class="li-activites">
-                    <span class="material-symbols-outlined icons-li">
-                      spa
-                    </span>
-                    <p class="bodyMD">Spabad</p>
-                  </li>
-                  <li class="li-activites">
-                    <span class="material-symbols-outlined icons-li">
-                      wifi
-                    </span>
-                    <p class="bodyMD">Fri Wifi</p>
-                  </li>
-                  <li class="li-activites">
-                    <span class="material-symbols-outlined icons-li">
-                      wine_bar
-                    </span>
-                    <p class="bodyMD">Mat och dryck (Egen tillagning)</p>
-                  </li>
-                </ul>
-                <a class="ShowMoreBtn mbt1-125 mb3" href="#">Visa mer</a>
-              </section>
-              <div class="deviderLine mbt4"></div>
-              <!-- Sektionen vart finns det? -->
-              <section class="whereItIs-section">
-                <h2 class="heading_4 mb1">Vart finns det?</h2>
-                <p class="showPlaceMap bodyXS mb1">Visa platsen på kartan</p>
-                <!-- Kartan -->
-                <div class="map-box">
-                  <div class="mapouter">
-                    <div class="gmap_canvas">
-                      <iframe
-                        class="gmap_iframe"
-                        frameborder="0"
-                        scrolling="no"
-                        marginheight="0"
-                        marginwidth="0"
-                        src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Trakt Forest Hotel, SÄLLEHÄGNAD 6, 574 54 Holsbybrunn&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-                      ></iframe
-                      ><a href="https://embed-googlemap.com"
-                        >embed-googlemap.com</a
-                      >
+                  <p class="bodyXS">
+                    Verkligen ett toppenställe när du vill få en paus från
+                    stadsbubblan! Detta var precis vad jag behövde
+                  </p>
+                  <a class="ShowMoreBtn" href="#">Läs mer</a>
+                </article>
+                <!-- ETT KORT -->
+                <article class="review-card ml">
+                  <div class="PicContent-box">
+                    <figure>
+                      <img src="assets/img/jennie.jpg" alt="Profil pic of a woman" />
+                    </figure>
+                    <div class="nameCircle-box">
+                      <h3>Sofie Emanuelsson</h3>
+                      <div class="circleHowLong-box">
+                        <div class="circleRating-box">
+                          <div class="circle-box detailpagcircles">
+                            <div class="ellipse"></div>
+                            <div class="ellipse"></div>
+                            <div class="ellipse"></div>
+                            <div class="ellipse"></div>
+                            <div class="ellipse border"></div>
+                          </div>
+                          <p class="bodyXS weeks">3 veckor sedan</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="info-box mt1 mb3">
-                  <p class="bodyXS first-p">Sällehägnad 6</p>
-                  <p class="bodyXS">574 54 Holsbybrunn, Sverige</p>
-                </div>
-                <!-- Knappen till hemsidan, fast annan färg -->
-                <a
-                  class="btnBookWebsite button upperCASE"
-                  href="https://traktforesthotel.com/?gad_source=1&gclid=CjwKCAjw0YGyBhByEiwAQmBEWqwHVwYfPxVts8i8L3sKvbf2588236LM3DvubJXLWVNdzoQ_Ct9z1RoCJvwQAvD_BwE"
-                  >BOKA PÅ HEMSIDAN
-                  <span class="material-symbols-outlined openNewIcon">
-                    open_in_new
-                  </span></a
-                >
-              </section>
-              <div class="deviderLine mbt4"></div>
-              <section class="reviews-section">
-                <h2 class="heading_4">Recensioner (4)</h2>
-                <div class="reviews-box">
-                  <!-- ETT KORT -->
-                  <article class="review-card">
-                    <div class="PicContent-box">
-                      <figure>
-                        <img
-                          src="/assets/img/lasse.jpg"
-                          alt="Profil pic of a man"
-                        />
-                      </figure>
-                      <div class="nameCircle-box">
-                        <h3>Anton Bergsjö</h3>
-                        <div class="circleHowLong-box">
-                          <div class="circleRating-box">
-                            <div class="circle-box detailpagcircles">
-                              <div class="ellipse"></div>
-                              <div class="ellipse"></div>
-                              <div class="ellipse"></div>
-                              <div class="ellipse"></div>
-                              <div class="ellipse border"></div>
-                            </div>
-                            <p class="bodyXS weeks">1 vecka sedan</p>
+                  <p class="bodyXS">
+                    Bokade en “offline-helg”med en tjejkompis och bodde i
+                    deras trädsvit. Kan starkt rekommendera det!
+                  </p>
+                  <a class="ShowMoreBtn" href="#">Läs mer</a>
+                </article>
+                <!-- ETT KORT -->
+                <article class="review-card ml">
+                  <div class="PicContent-box">
+                    <figure>
+                      <img src="assets/img/Louise.jpg" alt="Profil pic of a woman" />
+                    </figure>
+                    <div class="nameCircle-box">
+                      <h3>Maja Karlsson</h3>
+                      <div class="circleHowLong-box">
+                        <div class="circleRating-box">
+                          <div class="circle-box detailpagcircles">
+                            <div class="ellipse"></div>
+                            <div class="ellipse"></div>
+                            <div class="ellipse"></div>
+                            <div class="ellipse"></div>
+                            <div class="ellipse border"></div>
                           </div>
+                          <p class="bodyXS weeks">1 vecka sedan</p>
                         </div>
                       </div>
                     </div>
-                    <p class="bodyXS">
-                      Verkligen ett toppenställe när du vill få en paus från
-                      stadsbubblan! Detta var precis vad jag behövde
-                    </p>
-                    <a class="ShowMoreBtn" href="#">Läs mer</a>
-                  </article>
-                  <!-- ETT KORT -->
-                  <article class="review-card ml">
-                    <div class="PicContent-box">
-                      <figure>
-                        <img
-                          src="/assets/img/jennie.jpg"
-                          alt="Profil pic of a woman"
-                        />
-                      </figure>
-                      <div class="nameCircle-box">
-                        <h3>Sofie Emanuelsson</h3>
-                        <div class="circleHowLong-box">
-                          <div class="circleRating-box">
-                            <div class="circle-box detailpagcircles">
-                              <div class="ellipse"></div>
-                              <div class="ellipse"></div>
-                              <div class="ellipse"></div>
-                              <div class="ellipse"></div>
-                              <div class="ellipse border"></div>
-                            </div>
-                            <p class="bodyXS weeks">3 veckor sedan</p>
+                  </div>
+                  <p class="bodyXS">
+                    Har vart hos Trakt två gånger och det är alltid lika
+                    underbart! Vi testade att åka dit på sommaren och det va
+                    magiskt!
+                  </p>
+                  <a class="ShowMoreBtn" href="#">Läs mer</a>
+                </article>
+                <!-- ETT KORT -->
+                <article class="review-card ml">
+                  <div class="PicContent-box">
+                    <figure>
+                      <img src="assets/img/Mike.jpg" alt="Profil pic of a man" />
+                    </figure>
+                    <div class="nameCircle-box">
+                      <h3>Ingmar Jönsson</h3>
+                      <div class="circleHowLong-box">
+                        <div class="circleRating-box">
+                          <div class="circle-box detailpagcircles">
+                            <div class="ellipse"></div>
+                            <div class="ellipse"></div>
+                            <div class="ellipse"></div>
+                            <div class="ellipse"></div>
+                            <div class="ellipse border"></div>
                           </div>
+                          <p class="bodyXS weeks">10 veckor sedan</p>
                         </div>
                       </div>
                     </div>
-                    <p class="bodyXS">
-                      Bokade en “offline-helg”med en tjejkompis och bodde i
-                      deras trädsvit. Kan starkt rekommendera det!
-                    </p>
-                    <a class="ShowMoreBtn" href="#">Läs mer</a>
-                  </article>
-                  <!-- ETT KORT -->
-                  <article class="review-card ml">
-                    <div class="PicContent-box">
-                      <figure>
-                        <img
-                          src="/assets/img/Louise.jpg"
-                          alt="Profil pic of a woman"
-                        />
-                      </figure>
-                      <div class="nameCircle-box">
-                        <h3>Maja Karlsson</h3>
-                        <div class="circleHowLong-box">
-                          <div class="circleRating-box">
-                            <div class="circle-box detailpagcircles">
-                              <div class="ellipse"></div>
-                              <div class="ellipse"></div>
-                              <div class="ellipse"></div>
-                              <div class="ellipse"></div>
-                              <div class="ellipse border"></div>
-                            </div>
-                            <p class="bodyXS weeks">1 vecka sedan</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <p class="bodyXS">
-                      Har vart hos Trakt två gånger och det är alltid lika
-                      underbart! Vi testade att åka dit på sommaren och det va
-                      magiskt!
-                    </p>
-                    <a class="ShowMoreBtn" href="#">Läs mer</a>
-                  </article>
-                  <!-- ETT KORT -->
-                  <article class="review-card ml">
-                    <div class="PicContent-box">
-                      <figure>
-                        <img
-                          src="/assets/img/Mike.jpg"
-                          alt="Profil pic of a man"
-                        />
-                      </figure>
-                      <div class="nameCircle-box">
-                        <h3>Ingmar Jönsson</h3>
-                        <div class="circleHowLong-box">
-                          <div class="circleRating-box">
-                            <div class="circle-box detailpagcircles">
-                              <div class="ellipse"></div>
-                              <div class="ellipse"></div>
-                              <div class="ellipse"></div>
-                              <div class="ellipse"></div>
-                              <div class="ellipse border"></div>
-                            </div>
-                            <p class="bodyXS weeks">10 veckor sedan</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <p class="bodyXS">
-                      Spenderade en helg hos Trakt Forest med sambon, och wow
-                      vilket ställe! Vi kommer att återkomma.
-                    </p>
-                    <a class="ShowMoreBtn" href="#">Läs mer</a>
-                  </article>
-                </div>
-
-                <a class="seeMoreReviweBtn button upperCASE" href="#"
-                  >SE FLER RECENSIONER
-                </a>
-              </section>
-              <div class="deviderLine mbt4"></div>
-
-              <section class="contact-section"></section>
-
-              <h2 class="heading_4">Kontakt</h2>
-
-              <div class="location-box">
-                <span class="material-symbols-outlined icons-li"> mail </span>
-                <div class="contactTxt-box">
-                  <p class="bodyMD">konferens@traktforesthotel.com</p>
-                </div>
+                  </div>
+                  <p class="bodyXS">
+                    Spenderade en helg hos Trakt Forest med sambon, och wow
+                    vilket ställe! Vi kommer att återkomma.
+                  </p>
+                  <a class="ShowMoreBtn" href="#">Läs mer</a>
+                </article>
               </div>
-              <div class="location-box">
-                <span class="material-symbols-outlined icons-li">
-                  location_on
-                </span>
-                <div class="contactTxt-box">
-                  <p class="bodyMD">Sällehägnad 6</p>
-                  <p class="bodyMD">574 54 Holsbybrunn</p>
-                </div>
+
+              <a class="seeMoreReviweBtn button upperCASE" href="#">SE FLER RECENSIONER
+              </a>
+            </section>
+            <div class="deviderLine mbt4"></div>
+
+            <section class="contact-section"></section>
+
+            <h2 class="heading_4">Kontakt</h2>
+
+            <div class="location-box">
+              <span class="material-symbols-outlined icons-li"> mail </span>
+              <div class="contactTxt-box">
+                <p class="bodyMD">konferens@traktforesthotel.com</p>
               </div>
-              <div class="socialMedia-box">
-                <a href="https://www.facebook.com/traktkoket">
-                  <img
-                    class="socialMedia-icon"
-                    src="/assets/icons/fb.svg"
-                    alt="facebook icon"
-                  />
-                </a>
-                <a href="https://www.instagram.com/traktkoket/">
-                  <img
-                    class="socialMedia-icon margin-left"
-                    src="/assets/icons/insta.svg"
-                    alt="instagram icon"
-                  />
-                </a>
+            </div>
+            <div class="location-box">
+              <span class="material-symbols-outlined icons-li">
+                location_on
+              </span>
+              <div class="contactTxt-box">
+                <p class="bodyMD">Sällehägnad 6</p>
+                <p class="bodyMD">574 54 Holsbybrunn</p>
               </div>
-            </main>
-          </section>
-        </template>
-      </div>
-      <!-- </main> -->
-      <!-- NAVIGATION -->
-      <nav class="bottom-menu-container">
-        <ul class="bottom-menu">
-          <!-- Aktivt state -->
-          <li class="menu-item">
-            <a class="menu-link" href="/index.html">
-              <span class="material-symbols-outlined">home</span>
-              <p class="nav-p">Hem</p>
-            </a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link" href="/filterPage.html">
-              <img
-                class="nav-icons"
-                src="/assets/icons/Search.svg"
-                alt="search icon"
-              />
-              <p class="nav-p">Utforska</p>
-            </a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link" href="/savedDestinations.html">
-              <span class="material-symbols-outlined"> favorite </span>
-              <p class="nav-p">Favoriter</p>
-            </a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link" href="/profil.html">
-              <span class="material-symbols-outlined"> account_circle </span>
-              <p class="nav-p">Profil</p>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <script src="/assets/js/getAccommodation.js" defer></script>
+            </div>
+            <div class="socialMedia-box">
+              <a href="https://www.facebook.com/traktkoket">
+                <img class="socialMedia-icon" src="assets/icons/fb.svg" alt="facebook icon" />
+              </a>
+              <a href="https://www.instagram.com/traktkoket/">
+                <img class="socialMedia-icon margin-left" src="assets/icons/insta.svg" alt="instagram icon" />
+              </a>
+            </div>
+          </main>
+        </section>
+      </template>
     </div>
-  </body>
+    <!-- </main> -->
+    <!-- NAVIGATION -->
+    <nav class="bottom-menu-container">
+      <ul class="bottom-menu">
+        <!-- Aktivt state -->
+        <li class="menu-item">
+          <a class="menu-link" href="/index.html">
+            <span class="material-symbols-outlined">home</span>
+            <p class="nav-p">Hem</p>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="/filterPage.html">
+            <img class="nav-icons" src="assets/icons/Search.svg" alt="search icon" />
+            <p class="nav-p">Utforska</p>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="/savedDestinations.html">
+            <span class="material-symbols-outlined"> favorite </span>
+            <p class="nav-p">Favoriter</p>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="/profil.html">
+            <span class="material-symbols-outlined"> account_circle </span>
+            <p class="nav-p">Profil</p>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <script src="assets/js/getAccommodation.js" defer></script>
+  </div>
+</body>
 </html>
